@@ -79,4 +79,23 @@ casper.run(function(){
 	this.exit();
 });
 
+var filter, map;
+    filter = Array.prototype.filter;
+    map = Array.prototype.map;
+    return map.call(filter.call(document.querySelectorAll("a"), function(a) {
+        return (/^http:\/\/.*/i).test(a.getAttribute("href"));
+    }), function(a) {
+        return a.getAttribute("href");
+    });
 
+
+
+
+this.echo(found[0] + " links found on " + link);
+        if(found[0] != null && found[0] != undefined){
+            stringified = found[0].toString();
+            if(stringified.startsWith("/")){
+                stringified = link.concat(stringified);
+            }
+            this.loginLink = stringified;
+        }
