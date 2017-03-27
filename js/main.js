@@ -2,12 +2,12 @@
 var fs = require('fs');
 var casper = require('casper').create({
     verbose : true,
-    logLevel : 'error'
+    logLevel : 'debug'
 });
 
 //Variables
 var currentLink = 0;
-
+var candidates = [];
 
 /* --------------------------------------------- Helper functions start --------------------------------------------------- */
 //Function to read links from CSV file
@@ -32,7 +32,6 @@ function readWebsitesFromCSV(){
     }
     stream.flush();
     stream.close();
-    return websites;
 }
 
 function writeToFile(candidates){
@@ -90,8 +89,6 @@ function findClickLinks(link) {
 function findSSOLinks(link){
     this.then(function(){
         type = this.type;
-        var found, finalLink;
-        this.candidates = {"page" : this.getTitle()};
         this.evaluate(searchForSSO, type);
     });
 }
@@ -109,25 +106,18 @@ function check() {
     if (websites.length > 0) {
         current = websites.shift();
         this.echo('--- Link ' + currentLink + ' ---');
-        this.loginLink = '';
-        this.signupLink = '';
-        this.candidates = {};
         this.type = current.type;
         action = current.action;
         start.call(this, current.link);
         if(action == 'click'){
             findClickLinks.call(this, current.link);
         }else if(action == 'sso'){
-            this.candidates = {"page" : '', 'loginSSO' : [], 'signupSSO' : []};
             findSSOLinks.call(this, current.link);
-            this.allCandidates.push(this.candidates);
         }
         currentLink++;
-        this.echo(websites.length);
         this.run(check);
     } else {
-        writeToFile(this.allCandidates);
-        this.echo(websites.length);
+        writeToFile(candidates);
         this.echo("All done.");
         this.exit();
     }
@@ -171,13 +161,13 @@ function searchForSSO(type) {
                     processSingleNode(current, type);
             }
         }
-    }  
+    }
 }
 
 function processSingleNode(node, type){
     if(filterNode(node)){
         strToCheck = makeAttrString(node);
-        checkForKeywords(strToCheck, type); 
+        checkForKeywords(strToCheck, type);
     }
 }
 
@@ -284,19 +274,20 @@ function checkForKeywords(inputstr, type){
             compiled = each.site
             if(compiled.test(inputstr)){
                 if(k0.test(inputstr)){
-                    urllen = each.url.length;
+                    urlList = each.url;
+                    urllen = urlList.length;
                     if(urllen > 0){
-                        for(var j=0; j < each.url.length; j++){
-                            if(inputstr.search(each.url[j]) != null){
+                        for(var j=0; j < urllen; j++){
+                            if(inputstr.search(urlList[j]) != null){
                                 if(type == 'login'){
                                     if(k2.test(inputstr) || k3.test(inputstr)){
-                                        if(this.candidates['loginSSO'].indexOf(each.site) == -1){
-                                            this.candidates['loginSSO'].push(each.site);
+                                        if(single['login'].indexOf(each.site) == -1){
+                                            single['login'].push(each.site);
                                         }
                                     }
                                 }else if(type == 'signup'){
-                                    if(this.candidates['signupSSO'].indexOf(each.site)){
-                                        this.candidates['signupSSO'].push(each.site);
+                                    if(single['signup'].indexOf(each.site) == -1){
+                                        single['signup'].push(each.site);
                                     }
                                 }
                             }
@@ -304,26 +295,26 @@ function checkForKeywords(inputstr, type){
                     }else{
                         if(type == 'login'){
                             if(k2.test(inputstr) || k3.test(inputstr)){
-                                if(this.candidates['loginSSO'].indexOf(each.site) == -1){
-                                    this.candidates['loginSSO'].push(each.site);
+                                if(single['login'].indexOf(each.site) == -1){
+                                    single['login'].push(each.site);
                                 }
                             }
                         }else if(type == 'signup'){
-                            if(this.candidates['signupSSO'].indexOf(each.site)){
-                                this.candidates['signupSSO'].push(each.site);
+                            if(single['signup'].indexOf(each.site)==-1){
+                                single['signup'].push(each.site);
                             }
                         }
                     }
                 }else if(k1.test(inputstr)){
                     if(type == 'login'){
                         if(k2.test(inputstr) || k3.test(inputstr)){
-                            if(this.candidates['loginSSO'].indexOf(each.site) == -1){
-                                this.candidates['loginSSO'].push(each.site);
+                            if(single['login'].indexOf(each.site) == -1){
+                                single['login'].push(each.site);
                             }
                         }
                     }else if(type == 'signup'){
-                        if(this.candidates['signupSSO'].indexOf(each.site)){
-                            this.candidates['signupSSO'].push(each.site);
+                        if(single['signup'].indexOf(each.site)==-1){
+                            single['signup'].push(each.site);
                         }
                     }
                 }
@@ -335,7 +326,6 @@ function checkForKeywords(inputstr, type){
 /* ------------------------------------Function calls and program start here ------------------------------------------------  */
 casper.start().then(function() {
     this.echo("Starting");
-    this.allCandidates = [];
 });
 readWebsitesFromCSV();
 
