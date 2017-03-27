@@ -35,6 +35,17 @@ function readWebsitesFromCSV(){
     return websites;
 }
 
+function writeToFile(candidates){
+    stream = fs.open('../data/log.json', 'aw');
+
+    for(var i=0; i<candidates.length;i++){
+        stream.writeLine(JSON.stringify(candidates[i]));
+    }
+    stream.flush();
+    stream.close();
+}
+
+
 // Get the links, and add them to the links array
 function findClickLinks(link) {
     var found, finalLink;
@@ -57,6 +68,11 @@ function findClickLinks(link) {
             if(type == 'login'){
                 websites.unshift({
                     "link" : finalLink,
+                    "type" : "signup",
+                    "action" : "click"
+                });
+                websites.unshift({
+                    "link" : finalLink,
                     "type" : "login",
                     "action" : "sso"
                 });
@@ -75,7 +91,8 @@ function findSSOLinks(link){
     this.then(function(){
         type = this.type;
         var found, finalLink;
-        found = this.evaluate(searchForSSO, type)
+        this.candidates = {"page" : this.getTitle()};
+        this.evaluate(searchForSSO, type);
     });
 }
 
@@ -101,12 +118,15 @@ function check() {
         if(action == 'click'){
             findClickLinks.call(this, current.link);
         }else if(action == 'sso'){
-            findSSOLinks.call(this, current.link)
+            this.candidates = {"page" : '', 'loginSSO' : [], 'signupSSO' : []};
+            findSSOLinks.call(this, current.link);
+            this.allCandidates.push(this.candidates);
         }
         currentLink++;
         this.echo(websites.length);
         this.run(check);
     } else {
+        writeToFile(this.allCandidates);
         this.echo(websites.length);
         this.echo("All done.");
         this.exit();
@@ -259,69 +279,63 @@ function checkForKeywords(inputstr, type){
         e2 = /connect/gi;
         e3 = /like/gi;
 
-        for(each of sso){
+        for(var i=0; i < sso.length; i++){
+            each = sso[i];
             compiled = each.site
             if(compiled.test(inputstr)){
                 if(k0.test(inputstr)){
                     urllen = each.url.length;
                     if(urllen > 0){
-                        for(url of each.url){
-                            if(inputstr.search(url) != null){
+                        for(var j=0; j < each.url.length; j++){
+                            if(inputstr.search(each.url[j]) != null){
                                 if(type == 'login'){
                                     if(k2.test(inputstr) || k3.test(inputstr)){
-                                        
+                                        if(this.candidates['loginSSO'].indexOf(each.site) == -1){
+                                            this.candidates['loginSSO'].push(each.site);
+                                        }
+                                    }
+                                }else if(type == 'signup'){
+                                    if(this.candidates['signupSSO'].indexOf(each.site)){
+                                        this.candidates['signupSSO'].push(each.site);
                                     }
                                 }
                             }
+                        }
+                    }else{
+                        if(type == 'login'){
+                            if(k2.test(inputstr) || k3.test(inputstr)){
+                                if(this.candidates['loginSSO'].indexOf(each.site) == -1){
+                                    this.candidates['loginSSO'].push(each.site);
+                                }
+                            }
+                        }else if(type == 'signup'){
+                            if(this.candidates['signupSSO'].indexOf(each.site)){
+                                this.candidates['signupSSO'].push(each.site);
+                            }
+                        }
+                    }
+                }else if(k1.test(inputstr)){
+                    if(type == 'login'){
+                        if(k2.test(inputstr) || k3.test(inputstr)){
+                            if(this.candidates['loginSSO'].indexOf(each.site) == -1){
+                                this.candidates['loginSSO'].push(each.site);
+                            }
+                        }
+                    }else if(type == 'signup'){
+                        if(this.candidates['signupSSO'].indexOf(each.site)){
+                            this.candidates['signupSSO'].push(each.site);
                         }
                     }
                 }
             }
         }
-            
-            
-                
-                    if (each.url).length > 0:
-                        for url in each['url']:
-                            c_url = re.compile(url, re.I)
-                            if c_url.search(inputstr) is not None:
-                                if stype == 'login':
-                                    if k2.search(inputstr) is not None or k3.search(inputstr) is not None:
-                                        if each['site'] not in self.sso_info["loginSSO"]:
-                                            self.sso_info["url"] = self.first_url
-                                            self.sso_info["loginSSO"].append(each['site'])
-                                elif stype == 'signup':
-                                    if each['site'] not in self.sso_info["signupSSO"]:
-                                        self.sso_info["url"] = self.first_url
-                                        self.sso_info["signupSSO"].append(each['site'])
-                    else:
-                        if stype == 'login':
-                            if k2.search(inputstr) is not None or k3.search(inputstr) is not None:
-                                if each['site'] not in self.sso_info["loginSSO"]:
-                                    self.sso_info["url"] = self.first_url
-                                    self.sso_info["loginSSO"].append(each['site'])
-                        elif stype == 'signup':
-                            if each['site'] not in self.sso_info["signupSSO"]:
-                                self.sso_info["url"] = self.first_url
-                                self.sso_info["signupSSO"].append(each['site'])
-                elif k1.search(inputstr) is not None:
-                    if stype == 'login':
-                        if k2.search(inputstr) is not None or k3.search(inputstr) is not None:
-                            if each['site'] not in self.sso_info["loginSSO"]:
-                                self.sso_info["url"] = self.first_url
-                                self.sso_info["loginSSO"].append(each['site'])
-                    elif stype == 'signup':
-                        if each['site'] not in self.sso_info["signupSSO"]:
-                            self.sso_info["url"] = self.first_url
-                            self.sso_info["signupSSO"].append(each['site'])
-
-
 }
 /* ---------------------------------------------------- Search functions end ----------------------------------------------- */
 
 /* ------------------------------------Function calls and program start here ------------------------------------------------  */
 casper.start().then(function() {
     this.echo("Starting");
+    this.allCandidates = [];
 });
 readWebsitesFromCSV();
 
