@@ -1,4 +1,1 @@
-{"page":"Log In - Stack Overflow","login":["google","facebook","yahoo","aol"]}
-{"page":"Sign Up - Stack Overflow","signup":["google","facebook","yahoo","aol"]}
-{"page":"Log In - Stack Overflow","login":["google","facebook","yahoo","aol"]}
-{"page":"Sign Up - Stack Overflow","signup":["google","facebook","yahoo","aol"]}
+{"page":"Sign in - Google Accounts","login":["google"]}

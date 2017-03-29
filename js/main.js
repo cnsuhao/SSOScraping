@@ -41,7 +41,7 @@ function readWebsitesFromCSV(){
 
 function writeToFile(candidates){
     stream = fs.open('../data/log.txt', 'w');
-
+    
     for(var i=0; i<candidates.length;i++){
         var each = candidates[i];
         var keys = Object.keys(each);
@@ -130,7 +130,9 @@ function findSSOLinks(link){
                                 yno = this.filterNode(current);
                                 if(yno){
                                     result = this.processSingleNode(current);
-                                    if(result) results.push(result);
+                                    if(result){
+                                        if(results.indexOf(result) == -1) results.push(result);
+                                    }
                                 }
                             }
                         }
@@ -235,6 +237,7 @@ function findSSOLinks(link){
                     var k2 = /log[\-\S]?[io]n/gi;
                     var k3 = /sign[\-\S]?[io]n/gi;
                     var k4 = /sign[\-\S]?up/gi;
+                    var k5 = /with[\-\S]/gi;
                     var e0 = /social/gi;
                     var e1 = /subscribe/gi;
                     var e2 = /connect/gi;
@@ -259,7 +262,11 @@ function findSSOLinks(link){
                                 }
                             }else if(openMatch != null){
                                 return each.site;
-                            } //add another else clause
+                            }else{
+                                if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null ){
+                                    if(inputstr.match(k5) != null) return each.site;
+                                }
+                            }
                         }
                     }
                 }
@@ -284,7 +291,6 @@ function findSSOLinks(link){
 // Just opens the page and prints the title
 function start(link) {
     this.start(link, function() {
-        this.echo(this.status(true))
         this.echo('Page title: ' + this.getTitle());
         this.ssoInfo['page'] = this.getTitle();
     });
@@ -338,6 +344,7 @@ function searchForClickCandidates(type){
 /* ------------------------------------Function calls and program start here ------------------------------------------------  */
 casper.start().then(function() {
     this.echo("Starting");
+    websites = [{"link" : "https://www.google.com", "type" : "login", "action" : "click"}];
 });
 readWebsitesFromCSV();
 
