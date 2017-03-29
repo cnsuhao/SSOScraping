@@ -344,7 +344,6 @@ function searchForClickCandidates(type){
 /* ------------------------------------Function calls and program start here ------------------------------------------------  */
 casper.start().then(function() {
     this.echo("Starting");
-    websites = [{"link" : "https://www.google.com", "type" : "login", "action" : "click"}];
 });
 readWebsitesFromCSV();
 
