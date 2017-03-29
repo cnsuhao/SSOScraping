@@ -40,8 +40,15 @@ function writeToFile(candidates){
 
     for(var i=0; i<candidates.length;i++){
         var each = candidates[i];
-        if((each.login).length > 0 || (each.signup).length > 0){
-            stream.writeLine(JSON.stringify(candidates[i]));
+        var keys = Object.keys(each);
+        if(keys[1] == 'login'){
+            if(each['login'].length > 0){
+                stream.writeLine(JSON.stringify(each));
+            }
+        }else if(keys[1] == 'signup'){
+            if(each['signup'].length > 0){
+                stream.writeLine(JSON.stringify(each));
+            }
         }
     }
     stream.flush();
@@ -326,6 +333,7 @@ function searchForClickCandidates(type){
 /* ------------------------------------Function calls and program start here ------------------------------------------------  */
 casper.start().then(function() {
     this.echo("Starting");
+    // websites = [{"link" : "https://www.stackoverflow.com", "type" : "login", "action" : "click"}]
 });
 readWebsitesFromCSV();
 
