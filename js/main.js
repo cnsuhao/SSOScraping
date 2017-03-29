@@ -3,8 +3,9 @@ var fs = require('fs');
 var casper = require('casper').create({
     verbose : true,
     logLevel : 'error',
+    waitTimeout : 30000,
     pageSettings : {
-        resourceTimeout : 30000
+        userAgent : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
     }
 });
 
@@ -18,7 +19,7 @@ var candidates = [];
 function readWebsitesFromCSV(){
     websites = [];
     //Script starts
-    stream = fs.open('../data/summa.csv','r');
+    stream = fs.open('../data/top-1000.csv','r');
     line = stream.readLine().split(',')[1];
     websites.push({
         "link" : "https://www."+line,
@@ -213,7 +214,7 @@ function findSSOLinks(link){
                         {"site" : "etsy", "regex" : /etsy/gi, "url" : ["https://www.etsy.com/oauth"]}, 
                         {"site" : "evernote", "regex" : /evernote/gi, "url" : ["https://sandbox.evernote.com/OAuth.action"]},  
                         {"site" : "yelp", "regex" : /yelp/gi, "url" : ["https://api.yelp.com/oauth2"]},  
-                        {"site" : "facebook", "regex" : /facebook/gi, "url" : ["fb-login-button", "https://www.facebook.com/v2.0/dialog/oauth"]},
+                        {"site" : "facebook", "regex" : /facebook/gi, "url" : ["fb-login-button", "https://www.facebook.com/v2.0/dialog/oauth",  "https://www.facebook.com/v2.3/dialog/oauth"]},
                         {"site" : "dropbox", "regex" : /dropbox/gi, "url" : ["https://www.dropbox.com/1/oauth2/authorize", "https://www.dropbox.com/1/oauth/authorize"]}, 
                         {"site" : "twitch", "regex" : /twitch/gi, "url" : ["https://api.twitch.tv/kraken/oauth2/authorize"]},
                         {"site" : "stripe", "regex" : /stripe/gi, "url" : ["https://connect.stripe.com/oauth/authorize"]},
@@ -258,7 +259,7 @@ function findSSOLinks(link){
                                 }
                             }else if(openMatch != null){
                                 return each.site;
-                            }
+                            } //add another else clause
                         }
                     }
                 }
@@ -283,6 +284,7 @@ function findSSOLinks(link){
 // Just opens the page and prints the title
 function start(link) {
     this.start(link, function() {
+        this.echo(this.status(true))
         this.echo('Page title: ' + this.getTitle());
         this.ssoInfo['page'] = this.getTitle();
     });
