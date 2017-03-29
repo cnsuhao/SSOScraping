@@ -39,7 +39,10 @@ function writeToFile(candidates){
     stream = fs.open('../data/log.txt', 'aw');
 
     for(var i=0; i<candidates.length;i++){
-        stream.writeLine(JSON.stringify(candidates[i]));
+        var each = candidates[i];
+        if((each.login).length > 0 || (each.signup).length > 0){
+            stream.writeLine(JSON.stringify(candidates[i]));
+        }
     }
     stream.flush();
     stream.close();
