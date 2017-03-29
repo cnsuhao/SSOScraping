@@ -55,11 +55,17 @@ function findClickLinks(link) {
         this.echo(found + "links found on " + link);
         if(found.length > 0){
             for(key in found){
-                if(found[key].indexOf("/") == 0){
-                    found[key] = link + found[key];
+                if(found[key] != '#'){
+                    val = found[key];
+                    if(val[0] == "/" && val[1] == "/"){
+                        val = "https:" + val;
+                    }else if(val[0] == "/"){
+                         val = link + val;
+                    }
+                    finalLink = val;
+                    this.echo("finalLink-----" + finalLink);
+                    if(finalLink)break;
                 }
-                finalLink = found[key];
-                if(finalLink)break;
             }
             if(type == 'login'){
                 websites.unshift({
@@ -317,9 +323,7 @@ function searchForClickCandidates(type){
 /* ------------------------------------Function calls and program start here ------------------------------------------------  */
 casper.start().then(function() {
     this.echo("Starting");
-    websites = [{"link" : "https://stackoverflow.com", "type" : "login", "action" : "click"}];
-    candidates = [];
 });
-// readWebsitesFromCSV();
+readWebsitesFromCSV();
 
 casper.run(check);
