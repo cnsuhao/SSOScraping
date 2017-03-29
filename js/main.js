@@ -264,7 +264,7 @@ function findSSOLinks(link){
                                 return each.site;
                             }else{
                                 if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null ){
-                                    if(inputstr.match(k5) != null) return each.site;
+                                    return each.site;
                                 }
                             }
                         }
@@ -344,6 +344,7 @@ function searchForClickCandidates(type){
 /* ------------------------------------Function calls and program start here ------------------------------------------------  */
 casper.start().then(function() {
     this.echo("Starting");
+    // websites = [{"link" : "https://www.spotify.com", "type" : "login", "action" : "click"}];
 });
 readWebsitesFromCSV();
 

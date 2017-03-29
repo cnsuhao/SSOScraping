@@ -1,1 +1,2 @@
-{"page":"Sign in - Google Accounts","login":["google"]}
+{"page":"Spotify","login":["facebook"]}
+{"page":"Sign up - Spotify","signup":["facebook"]}
