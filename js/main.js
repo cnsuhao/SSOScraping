@@ -2,7 +2,10 @@
 var fs = require('fs');
 var casper = require('casper').create({
     verbose : true,
-    logLevel : 'error'
+    logLevel : 'error',
+    pageSettings : {
+        resourceTimeout : 30000
+    }
 });
 
 //Variables
@@ -36,7 +39,7 @@ function readWebsitesFromCSV(){
 }
 
 function writeToFile(candidates){
-    stream = fs.open('../data/log.txt', 'aw');
+    stream = fs.open('../data/log.txt', 'w');
 
     for(var i=0; i<candidates.length;i++){
         var each = candidates[i];
