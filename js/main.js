@@ -9,7 +9,7 @@ var casper = require('casper').create({
     }
 });
 
-//Variables
+//Variables declared
 var currentLink = 0;
 var candidates = [];
 
