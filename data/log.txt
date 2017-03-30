@@ -1,2 +1,11 @@
-{"page":"Spotify","login":["facebook"]}
-{"page":"Sign up - Spotify","signup":["facebook"]}
+{"page":"Sign in - Google Accounts","login":["google"]}
+{"page":"Create your Google Account","signup":["google","box"]}
+{"page":"Fazer login nas Contas do Google","login":["google"]}
+{"page":"Crie sua Conta do Google","signup":["google","box"]}
+{"page":"Acceso: cuentas de Google","login":["google"]}
+{"page":"Acceso: cuentas de Google","login":["google"]}
+{"page":"Inloggen – Google Accounts","login":["google"]}
+{"page":"Kirjaudu sisään – Google-tilit","login":["google"]}
+{"page":"Prijava – Google računi","login":["google"]}
+{"page":"Izradite Google račun","signup":["google","box"]}
+{"page":"تسجيل الدخول - حسابات Google","login":["google"]}
