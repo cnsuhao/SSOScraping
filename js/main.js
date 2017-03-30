@@ -283,8 +283,8 @@ function findSSOLinks(link){
         }else if(type == 'signup'){
             ssoInfo['signup'] = ssoResult;
         }
-        if(candidates.indexOf(ssoResult) == -1){
-            candidates.push(ssoResult);
+        if(candidates.indexOf(ssoInfo) == -1){
+            candidates.push(ssoInfo);
         }
     });
 }
@@ -326,7 +326,7 @@ function check() {
 function searchForClickCandidates(type){
     var regexes = [/log[\s-_]?[io]n/gi, /sign[\s-_]?[io]n/gi, /sign[\s-_]?up/gi, /create[\s-_]?account/gi];
     var foundElems, map;
-    foundElems = document.querySelectorAll("a, button, span, div, img");
+    foundElems = document.querySelectorAll("a, button, span, div, img, input, form");
     filter = Array.prototype.filter;
     map = Array.prototype.map;
     return map.call(filter.call(foundElems, function(elem){
@@ -338,22 +338,12 @@ function searchForClickCandidates(type){
             }
         }
     }), function(elem){
-        var href = elem.getAttribute('href');
-        var parent = elem.parentElement;
-        var phref = parent.getAttribute('href');
-
-        if(href) return href;
-        else if(phref) return phref;
-            if(elem.nodeName == 'A'){
-
-            }
-            if(elem.nodeName == 'BUTTON') return elem.getAttribute('href') || elem.getAttribute('onclick');
-            if(elem.nodeName == 'IMG') return elem.getAttribute('href') || elem.getAttribute('src');
-            if(elem.nodeName == 'INPUT')
-        }
-         return elem.getAttribute('href');
-        
-        
+        if(elem.nodeName == 'A')return elem.getAttribute('href');
+        if(elem.nodeName == 'BUTTON') return elem.getAttribute('href') || elem.getAttribute('onclick');
+        if(elem.nodeName == 'IMG') return elem.getAttribute('href') || elem.getAttribute('src');
+        if(elem.nodeName == 'INPUT') return elem.getAttribute('href');
+        if(elem.nodeName == 'FORM') return elem.getAttribute('action');
+    
     });
 }
 /* ---------------------------------------------------- Search functions end ----------------------------------------------- */
@@ -361,7 +351,6 @@ function searchForClickCandidates(type){
 /* ------------------------------------Function calls and program start here ------------------------------------------------  */
 casper.start().then(function() {
     this.echo("Starting");
-    // websites = [{"link" : "https://www.spotify.com", "type" : "login", "action" : "click"}];
 });
 readWebsitesFromCSV();
 
