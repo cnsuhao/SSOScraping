@@ -11,6 +11,7 @@ var casper = require('casper').create({
     },
     onStepTimeout : function(step, timeout){
         this.echo(this.page.url)
+        this.echo(total);
         if(step == 1){
             total += timeout;
             loading = this.page.loadingProgress;
