@@ -10,6 +10,7 @@ var casper = require('casper').create({
         ignoreSslErrors: true
     },
     onStepTimeout : function(step, timeout){
+        this.echo(this.page.loadingProgress);
         this.echo("Timeout : " + step);
     }
 });
