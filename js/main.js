@@ -283,7 +283,9 @@ function findSSOLinks(link){
         }else if(type == 'signup'){
             ssoInfo['signup'] = ssoResult;
         }
-        candidates.push(ssoInfo);
+        if(candidates.indexOf(ssoResult) == -1){
+            candidates.push(ssoResult);
+        }
     });
 }
 
@@ -336,7 +338,22 @@ function searchForClickCandidates(type){
             }
         }
     }), function(elem){
-        return elem.getAttribute('href');
+        var href = elem.getAttribute('href');
+        var parent = elem.parentElement;
+        var phref = parent.getAttribute('href');
+
+        if(href) return href;
+        else if(phref) return phref;
+            if(elem.nodeName == 'A'){
+
+            }
+            if(elem.nodeName == 'BUTTON') return elem.getAttribute('href') || elem.getAttribute('onclick');
+            if(elem.nodeName == 'IMG') return elem.getAttribute('href') || elem.getAttribute('src');
+            if(elem.nodeName == 'INPUT')
+        }
+         return elem.getAttribute('href');
+        
+        
     });
 }
 /* ---------------------------------------------------- Search functions end ----------------------------------------------- */
