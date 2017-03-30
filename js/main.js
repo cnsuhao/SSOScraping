@@ -3,9 +3,14 @@ var fs = require('fs');
 var casper = require('casper').create({
     verbose : true,
     logLevel : 'info',
+    stepTimeout : 30000,
     pageSettings : {
+        loadPlugins : false,
         userAgent : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
         ignoreSslErrors: true
+    },
+    onStepTimeout : function(step, timeout){
+        this.echo("Timeout : " + step);
     }
 });
 
