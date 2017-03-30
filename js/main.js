@@ -10,6 +10,7 @@ var casper = require('casper').create({
         ignoreSslErrors: true
     },
     onStepTimeout : function(step, timeout){
+        this.echo("Step nummm" + step);
         this.echo(this.page.url)
         this.echo(total);
         if(step == 1){
