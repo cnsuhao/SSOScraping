@@ -10,11 +10,14 @@ var casper = require('casper').create({
         ignoreSslErrors: true
     },
     onStepTimeout : function(step, timeout){
-        total += timeout;
-        loading = this.page.loadingProgress;
-        if(total >= 90000 && loading < 90){
-            this.page.close();
-            this.echo("timed out");
+        this.echo(this.page.url)
+        if(step == 1){
+            total += timeout;
+            loading = this.page.loadingProgress;
+            if(total >= 90000 && loading < 90){
+                this.page.close();
+                this.echo("timed out");
+            }
         }
     }
 });
