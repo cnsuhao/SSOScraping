@@ -2,7 +2,7 @@
 var fs = require('fs');
 var casper = require('casper').create({
     verbose : true,
-    logLevel : 'error',
+    logLevel : 'info',
     stepTimeout : 30000,
     pageSettings : {
         loadPlugins : false,
@@ -12,7 +12,7 @@ var casper = require('casper').create({
     onStepTimeout : function(step, timeout){
         total += timeout;
         loading = this.page.loadingProgress;
-        if(total > 90000 && loading < 90){
+        if(total >= 90000 && loading < 90){
             this.page.close();
             this.echo("timed out");
         }
