@@ -2,7 +2,7 @@
 var fs = require('fs');
 var casper = require('casper').create({
     verbose : true,
-    logLevel : 'info',
+    logLevel : 'error',
     stepTimeout : 30000,
     pageSettings : {
         loadPlugins : false,
@@ -10,15 +10,19 @@ var casper = require('casper').create({
         ignoreSslErrors: true
     },
     onStepTimeout : function(step, timeout){
-        this.echo(this.page.loadingProgress);
-        this.echo("Timeout : " + step);
+        total += timeout;
+        loading = this.page.loadingProgress;
+        if(total > 90000 && loading < 90){
+            this.page.close();
+            this.echo("timed out");
+        }
     }
 });
 
 //Variables declared
 var currentLink = 0;
 var candidates = [];
-
+var total = 0;
 
 /* --------------------------------------------- Helper functions start --------------------------------------------------- */
 //Function to read links from CSV file
