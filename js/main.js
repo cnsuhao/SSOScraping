@@ -3,9 +3,8 @@ var fs = require('fs');
 var casper = require('casper').create({
     verbose : true,
     logLevel : 'info',
-    stepTimeout : 30000,
+    stepTimeout : 180000,
     pageSettings : {
-        loadPlugins : false,
         userAgent : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
         ignoreSslErrors: true
     },
@@ -13,7 +12,7 @@ var casper = require('casper').create({
         if(step == 1){
             total += timeout;
             loading = this.page.loadingProgress;
-            if(loading < 95 && total >= 120000){
+            if(loading < 95){
                 this.echo(total);
                 this.clear();
                 this.page.stop();
