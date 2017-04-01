@@ -12,7 +12,6 @@ var casper = require('casper').create({
         total += timeout;
         if(total > 90000){
             if(step == 1){
-                this.clear();
                 this.page.reload();
                 this.echo("reloading");
             }
