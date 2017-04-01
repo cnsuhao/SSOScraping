@@ -3,7 +3,7 @@ var fs = require('fs');
 var casper = require('casper').create({
     verbose : true,
     logLevel : 'info',
-    stepTimeout : 90000,
+    stepTimeout : 30000,
     pageSettings : {
         loadPlugins : false,
         userAgent : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
@@ -11,8 +11,9 @@ var casper = require('casper').create({
     },
     onStepTimeout : function(timeout, step){
         if(step == 1){
+            total += timeout;
             loading = this.page.loadingProgress;
-            if(loading < 95){
+            if(loading < 95 && total >= 90000){
                 this.clear();
                 this.page.stop();
                 this.echo("timed out");
@@ -71,13 +72,115 @@ function writeToFile(candidates){
     stream.close();
 }
 
-
+/* --------------------------------------------- Helper functions end --------------------------------------------------- */
+/* --------------------------------------------- Main functions start --------------------------------------------------- */
 // Get the links, and add them to the links array
 function findClickLinks(link) {
     var found, finalLink;
     type = this.type;
     this.then(function(){
-        found = this.evaluate(searchForClickCandidates, type);
+        //Define functions in the page's context
+        this.evaluate(function(){
+            window.clickfns = {
+                searchForClickCandidates : function(type){
+                    var stack = []; var children; var current; var results = [];
+                    stack.push(document.body)
+                    
+                    while(stack.length > 0){
+                        current = stack.pop();
+                        if(current != null){
+                            children = current.children;
+                            if(children){
+                                var arrayChildren = [].slice.call(children);
+                                arrayChildren.forEach(function(currVal, arr, index){
+                                    stack.unshift(currVal);
+                                });
+                            }
+                            if(!(current.attributes == null || current.nodeName == "SCRIPT" ||
+                                current.nodeName == "EMBED" )){
+                                yno = this.filterNode(current);
+                                if(yno){
+                                    result = this.processSingleNode(current, type);
+                                    if(result){
+                                        var href = this.extractLink(current);
+                                        if(results.indexOf(href) == -1 && href != null) results.push(href);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    return results;
+                },
+                processSingleNode : function(node, type){
+                    var strToCheck; var result;
+                    strToCheck = this.makeAttrString(node);
+                    result = this.checkForKeywords(strToCheck, type);
+                    return result;
+                },
+                filterNode : function(current){
+                    var bool = true;
+                    if (current.nodeName != "A" && current.nodeName != "DIV" && current.nodeName != "IMG" &&
+                        current.nodeName != "SPAN" && current.nodeName != "INPUT" &&
+                        current.nodeName != "BUTTON") bool = false;
+                    if (current.nodeName == "INPUT") {
+                        if (current.type != "button" && current.type != "img" &&
+                            current.type != "submit") bool = false;
+                    }
+                    if (current.nodeName == "A") {
+                        if (current.href.toLowerCase().indexOf('mailto:') == 0) bool = false;
+                    }
+                    return bool;
+                },
+                makeAttrString : function(node){
+                    var str = '';
+                    var attribs = node.attributes;
+                    for(var i=0; i < attribs.length; i++){
+                        str += attribs[i].name + "=" + attribs[i].value + ";"
+                    }
+                    return str;
+                },
+                checkForKeywords : function(inputstr, type){
+                    var k2 = /log[\-\s]*[io]+n/gi;
+                    var k3 = /sign[\-\s]*[io]+n/gi;
+                    var k4 = /sign[\-\s]*up+/gi;
+                    var k5 = /create[\-\s]*account+/gi;
+                    var k6 = /register/gi;
+
+                    if(type == 'login'){
+                        if(inputstr.match(k2) != null || inputstr.match(k3) != null){
+                            return true;
+                        }
+                    }else if(type == 'signup'){
+                        if(inputstr.match(k4) != null || inputstr.match(k5) != null || inputstr.match(k6) != null){
+                            return true;
+                        }
+                    }
+                    return false;
+                },
+                extractLink : function(node){
+                    var parent = node.parentElement;
+                    var val = node.getAttribute('href') || node.getAttribute('onclick') || node.getAttribute('action');
+                    if(val){
+                        return val;
+                    }else{
+                        if(parent){
+                            var parentVal = node.getAttribute('href') || node.getAttribute('onclick') || node.getAttribute('action');
+                            if(parentVal) return parentVal;
+                        }
+                    }
+                    return null;
+                }
+            };
+        });
+        if(type == 'login'){
+            found = this.evaluate(function(){
+                return clickfns.searchForClickCandidates('login');
+            });
+        }else if(type == 'signup'){
+            found = this.evaluate(function(){
+                return clickfns.searchForClickCandidates('signup');
+            });
+        }
         this.echo(found + "links found on " + link);
         if(found.length > 0){
             for(key in found){
@@ -87,6 +190,12 @@ function findClickLinks(link) {
                         val = "https:" + val;
                     }else if(val[0] == "/"){
                          val = link + val;
+                    }else if(val.indexOf('()') != -1){
+                        if(type == 'login'){
+                            val = link + '/login';
+                        }else{
+                            val = link + '/signup';
+                        }
                     }
                     finalLink = val;
                     this.echo("finalLink-----" + finalLink);
@@ -107,6 +216,25 @@ function findClickLinks(link) {
             }else if(type == 'signup'){
                 websites.unshift({
                     "link" : finalLink,
+                    "type" : "signup",
+                    "action" : "sso"
+                });
+            }
+        }else{
+            if(type == 'login'){
+                websites.unshift({
+                    "link" : link + '/login',
+                    "type" : "signup",
+                    "action" : "click"
+                });
+                websites.unshift({
+                    "link" : link + '/login',
+                    "type" : "login",
+                    "action" : "sso"
+                });
+            }else if(type == 'signup'){
+                websites.unshift({
+                    "link" : link + '/signup',
                     "type" : "signup",
                     "action" : "sso"
                 });
@@ -332,33 +460,7 @@ function check() {
         this.exit();
     }
 }
-/* ---------------------------------------- Helper functions end ------------------------------------------------------------  */
-
-/* ---------------------------------------------------- Search functions start ----------------------------------------------- */ 
-function searchForClickCandidates(type){
-    var regexes = [/log[\s-_]?[io]n/gi, /sign[\s-_]?[io]n/gi, /sign[\s-_]?up/gi, /create[\s-_]?account/gi];
-    var foundElems, map;
-    foundElems = document.querySelectorAll("a, button, span, div, img, input, form");
-    filter = Array.prototype.filter;
-    map = Array.prototype.map;
-    return map.call(filter.call(foundElems, function(elem){
-        if(type == 'login'){
-            return (/log[\s-_]?[io]n/gi).test(elem);
-        }else if(type == 'signup'){
-            if((/sign[\s-_]?up/gi).test(elem) || (/create[\s-_]?account/gi).test(elem)){
-                return true;
-            }
-        }
-    }), function(elem){
-        if(elem.nodeName == 'A')return elem.getAttribute('href');
-        if(elem.nodeName == 'BUTTON') return elem.getAttribute('href') || elem.getAttribute('onclick');
-        if(elem.nodeName == 'IMG') return elem.getAttribute('href') || elem.getAttribute('src');
-        if(elem.nodeName == 'INPUT') return elem.getAttribute('href');
-        if(elem.nodeName == 'FORM') return elem.getAttribute('action');
-    
-    });
-}
-/* ---------------------------------------------------- Search functions end ----------------------------------------------- */
+/* ---------------------------------------- Main functions end ------------------------------------------------------------  */
 
 /* ------------------------------------Function calls and program start here ------------------------------------------------  */
 casper.start().then(function() {
