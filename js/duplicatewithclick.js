@@ -2,8 +2,8 @@
 var fs = require('fs');
 var casper = require('casper').create({
     verbose : true,
-    logLevel : 'info',
-    stepTimeout : 90000,
+    logLevel : 'debug',
+    stepTimeout : 30000,
     pageSettings : {
         loadPlugins : false,
         userAgent : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
@@ -11,13 +11,21 @@ var casper = require('casper').create({
     },
     onStepTimeout : function(timeout, step){
         if(step == 1){
+            total += timeout;
             loading = this.page.loadingProgress;
-            if(loading < 95){
+            if(loading < 95 && timeout > 90000){
                 this.clear();
                 this.page.stop();
                 this.echo("timed out");
             }
         }
+    },
+    onError : function(obj, msg, bktrace){
+        stream = fs.open('../data/errors.txt', 'aw');
+        var err = {"msg" : msg, "obj" : obj};
+        stream.writeLine("{\"msg\":"+err.msg+", \"obj\":"+err.obj+"\"}");
+        stream.flush();
+        stream.close();
     }
 });
 
@@ -34,17 +42,13 @@ function readWebsitesFromCSV(){
     stream = fs.open('../data/top-1000.csv','r');
     line = stream.readLine().split(',')[1];
     websites.push({
-        "link" : "https://www."+line,
-        "type" : "login",
-        "action" : "click"
+        "link" : "https://www."+line
     });
 
     while(line){
         line = stream.readLine().split(',')[1];
         websites.push({
-            "link" : "https://www."+line,
-            "type" : "login",
-            "action" : "click"
+            "link" : "https://www."+line
         });
     }
     stream.flush();
@@ -57,12 +61,8 @@ function writeToFile(candidates){
     for(var i=0; i<candidates.length;i++){
         var each = candidates[i];
         var keys = Object.keys(each);
-        if(keys[1] == 'login'){
-            if(each['login'].length > 0){
-                stream.writeLine(JSON.stringify(each));
-            }
-        }else if(keys[1] == 'signup'){
-            if(each['signup'].length > 0){
+        if(keys[1] == 'sso'){
+            if(each['sso'].length > 0){
                 stream.writeLine(JSON.stringify(each));
             }
         }
@@ -71,55 +71,134 @@ function writeToFile(candidates){
     stream.close();
 }
 
+/* --------------------------------------------- Helper functions end --------------------------------------------------- */
 
-// Get the links, and add them to the links array
-function findClickLinks(link) {
-    var found, finalLink;
-    type = this.type;
+/* ---------------------------------------- Main functions start ------------------------------------------------------------  */
+
+// Get the click links, and click them
+function findClickLinks() {
     this.then(function(){
-        found = this.evaluate(searchForClickCandidates, type);
-        this.echo(found + "links found on " + link);
-        if(found.length > 0){
-            for(key in found){
-                if(found[key] != '#'){
-                    val = found[key];
-                    if(val[0] == "/" && val[1] == "/"){
-                        val = "https:" + val;
-                    }else if(val[0] == "/"){
-                         val = link + val;
+        //Define functions in page's context
+        this.evaluate(function(){
+            window.clickfns = {
+                searchForClickCandidates : function(){
+                    var body = []; var children; var current; var results = [];
+                    body.push(document.body);
+                    while(body.length > 0){
+                        current = body.pop();
+                        if(current != null){
+                            children = current.children;
+                            if(children){
+                                var arrayChildren = [].slice.call(children);
+                                arrayChildren.forEach(function(currVal, arr, index){
+                                    body.unshift(currVal);
+                                });
+                            }
+                            if(!(current.attributes == null || current.nodeName == "SCRIPT" ||
+                                current.nodeName == "EMBED" )){
+                                yno = this.filterNode(current);
+                                if(yno){
+                                    var result = this.processSingleNode(current);
+                                    if(result){
+                                        var exp = this.makeSelectorExpression(current);
+                                        if(exp != "None"){
+                                            if(exp.indexOf('#') != -1){
+                                                results.push({"exp" : exp, "type" : 'selector'});
+                                            }else{
+                                                results.push({"exp" : exp, "type" : 'label'});
+                                            } 
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
-                    finalLink = val;
-                    this.echo("finalLink-----" + finalLink);
-                    if(finalLink)break;
+                    return results;
+                },
+                processSingleNode : function(node){
+                    var strToCheck; var result;
+                    strToCheck = this.makeAttrString(node);
+                    result = this.checkForKeywords(strToCheck);
+                    return result;
+                },
+                filterNode : function(current){
+                    var bool = true;
+                    if (current.nodeName != "A" && current.nodeName != "DIV" && current.nodeName != "IMG" &&
+                        current.nodeName != "SPAN" && current.nodeName != "INPUT" &&
+                        current.nodeName != "BUTTON") bool = false;
+                    if (current.nodeName == "INPUT") {
+                        if (current.type != "button" && current.type != "img" &&
+                            current.type != "submit") bool = false;
+                    }
+                    if (current.nodeName == "A") {
+                        if (current.href.toLowerCase().indexOf('mailto:') == 0) bool = false;
+                    }
+                    return bool;
+                },
+                makeAttrString : function(node){
+                    var str = '';
+                    var attribs = node.attributes;
+                    for(var i=0; i < attribs.length; i++){
+                        str += attribs[i].name + "=" + attribs[i].value + ";"
+                    }
+                    return str;
+                },
+                checkForKeywords : function(inputstr){
+                    var k2 = /log[\-\s]*[io]+n/gi;
+                    var k3 = /sign[\-\s]*[io]+n/gi;
+                    var k4 = /sign[\-\s]*up+/gi;
+                    var k5 = /create[\-\s]*account+/gi;
+                    var k6 = /register/gi;
+                    if(inputstr.match(k2) != null || inputstr.match(k3) != null || inputstr.match(k4) != null || inputstr.match(k5) != null || inputstr.match(k6) != null){
+                                return true;
+                    }
+                    return false;
+                },
+                makeSelectorExpression : function(node){
+                    var selctrExp = '';
+                    selctrExp = node.nodeName;
+                    var id = node.getAttribute('id');
+                    if(id){
+                        return selctrExp+"#"+id;
+                    }else{
+                        var text = node.textContent;
+                        if(text) return text;
+                    }
+                    return "None";
                 }
-            }
-            if(type == 'login'){
-                websites.unshift({
-                    "link" : finalLink,
-                    "type" : "signup",
-                    "action" : "click"
-                });
-                websites.unshift({
-                    "link" : finalLink,
-                    "type" : "login",
-                    "action" : "sso"
-                });
-            }else if(type == 'signup'){
-                websites.unshift({
-                    "link" : finalLink,
-                    "type" : "signup",
-                    "action" : "sso"
-                });
+            };
+        });
+        var found;
+        found = this.evaluate(function(){
+            return clickfns.searchForClickCandidates();
+        });
+        this.echo(JSON.stringify(found));
+        if(found){
+            if(found.length > 0){
+                var i = 0; var ids = []; var labels = [];
+                for(var i=0; i < found.length; i++){
+                    var exp = found[i];
+                    if(exp.type == 'selector') ids.push(exp.exp);
+                    if(exp.type == 'label') labels.push(exp.exp);
+                }
+                this.echo(JSON.stringify(ids))
+                this.echo(JSON.stringify(labels))
+                if(ids.length > 0){
+                    this.click(ids[0]);
+                }
+                else if(labels.length > 0){
+                    this.clickLabel(labels[0]);
+                }
             }
         }
     });
 }
 
-function findSSOLinks(link){
+function findSSOLinks(){
     var sme;
-    type = this.type;
     ssoInfo = this.ssoInfo;
     this.then(function(){
+        this.echo("click works" + this.getCurrentUrl());
         //First define the functions in the page's context
         this.evaluate(function(){
             window.ssofns = {
@@ -290,11 +369,7 @@ function findSSOLinks(link){
             return ssofns.searchForSSOCandidates();
         });
         this.echo(ssoResult);
-        if(type == 'login'){
-            ssoInfo['login'] = ssoResult;
-        }else if(type == 'signup'){
-            ssoInfo['signup'] = ssoResult;
-        }
+        ssoInfo['sso'] = ssoResult;
         if(candidates.indexOf(ssoInfo) == -1){
             candidates.push(ssoInfo);
         }
@@ -307,6 +382,7 @@ function start(link) {
     this.start(link, function() {
         this.echo('Page title: ' + this.getTitle());
         this.ssoInfo['page'] = this.getTitle();
+        this.ssoInfo['url'] = this.getCurrentUrl();
     });
 }
 
@@ -315,15 +391,10 @@ function check() {
     if (websites.length > 0) {
         current = websites.shift();
         this.echo('--- Link ' + currentLink + ' ---');
-        this.type = current.type;
         this.ssoInfo = {};
-        action = current.action;
         start.call(this, current.link);
-        if(action == 'click'){
-            findClickLinks.call(this, current.link);
-        }else if(action == 'sso'){
-            findSSOLinks.call(this, current.link);
-        }
+        findClickLinks.call(this);
+        findSSOLinks.call(this);
         currentLink++;
         this.run(check);
     } else {
@@ -332,37 +403,12 @@ function check() {
         this.exit();
     }
 }
-/* ---------------------------------------- Helper functions end ------------------------------------------------------------  */
-
-/* ---------------------------------------------------- Search functions start ----------------------------------------------- */ 
-function searchForClickCandidates(type){
-    var regexes = [/log[\s-_]?[io]n/gi, /sign[\s-_]?[io]n/gi, /sign[\s-_]?up/gi, /create[\s-_]?account/gi];
-    var foundElems, map;
-    foundElems = document.querySelectorAll("a, button, span, div, img, input, form");
-    filter = Array.prototype.filter;
-    map = Array.prototype.map;
-    return map.call(filter.call(foundElems, function(elem){
-        if(type == 'login'){
-            return (/log[\s-_]?[io]n/gi).test(elem);
-        }else if(type == 'signup'){
-            if((/sign[\s-_]?up/gi).test(elem) || (/create[\s-_]?account/gi).test(elem)){
-                return true;
-            }
-        }
-    }), function(elem){
-        if(elem.nodeName == 'A')return elem.getAttribute('href');
-        if(elem.nodeName == 'BUTTON') return elem.getAttribute('href') || elem.getAttribute('onclick');
-        if(elem.nodeName == 'IMG') return elem.getAttribute('href') || elem.getAttribute('src');
-        if(elem.nodeName == 'INPUT') return elem.getAttribute('href');
-        if(elem.nodeName == 'FORM') return elem.getAttribute('action');
-    
-    });
-}
-/* ---------------------------------------------------- Search functions end ----------------------------------------------- */
+/* ---------------------------------------- Main functions end ------------------------------------------------------------  */
 
 /* ------------------------------------Function calls and program start here ------------------------------------------------  */
 casper.start().then(function() {
     this.echo("Starting");
+    // websites = [{"link" : "https://www.google.com", "type" : "login", "count" : 0}]
 });
 readWebsitesFromCSV();
 
