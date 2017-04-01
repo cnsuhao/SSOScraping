@@ -1,0 +1,3 @@
+{"msg":mouseEvent(): Couldn't find any element matching 'A#nav-link-sign-up' selector, "obj":[object Casper], currently at https://www.spotify.com/us/"}
+{"msg":mouseEvent(): Couldn't find any element matching 'A#header-login-link' selector, "obj":[object Casper], currently at https://www.spotify.com/us/"}
+{"msg":mouseEvent(): Couldn't find any element matching 'A#nav-link-sign-up' selector, "obj":[object Casper], currently at https://www.spotify.com/us/"}

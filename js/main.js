@@ -18,6 +18,13 @@ var casper = require('casper').create({
                 this.echo("timed out");
             }
         }
+    },
+    onError : function(obj, msg, bktrace){
+        stream = fs.open('../data/errors.txt', 'aw');
+        var err = {"msg" : msg, "obj" : obj};
+        stream.writeLine("{\"msg\":"+err.msg+", \"obj\":"+err.obj+"\"}");
+        stream.flush();
+        stream.close();
     }
 });
 
@@ -77,14 +84,14 @@ function writeToFile(candidates){
 
 // Get the click links, and click them
 function findClickLinks(link) {
-    var found, finalLink;
+    var finalLink;
     type = this.type;
     this.then(function(){
         //Define functions in page's context
         this.evaluate(function(){
             window.clickfns = {
-                searchForClickCandidates : function(){
-                    var body = [];
+                searchForClickCandidates : function(type){
+                    var body = []; var children; var current; var results = [];
                     body.push(document.body);
                     while(body.length > 0){
                         current = body.pop();
@@ -100,18 +107,20 @@ function findClickLinks(link) {
                                 current.nodeName == "EMBED" )){
                                 yno = this.filterNode(current);
                                 if(yno){
-                                    if(this.processSingleNode(current)){
-                                        return this.makeSelectorExpression(current);
+                                    if(this.processSingleNode(current, type)){
+                                        var exp = this.makeSelectorExpression(current).split(',');
+                                        results.push({"exp" : exp[0], "type" :exp[1]});
                                     }
                                 }
                             }
                         }
                     }
+                    return results;
                 },
-                processSingleNode : function(node){
+                processSingleNode : function(node, type){
                     var strToCheck; var result;
                     strToCheck = this.makeAttrString(node);
-                    result = this.checkForKeywords(strToCheck);
+                    result = this.checkForKeywords(strToCheck, type);
                     return result;
                 },
                 filterNode : function(current){
@@ -136,13 +145,23 @@ function findClickLinks(link) {
                     }
                     return str;
                 },
-                checkForKeywords : function(inputstr){
+                checkForKeywords : function(inputstr, type){
                     var k2 = /log[\-\S]?[io]n/gi;
-                    var k3 = /sign[\-\S]?[io]n/gi;
-                    var k4 = /sign[\-\S]?up/gi;
+                    var k3 = /sign[\-\S]in/gi;
+                    var k4 = /sign[\-\S]on/gi
+                    var k5 = /sign[\-\S]up/gi;
+                    var k6 = /create[\-\S]?account/gi;
 
-                    if(inputstr.match(k2) != null || inputstr.match(k3) != null || inputstr.match(k4)){
-                        return true;
+                    if(type == 'login'){
+                        if(inputstr.match(k2) != null || inputstr.match(k3) != null || inputstr.match(k4) != null){
+                            if(inputstr.match(k5) == null && inputstr.match(k6) == null){
+                                return true;
+                            }
+                        }
+                    }else if(type == 'signup'){
+                        if(inputstr.match(k5) != null || inputstr.match(k6) != null){
+                            return true;
+                        }
                     }
                     return false;
                 },
@@ -151,56 +170,39 @@ function findClickLinks(link) {
                     selctrExp = node.nodeName;
                     var id = node.getAttribute('id');
                     if(id){
-                        return selctrExp+"#"+id;
+                        return selctrExp+"#"+id+",selector";
                     }else{
-                        var cls = node.getAttribute('class');
-                        if(/\s/g.test(cls)){
-                            cls.replace(' ', '.');
-                        }
-                        return selctrExp+"."+cls;
+                        var text = node.textContent;
+                        if(text) return text+",label";
                     }
                 }
             };
         });
-        found = this.evaluate(function(){
-            return clickfns.searchForClickCandidates();
-        });
+        var found;
+        if(type == 'login'){
+            found = this.evaluate(function(){
+                return clickfns.searchForClickCandidates('login');
+            });
+        }else if(type == 'signup'){
+            found = this.evaluate(function(){
+                return clickfns.searchForClickCandidates('signup');
+            });
+        }
         
-        // if(found.length > 0){
-        //     for(key in found){
-        //         if(found[key] != '#'){
-        //             val = found[key];
-        //             if(val[0] == "/" && val[1] == "/"){
-        //                 val = "https:" + val;
-        //             }else if(val[0] == "/"){
-        //                  val = link + val;
-        //             }
-        //             finalLink = val;
-        //             this.echo("finalLink-----" + finalLink);
-        //             if(finalLink)break;
-        //         }
-        //     }
-        //     if(type == 'login'){
-        //         websites.unshift({
-        //             "link" : finalLink,
-        //             "type" : "signup",
-        //             "action" : "click"
-        //         });
-        //         websites.unshift({
-        //             "link" : finalLink,
-        //             "type" : "login",
-        //             "action" : "sso"
-        //         });
-        //     }else if(type == 'signup'){
-        //         websites.unshift({
-        //             "link" : finalLink,
-        //             "type" : "signup",
-        //             "action" : "sso"
-        //         });
-        //     }
-        // }
-        this.echo(found);
-        this.click(found);
+        this.echo(type);
+        this.echo(JSON.stringify(found));
+        var i = 0; var ids = []; var labels = [];
+        for(var i=0; i < found.length; i++){
+            var exp = found[i];
+            if(exp.type == 'selector') ids.push(exp.exp);
+            if(exp.type == 'label') labels.push(exp.exp);
+        }
+        if(ids.length > 0){
+            this.click(ids[0]);
+        }else if(labels.length > 0){
+            this.clickLabel(labels[0]);
+        }
+        link.count++;
     });
 }
 
@@ -388,6 +390,9 @@ function findSSOLinks(link){
         if(candidates.indexOf(ssoInfo) == -1){
             candidates.push(ssoInfo);
         }
+        if(link.count == 1){
+            websites.unshift({"link" : this.getCurrentUrl(), "type" : "signup", "count" : link.count});
+        }
     });
 }
 
@@ -405,10 +410,11 @@ function check() {
     if (websites.length > 0) {
         current = websites.shift();
         this.echo('--- Link ' + currentLink + ' ---');
+        this.type = current.type;
         this.ssoInfo = {};
-        start.call(this, current);
+        start.call(this, current.link);
         findClickLinks.call(this, current);
-        findSSOLinks.call(this);
+        findSSOLinks.call(this, current);
         currentLink++;
         this.run(check);
     } else {
@@ -422,8 +428,8 @@ function check() {
 /* ------------------------------------Function calls and program start here ------------------------------------------------  */
 casper.start().then(function() {
     this.echo("Starting");
-    websites = ["https://www.stackexchange.com"]
+    websites = [{"link" : "https://www.spotify.com", "type" : "login", "count" : 0}]
 });
-readWebsitesFromCSV();
+// readWebsitesFromCSV();
 
 casper.run(check);
