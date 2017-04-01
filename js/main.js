@@ -13,7 +13,8 @@ var casper = require('casper').create({
         if(step == 1){
             total += timeout;
             loading = this.page.loadingProgress;
-            if(loading < 95 && total >= 90000){
+            if(loading < 95 && total >= 120000){
+                this.echo(total);
                 this.clear();
                 this.page.stop();
                 this.echo("timed out");
