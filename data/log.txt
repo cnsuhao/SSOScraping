@@ -1,2 +1,1 @@
-{"page":"Google","login":["google"]}
-{"page":"Sign in - Google Accounts","signup":["google"]}
+{"url":"https://www.basecamp.com/signup","signup":["google"]}

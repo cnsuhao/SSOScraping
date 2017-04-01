@@ -233,6 +233,11 @@ function findClickLinks(link) {
                     "action" : "sso"
                 });
             }else if(type == 'signup'){
+                if(link.indexOf('/signup') != -1){
+                    link = link.replace('/signup', '');
+                }else if(link.indexOf('/login') != -1){
+                    link = link.replace('/login', '');
+                }
                 websites.unshift({
                     "link" : link + '/signup',
                     "type" : "signup",
@@ -434,7 +439,7 @@ function findSSOLinks(link){
 function start(link) {
     this.start(link, function() {
         this.echo('Page title: ' + this.getTitle());
-        this.ssoInfo['page'] = this.getTitle();
+        // this.ssoInfo['page'] = this.getTitle();
     });
 }
 
@@ -444,7 +449,7 @@ function check() {
         current = websites.shift();
         this.echo('--- Link ' + currentLink + ' ---');
         this.type = current.type;
-        this.ssoInfo = {};
+        this.ssoInfo = {'url' : current.link};
         action = current.action;
         start.call(this, current.link);
         if(action == 'click'){
@@ -465,6 +470,7 @@ function check() {
 /* ------------------------------------Function calls and program start here ------------------------------------------------  */
 casper.start().then(function() {
     this.echo("Starting");
+    // websites = [{"link" : "https://www.basecamp.com", "type" : "login", "action" : "click"}]
 });
 readWebsitesFromCSV();
 
