@@ -3,22 +3,26 @@ var fs = require('fs');
 var casper = require('casper').create({
     verbose : true,
     logLevel : 'info',
+    waitTimeout : 90000,
     stepTimeout : 180000,
     pageSettings : {
         userAgent : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
         ignoreSslErrors: true
     },
     onStepTimeout : function(timeout, step){
-        // if(step == 1){
-        //     total += timeout;
-        //     loading = this.page.loadingProgress;
-        //     if(loading < 95 && timeout > ){
-        //         this.echo(total);
-        //         this.clear();
-        //         this.page.stop();
-        //         this.echo("timed out");
-        //     }
-        // }
+        if(step == 1){
+            total += timeout;
+            loading = this.page.loadingProgress;
+            if(loading < 100 && timeout > 300000){
+                this.echo(total);
+                this.clear();
+                this.page.stop();
+                this.echo("timed out");
+            }
+        }
+    },
+    onWaitTimeout : function(timeout, obj){
+        this.echo("wait" + timeout);
     }
 });
 
@@ -408,8 +412,10 @@ function findSSOLinks(link){
                             }else if(openMatch != null){
                                 return each.site;
                             }else{
-                                if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null ){
-                                    return each.site;
+                                if(each.site != 'box'){
+                                    if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null ){
+                                        return each.site;
+                                    }
                                 }
                             }
                         }
