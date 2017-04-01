@@ -6,21 +6,17 @@ var casper = require('casper').create({
     stepTimeout : 30000,
     pageSettings : {
         loadPlugins : false,
-        webSecurityEnabled : false,
-        ignoreSslErrors: true
+        webSecurityEnabled : false
     },
     onStepTimeout : function(timeout, step){
-        this.echo(timeout);
-        if(step == 1){
-            total += timeout;
-            this.echo(total)
-            loading = this.page.loadingProgress;
-            if(loading < 100 && total > 180000){
-                this.echo(total);
+        total += timeout;
+        if(total > 90000){
+            if(step == 1){
                 this.clear();
-                this.page.stop();
-                this.echo("timed out");
+                this.page.reload();
+                this.echo("reloading");
             }
+           
         }
     }
 });
