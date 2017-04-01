@@ -9,16 +9,16 @@ var casper = require('casper').create({
         ignoreSslErrors: true
     },
     onStepTimeout : function(timeout, step){
-        if(step == 1){
-            total += timeout;
-            loading = this.page.loadingProgress;
-            if(loading < 95){
-                this.echo(total);
-                this.clear();
-                this.page.stop();
-                this.echo("timed out");
-            }
-        }
+        // if(step == 1){
+        //     total += timeout;
+        //     loading = this.page.loadingProgress;
+        //     if(loading < 95 && timeout > ){
+        //         this.echo(total);
+        //         this.clear();
+        //         this.page.stop();
+        //         this.echo("timed out");
+        //     }
+        // }
     }
 });
 
