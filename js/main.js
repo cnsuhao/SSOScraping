@@ -182,6 +182,11 @@ function findClickLinks(link) {
             });
         }
         this.echo(found + "links found on " + link);
+        if(link.indexOf('/signup') != -1){
+            link = link.replace('/signup', '');
+        }else if(link.indexOf('/login') != -1){
+            link = link.replace('/login', '');
+        }
         if(found.length > 0){
             for(key in found){
                 if(found[key] != '#'){
@@ -233,11 +238,6 @@ function findClickLinks(link) {
                     "action" : "sso"
                 });
             }else if(type == 'signup'){
-                if(link.indexOf('/signup') != -1){
-                    link = link.replace('/signup', '');
-                }else if(link.indexOf('/login') != -1){
-                    link = link.replace('/login', '');
-                }
                 websites.unshift({
                     "link" : link + '/signup',
                     "type" : "signup",
