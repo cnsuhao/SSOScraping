@@ -9,17 +9,12 @@ var casper = require('casper').create({
         webSecurityEnabled : false
     },
     onStepTimeout : function(timeout, step){
-        total += timeout;
-        if(total >= 300000){
-            if(step == 1){
-                this.page.stop();
-            }
-        }else{
-           if(total > 90000){
-                if(step == 1){
-                    this.page.reload();
-                    this.echo("reloading");
-                }
+        if(step == 1){
+            total += timeout;
+            var loading = this.page.loadingProgress;
+            if(total > 90000 && total < 600000){
+                this.page.reload();
+                this.echo("reloading");
             }
         }
     }
@@ -150,15 +145,23 @@ function findClickLinks(link) {
                     var k4 = /sign[\-\s]*up+/gi;
                     var k5 = /create[\-\s]*account+/gi;
                     var k6 = /register/gi;
+                    var e0 = /social/gi; var e1 = /subscribe/gi; var e2 = /connect/gi; var e3 = /like/gi; var e4 = /support/gi;
+                    var e5 = /recovery/gi; var e6 = /forgot/gi; var e7 = /help/gi; var e8 = /promo[tion]*/gi; 
+                    var e9 = /privacy[\-\s]*[policy]*/gi; var e10 = /sports/gi; 
 
-                    if(type == 'login'){
-                        if(inputstr.match(k2) != null || inputstr.match(k3) != null){
-                            return true;
-                        }
-                    }else if(type == 'signup'){
-                        if(inputstr.match(k4) != null || inputstr.match(k5) != null || inputstr.match(k6) != null){
-                            return true;
-                        }
+                    if(inputstr.match(e0) == null && inputstr.match(e1) == null  && inputstr.match(e2) == null && 
+                        inputstr.match(e3) == null && inputstr.match(e4) == null && inputstr.match(e5) == null &&
+                        inputstr.match(e6) == null && inputstr.match(e7) == null && inputstr.match(e8) == null &&
+                        inputstr.match(e9) == null && inputstr.match(e10) == null){
+                            if(type == 'login'){
+                                if(inputstr.match(k2) != null || inputstr.match(k3) != null){
+                                    return true;
+                                }
+                            }else if(type == 'signup'){
+                                if(inputstr.match(k4) != null || inputstr.match(k5) != null || inputstr.match(k6) != null){
+                                    return true;
+                                }
+                            }
                     }
                     return false;
                 },
@@ -480,7 +483,7 @@ function check() {
 casper.start().then(function() {
     this.echo("Starting");
     startTime = Date.now();
-    // websites = [{"link" : "https://www.amazon.com", "type" : "login", "action" : "click"}]
+    websites = [{"link" : "https://www.stackoverflow.com", "type" : "login", "action" : "click"}]
 });
 readWebsitesFromCSV();
 
