@@ -228,15 +228,9 @@ function findLinks(){
                     var k4 = /sign[\-\s]*[up]+[\-\s]*[with]+[using]+/gi;
                     var k5 = /register[\-\s]*[up]+[\-\s]*[with]+[using]+/gi;
                     var k6 = /create[\-\s]*[up]+[\-\s]*[with]+[using]+/gi;
-                    var e0 = /social/gi;
-                    var e1 = /subscribe/gi;
-                    var e2 = /connect/gi;
-                    var e3 = /like/gi;
-                    var e4 = /support/gi;
-                    var e5 = /recovery/gi;
-                    var e6 = /forgot/gi;
-                    var e7 = /help/gi;
-                    var e8 = /promo[tion]*/gi;
+                    var e0 = /social/gi; var e1 = /subscribe/gi; var e2 = /connect/gi; var e3 = /like/gi; var e4 = /support/gi;
+                    var e5 = /recovery/gi; var e6 = /forgot/gi; var e7 = /help/gi; var e8 = /promo[tion]*/gi; 
+                    var e9 = /privacy[\-\s]*[policy]*/gi; var e10 = /sports/gi; 
 
                     var filtered = {"type" : 'sso', "value" : []};
 
@@ -270,7 +264,8 @@ function findLinks(){
                             }else {
                                 if(inputstr.match(e0) == null && inputstr.match(e1) == null  && inputstr.match(e2) == null && 
                                 inputstr.match(e3) == null && inputstr.match(e4) == null && inputstr.match(e5) == null &&
-                                inputstr.match(e6) == null && inputstr.match(e7) == null && inputstr.match(e8) == null){
+                                inputstr.match(e6) == null && inputstr.match(e7) == null && inputstr.match(e8) == null &&
+                                inputstr.match(e9) == null && inputstr.match(e10) == null){
                                     filtered['type'] = 'link';
                                     var extracted = this.extractLinkFrmNode(elem);
                                     if(filtered['value'].indexOf(extracted) == -1) filtered['value'].push(extracted);
