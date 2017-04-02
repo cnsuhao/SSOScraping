@@ -264,7 +264,6 @@ function findLinks(){
                                 if(filtered['value'].indexOf(each.site) == -1) filtered['value'].push(each.site);
                             }else if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
                                 inputstr.match(k5) != null || inputstr.match(k6) != null){
-                                return "2";
                                 filtered['type'] = 'sso';
                                 if(filtered['value'].indexOf(each.site) == -1) filtered['value'].push(each.site);
                             }else {
