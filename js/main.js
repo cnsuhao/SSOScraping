@@ -24,6 +24,8 @@ var casper = require('casper').create({
 var currentLink = 0;
 var candidates = [];
 var total = 0;
+var startTime = '';
+var endTime = '';
 
 /* --------------------------------------------- Helper functions start --------------------------------------------------- */
 //Function to read links from CSV file
@@ -202,26 +204,25 @@ function findClickLinks(link) {
                     }
                     finalLink = val;
                     this.echo("finalLink-----" + finalLink);
-                    if(finalLink)break;
+                    if(type == 'login'){
+                        websites.unshift({
+                            "link" : finalLink,
+                            "type" : "signup",
+                            "action" : "click"
+                        });
+                        websites.unshift({
+                            "link" : finalLink,
+                            "type" : "login",
+                            "action" : "sso"
+                        });
+                    }else if(type == 'signup'){
+                        websites.unshift({
+                            "link" : finalLink,
+                            "type" : "signup",
+                            "action" : "sso"
+                        });
+                    }
                 }
-            }
-            if(type == 'login'){
-                websites.unshift({
-                    "link" : finalLink,
-                    "type" : "signup",
-                    "action" : "click"
-                });
-                websites.unshift({
-                    "link" : finalLink,
-                    "type" : "login",
-                    "action" : "sso"
-                });
-            }else if(type == 'signup'){
-                websites.unshift({
-                    "link" : finalLink,
-                    "type" : "signup",
-                    "action" : "sso"
-                });
             }
         }else{
             if(type == 'login'){
@@ -462,6 +463,9 @@ function check() {
     } else {
         writeToFile(candidates);
         this.echo("All done.");
+        endTime = Date.now();
+        timeTaken = endTime - startTime + "ms";
+        this.echo("Executed in:" + timeTaken);
         this.exit();
     }
 }
@@ -470,7 +474,8 @@ function check() {
 /* ------------------------------------Function calls and program start here ------------------------------------------------  */
 casper.start().then(function() {
     this.echo("Starting");
-    // websites = [{"link" : "https://www.basecamp.com", "type" : "login", "action" : "click"}]
+    startTime = Date.now();
+    // websites = [{"link" : "https://www.amazon.com", "type" : "login", "action" : "click"}]
 });
 readWebsitesFromCSV();
 
