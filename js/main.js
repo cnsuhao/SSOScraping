@@ -99,7 +99,7 @@ function findLinks(){
                                         if(obj['type'] == 'sso'){
                                             var i = 0;
                                             while(i < obj['value'].length){
-                                                arrResults['sso'].push(obj['value'][i]);
+                                                if(arrResults['sso'].indexOf(obj['value'][i]) == -1) arrResults['sso'].push(obj['value'][i]);
                                                 i++;
                                             }
                                         }else if(obj['type'] == 'link'){
@@ -171,31 +171,31 @@ function findLinks(){
                         {"site" : "flickr", "regex" : /flickr/gi, "url" : ["https://www.flickr.com/services/oauth"]}, 
                         {"site" : "bitbucket", "regex" : /bitbucket/gi, "url" : ["https://bitbucket.org/site/oauth2", "https://bitbucket.org/api/1.0/oauth"]}, 
                         {"site" : "bitly", "regex" : /bitly/gi, "url" : ["https://bitly.com/oauth"]}, 
-                        {"site" : "cloud foundry", "regex" : /cloud[\-\S]foundry/gi, "url" : ["/uaa/oauth"]}, 
+                        {"site" : "cloud foundry", "regex" : /cloud[\-\s]*foundry/gi, "url" : ["/uaa/oauth"]}, 
                         {"site" : "dailymotion", "regex" : /dailymotion/gi, "url" : ["https://www.dailymotion.com/oauth"]}, 
                         {"site" : "deviantart", "regex" : /deviantART/gi, "url" : ["https://www.deviantart.com/oauth2"]}, 
                         {"site" : "discogs", "regex" : /discogs/gi, "url" : ["https://api.discogs.com/oauth"]}, 
                         {"site" : "huddle", "regex" : /huddle/gi, "url" : ["https://login.huddle.net/request"]}, 
                         {"site" : "netflix", "regex" : /netflix/gi, "url" : ["https://api-user.netflix.com/oauth"]}, 
-                        {"site" : "openlink data spaces", "regex" : /openlink[\-\S]data[\-\S]spaces/gi, "url" : ["/OAuth"]}, 
+                        {"site" : "openlink data spaces", "regex" : /openlink[\-\s]*data[\-\s]*spaces/gi, "url" : ["/OAuth"]}, 
                         {"site" : "openstreetmap", "regex" : /openstreetmap/gi, "url" : ["http://www.openstreetmap.org/oauth"]}, 
                         {"site" : "opentable", "regex" : /opentable/gi, "url" : ["http://www.opentable.com/oauth"]}, 
                         {"site" : "passport", "regex" : /passport/gi, "url" : ["/dialog/authorize", "oauth2/authorize", "oauth/authorize"]},
                         {"site" : "paypal", "regex" : /paypal/gi, "url" : ["paypal.com/v1/oauth2"]}, 
                         {"site" : "plurk", "regex" : /plurk/gi, "url" : ["https://www.plurk.com/OAuth/authorize"]},
-                        {"site" : "sina weibo", "regex" : /sina[\-\S]weibo/gi, "url" : ["http://api.t.sina.com.cn/oauth/authorize"]},
-                        {"site" : "stackexchange", "regex" : /stack[\-\S]exchange/gi, "url" : ["https://stackexchange.com/oauth"]}, 
+                        {"site" : "sina weibo", "regex" : /sina[\-\s]*weibo/gi, "url" : ["http://api.t.sina.com.cn/oauth/authorize"]},
+                        {"site" : "stackexchange", "regex" : /stack[\-\s]*exchange/gi, "url" : ["https://stackexchange.com/oauth"]}, 
                         {"site" : "statusnet", "regex" : /statusnet/gi, "url" : ["status.net/api/oauth/authorize"]}, 
-                        {"site" : "ubuntu one", "regex" : /ubuntu[\-\S]one/gi, "url" : ["https://login.ubuntu.com/api/1.0/authentications"]},
+                        {"site" : "ubuntu one", "regex" : /ubuntu[\-\s]*one/gi, "url" : ["https://login.ubuntu.com/api/1.0/authentications"]},
                         {"site" : "viadeo", "regex" : /viadeo/gi, "url" : ["https://partners.viadeo.com/oauth/authorize"]},
                         {"site" : "vimeo", "regex" : /vimeo/gi, "url" : ["https://api.vimeo.com/oauth/authorize"]}, 
                         {"site" : "withings", "regex" : /withings/gi, "url" : ["https://oauth.withings.com/account/authorize"]},
                         {"site" : "xero", "regex" : /xero/gi, "url" : ["https://api.xero.com/oauth/Authorize"]},
                         {"site" : "xing", "regex" : /xing/gi, "url" : ["https://api.xing.com/v1/authorize"]}, 
                         {"site" : "goodreads", "regex" : /goodreads/gi, "url" : ["http://www.goodreads.com/oauth"]}, 
-                        {"site" : "google app engine", "regex" : /google[\-\S]app[\-\S]engine/gi, "url" : ["https://accounts.google.com/o/oauth2/v2/auth"]},
+                        {"site" : "google app engine", "regex" : /google[\-\s]*app[\-\s]*engine/gi, "url" : ["https://accounts.google.com/o/oauth2/v2/auth"]},
                         {"site" : "groundspeak", "regex" : /groundspeak/gi, "url" : ["groundspeak.com/oauth"]}, 
-                        {"site" : "intel cloud services", "regex" : /intel[\-\S]cloud[\-\S]services/gi, "url" : []}, 
+                        {"site" : "intel cloud services", "regex" : /intel[\-\s]*cloud[\-\s]*services/gi, "url" : []}, 
                         {"site" : "jive", "regex" : /jive/gi, "url" : ["jiveon.com/oauth2"]}, 
                         {"site" : "linkedin", "regex" : /linkedin/gi, "url" : ["https://www.linkedin.com/oauth/v2/authorization"]}, 
                         {"site" : "trello", "regex" : /trello/gi, "url" : ["https://trello.com/1/OAuthAuthorizeToken", "https://trello.com/1/authorize"]}, 
@@ -264,14 +264,17 @@ function findLinks(){
                                 if(filtered['value'].indexOf(each.site) == -1) filtered['value'].push(each.site);
                             }else if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
                                 inputstr.match(k5) != null || inputstr.match(k6) != null){
+                                return "2";
                                 filtered['type'] = 'sso';
                                 if(filtered['value'].indexOf(each.site) == -1) filtered['value'].push(each.site);
-                            }else if(inputstr.match(e0) == null && inputstr.match(e1) == null  && inputstr.match(e2) == null && 
+                            }else {
+                                if(inputstr.match(e0) == null && inputstr.match(e1) == null  && inputstr.match(e2) == null && 
                                 inputstr.match(e3) == null && inputstr.match(e4) == null && inputstr.match(e5) == null &&
                                 inputstr.match(e6) == null){
-                                filtered['type'] = 'link';
-                                var extracted = this.extractLinkFrmNode(elem);
-                                if(filtered['value'].indexOf(extracted) == -1) filtered['value'].push(extracted);
+                                    filtered['type'] = 'link';
+                                    var extracted = this.extractLinkFrmNode(elem);
+                                    if(filtered['value'].indexOf(extracted) == -1) filtered['value'].push(extracted);
+                                }
                             }
                         }
                     }
@@ -301,22 +304,23 @@ function findLinks(){
         combined = this.evaluate(function(){
             return fns.getLinks();
         });
-        
+        this.echo(JSON.stringify(combined));
         if(combined){
-            var keys = Object.keys(combined);
-            if(keys[0] == 'links'){
-                if(combined['links'].length > 0){
-                    for(var k = 0; k < combined['links'].length; k++){
-                        var each = combined['links'][k];
-                        if(visitedLinks.indexOf(each) == -1){
-                            if(websites.indexOf(each) == -1) websites.unshift(each);
+            for(var key in combined){
+                if(key == 'links'){
+                    if(combined[key].length > 0){
+                        for(var k = 0; k < combined[key].length; k++){
+                            var each = combined[key][k];
+                            if(visitedLinks.indexOf(each) == -1){
+                                if(websites.indexOf(each) == -1) websites.unshift(each);
+                            }
                         }
                     }
-                }
-            }else if(keys[0] == 'sso'){
-                if(combined['sso'].length > 0){
-                    this.ssoInfo['sso'] = combined['sso'];
-                    if(candidates.indexOf(this.ssoInfo) == -1) candidates.push(this.ssoInfo);
+                }else if(key == 'sso'){
+                    if(combined[key].length > 0){
+                        this.ssoInfo['sso'] = combined[key];
+                        if(candidates.indexOf(this.ssoInfo) == -1) candidates.push(this.ssoInfo);
+                    }
                 }
             }
         }
