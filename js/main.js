@@ -15,7 +15,6 @@ var casper = require('casper').create({
                 this.page.reload();
                 this.echo("reloading");
             }
-           
         }
     }
 });
@@ -378,10 +377,11 @@ function findSSOLinks(link){
                         {"site" : "battle.net", "regex" : /battle.net/gi, "url" : ["https://us.battle.net/oauth/authorize"]}]
                     var k0 = /oauth/gi;
                     var k1 = /openid/gi
-                    var k2 = /log[\-\S]?[io]n/gi;
-                    var k3 = /sign[\-\S]?[io]n/gi;
-                    var k4 = /sign[\-\S]?up/gi;
-                    var k5 = /with[\-\S]/gi;
+                    var k2 = /log[\-\s]*[io]+n[\-\s]*[with]+[using]+/gi;
+                    var k3 = /sign[\-\s]*[io]+n[\-\s]*[with]+[using]+/gi;
+                    var k4 = /sign[\-\s]*[up]+[\-\s]*[with]+[using]+/gi;
+                    var k5 = /register[\-\s]*[up]+[\-\s]*[with]+[using]+/gi;
+                    var k6 = /create[\-\s]*[up]+[\-\s]*[with]+[using]+/gi;
                     var e0 = /social/gi;
                     var e1 = /subscribe/gi;
                     var e2 = /connect/gi;
@@ -407,10 +407,9 @@ function findSSOLinks(link){
                             }else if(openMatch != null){
                                 return each.site;
                             }else{
-                                if(each.site != 'box'){
-                                    if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null ){
-                                        return each.site;
-                                    }
+                                if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
+                                    inputstr.match(k5) != null || inputstr.match(k6) != null){
+                                    return each.site;
                                 }
                             }
                         }
