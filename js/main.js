@@ -26,6 +26,7 @@ var candidates = [];
 var total = 0;
 var startTime = '';
 var endTime = '';
+var visitedLinks = [];
 
 /* --------------------------------------------- Helper functions start --------------------------------------------------- */
 //Function to read links from CSV file
@@ -67,6 +68,20 @@ function writeToFile(candidates){
     }
     stream.flush();
     stream.close();
+}
+
+function checkIfVisited(obj){
+    var i;
+    for (i = 0; i < visitedLinks.length; i++) {
+        var link = visitedLinks[i].link.split('?')[0];
+        var type = visitedLinks[i].type;
+        var action = visitedLinks[i].action;
+        var olink = obj.link.split('?')[0];
+        if (link === olink && type == obj.type && action == obj.action) {
+            return true;
+        }
+    }
+    return false;
 }
 
 /* --------------------------------------------- Helper functions end --------------------------------------------------- */
@@ -145,12 +160,13 @@ function findClickLinks(link) {
                     var e0 = /social/gi; var e1 = /subscribe/gi; var e2 = /connect/gi; var e3 = /like/gi; var e4 = /support/gi;
                     var e5 = /recovery/gi; var e6 = /forgot/gi; var e7 = /help/gi; var e8 = /promo[tion]*/gi; 
                     var e9 = /privacy[\-\s]*[policy]*/gi; var e10 = /sports/gi; var e11 = /story/gi; var e12 = /campaign/gi;
+                    var e13 = /questions/gi;
 
                     if(inputstr.match(e0) == null && inputstr.match(e1) == null  && inputstr.match(e2) == null && 
                         inputstr.match(e3) == null && inputstr.match(e4) == null && inputstr.match(e5) == null &&
                         inputstr.match(e6) == null && inputstr.match(e7) == null && inputstr.match(e8) == null &&
                         inputstr.match(e9) == null && inputstr.match(e10) == null && inputstr.match(e11) == null &&
-                        inputstr.match(e12) == null){
+                        inputstr.match(e12) == null && inputstr.match(e13) == null){
                             if(type == 'login'){
                                 if(inputstr.match(k2) != null || inputstr.match(k3) != null){
                                     return true;
@@ -200,7 +216,9 @@ function findClickLinks(link) {
                     if(val[0] == "/" && val[1] == "/"){
                         val = "https:" + val;
                     }else if(val[0] == "/"){
-                         val = link + val;
+                        link = link.split('?')[0];
+                        link = link.split('/')[0];
+                        val = link + val;
                     }else if(val.indexOf('()') != -1){
                         if(type == 'login'){
                             val = link + '/login';
@@ -211,45 +229,64 @@ function findClickLinks(link) {
                     finalLink = val;
                     this.echo("finalLink-----" + finalLink);
                     if(type == 'login'){
-                        websites.unshift({
+                        var o1 = {
                             "link" : finalLink,
                             "type" : "signup",
                             "action" : "click"
-                        });
-                        websites.unshift({
+                        };
+                        var o2 = {
                             "link" : finalLink,
                             "type" : "login",
                             "action" : "sso"
-                        });
+                        };
+                        if(!(checkIfVisited(o1))){
+                            websites.unshift(o1);
+                        }
+                        if(!(checkIfVisited(o2))){
+                            websites.unshift(o2);
+                        }
                     }else if(type == 'signup'){
-                        websites.unshift({
+                        var o3 = {
                             "link" : finalLink,
                             "type" : "signup",
                             "action" : "sso"
-                        });
+                        };
+                        if(!(checkIfVisited(o3))){
+                            websites.unshift(o3);
+                        }
                     }
                 }
             }
         }else{
             if(type == 'login'){
-                websites.unshift({
+                var o4 = {
                     "link" : link + '/login',
                     "type" : "signup",
                     "action" : "click"
-                });
-                websites.unshift({
+                };
+                var o5 = {
                     "link" : link + '/login',
                     "type" : "login",
                     "action" : "sso"
-                });
+                };
+                if(!(checkIfVisited(o4))){
+                    websites.unshift(o4);
+                }
+                if(!(checkIfVisited(o5))){
+                    websites.unshift(o5);
+                }
             }else if(type == 'signup'){
-                websites.unshift({
+                var o6 = {
                     "link" : link + '/signup',
                     "type" : "signup",
                     "action" : "sso"
-                });
+                };
+                if(!(checkIfVisited(o6))){
+                    websites.unshift(o6);
+                }
             }
         }
+        this.echo(JSON.stringify(websites));
     });
 }
 
@@ -434,7 +471,7 @@ function findSSOLinks(link){
         if(!(candidates.filter(function(e) {return e.page == ssoInfo.page}).length > 0)){
             candidates.push(ssoInfo);
         }
-        this.echo(JSON.stringify(candidates))
+        this.echo(JSON.stringify(candidates));
     });
 }
 
@@ -453,6 +490,8 @@ function start(link) {
 function check() {
     if (websites.length > 0) {
         current = websites.shift();
+        visitedLinks.push(current);
+        this.echo(JSON.stringify(visitedLinks));
         this.echo('--- Link ' + currentLink + ' ---');
         this.type = current.type;
         this.ssoInfo = {'url' : current.link, 'page' : ''};
