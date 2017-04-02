@@ -10,10 +10,16 @@ var casper = require('casper').create({
     },
     onStepTimeout : function(timeout, step){
         total += timeout;
-        if(total > 90000){
+        if(total >= 300000){
             if(step == 1){
-                this.page.reload();
-                this.echo("reloading");
+                this.page.stop();
+            }
+        }else{
+           if(total > 90000){
+                if(step == 1){
+                    this.page.reload();
+                    this.echo("reloading");
+                }
             }
         }
     }
@@ -31,7 +37,7 @@ var endTime = '';
 function readWebsitesFromCSV(){
     websites = [];
     //Script starts
-    stream = fs.open('../data/top-1000.csv','r');
+    stream = fs.open('../data/top-80k.csv','r');
     line = stream.readLine().split(',')[1];
     websites.push({
         "link" : "https://www."+line,
