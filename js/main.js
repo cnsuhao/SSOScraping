@@ -25,6 +25,7 @@ var casper = require('casper').create({
                 this.page.reload();
                 this.echo("reloading");
             }else if(total >= 600000 && loading < 98){
+                this.clear();
                 this.page.stop();
                 this.echo("timed out");
                 total = 0;
@@ -239,6 +240,8 @@ function findLinks(){
                     var e4 = /support/gi;
                     var e5 = /recovery/gi;
                     var e6 = /forgot/gi;
+                    var e7 = /help/gi;
+                    var e8 = /promo[tion]*/gi;
 
                     var filtered = {"type" : 'sso', "value" : []};
 
