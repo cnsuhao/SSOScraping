@@ -286,7 +286,6 @@ function findClickLinks(link) {
                 }
             }
         }
-        this.echo(JSON.stringify(websites));
     });
 }
 
@@ -491,7 +490,6 @@ function check() {
     if (websites.length > 0) {
         current = websites.shift();
         visitedLinks.push(current);
-        this.echo(JSON.stringify(visitedLinks));
         this.echo('--- Link ' + currentLink + ' ---');
         this.type = current.type;
         this.ssoInfo = {'url' : current.link, 'page' : ''};
