@@ -519,7 +519,7 @@ function check() {
 casper.start().then(function() {
     this.echo("Starting");
     startTime = Date.now();
-    websites = [{"link" : "https://www.stackoverflow.com", "type" : "login", "action" : "click"}]
+    // websites = [{"link" : "https://www.stackoverflow.com", "type" : "login", "action" : "click"}]
 });
 readWebsitesFromCSV();
 
