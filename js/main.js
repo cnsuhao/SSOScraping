@@ -20,12 +20,14 @@ var casper = require('casper').create({
     onStepTimeout : function(timeout, step){
         if(step == 1){
             total += timeout;
-            if(total > 90000 && total < 800000){
+            var loading = this.page.loadingProgress;
+            if(total > 90000 && total < 600000){
                 this.page.reload();
                 this.echo("reloading");
-            }else if(total >= 800000){
+            }else if(total >= 600000 && loading < 98){
                 this.page.stop();
                 this.echo("timed out");
+                total = 0;
             }
         }
     }
@@ -67,6 +69,7 @@ function start(link){
     this.start(link, function(){
         this.ssoInfo['page'] = this.getTitle();
         this.echo("Page : " + this.getTitle());
+        total = 0;
     });
 }
 //Find links on page related to login, sign up and sso and carry out appropriate actions
@@ -311,7 +314,10 @@ function findLinks(){
                         for(var k = 0; k < combined[key].length; k++){
                             var each = combined[key][k];
                             if(visitedLinks.indexOf(each) == -1){
-                                if(websites.indexOf(each) == -1) websites.unshift(each);
+                                if(websites.indexOf(each) == -1){
+                                    casper.options.stepTimeout = 30000;
+                                    websites.unshift(each);
+                                }
                             }
                         }
                     }
@@ -332,6 +338,7 @@ function findLinks(){
 //Check if links are present and run them
 function check(){
     if(websites.length > 0){
+        this.clear();
         firstLink = websites.shift();
         visitedLinks.push(firstLink);
         this.echo('--- Link ' + currentLink + ' ---');

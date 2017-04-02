@@ -1,34 +1,31 @@
 {"url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/","page":"Sign in - Google Accounts","sso":["google"]}
 {"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.com%2F&hl=en","page":"Sign in - Google Accounts","sso":["google"]}
-{"url":"https://accounts.google.com/ServiceLogin?passive=true&hl=en&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dsign_in_promo%26hl%3Den%26next%3D%252F%26action_handle_signin%3Dtrue%26app%3Ddesktop&uilel=3&service=youtube","page":"YouTube","sso":["google"]}
-{"url":"https://accounts.google.com/AccountChooser?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dsign_in_promo%26hl%3Den%26next%3D%252F%26action_handle_signin%3Dtrue%26app%3Ddesktop&hl=en&service=youtube","page":"YouTube","sso":["google"]}
-{"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dsign_in_promo%26hl%3Den%26next%3D%252F%26action_handle_signin%3Dtrue%26app%3Ddesktop&service=youtube&rip=1&sacu=1","page":"YouTube","sso":["google"]}
-{"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dsign_in_promo%26hl%3Den%26next%3D%252F%26action_handle_signin%3Dtrue%26app%3Ddesktop&service=youtube&hl=en","page":"YouTube","sso":["google"]}
-{"url":"https://accounts.google.com/ServiceLogin?passive=true&hl=en&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dsign_in_button%26hl%3Den%26next%3D%252F%26action_handle_signin%3Dtrue%26app%3Ddesktop&uilel=3&service=youtube","page":"YouTube","sso":["google"]}
-{"url":"https://accounts.google.com/AccountChooser?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dsign_in_button%26hl%3Den%26next%3D%252F%26action_handle_signin%3Dtrue%26app%3Ddesktop&hl=en&service=youtube","page":"YouTube","sso":["google"]}
-{"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dsign_in_button%26hl%3Den%26next%3D%252F%26action_handle_signin%3Dtrue%26app%3Ddesktop&service=youtube&rip=1&sacu=1","page":"YouTube","sso":["google"]}
-{"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dsign_in_button%26hl%3Den%26next%3D%252F%26action_handle_signin%3Dtrue%26app%3Ddesktop&service=youtube&hl=en","page":"YouTube","sso":["google"]}
-{"url":"https://accounts.google.com/ServiceLogin?passive=true&hl=en&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dplaylist%26hl%3Den%26next%3D%252F%26action_handle_signin%3Dtrue%26app%3Ddesktop&uilel=3&service=youtube","page":"YouTube","sso":["google"]}
-{"url":"https://accounts.google.com/AccountChooser?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dplaylist%26hl%3Den%26next%3D%252F%26action_handle_signin%3Dtrue%26app%3Ddesktop&hl=en&service=youtube","page":"YouTube","sso":["google"]}
-{"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dplaylist%26hl%3Den%26next%3D%252F%26action_handle_signin%3Dtrue%26app%3Ddesktop&service=youtube&rip=1&sacu=1","page":"YouTube","sso":["google"]}
-{"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dplaylist%26hl%3Den%26next%3D%252F%26action_handle_signin%3Dtrue%26app%3Ddesktop&service=youtube&hl=en","page":"YouTube","sso":["google"]}
+{"url":"https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&hl=en&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fapp%3Ddesktop%26action_handle_signin%3Dtrue%26hl%3Den%26next%3D%252F%26feature%3Dsign_in_promo&passive=true","page":"YouTube","sso":["google"]}
+{"url":"https://accounts.google.com/AccountChooser?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fapp%3Ddesktop%26action_handle_signin%3Dtrue%26hl%3Den%26next%3D%252F%26feature%3Dsign_in_promo&hl=en&service=youtube","page":"YouTube","sso":["google"]}
+{"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fapp%3Ddesktop%26action_handle_signin%3Dtrue%26hl%3Den%26next%3D%252F%26feature%3Dsign_in_promo&service=youtube&rip=1&sacu=1","page":"YouTube","sso":["google"]}
+{"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fapp%3Ddesktop%26action_handle_signin%3Dtrue%26hl%3Den%26next%3D%252F%26feature%3Dsign_in_promo&service=youtube&hl=en","page":"YouTube","sso":["google"]}
+{"url":"https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&hl=en&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fapp%3Ddesktop%26action_handle_signin%3Dtrue%26hl%3Den%26next%3D%252F%26feature%3Dsign_in_button&passive=true","page":"YouTube","sso":["google"]}
+{"url":"https://accounts.google.com/AccountChooser?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fapp%3Ddesktop%26action_handle_signin%3Dtrue%26hl%3Den%26next%3D%252F%26feature%3Dsign_in_button&hl=en&service=youtube","page":"YouTube","sso":["google"]}
+{"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fapp%3Ddesktop%26action_handle_signin%3Dtrue%26hl%3Den%26next%3D%252F%26feature%3Dsign_in_button&service=youtube&rip=1&sacu=1","page":"YouTube","sso":["google"]}
+{"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fapp%3Ddesktop%26action_handle_signin%3Dtrue%26hl%3Den%26next%3D%252F%26feature%3Dsign_in_button&service=youtube&hl=en","page":"YouTube","sso":["google"]}
+{"url":"https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&hl=en&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fapp%3Ddesktop%26action_handle_signin%3Dtrue%26hl%3Den%26next%3D%252F%26feature%3Dplaylist&passive=true","page":"YouTube","sso":["google"]}
+{"url":"https://accounts.google.com/AccountChooser?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fapp%3Ddesktop%26action_handle_signin%3Dtrue%26hl%3Den%26next%3D%252F%26feature%3Dplaylist&hl=en&service=youtube","page":"YouTube","sso":["google"]}
+{"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fapp%3Ddesktop%26action_handle_signin%3Dtrue%26hl%3Den%26next%3D%252F%26feature%3Dplaylist&service=youtube&rip=1&sacu=1","page":"YouTube","sso":["google"]}
+{"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fapp%3Ddesktop%26action_handle_signin%3Dtrue%26hl%3Den%26next%3D%252F%26feature%3Dplaylist&service=youtube&hl=en","page":"YouTube","sso":["google"]}
+{"url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.co.in/","page":"Sign in - Google Accounts","sso":["google"]}
+{"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.co.in%2F&hl=en","page":"Sign in - Google Accounts","sso":["google"]}
+{"url":"https://www.amazon.com","page":"Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more","sso":["amazon"]}
 {"url":"https://accounts.google.com/ServiceLogin?hl=ja&passive=true&continue=https://www.google.co.jp/","page":"ログイン - Google アカウント","sso":["google"]}
 {"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.co.jp%2F&hl=ja","page":"ログイン - Google アカウント","sso":["google"]}
-{"url":"https://www.taobao.com","page":"ログイン - Google アカウント","sso":["google"]}
 {"url":"https://accounts.google.com/ServiceLogin?hl=de&passive=true&continue=https://www.google.de/","page":"Anmelden – Google Konten","sso":["google"]}
 {"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.de%2F&hl=de","page":"Anmelden – Google Konten","sso":["google"]}
 {"url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.co.uk/","page":"Sign in - Google Accounts","sso":["google"]}
 {"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.co.uk%2F&hl=en","page":"Sign in - Google Accounts","sso":["google"]}
 {"url":"https://accounts.google.com/ServiceLogin?hl=fr&passive=true&continue=https://www.google.fr/","page":"Connexion : comptes Google","sso":["google"]}
-{"url":"https://accounts.google.com/SignUp?continue=https%3A%2F%2Fwww.google.fr%2F&hl=fr","page":"Connexion : comptes Google","sso":["google"]}
 {"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.fr%2F&hl=fr","page":"Connexion : comptes Google","sso":["google"]}
-{"url":"https://accounts.google.com/ServiceLogin?hl=ru&passive=true&continue=https://www.google.ru/","page":"Вход – Google Аккаунты","sso":["google"]}
-{"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.ru%2F&hl=ru","page":"Вход – Google Аккаунты","sso":["google"]}
-{"url":"https://accounts.google.com/ServiceLogin?hl=pt-BR&passive=true&continue=https://www.google.com.br/","page":"Fazer login nas Contas do Google","sso":["google"]}
-{"url":"https://accounts.google.com/SignUp?continue=https%3A%2F%2Fwww.google.com.br%2F&hl=pt-BR","page":"Fazer login nas Contas do Google","sso":["google"]}
-{"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.com.br%2F&hl=pt-BR","page":"Fazer login nas Contas do Google","sso":["google"]}
-{"url":"https://www.stackoverflow.com","page":"Fazer login nas Contas do Google","sso":["google"]}
-{"url":"https://www.amazon.co.jp","page":"Fazer login nas Contas do Google","sso":["google"]}
-{"url":"https://www.yandex.ru","page":"Fazer login nas Contas do Google","sso":["google"]}
 {"url":"https://accounts.google.com/ServiceLogin?hl=it&passive=true&continue=https://www.google.it/","page":"Accedi - Google Account","sso":["google"]}
 {"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.it%2F&hl=it","page":"Accedi - Google Account","sso":["google"]}
+{"url":"https://accounts.google.com/ServiceLogin?hl=es&passive=true&continue=https://www.google.es/","page":"Inicio de sesión - Cuentas de Google","sso":["google"]}
+{"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.es%2F&hl=es","page":"Inicio de sesión - Cuentas de Google","sso":["google"]}
+{"url":"https://accounts.google.com/ServiceLogin?hl=zh-TW&passive=true&continue=https://www.google.com.hk/","page":"登入 - Google 帳戶","sso":["google"]}
+{"url":"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.com.hk%2F&hl=zh-TW","page":"登入 - Google 帳戶","sso":["google"]}
