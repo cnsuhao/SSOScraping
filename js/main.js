@@ -24,11 +24,6 @@ var casper = require('casper').create({
             if(total > 90000 && total < 600000){
                 this.page.reload();
                 this.echo("reloading");
-            }else if(total >= 600000 && loading < 98){
-                this.clear();
-                this.page.stop();
-                this.echo("timed out");
-                total = 0;
             }
         }
     }
@@ -275,7 +270,7 @@ function findLinks(){
                             }else {
                                 if(inputstr.match(e0) == null && inputstr.match(e1) == null  && inputstr.match(e2) == null && 
                                 inputstr.match(e3) == null && inputstr.match(e4) == null && inputstr.match(e5) == null &&
-                                inputstr.match(e6) == null){
+                                inputstr.match(e6) == null && inputstr.match(e7) == null && inputstr.match(e8) == null){
                                     filtered['type'] = 'link';
                                     var extracted = this.extractLinkFrmNode(elem);
                                     if(filtered['value'].indexOf(extracted) == -1) filtered['value'].push(extracted);
