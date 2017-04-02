@@ -4,6 +4,8 @@ var candidates = [];
 var total = 0;
 var startTime = '';
 var endTime = '';
+var firstLink = '';
+var visitedLinks = [];
 
 //Required modules
 var fs = require('fs');
@@ -36,14 +38,10 @@ function readWebsitesFromCSV(){
     //Script starts
     stream = fs.open('../data/summa.csv','r');
     line = stream.readLine().split(',')[1];
-    websites.push({
-        "link" : "https://www."+line
-    });
+    websites.push("https://www."+line);
     while(line){
         line = stream.readLine().split(',')[1];
-        websites.push({
-            "link" : "https://www."+line
-        });
+        websites.push("https://www."+line);
     }
     stream.flush();
     stream.close();
@@ -55,19 +53,14 @@ function logSSO(cArray){
     for(var i = 0; i < cArray.length; i++){
         var each = cArray[i];
         var keys = Object.keys(each);
-        if(keys[1] == 'login'){
-            if(each['login'].length > 0){
-                stream.writeLine(JSON.stringify(each));
-            }
-        }else if(keys[1] == 'signup'){
-            if(each['signup'].length > 0){
-                stream.writeLine(JSON.stringify(each));
-            }
+        if(keys[2] == 'sso'){
+            stream.writeLine(JSON.stringify(each));
         }
     }
     stream.flush();
     stream.close();
 }
+
 
 //Start Url
 function start(link){
@@ -85,7 +78,7 @@ function findLinks(){
         this.evaluate(function(){
             window.fns = {
                 getLinks : function(){
-                    var stack = []; var offspring; var singleResult; var arrResults = [];
+                    var stack = []; var offspring; var singleResult; var arrResults = {"sso" : [], "links" : []};
                     stack.push(document.body);
                     while(stack.length > 0){
                         var popped = stack.pop();
@@ -102,7 +95,20 @@ function findLinks(){
                                 if(bool){
                                     singleResult = this.processNodeForLinks(popped);
                                     if(singleResult){
-                                        if(arrResults.indexOf(popped) == -1) arrResults.push(popped);
+                                        var obj = this.hasSSO(popped);
+                                        if(obj['type'] == 'sso'){
+                                            var i = 0;
+                                            while(i < obj['value'].length){
+                                                arrResults['sso'].push(obj['value'][i]);
+                                                i++;
+                                            }
+                                        }else if(obj['type'] == 'link'){
+                                            var i = 0;
+                                            while(i < obj['value'].length){
+                                                arrResults['links'].push(obj['value'][i]);
+                                                i++;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -128,6 +134,7 @@ function findLinks(){
                     var attrStr; var hasKeyword;
                     attrStr = this.makeStringAttr(node);
                     hasKeyword = this.hasLink(attrStr);
+                    return hasKeyword;
                 },
                 makeStringAttr : function(node){
                     var str = '';
@@ -150,7 +157,7 @@ function findLinks(){
                     }
                     return false;
                 },
-                hasSSO : function(elems){
+                hasSSO : function(elem){
                     var sso = [{"site" : "google", "regex" : /google/gi, "url" : ["https://accounts.google.com/o/oauth2/auth"]}, 
                         {"site" : "yahoo", "regex" : /yahoo/gi, "url" : ["https://api.login.yahoo.com/oauth2/request_auth"]}, 
                         {"site" : "500px", "regex" : /500px/gi, "url": ["https://api.500px.com/v1/oauth"]}, 
@@ -226,62 +233,107 @@ function findLinks(){
                     var e1 = /subscribe/gi;
                     var e2 = /connect/gi;
                     var e3 = /like/gi;
+                    var e4 = /support/gi;
+                    var e5 = /recovery/gi;
+                    var e6 = /forgot/gi;
 
-                    var filtered = {"sso" : [], "links" : []};
+                    var filtered = {"type" : 'sso', "value" : []};
 
-                    for(var j = 0; j < elems.length; j++){
-                        var inputstr = this.makeStringAttr(elems[j]);
-                        for(var i = 0; i < sso.length; i++){
-                            var each = sso[i];
-                            var siteMatch = inputstr.match(each.regex);
-                            if(siteMatch != null){
-                                var authMatch = inputstr.match(k0);
-                                var openMatch = inputstr.match(k1);
-                                if(authMatch != null){
-                                    var urlList = each.url;
-                                    var urlLen = urlList.length;
-                                    if(urlLen > 0){
-                                        for(var j=0; j < urlLen; j++){
-                                            var urlMatch = inputstr.match(urlList[j]);
-                                            if(urlMatch != null){
-                                                if(filtered['sso'].indexOf(each.site) == -1) filtered['sso'].push(each.site);
-                                            }
+                    
+                    var inputstr = this.makeStringAttr(elem);
+                    for(var i = 0; i < sso.length; i++){
+                        var each = sso[i];
+                        var siteMatch = inputstr.match(each.regex);
+                        if(siteMatch != null){
+                            var authMatch = inputstr.match(k0);
+                            var openMatch = inputstr.match(k1);
+                            if(authMatch != null){
+                                var urlList = each.url;
+                                var urlLen = urlList.length;
+                                if(urlLen > 0){
+                                    for(var j=0; j < urlLen; j++){
+                                        var urlMatch = inputstr.match(urlList[j]);
+                                        if(urlMatch != null){
+                                            filtered['type'] = 'sso';
+                                            if(filtered['value'].indexOf(each.site) == -1) filtered['value'].push(each.site);
                                         }
                                     }
-                                }else if(openMatch != null){
-                                    if(filtered['sso'].indexOf(each.site) == -1) filtered['sso'].push(each.site);
-                                }else{
-                                    if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
-                                        inputstr.match(k5) != null || inputstr.match(k6) != null){
-                                        if(filtered['sso'].indexOf(each.site) == -1) filtered['sso'].push(each.site);
-                                    }
                                 }
-                            }else{
-                                if(filtered['links'].indexOf() == -1) filtered['links'].push(elems[j]);
+                            }else if(openMatch != null){
+                                filtered['type'] = 'sso';
+                                if(filtered['value'].indexOf(each.site) == -1) filtered['value'].push(each.site);
+                            }else if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
+                                inputstr.match(k5) != null || inputstr.match(k6) != null){
+                                filtered['type'] = 'sso';
+                                if(filtered['value'].indexOf(each.site) == -1) filtered['value'].push(each.site);
+                            }else if(inputstr.match(e0) == null && inputstr.match(e1) == null  && inputstr.match(e2) == null && 
+                                inputstr.match(e3) == null && inputstr.match(e4) == null && inputstr.match(e5) == null &&
+                                inputstr.match(e6) == null){
+                                filtered['type'] = 'link';
+                                var extracted = this.extractLinkFrmNode(elem);
+                                if(filtered['value'].indexOf(extracted) == -1) filtered['value'].push(extracted);
                             }
                         }
                     }
                     return filtered;
+                },
+                //Extract link from node
+                extractLinkFrmNode : function(node){
+                    var href = node.getAttribute('href');
+                    if(href){
+                        return href;
+                    }else{
+                        if(node.nodeName == 'BUTTON' || node.nodeName == 'INPUT') return node.getAttribute('href') || node.getAttribute('onclick');
+                        else if(node.nodeName == 'FORM') return node.getAttribute('action') || node.getAttribute('href');
+                        else if(node.parentElement){
+                            var parent = node.parentElement;
+                            var phref = parent.getAttribute('href') || parent.getAttribute('action') || parent.getAttribute('onclick');
+                            if(phref){
+                                return phref;
+                            }
+                        }
+                    }
                 }
             };
         });
 
         //Call functions in page context
         combined = this.evaluate(function(){
-            return fns.hasSSO(fns.getLinks());
+            return fns.getLinks();
         });
-        this.echo(combined);
-
+        
+        if(combined){
+            var keys = Object.keys(combined);
+            if(keys[0] == 'links'){
+                if(combined['links'].length > 0){
+                    for(var k = 0; k < combined['links'].length; k++){
+                        var each = combined['links'][k];
+                        if(visitedLinks.indexOf(each) == -1){
+                            if(websites.indexOf(each) == -1) websites.unshift(each);
+                        }
+                    }
+                }
+            }else if(keys[0] == 'sso'){
+                if(combined['sso'].length > 0){
+                    this.ssoInfo['sso'] = combined['sso'];
+                    if(candidates.indexOf(this.ssoInfo) == -1) candidates.push(this.ssoInfo);
+                }
+            }
+        }
+        this.echo(JSON.stringify(candidates));
+        this.echo(JSON.stringify(websites));
     });
 }
+
 
 //Check if links are present and run them
 function check(){
     if(websites.length > 0){
-        var current = websites.shift();
+        firstLink = websites.shift();
+        visitedLinks.push(firstLink);
         this.echo('--- Link ' + currentLink + ' ---');
-        this.ssoInfo = {'url' : current.link, 'page' : ''};
-        start.call(this, current.link);
+        this.ssoInfo = {'url' : firstLink, 'page' : ''};
+        start.call(this, firstLink);
         findLinks.call(this);
         currentLink++;
         this.run(check);
@@ -297,7 +349,8 @@ function check(){
 
 casper.start().then(function(){
     this.echo("Starting process");
-    websites = [{"link" : "https://www.google.com"}]
+    websites = ["https://www.google.com"]
+    startTime = Date.now();
 });
 
 // readWebsitesFromCSV();
