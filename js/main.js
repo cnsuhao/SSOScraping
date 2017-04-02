@@ -18,12 +18,12 @@ var casper = require('casper').create({
         webSecurityEnabled : false
     },
     onStepTimeout : function(timeout, step){
-        total += timeout;
         if(step == 1){
-            if(total > 90000 && total < 300000){
+            total += timeout;
+            if(total > 90000 && total < 800000){
                 this.page.reload();
                 this.echo("reloading");
-            }else if(total >= 300000){
+            }else if(total >= 800000){
                 this.page.stop();
                 this.echo("timed out");
             }
