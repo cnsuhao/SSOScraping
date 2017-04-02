@@ -349,10 +349,10 @@ function check(){
 
 casper.start().then(function(){
     this.echo("Starting process");
-    websites = ["https://www.google.com"]
+    // websites = ["https://www.google.com"]
     startTime = Date.now();
 });
 
-// readWebsitesFromCSV();
+readWebsitesFromCSV();
 
 casper.run(check);
