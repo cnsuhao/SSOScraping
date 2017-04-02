@@ -57,14 +57,11 @@ function writeToFile(candidates){
     
     for(var i=0; i<candidates.length;i++){
         var each = candidates[i];
-        var keys = Object.keys(each);
-        if(keys[1] == 'login'){
-            if(each['login'].length > 0){
-                stream.writeLine(JSON.stringify(each));
-            }
-        }else if(keys[1] == 'signup'){
-            if(each['signup'].length > 0){
-                stream.writeLine(JSON.stringify(each));
+        for(var key in each){
+            if(key == 'sso'){
+                if(each['sso'].length > 0){
+                    stream.writeLine(JSON.stringify(each));
+                }
             }
         }
     }
@@ -147,12 +144,13 @@ function findClickLinks(link) {
                     var k6 = /register/gi;
                     var e0 = /social/gi; var e1 = /subscribe/gi; var e2 = /connect/gi; var e3 = /like/gi; var e4 = /support/gi;
                     var e5 = /recovery/gi; var e6 = /forgot/gi; var e7 = /help/gi; var e8 = /promo[tion]*/gi; 
-                    var e9 = /privacy[\-\s]*[policy]*/gi; var e10 = /sports/gi; 
+                    var e9 = /privacy[\-\s]*[policy]*/gi; var e10 = /sports/gi; var e11 = /story/gi; var e12 = /campaign/gi;
 
                     if(inputstr.match(e0) == null && inputstr.match(e1) == null  && inputstr.match(e2) == null && 
                         inputstr.match(e3) == null && inputstr.match(e4) == null && inputstr.match(e5) == null &&
                         inputstr.match(e6) == null && inputstr.match(e7) == null && inputstr.match(e8) == null &&
-                        inputstr.match(e9) == null && inputstr.match(e10) == null){
+                        inputstr.match(e9) == null && inputstr.match(e10) == null && inputstr.match(e11) == null &&
+                        inputstr.match(e12) == null){
                             if(type == 'login'){
                                 if(inputstr.match(k2) != null || inputstr.match(k3) != null){
                                     return true;
@@ -432,23 +430,22 @@ function findSSOLinks(link){
             return ssofns.searchForSSOCandidates();
         });
         this.echo(ssoResult);
-        if(type == 'login'){
-            ssoInfo['login'] = ssoResult;
-        }else if(type == 'signup'){
-            ssoInfo['signup'] = ssoResult;
-        }
-        if(candidates.indexOf(ssoInfo) == -1){
+        ssoInfo['sso'] = ssoResult;
+        if(!(candidates.filter(function(e) {return e.page == ssoInfo.page}).length > 0)){
             candidates.push(ssoInfo);
         }
+        this.echo(JSON.stringify(candidates))
     });
 }
 
 
 // Just opens the page and prints the title
 function start(link) {
+    ssoInfo = this.ssoInfo;
     this.start(link, function() {
+        ssoInfo['page'] = this.getTitle();
         this.echo('Page title: ' + this.getTitle());
-        // this.ssoInfo['page'] = this.getTitle();
+        total = 0;
     });
 }
 
@@ -458,7 +455,7 @@ function check() {
         current = websites.shift();
         this.echo('--- Link ' + currentLink + ' ---');
         this.type = current.type;
-        this.ssoInfo = {'url' : current.link};
+        this.ssoInfo = {'url' : current.link, 'page' : ''};
         action = current.action;
         start.call(this, current.link);
         if(action == 'click'){
