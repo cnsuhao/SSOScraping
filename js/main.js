@@ -5,8 +5,9 @@ var casper = require('casper').create({
     logLevel : 'info',
     stepTimeout : 30000,
     pageSettings : {
-        loadPlugins : false,
-        webSecurityEnabled : false
+        loadImages: false,
+        loadPlugins: false,
+        userAgent: 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
     },
     onStepTimeout : function(timeout, step){
         if(step == 1){
@@ -488,10 +489,12 @@ function findSSOLinks(link){
 // Just opens the page and prints the title
 function start(link) {
     ssoInfo = this.ssoInfo;
-    this.start(link, function() {
-        ssoInfo['page'] = this.getTitle();
-        this.echo('Page title: ' + this.getTitle());
-        total = 0;
+    this.then(function(){
+        this.start(link, function() {
+            ssoInfo['page'] = this.getTitle();
+            this.echo('Page title: ' + this.getTitle());
+            total = 0;
+        });
     });
 }
 
