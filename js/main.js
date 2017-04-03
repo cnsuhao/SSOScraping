@@ -489,12 +489,10 @@ function findSSOLinks(link){
 // Just opens the page and prints the title
 function start(link) {
     ssoInfo = this.ssoInfo;
-    this.then(function(){
-        this.start(link, function() {
-            ssoInfo['page'] = this.getTitle();
-            this.echo('Page title: ' + this.getTitle());
-            total = 0;
-        });
+    this.start(link, function() {
+        ssoInfo['page'] = this.getTitle();
+        this.echo('Page title: ' + this.getTitle());
+        total = 0;
     });
 }
 
