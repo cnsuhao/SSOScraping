@@ -2,7 +2,7 @@
 var fs = require('fs');
 var casper = require('casper').create({
     verbose : true,
-    logLevel : 'info',
+    logLevel : 'debug',
     stepTimeout : 30000,
     pageSettings : {
         loadPlugins : false,
@@ -15,7 +15,7 @@ var casper = require('casper').create({
             if(total > 100000 && total < 600000){
                 this.page.reload();
                 this.echo("reloading");
-            }else if(total >= 600000 && loading < 98){
+            }else if(total >= 600000){
                 stream = fs.open('../data/errors.txt', 'aw');
                 var err = {"msg" : "timed out", "page" : this.page.getCurrentUrl()};
                 stream.writeLine("{\"msg\":"+err.msg+", \"obj\":"+err.page+"\"}");
