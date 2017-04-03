@@ -222,7 +222,7 @@ function findClickLinks(link) {
         }
         if(found.length > 0){
             for(key in found){
-                if(found[key] != '#'){
+                if(found[key] != '#' && found[key].indexOf("javascript:void(0)") == -1){
                     val = found[key];
                     if(val[0] == "/" && val[1] == "/"){
                         val = "https:" + val;
