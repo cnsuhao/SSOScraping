@@ -2,7 +2,7 @@
 var fs = require('fs');
 var casper = require('casper').create({
     verbose : true,
-    logLevel : 'info',
+    logLevel : 'error',
     stepTimeout : 90000,
     pageSettings : {
         loadImages: false,
@@ -482,12 +482,10 @@ function findSSOLinks(link){
         ssoResult = this.evaluate(function(){
             return ssofns.searchForSSOCandidates();
         });
-        this.echo(ssoResult);
         ssoInfo['sso'] = ssoResult;
         if(!(candidates.filter(function(e) {return e.page == ssoInfo.page}).length > 0)){
             candidates.push(ssoInfo);
         }
-        this.echo(JSON.stringify(candidates));
     });
 }
 
