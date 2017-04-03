@@ -2,7 +2,7 @@
 var fs = require('fs');
 var casper = require('casper').create({
     verbose : true,
-    logLevel : 'debug',
+    logLevel : 'info',
     stepTimeout : 30000,
     pageSettings : {
         loadPlugins : false,
@@ -11,7 +11,6 @@ var casper = require('casper').create({
     onStepTimeout : function(timeout, step){
         if(step == 1){
             total += timeout;
-            var loading = this.page.loadingProgress;
             if(total > 100000 && total < 600000){
                 this.page.reload();
                 this.echo("reloading");
