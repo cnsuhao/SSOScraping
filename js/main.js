@@ -12,21 +12,20 @@ var casper = require('casper').create({
         if(step == 1){
             total += timeout;
             var loading = this.page.loadingProgress;
-            if(total > 100000 && total < 600000 && loading < 80){
+            if(total > 100000 && total < 600000){
                 this.page.reload();
                 this.echo("reloading");
-            }else if(total >= 600000){
+            }else if(total >= 600000 && loading < 98){
                 stream = fs.open('../data/errors.txt', 'aw');
                 var err = {"msg" : "timed out", "page" : this.page.getCurrentUrl()};
                 stream.writeLine("{\"msg\":"+err.msg+", \"obj\":"+err.page+"\"}");
                 stream.flush();
                 stream.close();
-                
+
                 this.clear();
                 this.page.stop();
                 this.echo("timed out");
                 total = 0;
-
             }
         }
     }
