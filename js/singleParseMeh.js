@@ -14,16 +14,25 @@ var casper = require('casper').create({
     logLevel : 'info',
     stepTimeout : 30000,
     pageSettings : {
-        loadPlugins : false,
-        webSecurityEnabled : false
+        loadPlugins: false,
+        userAgent: 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
+        XSSAuditingEnabled : true
     },
+    exitOnError : false,
+    silentErrors : true,
     onStepTimeout : function(timeout, step){
         if(step == 1){
             total += timeout;
-            var loading = this.page.loadingProgress;
-            if(total > 90000 && total < 600000){
-                this.page.reload();
-                this.echo("reloading");
+            if(total > 130000){
+                stream = fs.open('../data/errors.txt', 'aw');
+                var err = {"msg" : "timed out", "page" : this.page.getCurrentUrl()};
+                stream.writeLine("{\"msg\":"+err.msg+", \"obj\":"+err.page+"\"}");
+                stream.flush();
+                stream.close();
+                this.page.clear();
+                this.page.stop();
+                this.echo("timed out");
+                total = 0;
             }
         }
     }
@@ -34,7 +43,7 @@ var casper = require('casper').create({
 function readWebsitesFromCSV(){
     websites = [];
     //Script starts
-    stream = fs.open('../data/summa.csv','r');
+    stream = fs.open('../data/top-80k.csv','r');
     line = stream.readLine().split(',')[1];
     websites.push("https://www."+line);
     while(line){
@@ -322,8 +331,6 @@ function findLinks(){
                 }
             }
         }
-        this.echo(JSON.stringify(candidates));
-        this.echo(JSON.stringify(websites));
     });
 }
 
