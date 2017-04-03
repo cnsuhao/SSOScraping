@@ -1,8 +1,1 @@
 
-
-{"msg":mouseEvent(): Couldn't find any element matching 'DIV#shared-addto-watch-later-login' selector, "obj":[object Casper], currently at https://www.youtube.com/"}
-{"msg":mouseEvent(): Couldn't find any element matching 'DIV#shared-addto-watch-later-login' selector, "obj":[object Casper], currently at https://www.youtube.com/"}
-{"msg":mouseEvent(): Couldn't find any element matching 'DIV#shared-addto-watch-later-login' selector, "obj":[object Casper], currently at https://www.youtube.com/"}
-{"msg":mouseEvent(): Couldn't find any element matching 'DIV#login_css' selector, "obj":[object Casper], currently at https://vk.com/"}
-{"msg":mouseEvent(): Couldn't find any element matching 'DIV#a-register' selector, "obj":[object Casper], currently at https://www.sina.com.cn/"}
-{"msg":mouseEvent(): Couldn't find any element matching 'DIV#signInToWatchTooltip' selector, "obj":[object Casper], currently at http://www.ebay.com/"}

@@ -15,7 +15,7 @@ var casper = require('casper').create({
     onStepTimeout : function(timeout, step){
         if(step == 1){
             total += timeout;
-            if(total >= 600000){
+            if(total >= 300000){
                 stream = fs.open('../data/errors.txt', 'aw');
                 var err = {"msg" : "timed out", "page" : this.page.getCurrentUrl()};
                 stream.writeLine("{\"msg\":"+err.msg+", \"obj\":"+err.page+"\"}");
