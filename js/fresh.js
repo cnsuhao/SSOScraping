@@ -1,7 +1,7 @@
 var linknum = 0;
 var sites = [];
 
-require.paths.push('/home/arames/.nvm/v7.8.0/lib/node_modules/casperjs');
+require.paths.push('../../.nvm/v7.8.0/lib/node_modules/casperjs');
 var fs = require('fs');
 sites = readWebsitesFromCSV();
 
