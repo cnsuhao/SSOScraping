@@ -3,7 +3,7 @@ var linknum = 0;
 var sites = [];
 
 var path = fs.absolute('../../.nvm/v7.8.0/lib/node_modules');
-this.echo(path);
+
 require.paths.push(path);
 
 sites = readWebsitesFromCSV();
