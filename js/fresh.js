@@ -1,11 +1,8 @@
-var fs = require('fs');
 var linknum = 0;
 var sites = [];
 
-var path = fs.absolute('../../.nvm/v7.8.0/lib/node_modules');
-
-require.paths.push(path);
-
+require.paths.push('/home/arames/.nvm/v7.8.0/lib/node_modules/casperjs');
+var fs = require('fs');
 sites = readWebsitesFromCSV();
 
 var casper = require('casper').create({
