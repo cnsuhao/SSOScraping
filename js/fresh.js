@@ -1,8 +1,11 @@
+var fs = require('fs');
 var linknum = 0;
 var sites = [];
 
-require.paths.push('../../.nvm/v7.8.0/lib/node_modules');
-var fs = require('fs');
+var path = fs.absolute('../../.nvm/v7.8.0/lib/node_modules');
+this.echo(path);
+require.paths.push(path);
+
 sites = readWebsitesFromCSV();
 
 var casper = require('casper').create({
