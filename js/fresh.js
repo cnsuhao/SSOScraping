@@ -1,8 +1,6 @@
 var linknum = 0;
 var sites = [];
 var fs = require('fs');
-var path = fs.absolute('../modules/casperjs/modules')
-require.paths.push(path);
 
 sites = readWebsitesFromCSV();
 
