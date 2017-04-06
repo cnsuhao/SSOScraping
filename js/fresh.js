@@ -1,8 +1,8 @@
 var linknum = 0;
 var sites = [];
 var fs = require('fs');
-var phantom = fs.absolute('../../node_modules/phantomjs');
-var path = fs.absolute('../../node_modules/casperjs');
+var phantom = fs.absolute('../../node_modules/phantomjs/modules');
+var path = fs.absolute('../../node_modules/casperjs/modules');
 require.paths.push(phantom);
 require.paths.push(path);
 
