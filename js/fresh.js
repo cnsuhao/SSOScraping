@@ -1,12 +1,11 @@
 var linknum = 0;
 var sites = [];
 var fs = require('fs');
-var path = fs.absolute('../../node_modules/casperjs/modules')
+var path = fs.absolute('../modules/casperjs/modules')
 require.paths.push(path);
 
 sites = readWebsitesFromCSV();
 
-var require = patchRequire(require);
 var casper = require('casper').create({
 	verbose : true,
 	logLevel : 'debug'
