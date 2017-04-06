@@ -6,6 +6,7 @@ require.paths.push(path);
 
 sites = readWebsitesFromCSV();
 
+var require = patchRequire(require);
 var casper = require('casper').create({
 	verbose : true,
 	logLevel : 'debug'
