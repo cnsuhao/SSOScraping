@@ -30,7 +30,7 @@ while(websites.length > 0){
                 return bool;
 	    	},
 	    	traverseDOM : function(){
-	    		var tree = []; var candidates = [];
+	    		var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : []}
 	    		tree.push(document.body);
 	    		while(tree.length > 0){
 	    			var branch = tree.pop();
@@ -47,12 +47,14 @@ while(websites.length > 0){
 	    						var sso = this.hasSSO(branch);
 	    						var link = this.hasLinks(branch);
 	    						if(sso) candidates.push(sso);
-	    						if(link) websites.unshift(link);
+	    						if(link) sites.unshift(link);
 	    					}
 	    				}
 	    			}
 	    		}
-	    		return candidates;
+	    		result.candidates = candidates;
+	    		result.links = sites;
+	    		return result;
 	    	},
 	    	hasLinks : function(node){
 	    		var attrStr = this.makeAttrString(node);
@@ -216,7 +218,8 @@ while(websites.length > 0){
 	  .end()
 	  .then(function (result) {
 	  	if(result){
-	  		results.concat(result);
+	  		results.concat(result.candidates);
+	  		websites.concat(result.links);
 	  	}
 	  	console.log(results);
 	  	if(linkNum > 500) write(results);
