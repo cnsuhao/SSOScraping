@@ -46,6 +46,7 @@ while(websites.length > 0){
 	    					if(this.prefilter(branch)){
 	    						var sso = this.hasSSO(branch);
 	    						var link = this.hasLinks(branch);
+	    						console.log(sso); console.log(link);
 	    						if(sso) candidates.push(sso);
 	    						if(link) sites.unshift(link);
 	    					}
