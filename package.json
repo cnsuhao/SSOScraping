@@ -1,0 +1,25 @@
+{
+  "name": "ssoscraping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amrutharamesh/SSOScraping.git"
+  },
+  "author": "amrutha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amrutharamesh/SSOScraping/issues"
+  },
+  "homepage": "https://github.com/amrutharamesh/SSOScraping#readme",
+  "devDependencies": {
+    "nightmare": "^2.10.0"
+  },
+  "dependencies": {
+    "nightmare": "^2.10.0"
+  }
+}
