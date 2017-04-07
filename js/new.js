@@ -218,6 +218,7 @@ while(websites.length > 0){
 	  	if(result){
 	  		results.concat(result);
 	  	}
+	  	console.log(results);
 	  	if(linkNum > 500) write(results);
 	  })
 	  .catch(function (error) {
