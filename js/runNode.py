@@ -11,4 +11,4 @@ with open('../data/summa.csv') as csvFile:
 for site in websites:
     site = "https://"+site
     print site
-    subprocess.call("xvfb-run --server-args='-screen 0 1024x768x24' node index.js "+site, shell=True)
+    subprocess.call("xvfb-run --server-args=\"-screen 0 1024x768x24\" node index.js "+site, shell=True)
