@@ -9,7 +9,7 @@ function write(data){
 		data = makeObjectsUnique(data);
 		if(data.length > 0){
 			for(var j = 0; j < data.length; j++){
-				fs.appendFile('../data/log-80k.txt', JSON.stringify(data[j]), function(isDone){
+				fs.appendFile('../data/log-1000.txt', JSON.stringify(data[j]), function(isDone){
 
 				});
 			}
@@ -21,7 +21,7 @@ function write(data){
 }
 function getWebsites(){
 	try{
-		var data = fs.readFileSync('../data/top-80k.csv', 'utf8');
+		var data = fs.readFileSync('../data/top-1000.csv', 'utf8');
 		var arr = data.split(/\r?\n/);
 		sites = arr.map(function(val, index, arr){
 		    return val = "https://www." + val.split(',')[1];
