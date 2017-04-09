@@ -14,5 +14,5 @@ with open('../data/top-20k.csv') as csvFile:
 for site in websites:
 	site = "https://"+site
 	print site
-	cmd = "node index.js "+site
+	cmd = "node DEBUG=nightmare* index.js "+site
 	subprocess.call(cmd, shell=True)
