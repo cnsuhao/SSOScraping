@@ -26,6 +26,7 @@ function getWebsites(){
 		sites = arr.map(function(val, index, arr){
 		    return val = "https://www." + val.split(',')[1];
 		});
+		console.log(sites.length);
 		return sites;
 	}catch(e){
 		console.log("File read error : " + e);
