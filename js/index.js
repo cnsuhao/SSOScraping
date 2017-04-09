@@ -299,7 +299,6 @@ function run(){
 		  		ssoInfo.sso = result.candidates;
 		  		if(ssoInfo.sso.length > 0) results.push(ssoInfo);
 		  		links = links.concat(result.links);
-		  		console.log(results.length);
 		  	}
 		  	if(linkNum > 500) write(results);
 		  	rerun(links);
@@ -483,7 +482,6 @@ function rerun(links){
 		  	if(result){
 		  		ssoInfo.sso = result.candidates;
 		  		if(ssoInfo.sso.length > 0) results.push(ssoInfo);
-		  		console.log(results.length);
 		  	}
 		  })
 		  .catch(function (error) {
