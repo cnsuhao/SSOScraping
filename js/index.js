@@ -211,12 +211,12 @@ function run(current){
 	                            for(var j=0; j < urlLen; j++){
 	                                var urlMatch = inputstr.match(urlList[j]);
 	                                if(urlMatch != null){
-	                                    return each.site;
+	                                    return each.site+", oauth";
 	                                }
 	                            }
 	                        }
 	                    }else if(openMatch != null){
-	                        return each.site;
+	                        return each.site+", openid";
 	                    }else{
 	                        if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
 	                            inputstr.match(k5) != null || inputstr.match(k6) != null){
@@ -278,7 +278,6 @@ function run(current){
 	  		ssoInfo.sso = result.candidates;
 	  		if(ssoInfo['sso'].length > 0) write(ssoInfo);
 	  		links = links.concat(result.links);
-	  		console.log(links);
 	  		rerun(links, current);
 	  	}
 	  })
@@ -437,12 +436,12 @@ function rerun(links, current){
 		                            for(var j=0; j < urlLen; j++){
 		                                var urlMatch = inputstr.match(urlList[j]);
 		                                if(urlMatch != null){
-		                                    return each.site;
+		                                    return each.site+", oauth";
 		                                }
 		                            }
 		                        }
 		                    }else if(openMatch != null){
-		                        return each.site;
+		                        return each.site+", openid";
 		                    }else{
 		                        if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
 		                            inputstr.match(k5) != null || inputstr.match(k6) != null){
