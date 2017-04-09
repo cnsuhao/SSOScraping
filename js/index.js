@@ -6,7 +6,7 @@ var Nightmare = require('nightmare');
 // Write or read from file functions
 function write(data){
 	try{		
-		fs.appendFile('../data/log.txt', JSON.stringify(data), function(isDone){
+		fs.appendFile('../data/log-f20k.txt', JSON.stringify(data)+"\n", function(isDone){
 
 		});
 	}catch(e){
