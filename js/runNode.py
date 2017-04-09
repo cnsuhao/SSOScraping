@@ -1,9 +1,9 @@
 import subprocess
 import csv
-import os
+# import os
 
-os.environ["DISPLAY"]=":1"
-xvfb = subprocess.Popen(['Xvfb', ':1'])
+# os.environ["DISPLAY"]=":1"
+# xvfb = subprocess.Popen(['Xvfb', ':1'])
 websites = []
 with open('../data/summa.csv') as csvFile:
     reader = csv.reader(csvFile, delimiter=",")
