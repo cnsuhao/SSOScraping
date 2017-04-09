@@ -7,8 +7,6 @@ var Nightmare = require('nightmare');
 function write(data){
 	try{
 		data = makeObjectsUnique(data);
-		console.log("data")
-		console.log(data);
 		fs.appendFile('../data/log.txt', JSON.stringify(data), function(isDone){
 
 		});
@@ -31,11 +29,12 @@ function getWebsites(){
 }
 
 //Variable declaration
-// var websites = getWebsites();
-var websites = ["https://www.stackoverflow.com"]
+var websites = getWebsites();
+// var websites = ["https://www.stackoverflow.com"]
 var results = [];
 var linkNum = 0;
 var links = [];
+var visited = [];
 
 //Function to go through the first set of URLs
 function run(){
@@ -300,9 +299,9 @@ function run(){
 		  		ssoInfo.sso = result.candidates;
 		  		if(ssoInfo.sso.length > 0) results.push(ssoInfo);
 		  		links = links.concat(result.links);
-		  		console.log(links);
+		  		console.log(results.length);
 		  	}
-		  	write(results);
+		  	if(linkNum > 100) write(results);
 		  	rerun(links);
 		  })
 		  .catch(function (error) {
@@ -314,7 +313,6 @@ function run(){
 
 function rerun(links){
 	while(links.length > 0){
-		console.log("2");
 		var current = links.shift();
 		var ssoInfo = {"url" : current, "sso" : []}
 		var nightmare = Nightmare({
@@ -485,8 +483,8 @@ function rerun(links){
 		  	if(result){
 		  		ssoInfo.sso = result.candidates;
 		  		if(ssoInfo.sso.length > 0) results.push(ssoInfo);
+		  		console.log(results.length);
 		  	}
-		  	write(results);
 		  })
 		  .catch(function (error) {
 		    console.error('Search failed:', error);
