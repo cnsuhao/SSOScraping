@@ -1,16 +1,26 @@
 var fs = require('fs');
 var Nightmare = require('nightmare');
+var vo = require('vo');
 
-var websites = getWebsites();
+// var websites = getWebsites();
+var websites = ["https://www.spotify.com"]
 var results = [];
 var linkNum = 0;
 
 while(websites.length > 0){
+	vo(run)(function(err, result){
+		if(err) throw err;
+	});
+}
+
+
+function* run(){
 	var current = websites.shift();
 	var nightmare = Nightmare({
 		gotoTimeout : 30000,
 		show : false
 	});
+	console.log(linkNum)
 	nightmare
 	  .goto(current)
 	  .evaluate(function () {
@@ -46,10 +56,8 @@ while(websites.length > 0){
 	    					if(this.prefilter(branch)){
 	    						var sso = this.hasSSO(branch);
 	    						var link = this.hasLinks(branch);
-	    						return link;
-	    						// console.log(sso); console.log(link);
-	    						// if(sso) candidates.push(sso);
-	    						// if(link) sites.unshift(link);
+	    						if(sso) candidates.push(sso);
+	    						if(link) sites.unshift(link);
 	    					}
 	    				}
 	    			}
@@ -213,28 +221,27 @@ while(websites.length > 0){
 	                    }
 	                }
 	            }
-	    	}
+	        }
 	    };
 	    return fns.traverseDOM();
 	  })
 	  .end()
 	  .then(function (result) {
 	  	if(result){
-	  		results.concat(result.candidates);
-	  		websites.concat(result.links);
+	  		results = results.concat(result.candidates);
+	  		websites = websites.concat(result.links);
 	  	}
 	  	console.log(results);
+	  	console.log(websites);
 	  	if(linkNum > 500) write(results);
 	  })
 	  .catch(function (error) {
 	    console.error('Search failed:', error);
 	  });
 
+	  console.log("outside"+websites)
 	  linkNum++;
 }
-
-
-
 
 
 function write(data){
