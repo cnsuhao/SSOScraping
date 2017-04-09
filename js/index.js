@@ -16,7 +16,7 @@ function write(data){
 }
 function getWebsites(){
 	try{
-		var data = fs.readFileSync('../data/summa.csv', 'utf8');
+		var data = fs.readFileSync('../data/top-80k.csv', 'utf8');
 		var arr = data.split(/\r?\n/);
 		sites = arr.map(function(val, index, arr){
 		    return val = "https://www." + val.split(',')[1];
@@ -301,7 +301,7 @@ function run(){
 		  		links = links.concat(result.links);
 		  		console.log(results.length);
 		  	}
-		  	if(linkNum > 100) write(results);
+		  	if(linkNum > 500) write(results);
 		  	rerun(links);
 		  })
 		  .catch(function (error) {
