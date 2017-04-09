@@ -312,3 +312,48 @@ function checkForKeywords(inputstr, type){
         //     }
         // }
 }
+
+
+
+
+function getWebsites(){
+    try{
+        var data = fs.readFileSync('../data/top-1000.csv', 'utf8');
+        var arr = data.split(/\r?\n/);
+        sites = arr.map(function(val, index, arr){
+            return val = "https://www." + val.split(',')[1];
+        });
+        console.log(sites.length);
+        return sites;
+    }catch(e){
+        console.log("File read error : " + e);
+    }
+    
+}
+
+//Variable declaration
+var websites = getWebsites();
+// var websites = ["https://www.stackoverflow.com"]
+
+
+
+function makeObjectsUnique(list){
+    var i; var newList = [];
+    Array.prototype.contains = function(v){
+        for(var i = 0; i < this.length; i++) {
+            if(this[i] === v) return true;
+        }
+        return false;
+    };
+    Array.prototype.unique = function(){
+        var arr = [];
+        for(var i = 0; i < this.length; i++) {
+            if(!arr.contains(this[i])) {
+                arr.push(this[i]);
+            }
+        }
+        return arr; 
+    };
+    newList = list.unique();
+    return newList;
+}
