@@ -42,6 +42,7 @@ var links = [];
 
 //Function to go through the first set of URLs
 function run(){
+	console.log(linkNum);
 	while(websites.length > 0){
 		var current = websites.shift();
 		var ssoInfo = {"url" : current, "sso" : []}
@@ -316,6 +317,7 @@ function run(){
 }
 
 function rerun(links){
+	console.log('2');
 	while(links.length > 0){
 		var current = links.shift();
 		var ssoInfo = {"url" : current, "sso" : []}
