@@ -7,9 +7,14 @@ var Nightmare = require('nightmare');
 function write(data){
 	try{
 		data = makeObjectsUnique(data);
-		fs.appendFile('../data/log.txt', JSON.stringify(data), function(isDone){
+		if(data.length > 0){
+			for(var j = 0; j < data.length; j++){
+				fs.appendFile('../data/log-80k.txt', JSON.stringify(data[j]), function(isDone){
 
-		});
+				});
+			}
+			results = [];
+		}
 	}catch(e){
 		console.log("Write file error : " + e);
 	}
@@ -34,7 +39,6 @@ var websites = getWebsites();
 var results = [];
 var linkNum = 0;
 var links = [];
-var visited = [];
 
 //Function to go through the first set of URLs
 function run(){
@@ -80,7 +84,7 @@ function run(){
 		    					if(this.prefilter(branch)){
 		    						var sso = this.hasSSO(branch);
 		    						var link = this.hasLinks(branch);
-		    						if(sso) candidates.push(sso);
+		    						if(sso && candidates.indexOf(sso) == -1) candidates.push(sso);
 		    						if(link) sites.unshift(link);
 		    					}
 		    				}
@@ -107,13 +111,14 @@ function run(){
 	                var e5 = /recovery/gi; var e6 = /forgot/gi; var e7 = /help/gi; var e8 = /promo[tion]*/gi; 
 	                var e9 = /privacy[\-\s]*[policy]*/gi; var e10 = /sports/gi; var e11 = /story/gi; var e12 = /campaign/gi;
 	                var e13 = /questions/gi; var e14 = /store/gi; var e15 = /itunes/gi; var e16 = /play\.google/gi;
+	                var e17 = /graph\.facebook/gi;
 
 	                if(inputstr.match(e0) == null && inputstr.match(e1) == null  && inputstr.match(e2) == null && 
 	                    inputstr.match(e3) == null && inputstr.match(e4) == null && inputstr.match(e5) == null &&
 	                    inputstr.match(e6) == null && inputstr.match(e7) == null && inputstr.match(e8) == null &&
 	                    inputstr.match(e9) == null && inputstr.match(e10) == null && inputstr.match(e11) == null &&
 	                    inputstr.match(e12) == null && inputstr.match(e13) == null && inputstr.match(e14) == null
-	                    && inputstr.match(e15) == null && inputstr.match(e16) == null){
+	                    && inputstr.match(e15) == null && inputstr.match(e16) == null && inputstr.match(e17) == null){
 	                    if(inputstr.match(l1) != null || inputstr.match(l2) != null || 
 	                    	inputstr.match(l3) != null || inputstr.match(l4) != null || inputstr.match(l5) != null){
 	                        return true;
@@ -196,7 +201,7 @@ function run(){
 						{"site" : "etsy", "regex" : /etsy/gi, "url" : ["https://www.etsy.com/oauth"]}, 
 						{"site" : "evernote", "regex" : /evernote/gi, "url" : ["https://sandbox.evernote.com/OAuth.action"]},  
 						{"site" : "yelp", "regex" : /yelp/gi, "url" : ["https://api.yelp.com/oauth2"]},  
-						{"site" : "facebook", "regex" : /facebook/gi, "url" : ["fb-login-button", "https://www.facebook.com/v2.0/dialog/oauth",  "https://www.facebook.com/v2.3/dialog/oauth"]},
+						{"site" : "facebook", "regex" : /facebook/gi, "url" : ["fb-login-button", "https://www.facebook.com/v2.0/dialog/oauth",  "https://www.facebook.com/v2.3/dialog/oauth", "https://graph.facebook.com/v2.8/oauth/authorize"]},
 						{"site" : "dropbox", "regex" : /dropbox/gi, "url" : ["https://www.dropbox.com/1/oauth2/authorize", "https://www.dropbox.com/1/oauth/authorize"]}, 
 						{"site" : "twitch", "regex" : /twitch/gi, "url" : ["https://api.twitch.tv/kraken/oauth2/authorize"]},
 						{"site" : "stripe", "regex" : /stripe/gi, "url" : ["https://connect.stripe.com/oauth/authorize"]},
@@ -241,7 +246,7 @@ function run(){
 		                    }else{
 		                        if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
 		                            inputstr.match(k5) != null || inputstr.match(k6) != null){
-		                            return each.site;
+		                            return each.site+', edgecase';
 		                        }
 		                    }
 		                }
@@ -297,11 +302,11 @@ function run(){
 		  .then(function (result) {
 		  	if(result){
 		  		ssoInfo.sso = result.candidates;
-		  		if(ssoInfo.sso.length > 0) results.push(ssoInfo);
+		  		if(ssoInfo['sso'].length > 0) results.push(ssoInfo);
 		  		links = links.concat(result.links);
+		  		if(linkNum > 500) write(results);
+		  		rerun(links);
 		  	}
-		  	if(linkNum > 500) write(results);
-		  	rerun(links);
 		  })
 		  .catch(function (error) {
 		    console.error('Search failed:', error);
@@ -352,7 +357,7 @@ function rerun(links){
 		    				if(!(branch.attributes == null || branch.nodeName == 'SCRIPT' || branch.nodeName == 'EMBED')){
 		    					if(this.prefilter(branch)){
 		    						var sso = this.hasSSO(branch);
-		    						if(sso) candidates.push(sso);
+		    						if(sso && candidates.indexOf(sso) == -1) candidates.push(sso);
 		    					}
 		    				}
 		    			}
@@ -423,7 +428,7 @@ function rerun(links){
 						{"site" : "etsy", "regex" : /etsy/gi, "url" : ["https://www.etsy.com/oauth"]}, 
 						{"site" : "evernote", "regex" : /evernote/gi, "url" : ["https://sandbox.evernote.com/OAuth.action"]},  
 						{"site" : "yelp", "regex" : /yelp/gi, "url" : ["https://api.yelp.com/oauth2"]},  
-						{"site" : "facebook", "regex" : /facebook/gi, "url" : ["fb-login-button", "https://www.facebook.com/v2.0/dialog/oauth",  "https://www.facebook.com/v2.3/dialog/oauth"]},
+						{"site" : "facebook", "regex" : /facebook/gi, "url" : ["fb-login-button", "https://www.facebook.com/v2.0/dialog/oauth",  "https://www.facebook.com/v2.3/dialog/oauth", "https://graph.facebook.com/v2.8/oauth/authorize"]},
 						{"site" : "dropbox", "regex" : /dropbox/gi, "url" : ["https://www.dropbox.com/1/oauth2/authorize", "https://www.dropbox.com/1/oauth/authorize"]}, 
 						{"site" : "twitch", "regex" : /twitch/gi, "url" : ["https://api.twitch.tv/kraken/oauth2/authorize"]},
 						{"site" : "stripe", "regex" : /stripe/gi, "url" : ["https://connect.stripe.com/oauth/authorize"]},
@@ -468,7 +473,7 @@ function rerun(links){
 		                    }else{
 		                        if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
 		                            inputstr.match(k5) != null || inputstr.match(k6) != null){
-		                            return each.site;
+		                            return each.site+', edgecase';
 		                        }
 		                    }
 		                }
@@ -481,7 +486,7 @@ function rerun(links){
 		  .then(function (result) {
 		  	if(result){
 		  		ssoInfo.sso = result.candidates;
-		  		if(ssoInfo.sso.length > 0) results.push(ssoInfo);
+		  		if(ssoInfo['sso'].length > 0) results.push(ssoInfo);
 		  	}
 		  })
 		  .catch(function (error) {
