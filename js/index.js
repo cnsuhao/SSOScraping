@@ -6,7 +6,10 @@ var Nightmare = require('nightmare');
 // Write or read from file functions
 function write(data){
 	try{
-		fs.writeFile('../data/log.txt', JSON.stringify(data), function(isDone){
+		data = makeObjectsUnique(data);
+		console.log("data")
+		console.log(data);
+		fs.appendFile('../data/log.txt', JSON.stringify(data), function(isDone){
 
 		});
 	}catch(e){
@@ -29,7 +32,7 @@ function getWebsites(){
 
 //Variable declaration
 // var websites = getWebsites();
-var websites = ["https://www.vk.com"]
+var websites = ["https://www.stackoverflow.com"]
 var results = [];
 var linkNum = 0;
 var links = [];
@@ -300,7 +303,6 @@ function run(){
 		  		console.log(links);
 		  	}
 		  	write(results);
-		  	console.log(results);
 		  	rerun(links);
 		  })
 		  .catch(function (error) {
@@ -485,7 +487,6 @@ function rerun(links){
 		  		if(ssoInfo.sso.length > 0) results.push(ssoInfo);
 		  	}
 		  	write(results);
-		  	console.log(results);
 		  })
 		  .catch(function (error) {
 		    console.error('Search failed:', error);
@@ -493,4 +494,27 @@ function rerun(links){
 	}
 }
 
+function makeObjectsUnique(list){
+	var i; var newList = [];
+	Array.prototype.contains = function(v){
+	    for(var i = 0; i < this.length; i++) {
+	        if(this[i] === v) return true;
+	    }
+	    return false;
+	};
+	Array.prototype.unique = function(){
+	    var arr = [];
+	    for(var i = 0; i < this.length; i++) {
+	        if(!arr.contains(this[i])) {
+	            arr.push(this[i]);
+	        }
+	    }
+	    return arr; 
+	};
+   	newList = list.unique();
+    return newList;
+}
+
+
+//Function call to start work
 run();
