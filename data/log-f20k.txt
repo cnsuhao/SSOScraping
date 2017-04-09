@@ -48,4 +48,65 @@
 {"parent":"https://google.pl","url":"https://accounts.google.com/ServiceLogin?hl=pl&passive=true&continue=https://www.google.pl/","sso":["google, edgecase"]}
 {"parent":"none","url":"https://amazon.de","sso":["amazon, openid"]}
 {"parent":"https://amazon.de","url":"https://www.amazon.de/ap/register?openid.return_to=https%3A%2F%2Fwww.amazon.de%2Fref%3Dgw_sgn_ib%2F260-1831195-2377320&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=deflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&","sso":["amazon, openid"]}
-{"parent":"https://amazon.de","url":"https://www.amazon.de/ap/register?openid.return_to=https%3A%2F%2Fwww.amazon.de%2Fref%3Dgw_sgn_ib%2F260-1831195-2377320&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=deflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&","sso":["amazon, openid"]}
+{"parent":"https://amazon.de","url":"https://www.amazon.de/ap/register?openid.return_to=https%3A%2F%2Fwww.amazon.de%2Fref%3Dgw_sgn_ib%2F260-1831195-2377320&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=deflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&","sso":["amazon, openid"]}{"parent":"none","url":"https://amazon.in","sso":["amazon, openid"]}
+{"parent":"https://amazon.in","url":"https://www.amazon.in/ap/register?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fref%3Dgw_sgn_ib%2F260-8552702-6010003&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&","sso":["amazon, openid"]}
+{"parent":"https://amazon.in","url":"https://www.amazon.in/ap/register?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fref%3Dgw_sgn_ib%2F260-8552702-6010003&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&","sso":["amazon, openid"]}
+{"parent":"https://google.com.eg","url":"https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://www.google.com.eg/","sso":["google, edgecase"]}
+{"parent":"https://google.co.th","url":"https://accounts.google.com/ServiceLogin?hl=th&passive=true&continue=https://www.google.co.th/","sso":["google, edgecase"]}
+{"parent":"https://google.com.sa","url":"https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://www.google.com.sa/","sso":["google, edgecase"]}
+{"parent":"https://google.com.pk","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.pk/","sso":["google, edgecase"]}
+{"parent":"https://google.com.ar","url":"https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https://www.google.com.ar/","sso":["google, edgecase"]}
+{"parent":"https://blogger.com","url":"https://www.blogger.com/go/signin","sso":["google, edgecase"]}
+{"parent":"https://google.nl","url":"https://accounts.google.com/ServiceLogin?hl=nl&passive=true&continue=https://www.google.nl/","sso":["google, edgecase"]}
+{"parent":"https://google.co.ve","url":"https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https://www.google.co.ve/","sso":["google, edgecase"]}
+{"parent":"https://google.co.za","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.co.za/","sso":["google, edgecase"]}
+{"parent":"https://google.gr","url":"https://accounts.google.com/ServiceLogin?hl=el&passive=true&continue=https://www.google.gr/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://mediafire.com","sso":["twitter, edgecase"]}
+{"parent":"https://mediafire.com","url":"https://www.mediafire.com/","sso":["twitter, edgecase"]}
+{"parent":"https://google.com.co","url":"https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https://www.google.com.co/","sso":["google, edgecase"]}
+{"parent":"https://google.com.ph","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.ph/","sso":["google, edgecase"]}
+{"parent":"https://google.com.vn","url":"https://accounts.google.com/ServiceLogin?hl=vi&passive=true&continue=https://www.google.com.vn/","sso":["google, edgecase"]}
+{"parent":"https://google.be","url":"https://accounts.google.com/ServiceLogin?hl=nl&passive=true&continue=https://www.google.be/","sso":["google, edgecase"]}
+{"parent":"https://google.com.ua","url":"https://accounts.google.com/ServiceLogin?hl=uk&passive=true&continue=https://www.google.com.ua/","sso":["google, edgecase"]}
+{"parent":"https://google.se","url":"https://accounts.google.com/ServiceLogin?hl=sv&passive=true&continue=https://www.google.se/","sso":["google, edgecase"]}
+{"parent":"https://google.ro","url":"https://accounts.google.com/ServiceLogin?hl=ro&passive=true&continue=https://www.google.ro/","sso":["google, edgecase"]}
+{"parent":"https://blogspot.co.id","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/","sso":["google, edgecase"]}
+{"parent":"https://google.az","url":"https://accounts.google.com/ServiceLogin?hl=az&passive=true&continue=https://www.google.az/","sso":["google, edgecase"]}
+{"parent":"https://gfycat.com","url":"https://gfycat.com/signup","sso":["facebook, edgecase"]}
+{"parent":"https://google.at","url":"https://accounts.google.com/ServiceLogin?hl=de&passive=true&continue=https://www.google.at/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://amazon.fr","sso":["amazon, openid"]}
+{"parent":"https://amazon.fr","url":"https://www.amazon.fr/ap/register?openid.return_to=https%3A%2F%2Fwww.amazon.fr%2Fref%3Dgw_sgn_ib%2F262-9994843-7540030&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=frflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&","sso":["amazon, openid"]}
+{"parent":"https://amazon.fr","url":"https://www.amazon.fr/ap/register?openid.return_to=https%3A%2F%2Fwww.amazon.fr%2Fref%3Dgw_sgn_ib%2F262-9994843-7540030&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=frflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&","sso":["amazon, openid"]}
+{"parent":"https://google.com.ng","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.ng/","sso":["google, edgecase"]}
+{"parent":"https://google.com.pe","url":"https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https://www.google.com.pe/","sso":["google, edgecase"]}
+{"parent":"https://google.ch","url":"https://accounts.google.com/ServiceLogin?hl=de&passive=true&continue=https://www.google.ch/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://amazon.it","sso":["amazon, openid"]}
+{"parent":"https://amazon.it","url":"https://www.amazon.it/ap/register?openid.return_to=https%3A%2F%2Fwww.amazon.it%2Fref%3Dgw_sgn_ib%2F262-6057675-1398662&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=itflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&","sso":["amazon, openid"]}
+{"parent":"https://amazon.it","url":"https://www.amazon.it/ap/register?openid.return_to=https%3A%2F%2Fwww.amazon.it%2Fref%3Dgw_sgn_ib%2F262-6057675-1398662&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=itflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&","sso":["amazon, openid"]}
+{"parent":"https://google.cz","url":"https://accounts.google.com/ServiceLogin?hl=cs&passive=true&continue=https://www.google.cz/","sso":["google, edgecase"]}
+{"parent":"https://prestoris.com","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/%3Fgws_rd%3Dssl","sso":["google, edgecase"]}
+{"parent":"https://google.co.ao","url":"https://accounts.google.com/ServiceLogin?hl=pt-PT&passive=true&continue=https://www.google.co.ao/","sso":["google, edgecase"]}
+{"parent":"https://google.cl","url":"https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https://www.google.cl/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://livejournal.com","sso":["facebook, edgecase","twitter, edgecase"]}
+{"parent":"https://livejournal.com","url":"http://www.livejournal.com/login.bml","sso":["facebook, edgecase","twitter, edgecase"]}
+{"parent":"https://livejournal.com","url":"http://www.livejournal.com/login.bml","sso":["facebook, edgecase","twitter, edgecase"]}
+{"parent":"https://google.ae","url":"https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://www.google.ae/","sso":["google, edgecase"]}
+{"parent":"https://google.dz","url":"https://accounts.google.com/ServiceLogin?hl=fr&passive=true&continue=https://www.google.dz/","sso":["google, edgecase"]}
+{"parent":"https://google.pt","url":"https://accounts.google.com/ServiceLogin?hl=pt-PT&passive=true&continue=https://www.google.pt/","sso":["google, edgecase"]}
+{"parent":"https://aol.com","url":"https://my.screenname.aol.com/_cqr/login/login.psp?sitedomain=www.aol.com&lang=en&locale=us&authLev=0&siteState=https%3A%2F%2Fwww.aol.com%2F","sso":["twitter, edgecase","google, edgecase","aol, edgecase","yahoo, edgecase"]}
+{"parent":"https://blogspot.in","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/","sso":["google, edgecase"]}
+{"parent":"https://google.no","url":"https://accounts.google.com/ServiceLogin?hl=no&passive=true&continue=https://www.google.no/","sso":["google, edgecase"]}
+{"parent":"https://google.hu","url":"https://accounts.google.com/ServiceLogin?hl=hu&passive=true&continue=https://www.google.hu/","sso":["google, edgecase"]}
+{"parent":"https://google.ie","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.ie/","sso":["google, edgecase"]}
+{"parent":"https://google.co.il","url":"https://accounts.google.com/ServiceLogin?hl=iw&passive=true&continue=https://www.google.co.il/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://taringa.net","sso":["facebook, edgecase"]}
+{"parent":"https://taringa.net","url":"https://www.taringa.net/registro","sso":["facebook, edgecase"]}
+{"parent":"https://taringa.net","url":"https://www.taringa.net/registro","sso":["facebook, edgecase"]}
+{"parent":"https://taringa.net","url":"https://www.taringa.net/registro","sso":["facebook, edgecase"]}
+{"parent":"https://taringa.net","url":"https://www.taringa.net/registro","sso":["facebook, edgecase"]}
+{"parent":"none","url":"https://amazon.es","sso":["amazon, openid"]}
+{"parent":"https://amazon.es","url":"https://www.amazon.es/ap/register?openid.return_to=https%3A%2F%2Fwww.amazon.es%2Fref%3Dgw_sgn_ib%2F258-6439503-0700946&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=esflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&","sso":["amazon, openid"]}
+{"parent":"https://amazon.es","url":"https://www.amazon.es/ap/register?openid.return_to=https%3A%2F%2Fwww.amazon.es%2Fref%3Dgw_sgn_ib%2F258-6439503-0700946&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=esflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&","sso":["amazon, openid"]}
+{"parent":"none","url":"https://kaskus.co.id","sso":["twitter, edgecase"]}
+{"parent":"https://kaskus.co.id","url":"https://www.kaskus.co.id/user/login","sso":["twitter, edgecase"]}
+{"parent":"https://kaskus.co.id","url":"https://www.kaskus.co.id/user/login","sso":["twitter, edgecase"]}
