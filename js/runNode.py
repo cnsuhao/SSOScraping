@@ -2,8 +2,8 @@ import subprocess
 import csv
 import os
 
-os.environ["DISPLAY"]=":1"
-xvfb = subprocess.Popen(['Xvfb', ':1'])
+os.environ["DISPLAY"]=":99"
+xvfb = subprocess.Popen(['Xvfb', ':99'])
 websites = []
 with open('../data/top-20k.csv') as csvFile:
     reader = csv.reader(csvFile, delimiter=",")
