@@ -1,8 +1,8 @@
 import subprocess
 import csv
-import os
+# import os
 
-os.environ["DISPLAY"]=":3"
+# os.environ["DISPLAY"]=":3"
 websites = []
 with open('../data/top-20k.csv') as csvFile:
     reader = csv.reader(csvFile, delimiter=",")
