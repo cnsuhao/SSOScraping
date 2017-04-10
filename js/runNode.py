@@ -12,7 +12,7 @@ with open('../data/top-20k.csv') as csvFile:
     csvFile.close()
 
 for sitenum in range(len(websites)):
-	if(sitenum < 685): continue
+	if(sitenum < 872): continue
 	site = "https://www."+websites[sitenum]
 	print site
 	cmd = "DEBUG=nightmare:actions* node index.js "+site
