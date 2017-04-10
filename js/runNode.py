@@ -12,8 +12,8 @@ with open('../data/top-20k.csv') as csvFile:
     csvFile.close()
 
 for sitenum in range(len(websites)):
-	if(sitenum < 326): continue
-	site = "https://"+websites[sitenum]
+	if(sitenum < 685): continue
+	site = "https://www."+websites[sitenum]
 	print site
 	cmd = "DEBUG=nightmare* node index.js "+site
 	subprocess.call(cmd, shell=True)
