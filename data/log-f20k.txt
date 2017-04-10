@@ -110,3 +110,52 @@
 {"parent":"none","url":"https://kaskus.co.id","sso":["twitter, edgecase"]}
 {"parent":"https://kaskus.co.id","url":"https://www.kaskus.co.id/user/login","sso":["twitter, edgecase"]}
 {"parent":"https://kaskus.co.id","url":"https://www.kaskus.co.id/user/login","sso":["twitter, edgecase"]}
+{"parent":"none","url":"https://goodreads.com","sso":["facebook, edgecase","twitter, edgecase","google, edgecase","amazon, edgecase"]}
+{"parent":"https://goodreads.com","url":"https://www.goodreads.com/signup","sso":["goodreads, edgecase"]}
+{"parent":"none","url":"https://evernote.com","sso":["google, openid"]}
+{"parent":"https://evernote.com","url":"https://www.evernote.com/Home.action?offer=www_menu","sso":["google, openid"]}
+{"parent":"https://evernote.com","url":"https://www.evernote.com/Home.action?offer=www_menu","sso":["google, openid"]}
+{"parent":"https://google.fi","url":"https://accounts.google.com/ServiceLogin?hl=fi&passive=true&continue=https://www.google.fi/","sso":["google, edgecase"]}
+{"parent":"https://hatena.ne.jp","url":"https://www.hatena.ne.jp/register?via=200124","sso":["google, oauth"]}
+{"parent":"https://hatena.ne.jp","url":"https://www.hatena.ne.jp/register?via=200124","sso":["google, oauth"]}
+{"parent":"https://hatena.ne.jp","url":"https://www.hatena.ne.jp/register?via=200124","sso":["google, oauth"]}
+{"parent":"https://google.sk","url":"https://accounts.google.com/ServiceLogin?hl=sk&passive=true&continue=https://www.google.sk/","sso":["google, edgecase"]}
+{"parent":"https://blogspot.jp","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://amazon.ca","sso":["amazon, openid"]}
+{"parent":"https://amazon.ca","url":"https://www.amazon.ca/ap/register?openid.return_to=https%3A%2F%2Fwww.amazon.ca%2Fref%3Dgw_sgn_ib%2F139-1764678-2995056&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=caflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&","sso":["amazon, openid"]}
+{"parent":"https://amazon.ca","url":"https://www.amazon.ca/ap/register?openid.return_to=https%3A%2F%2Fwww.amazon.ca%2Fref%3Dgw_sgn_ib%2F139-1764678-2995056&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=caflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&","sso":["amazon, openid"]}
+{"parent":"https://google.kz","url":"https://accounts.google.com/ServiceLogin?hl=kk&passive=true&continue=https://www.google.kz/","sso":["google, edgecase"]}
+{"parent":"https://google.com.kw","url":"https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://www.google.com.kw/","sso":["google, edgecase"]}
+{"parent":"https://blogspot.mx","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/","sso":["google, edgecase"]}
+{"parent":"https://google.bg","url":"https://accounts.google.com/ServiceLogin?hl=bg&passive=true&continue=https://www.google.bg/","sso":["google, edgecase"]}
+{"parent":"https://tube8.com","url":"http://www.pornhubpremium.com/premium_signup?type=NetworkBar_T8&compliance=1","sso":["box, edgecase"]}
+{"parent":"https://pixabay.com","url":"https://pixabay.com/en/accounts/register/","sso":["google, oauth","microsoft, oauth"]}
+{"parent":"https://pixabay.com","url":"https://pixabay.com/en/accounts/register/","sso":["google, oauth","microsoft, oauth"]}
+{"parent":"none","url":"https://asana.com","sso":["google, edgecase"]}
+{"parent":"https://asana.com","url":"https://asana.com/signup","sso":["google, edgecase"]}
+{"parent":"https://asana.com","url":"https://asana.com/signup","sso":["google, edgecase"]}
+{"parent":"https://hubspot.com","url":"https://login.hubspot.com/login/","sso":["google, oauth"]}
+{"parent":"none","url":"https://addthis.com","sso":["google, edgecase","facebook, edgecase"]}
+{"parent":"https://addthis.com","url":"https://www.addthis.com/register?next=%2Fdashboard%23tool-config","sso":["google, edgecase","facebook, edgecase","twitter, edgecase"]}
+{"parent":"none","url":"https://amazon.cn","sso":["amazon, openid"]}
+{"parent":"https://google.co.nz","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.co.nz/","sso":["google, edgecase"]}
+{"parent":"https://google.lk","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.lk/","sso":["google, edgecase"]}
+{"parent":"https://google.rs","url":"https://accounts.google.com/ServiceLogin?hl=sr&passive=true&continue=https://www.google.rs/","sso":["google, edgecase"]}
+{"parent":"https://pantip.com","url":"https://pantip.com/login","sso":["facebook, oauth","google, oauth"]}
+{"parent":"https://surveymonkey.com","url":"https://www.surveymonkey.com/user/sign-in/","sso":["google, oauth","facebook, oauth"]}
+{"parent":"https://hootsuite.com","url":"https://hootsuite.com/plans","sso":["twitter, edgecase","google, openid","yahoo, openid","mixi, openid"]}
+{"parent":"https://google.com.do","url":"https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https://www.google.com.do/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://meetup.com","sso":["google, oauth"]}
+{"parent":"https://meetup.com","url":"https://secure.meetup.com/login/","sso":["google, oauth"]}
+{"parent":"https://meetup.com","url":"https://secure.meetup.com/login/","sso":["google, oauth"]}
+{"parent":"https://meetup.com","url":"https://secure.meetup.com/login/","sso":["google, oauth"]}
+{"parent":"https://meetup.com","url":"https://secure.meetup.com/login/","sso":["google, oauth"]}
+{"parent":"https://google.by","url":"https://accounts.google.com/ServiceLogin?hl=be&passive=true&continue=https://www.google.by/","sso":["google, edgecase"]}
+{"parent":"https://clotraiam.website","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/%3Fgws_rd%3Dssl","sso":["google, edgecase"]}
+{"parent":"https://goo.gl","url":"https://accounts.google.com/ServiceLogin?service=urlshortener&continue=https://goo.gl/?authed%3D1&followup=https://goo.gl/?authed%3D1&passive=1209600","sso":["google, edgecase"]}
+{"parent":"https://google.com.ly","url":"https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://www.google.com.ly/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://olx.ua","sso":["vk, oauth"]}
+{"parent":"https://olx.ua","url":"https://www.olx.ua/account/facebookmerge/","sso":["vk, oauth"]}
+{"parent":"https://olx.ua","url":"https://www.olx.ua/account/facebookmerge/","sso":["vk, oauth"]}
+{"parent":"https://olx.ua","url":"https://www.olx.ua/account/facebookmerge/","sso":["vk, oauth"]}
+{"parent":"https://olx.ua","url":"https://www.olx.ua/account/facebookmerge/","sso":["vk, oauth"]}
