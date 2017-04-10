@@ -159,3 +159,33 @@
 {"parent":"https://olx.ua","url":"https://www.olx.ua/account/facebookmerge/","sso":["vk, oauth"]}
 {"parent":"https://olx.ua","url":"https://www.olx.ua/account/facebookmerge/","sso":["vk, oauth"]}
 {"parent":"https://olx.ua","url":"https://www.olx.ua/account/facebookmerge/","sso":["vk, oauth"]}
+{"parent":"https://www.google.hr","url":"https://accounts.google.com/ServiceLogin?hl=hr&passive=true&continue=https://www.google.hr/","sso":["google, edgecase"]}
+{"parent":"https://www.google.tn","url":"https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://www.google.tn/","sso":["google, edgecase"]}
+{"parent":"https://www.fanfiction.net","url":"https://www.fanfiction.net/login.php","sso":["google, oauth","amazon, edgecase"]}
+{"parent":"https://www.fanfiction.net","url":"https://www.fanfiction.net/login.php","sso":["google, oauth","amazon, edgecase"]}
+{"parent":"https://www.rapidgator.net","url":"https://rapidgator.net/auth/login","sso":["google, oauth"]}
+{"parent":"https://www.bitbucket.org","url":"https://bitbucket.org/account/signup/?plan=5_users","sso":["google, edgecase","aol, openid"]}
+{"parent":"https://www.squarespace.com","url":"https://www.squarespace.com/login","sso":["google, edgecase"]}
+{"parent":"https://www.superuser.com","url":"https://superuser.com/users/signup?ssrc=head&returnurl=https%3a%2f%2fsuperuser.com%2f","sso":["google, oauth","facebook, oauth","yahoo, openid","aol, openid"]}
+{"parent":"https://www.superuser.com","url":"https://superuser.com/users/signup?ssrc=head&returnurl=https%3a%2f%2fsuperuser.com%2f","sso":["google, oauth","facebook, oauth","yahoo, openid","aol, openid"]}
+{"parent":"https://www.superuser.com","url":"https://superuser.com/users/signup?ssrc=head&returnurl=https%3a%2f%2fsuperuser.com%2f","sso":["google, oauth","facebook, oauth","yahoo, openid","aol, openid"]}
+{"parent":"https://www.superuser.com","url":"https://superuser.com/users/signup?ssrc=head&returnurl=https%3a%2f%2fsuperuser.com%2f","sso":["google, oauth","facebook, oauth","yahoo, openid","aol, openid"]}
+{"parent":"https://www.olx.in","url":"https://www.olx.in/account/register/","sso":["google, oauth"]}
+{"parent":"https://www.webex.com","url":"https://www.webex.com/go/footer_signup","sso":["box, edgecase"]}
+{"parent":"none","url":"https://www.biblegateway.com","sso":["facebook, edgecase"]}
+{"parent":"https://www.biblegateway.com","url":"https://www.biblegateway.com/login/","sso":["facebook, edgecase"]}
+{"parent":"https://www.biblegateway.com","url":"https://www.biblegateway.com/login/","sso":["facebook, edgecase"]}
+{"parent":"https://www.biblegateway.com","url":"https://www.biblegateway.com/login/","sso":["facebook, edgecase"]}
+{"parent":"https://www.google.com.ec","url":"https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https://www.google.com.ec/","sso":["google, edgecase"]}
+{"parent":"https://www.voyeurhit.com","url":"http://voyeurhit.com/login.php","sso":["microsoft, oauth"]}
+{"parent":"https://www.google.com.et","url":"https://accounts.google.com/ServiceLogin?hl=am&passive=true&continue=https://www.google.com.et/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.mangvieclam.com","sso":["box, edgecase"]}
+{"parent":"https://www.mangvieclam.com","url":"https://mangvieclam.com/login","sso":["box, edgecase"]}
+{"parent":"https://www.mangvieclam.com","url":"https://mangvieclam.com/login","sso":["box, edgecase"]}
+{"parent":"https://www.mangvieclam.com","url":"https://mangvieclam.com/login","sso":["box, edgecase"]}
+{"parent":"https://www.mangvieclam.com","url":"https://mangvieclam.com/login","sso":["box, edgecase"]}
+{"parent":"https://www.askubuntu.com","url":"https://askubuntu.com/users/signup?ssrc=head&returnurl=http%3a%2f%2faskubuntu.com%2f","sso":["google, oauth","facebook, oauth","yahoo, openid","aol, openid"]}
+{"parent":"https://www.askubuntu.com","url":"https://askubuntu.com/users/signup?ssrc=head&returnurl=http%3a%2f%2faskubuntu.com%2f","sso":["google, oauth","facebook, oauth","yahoo, openid","aol, openid"]}
+{"parent":"https://www.askubuntu.com","url":"https://askubuntu.com/users/signup?ssrc=head&returnurl=http%3a%2f%2faskubuntu.com%2f","sso":["google, oauth","facebook, oauth","yahoo, openid","aol, openid"]}
+{"parent":"https://www.askubuntu.com","url":"https://askubuntu.com/users/signup?ssrc=head&returnurl=http%3a%2f%2faskubuntu.com%2f","sso":["google, oauth","facebook, oauth","yahoo, openid","aol, openid"]}
+{"parent":"https://www.google.iq","url":"https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://www.google.iq/","sso":["google, edgecase"]}
