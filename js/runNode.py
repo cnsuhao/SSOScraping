@@ -15,5 +15,5 @@ for sitenum in range(len(websites)):
 	if(sitenum < 685): continue
 	site = "https://www."+websites[sitenum]
 	print site
-	cmd = "DEBUG=nightmare* node index.js "+site
+	cmd = "DEBUG=nightmare:actions* node index.js "+site
 	subprocess.call(cmd, shell=True)
