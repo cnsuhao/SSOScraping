@@ -263,3 +263,4 @@
 {"parent":"none","url":"https://www.gleam.io","sso":["facebook, edgecase"]}
 {"parent":"https://www.gleam.io","url":"https://www.gleam.io/signup","sso":["facebook, edgecase"]}
 {"parent":"https://www.gleam.io","url":"https://www.gleam.io/signup","sso":["facebook, edgecase"]}
+{"parent":"https://www.primevideo.com","url":"https://www.primevideo.com/auth-redirect/ref=av_auth_ubid/146-2891800-2473100?_encoding=UTF8&refTag=atv_primeLPsignin&returnUrl=%2Fref%3Ddv_web_auth_return%2F146-2891800-2473100&signin=1","sso":["amazon, openid"]}
