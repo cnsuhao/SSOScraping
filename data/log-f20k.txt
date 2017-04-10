@@ -189,3 +189,77 @@
 {"parent":"https://www.askubuntu.com","url":"https://askubuntu.com/users/signup?ssrc=head&returnurl=http%3a%2f%2faskubuntu.com%2f","sso":["google, oauth","facebook, oauth","yahoo, openid","aol, openid"]}
 {"parent":"https://www.askubuntu.com","url":"https://askubuntu.com/users/signup?ssrc=head&returnurl=http%3a%2f%2faskubuntu.com%2f","sso":["google, oauth","facebook, oauth","yahoo, openid","aol, openid"]}
 {"parent":"https://www.google.iq","url":"https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://www.google.iq/","sso":["google, edgecase"]}
+{"parent":"https://www.sporx.com","url":"https://www.sporx.com/_login","sso":["facebook, edgecase"]}
+{"parent":"https://www.sporx.com","url":"https://www.sporx.com/_login","sso":["facebook, edgecase"]}
+{"parent":"https://www.google.lt","url":"https://accounts.google.com/ServiceLogin?hl=lt&passive=true&continue=https://www.google.lt/","sso":["google, edgecase"]}
+{"parent":"https://www.google.com.mm","url":"https://accounts.google.com/ServiceLogin?hl=my&passive=true&continue=https://www.google.com.mm/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.gutefrage.net","sso":["facebook, oauth"]}
+{"parent":"https://www.gutefrage.net","url":"https://www.gutefrage.net/nutzer_hinzufuegen","sso":["facebook, oauth"]}
+{"parent":"https://www.gutefrage.net","url":"https://www.gutefrage.net/nutzer_hinzufuegen","sso":["facebook, oauth"]}
+{"parent":"none","url":"https://www.ancestry.com","sso":["facebook, edgecase"]}
+{"parent":"https://www.gamespot.com","url":"https://auth.gamespot.com/login/","sso":["twitter, edgecase","google, oauth"]}
+{"parent":"https://www.gamespot.com","url":"https://auth.gamespot.com/login/","sso":["twitter, edgecase","google, oauth"]}
+{"parent":"https://www.hostgator.com","url":"https://portal.hostgator.com/login","sso":["twitter, edgecase"]}
+{"parent":"https://www.hostgator.com","url":"https://portal.hostgator.com/login","sso":["twitter, edgecase"]}
+{"parent":"https://www.codepen.io","url":"https://codepen.io/login","sso":["github, edgecase","twitter, edgecase","facebook, edgecase"]}
+{"parent":"https://www.patreon.com","url":"https://www.patreon.com/signup","sso":["facebook, edgecase"]}
+{"parent":"https://www.google.si","url":"https://accounts.google.com/ServiceLogin?hl=sl&passive=true&continue=https://www.google.si/","sso":["google, edgecase"]}
+{"parent":"https://www.google.com.gt","url":"https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https://www.google.com.gt/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.basecamp.com","sso":["google, edgecase"]}
+{"parent":"https://www.basecamp.com","url":"https://basecamp.com/signup","sso":["google, edgecase"]}
+{"parent":"https://www.basecamp.com","url":"https://basecamp.com/signup","sso":["google, edgecase"]}
+{"parent":"https://www.google.com.my","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.my/","sso":["google, edgecase"]}
+{"parent":"https://www.google.com.af","url":"https://accounts.google.com/ServiceLogin?hl=ps&passive=true&continue=https://www.google.com.af/","sso":["google, edgecase"]}
+{"parent":"https://www.constantcontact.com","url":"https://www.constantcontact.com/login","sso":["paypal, openid"]}
+{"parent":"https://www.gumtree.com.au","url":"https://www.gumtree.com.au/t-login.html?registration=1","sso":["google, edgecase"]}
+{"parent":"https://www.gumtree.com.au","url":"https://www.gumtree.com.au/t-login.html?registration=1","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.debate.com.mx","sso":["twitter, edgecase"]}
+{"parent":"https://www.google.tm","url":"https://accounts.google.com/ServiceLogin?hl=tk&passive=true&continue=https://www.google.tm/","sso":["google, edgecase"]}
+{"parent":"https://www.zoom.us","url":"https://www.zoom.us/signin","sso":["google, oauth"]}
+{"parent":"https://www.zoom.us","url":"https://www.zoom.us/signin","sso":["google, oauth"]}
+{"parent":"https://www.google.com.bd","url":"https://accounts.google.com/ServiceLogin?hl=bn&passive=true&continue=https://www.google.com.bd/","sso":["google, edgecase"]}
+{"parent":"https://www.audible.com","url":"https://www.audible.com/sign-in?ie=UTF8&pf_rd_r=0DJKAE5N765DJ41GGRQ1&pf_rd_m=A2ZO8JX97D5MN9&pf_rd_t=101&pf_rd_i=anonhp&pf_rd_p=2851512662&pf_rd_s=top-0","sso":["amazon, openid"]}
+{"parent":"https://www.audible.com","url":"https://www.audible.com/sign-in?ie=UTF8&pf_rd_r=0DJKAE5N765DJ41GGRQ1&pf_rd_m=A2ZO8JX97D5MN9&pf_rd_t=101&pf_rd_i=anonhp&pf_rd_p=2851512662&pf_rd_s=top-0","sso":["amazon, openid"]}
+{"parent":"https://www.audible.com","url":"https://www.audible.com/sign-in?ie=UTF8&pf_rd_r=0DJKAE5N765DJ41GGRQ1&pf_rd_m=A2ZO8JX97D5MN9&pf_rd_t=101&pf_rd_i=anonhp&pf_rd_p=2851512662&pf_rd_s=top-0","sso":["amazon, openid"]}
+{"parent":"none","url":"https://www.miniclip.com","sso":["facebook, edgecase"]}
+{"parent":"https://www.google.com.pr","url":"https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https://www.google.com.pr/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.ficbook.net","sso":["vk, oauth"]}
+{"parent":"https://www.ficbook.net","url":"https://ficbook.net/register","sso":["vk, oauth"]}
+{"parent":"none","url":"https://www.nhadatso.com","sso":["box, edgecase"]}
+{"parent":"https://www.nhadatso.com","url":"https://nhadatso.com/register/","sso":["box, edgecase"]}
+{"parent":"https://www.nhadatso.com","url":"https://nhadatso.com/register/","sso":["box, edgecase"]}
+{"parent":"https://www.nhadatso.com","url":"https://nhadatso.com/register/","sso":["box, edgecase"]}
+{"parent":"https://www.wikispaces.com","url":"https://www.wikispaces.com/site/signin","sso":["google, openid","yahoo, openid","aol, openid"]}
+{"parent":"https://www.google.lv","url":"https://accounts.google.com/ServiceLogin?hl=lv&passive=true&continue=https://www.google.lv/","sso":["google, edgecase"]}
+{"parent":"https://www.zappos.com","url":"http://www.zappos.com/login","sso":["amazon, edgecase"]}
+{"parent":"https://www.oschina.net","url":"https://www.oschina.net/home/login?goto_page=https%3A%2F%2Fwww.oschina.net%2F","sso":["box, openid","linkedin, openid"]}
+{"parent":"https://www.flaticon.com","url":"https://profile.flaticon.com/login","sso":["twitter, edgecase"]}
+{"parent":"https://www.google.ba","url":"https://accounts.google.com/ServiceLogin?hl=bs&passive=true&continue=https://www.google.ba/","sso":["google, edgecase"]}
+{"parent":"https://www.wildberries.ru","url":"https://security.wildberries.ru/register","sso":["vk, oauth","google, oauth","instagram, oauth"]}
+{"parent":"https://www.wildberries.ru","url":"https://security.wildberries.ru/register","sso":["vk, oauth","google, oauth","instagram, oauth"]}
+{"parent":"https://www.google.com.gh","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.gh/","sso":["google, edgecase"]}
+{"parent":"https://www.gnavi.co.jp","url":"https://my.gnavi.co.jp/authority/login/?cType=gnaviall&regCnt=home01&rUrl=https%3A%2F%2Fwww.gnavi.co.jp%2F","sso":["box, edgecase"]}
+{"parent":"https://www.withgoogle.com","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.pochta.ru","sso":["passport, oauth"]}
+{"parent":"none","url":"https://www.change.org","sso":["facebook, edgecase"]}
+{"parent":"https://www.change.org","url":"https://www.change.org/login_or_join","sso":["facebook, edgecase"]}
+{"parent":"none","url":"https://www.kongregate.com","sso":["facebook, edgecase"]}
+{"parent":"https://www.serverfault.com","url":"https://serverfault.com/users/signup?ssrc=head&returnurl=http%3a%2f%2fserverfault.com%2f","sso":["google, oauth","facebook, oauth","yahoo, openid","aol, openid"]}
+{"parent":"https://www.serverfault.com","url":"https://serverfault.com/users/signup?ssrc=head&returnurl=http%3a%2f%2fserverfault.com%2f","sso":["google, oauth","facebook, oauth","yahoo, openid","aol, openid"]}
+{"parent":"https://www.serverfault.com","url":"https://serverfault.com/users/signup?ssrc=head&returnurl=http%3a%2f%2fserverfault.com%2f","sso":["google, oauth","facebook, oauth","yahoo, openid","aol, openid"]}
+{"parent":"https://www.serverfault.com","url":"https://serverfault.com/users/signup?ssrc=head&returnurl=http%3a%2f%2fserverfault.com%2f","sso":["google, oauth","facebook, oauth","yahoo, openid","aol, openid"]}
+{"parent":"https://www.google.com.sv","url":"https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https://www.google.com.sv/","sso":["google, edgecase"]}
+{"parent":"https://www.google.jo","url":"https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://www.google.jo/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.strava.com","sso":["facebook, oauth","google, oauth"]}
+{"parent":"https://www.google.com.lb","url":"https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://www.google.com.lb/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.sendspace.com","sso":["facebook, openid","twitter, openid","google, edgecase","yahoo, openid"]}
+{"parent":"https://www.sendspace.com","url":"https://www.sendspace.com/login.html","sso":["facebook, openid","twitter, openid","google, edgecase","yahoo, openid"]}
+{"parent":"https://www.sendspace.com","url":"https://www.sendspace.com/login.html","sso":["facebook, openid","twitter, openid","google, edgecase","yahoo, openid"]}
+{"parent":"https://www.att.net","url":"https://login.yahoo.com/config/login?.src=fpctx&.intl=us&.partner=sbc&.lang=en-US&.done=https://att.yahoo.com","sso":["yahoo, edgecase"]}
+{"parent":"https://www.att.net","url":"https://login.yahoo.com/config/login?.src=fpctx&.intl=us&.partner=sbc&.lang=en-US&.done=https://att.yahoo.com","sso":["yahoo, edgecase"]}
+{"parent":"https://www.att.net","url":"https://login.yahoo.com/config/login?.src=fpctx&.intl=us&.partner=sbc&.lang=en-US&.done=https://att.yahoo.com","sso":["yahoo, edgecase"]}
+{"parent":"https://www.google.com.kh","url":"https://accounts.google.com/ServiceLogin?hl=km&passive=true&continue=https://www.google.com.kh/","sso":["google, edgecase"]}
+{"parent":"https://www.csfd.cz","url":"https://www.csfd.cz/signup","sso":["facebook, oauth"]}
+{"parent":"none","url":"https://www.gleam.io","sso":["facebook, edgecase"]}
+{"parent":"https://www.gleam.io","url":"https://www.gleam.io/signup","sso":["facebook, edgecase"]}
+{"parent":"https://www.gleam.io","url":"https://www.gleam.io/signup","sso":["facebook, edgecase"]}
