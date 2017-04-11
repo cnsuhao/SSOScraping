@@ -403,3 +403,15 @@
 {"parent":"https://www.google.com.qa","sso":["google, edgecase"]}
 {"parent":"none","url":"https://www.bdupload.info","sso":["facebook, edgecase","twitter, edgecase","google, edgecase","vk, edgecase"]}
 {"parent":"https://www.bdupload.info","sso":["facebook, edgecase","twitter, edgecase","google, edgecase","vk, edgecase"]}
+{"parent":"none","url":"https://www.teratail.com","sso":["google, edgecase"]}
+{"parent":"https://www.teratail.com","url":"https://teratail.com/login/forget/input","sso":["google, edgecase"]}
+{"parent":"https://www.teratail.com","url":"https://teratail.com/login/forget/input","sso":["google, edgecase"]}
+{"parent":"https://www.teratail.com","url":"https://teratail.com/login/forget/input","sso":["google, edgecase"]}
+{"parent":"https://www.google.com.pg","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.bleepingcomputer.com","sso":["facebook, edgecase","twitter, edgecase"]}
+{"parent":"https://www.bleepingcomputer.com","url":"https://www.bleepingcomputer.com/forums/index.php?app=core&module=global&section=login&serviceClick=facebook&return=https://www.bleepingcomputer.com/","sso":["facebook, edgecase","twitter, edgecase"]}
+{"parent":"none","url":"https://www.banki.ru","sso":["google, oauth"]}
+{"parent":"https://www.banki.ru","sso":["google, oauth"]}
+{"parent":"https://www.banki.ru","sso":["google, oauth"]}
+{"parent":"https://www.klm.com","sso":["facebook, edgecase"]}
+{"parent":"none","url":"https://www.mako.co.il","sso":["facebook, edgecase"]}
