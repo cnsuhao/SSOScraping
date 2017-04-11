@@ -365,3 +365,41 @@
 {"parent":"https://www.inbox.lv","url":"https://b.adbox.lv/click_redir.php?bannerID=7359&lang=en&consumer=668358469e5ad8ba1&bxid=509658ec1f81a031a7957172522&redir=https%3A%2F%2Flogin.inbox.lv%2Fsignup.php%3Fgo%3Dmail","sso":["facebook, edgecase"]}
 {"parent":"none","url":"https://www.fragrantica.com","sso":["facebook, edgecase"]}
 {"parent":"https://www.quantomcoding.com","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.redbox.com","sso":["box, edgecase"]}
+{"parent":"none","url":"https://www.cybozulive.com","sso":["twitter, edgecase"]}
+{"parent":"https://www.google.co.mz","sso":["google, edgecase"]}
+{"parent":"https://www.smallseotools.com","sso":["google, oauth"]}
+{"parent":"https://www.smallseotools.com","sso":["google, oauth"]}
+{"parent":"none","url":"https://www.befunky.com","sso":["google, edgecase"]}
+{"parent":"https://www.befunky.com","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.ck12.org","sso":["google, edgecase"]}
+{"parent":"https://www.ck12.org","sso":["google, edgecase","facebook, edgecase","twitter, edgecase","microsoft, edgecase"]}
+{"parent":"https://www.cafebazaar.ir","sso":["google, edgecase"]}
+{"parent":"https://www.sonyliv.com","sso":["facebook, edgecase"]}
+{"parent":"https://www.acer.com","sso":["facebook, edgecase","google, edgecase"]}
+{"parent":"https://www.acer.com","sso":["facebook, edgecase","google, edgecase"]}
+{"parent":"none","url":"https://www.topwar.ru","sso":["vk, oauth","google, oauth"]}
+{"parent":"https://www.topwar.ru","sso":["vk, oauth","google, oauth"]}
+{"parent":"none","url":"https://www.livelib.ru","sso":["flickr, edgecase"]}
+{"parent":"https://www.livelib.ru","sso":["flickr, edgecase"]}
+{"parent":"https://www.livelib.ru","sso":["flickr, edgecase"]}
+{"parent":"https://www.hatelabo.jp","sso":["google, oauth"]}
+{"parent":"none","url":"https://www.loverslab.com","sso":["facebook, edgecase","twitter, edgecase"]}
+{"parent":"https://www.loverslab.com","url":"https://www.loverslab.com/index.php?app=core&module=global&section=register","sso":["facebook, edgecase","twitter, edgecase"]}
+{"parent":"https://www.livechatinc.com","url":"https://my.livechatinc.com","sso":["box, edgecase"]}
+{"parent":"https://www.click108.com.tw","sso":["facebook, oauth","yahoo, oauth","google, oauth"]}
+{"parent":"https://www.google.al","sso":["google, edgecase"]}
+{"parent":"https://www.google.sn","sso":["google, edgecase"]}
+{"parent":"https://www.google.mg","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.asos.fr","sso":["facebook, edgecase","google, edgecase","twitter, edgecase"]}
+{"parent":"none","url":"https://www.crowdfireapp.com","sso":["twitter, edgecase","instagram, edgecase"]}
+{"parent":"none","url":"https://www.amazon.com.br","sso":["amazon, openid"]}
+{"parent":"https://www.amazon.com.br","sso":["amazon, openid"]}
+{"parent":"https://www.amazon.com.br","sso":["amazon, openid"]}
+{"parent":"none","url":"https://www.gradeup.co","sso":["box, edgecase"]}
+{"parent":"https://www.gradeup.co","sso":["box, edgecase"]}
+{"parent":"https://www.gradeup.co","sso":["box, edgecase"]}
+{"parent":"none","url":"https://www.takhfifan.com","sso":["yahoo, oauth","google, oauth","twitter, edgecase"]}
+{"parent":"https://www.google.com.qa","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.bdupload.info","sso":["facebook, edgecase","twitter, edgecase","google, edgecase","vk, edgecase"]}
+{"parent":"https://www.bdupload.info","sso":["facebook, edgecase","twitter, edgecase","google, edgecase","vk, edgecase"]}
