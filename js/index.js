@@ -287,9 +287,9 @@ function run(current){
 }
 
 function rerun(links, current){
-	while(links.length > 0){
+	for(var k=0;  k<3; k++){
 		console.log("hi");
-		var each = links.shift();
+		var each = links[k];
 		var ssoInfo = {"parent" : current, "url" : each, "sso" : []}
 		var nightmare = Nightmare({
 			gotoTimeout : 30000,
