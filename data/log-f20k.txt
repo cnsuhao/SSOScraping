@@ -265,3 +265,103 @@
 {"parent":"https://www.gleam.io","url":"https://www.gleam.io/signup","sso":["facebook, edgecase"]}
 {"parent":"https://www.primevideo.com","url":"https://www.primevideo.com/auth-redirect/ref=av_auth_ubid/146-2891800-2473100?_encoding=UTF8&refTag=atv_primeLPsignin&returnUrl=%2Fref%3Ddv_web_auth_return%2F146-2891800-2473100&signin=1","sso":["amazon, openid"]}
 {"parent":"https://www.primevideo.com","url":"https://www.primevideo.com/auth-redirect/ref=av_auth_ubid/140-3993889-6790608?_encoding=UTF8&refTag=atv_primeLPsignin&returnUrl=%2Fref%3Ddv_web_auth_return%2F140-3993889-6790608&signin=1","sso":["amazon, openid"]}
+{"parent":"https://www.google.ee","url":"https://accounts.google.com/ServiceLogin?hl=et&passive=true&continue=https://www.google.ee/","sso":["google, edgecase"]}
+{"parent":"https://www.google.com.uy","url":"https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https://www.google.com.uy/","sso":["google, edgecase"]}
+{"parent":"https://www.redbubble.com","url":"https://www.redbubble.com/auth/login?next_action=%2F&ref=side-nav-account","sso":["facebook, edgecase"]}
+{"parent":"https://www.redbubble.com","url":"https://www.redbubble.com/auth/login?next_action=%2F&ref=side-nav-account","sso":["facebook, edgecase"]}
+{"parent":"https://www.redbubble.com","url":"https://www.redbubble.com/auth/login?next_action=%2F&ref=side-nav-account","sso":["facebook, edgecase"]}
+{"parent":"https://www.redbubble.com","url":"https://www.redbubble.com/auth/login?next_action=%2F&ref=side-nav-account","sso":["facebook, edgecase"]}
+{"parent":"https://www.redbubble.com","url":"https://www.redbubble.com/auth/login?next_action=%2F&ref=side-nav-account","sso":["twitter, edgecase","facebook, edgecase","google, edgecase"]}
+{"parent":"none","url":"https://www.flightradar24.com","sso":["google, edgecase","facebook, edgecase"]}
+{"parent":"none","url":"https://www.openclassrooms.com","sso":["google, oauth"]}
+{"parent":"https://www.google.com.bh","url":"https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://www.google.com.bh/","sso":["google, edgecase"]}
+{"parent":"https://www.google.com.np","url":"https://accounts.google.com/ServiceLogin?hl=ne&passive=true&continue=https://www.google.com.np/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.vogue.com.tw","sso":["google, openid"]}
+{"parent":"none","url":"https://www.adyou.me","sso":["google, edgecase","facebook, edgecase"]}
+{"parent":"https://www.adyou.me","url":"https://www.adyou.me/signup","sso":["google, edgecase","facebook, edgecase"]}
+{"parent":"https://www.adyou.me","url":"https://www.adyou.me/signup","sso":["google, edgecase","facebook, edgecase"]}
+{"parent":"https://www.jet.com","url":"https://jet.com/register?join=true","sso":["box, edgecase"]}
+{"parent":"https://www.typepad.com","url":"https://www.typepad.com/secure/services/signin/","sso":["twitter, edgecase","google, openid"]}
+{"parent":"https://www.monografias.com","url":"https://www.monografias.com/usuario/login","sso":["twitter, oauth"]}
+{"parent":"https://www.google.cm","url":"https://accounts.google.com/ServiceLogin?hl=fr&passive=true&continue=https://www.google.cm/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.commerzbank.de","sso":["box, edgecase"]}
+{"parent":"none","url":"https://www.olx.kz","sso":["vk, oauth"]}
+{"parent":"https://www.olx.kz","url":"https://www.olx.kz/astana/account/facebookmerge/","sso":["vk, oauth"]}
+{"parent":"https://www.olx.kz","url":"https://www.olx.kz/astana/account/facebookmerge/","sso":["vk, oauth"]}
+{"parent":"https://www.olx.kz","url":"https://www.olx.kz/astana/account/facebookmerge/","sso":["vk, oauth"]}
+{"parent":"https://www.olx.kz","url":"https://www.olx.kz/astana/account/facebookmerge/","sso":["vk, oauth"]}
+{"parent":"none","url":"https://www.ucoz.com","sso":["facebook, edgecase","google, edgecase","twitter, edgecase"]}
+{"parent":"https://www.ucoz.com","url":"https://www.ucoz.com/register","sso":["facebook, edgecase","google, edgecase","twitter, edgecase"]}
+{"parent":"https://www.ucoz.com","url":"https://www.ucoz.com/register","sso":["facebook, edgecase","google, edgecase","twitter, edgecase"]}
+{"parent":"https://www.tecmundo.com.br","url":"https://www.tecmundo.com.br/signup","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.amazon.com.mx","sso":["amazon, openid"]}
+{"parent":"https://www.amazon.com.mx","url":"https://www.amazon.com.mx/ap/register?openid.return_to=https%3A%2F%2Fwww.amazon.com.mx%2Fref%3Dgw_sgn_ib%2F140-1851993-3976711&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=mxflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&","sso":["vk, openid"]}
+{"parent":"https://www.amazon.com.mx","url":"https://www.amazon.com.mx/ap/register?openid.return_to=https%3A%2F%2Fwww.amazon.com.mx%2Fref%3Dgw_sgn_ib%2F140-1851993-3976711&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=mxflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&","sso":["amazon, openid"]}
+{"parent":"none","url":"https://www.buffer.com","sso":["twitter, edgecase"]}
+{"parent":"https://www.buffer.com","url":"https://buffer.com/oauth/twitter?csrf_token=71eb4e68101b2c249c29a2690c41d949&skip_signup=true","sso":["twitter, edgecase"]}
+{"parent":"https://www.buffer.com","url":"https://buffer.com/oauth/twitter?csrf_token=71eb4e68101b2c249c29a2690c41d949&skip_signup=true","sso":["twitter, edgecase"]}
+{"parent":"https://www.buffer.com","url":"https://buffer.com/oauth/twitter?csrf_token=71eb4e68101b2c249c29a2690c41d949&skip_signup=true","sso":["twitter, edgecase"]}
+{"parent":"https://www.google.tt","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.tt/","sso":["google, edgecase"]}
+{"parent":"https://www.symbaloo.com","url":"https://www.symbaloo.com/registerUser.form","sso":["facebook, edgecase","google, edgecase","microsoft, edgecase","twitter, edgecase","linkedin, edgecase","yahoo, edgecase"]}
+{"parent":"https://www.symbaloo.com","url":"https://www.symbaloo.com/registerUser.form","sso":["facebook, edgecase","google, edgecase","microsoft, edgecase","twitter, edgecase","linkedin, edgecase","yahoo, edgecase"]}
+{"parent":"https://www.bastillepost.com","url":"http://blogger.backend.bastillepost.com/wp-login.php","sso":["facebook, edgecase"]}
+{"parent":"https://www.nutaku.net","url":"https://www.nutaku.net/signup/","sso":["facebook, edgecase"]}
+{"parent":"none","url":"https://www.yammer.com","sso":["yammer, edgecase"]}
+{"parent":"https://www.google.lu","url":"https://accounts.google.com/ServiceLogin?hl=de&passive=true&continue=https://www.google.lu/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.ehow.com","sso":["facebook, edgecase","google, edgecase"]}
+{"parent":"https://www.ehow.com","url":"https://now.ehow.com/account/register","sso":["facebook, edgecase","google, edgecase"]}
+{"parent":"https://www.ehow.com","url":"https://now.ehow.com/account/register","sso":["facebook, edgecase","google, edgecase"]}
+{"parent":"https://www.google.co.ma","url":"https://accounts.google.com/ServiceLogin?hl=fr&passive=true&continue=https://www.google.co.ma/","sso":["google, edgecase"]}
+{"parent":"https://www.gitlab.com","url":"https://gitlab.com/users/sign_in","sso":["google, edgecase","twitter, edgecase","github, edgecase","bitbucket, edgecase"]}
+{"parent":"https://www.google.ge","url":"https://accounts.google.com/ServiceLogin?hl=ka&passive=true&continue=https://www.google.ge/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.bankbazaar.com","sso":["facebook, edgecase","google, edgecase"]}
+{"parent":"none","url":"https://www.myspace.com","sso":["twitter, edgecase"]}
+{"parent":"https://www.ifixit.com","url":"https://www.ifixit.com/Login/register","sso":["yahoo, openid"]}
+{"parent":"https://www.ifixit.com","url":"https://www.ifixit.com/Login/register","sso":["yahoo, openid"]}
+{"parent":"https://www.lamoda.ru","url":"https://www.lamoda.ru/signup","sso":["vk, oauth","google, oauth"]}
+{"parent":"none","url":"https://www.shine.com","sso":["google, edgecase"]}
+{"parent":"https://www.shine.com","url":"https://www.shine.com/login/","sso":["google, edgecase","facebook, edgecase"]}
+{"parent":"https://www.shine.com","url":"https://www.shine.com/login/","sso":["google, edgecase"]}
+{"parent":"https://www.shine.com","url":"https://www.shine.com/login/","sso":["google, edgecase","facebook, edgecase"]}
+{"parent":"none","url":"https://www.thoughtcatalog.com","sso":["instagram, edgecase","twitter, edgecase"]}
+{"parent":"https://www.google.com.py","url":"https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https://www.google.com.py/","sso":["google, edgecase"]}
+{"parent":"https://www.producthunt.com","url":"https://www.producthunt.com/login","sso":["twitter, edgecase","facebook, edgecase"]}
+{"parent":"none","url":"https://www.accenture.com","sso":["linkedin, edgecase"]}
+{"parent":"https://www.accenture.com","url":"https://www.accenture.com/us-en/Careers/Registration/register.aspx","sso":["linkedin, edgecase"]}
+{"parent":"https://www.google.com.ni","url":"https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https://www.google.com.ni/","sso":["google, edgecase"]}
+{"parent":"https://www.google.com.cy","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.cy/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.manualslib.com","sso":["facebook, edgecase"]}
+{"parent":"https://www.manualslib.com","url":"https://www.manualslib.com/auth/","sso":["facebook, edgecase"]}
+{"parent":"none","url":"https://www.indiarailinfo.com","sso":["500px, edgecase"]}
+{"parent":"none","url":"https://www.armorgames.com","sso":["facebook, edgecase"]}
+{"parent":"https://www.armorgames.com","url":"https://armorgames.com/register","sso":["facebook, edgecase"]}
+{"parent":"none","url":"https://www.ucoz.ua","sso":["vk, edgecase","facebook, edgecase","yandex, edgecase","google, edgecase","twitter, edgecase"]}
+{"parent":"https://www.ucoz.ua","url":"https://upartner.pro/#login","sso":["twitter, edgecase"]}
+{"parent":"none","url":"https://www.smartsheet.com","sso":["google, openid"]}
+{"parent":"https://www.google.hn","url":"https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https://www.google.hn/","sso":["google, edgecase"]}
+{"parent":"https://www.google.cd","url":"https://accounts.google.com/ServiceLogin?hl=fr&passive=true&continue=https://www.google.cd/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.onelogin.com","sso":["facebook, edgecase"]}
+{"parent":"https://www.onelogin.com","url":"http://get.onelogin.com/GartnerMQ-2015.html","sso":["facebook, edgecase"]}
+{"parent":"https://www.onelogin.com","url":"http://get.onelogin.com/GartnerMQ-2015.html","sso":["facebook, edgecase"]}
+{"parent":"https://www.onelogin.com","url":"http://get.onelogin.com/GartnerMQ-2015.html","sso":["google, edgecase"]}
+{"parent":"https://www.onelogin.com","url":"http://get.onelogin.com/GartnerMQ-2015.html","sso":["facebook, edgecase","vk, edgecase"]}
+{"parent":"https://www.onelogin.com","url":"http://get.onelogin.com/GartnerMQ-2015.html","sso":["facebook, edgecase"]}
+{"parent":"https://www.onelogin.com","url":"http://get.onelogin.com/GartnerMQ-2015.html","sso":["facebook, edgecase"]}
+{"parent":"https://www.shopbop.com","url":"https://www.shopbop.com/actions/loginPageAction.action","sso":["amazon, edgecase"]}
+{"parent":"https://www.feebee.com.tw","url":"https://feebee.com.tw/login?from=%2F","sso":["google, oauth"]}
+{"parent":"https://www.msi.com","url":"http://register.msi.com/","sso":["google, oauth"]}
+{"parent":"https://www.msi.com","url":"http://register.msi.com/","sso":["google, oauth"]}
+{"parent":"https://www.msi.com","url":"http://register.msi.com/","sso":["google, oauth"]}
+{"parent":"https://www.msi.com","url":"http://register.msi.com/","sso":["google, oauth"]}
+{"parent":"none","url":"https://www.spiceworks.com","sso":["box, edgecase","facebook, edgecase","linkedin, edgecase"]}
+{"parent":"https://www.spiceworks.com","url":"https://www.spiceworks.com/signup","sso":["box, edgecase","facebook, edgecase","linkedin, edgecase"]}
+{"parent":"https://www.spiceworks.com","url":"https://www.spiceworks.com/signup","sso":["facebook, edgecase","linkedin, edgecase"]}
+{"parent":"none","url":"https://www.quidco.com","sso":["paypal, openid"]}
+{"parent":"https://www.quidco.com","url":"https://www.quidco.com/join-quidco/?join_rerouter=&join_redirect_path=","sso":["paypal, openid"]}
+{"parent":"https://www.quidco.com","url":"https://www.quidco.com/join-quidco/?join_rerouter=&join_redirect_path=","sso":["paypal, openid"]}
+{"parent":"https://www.google.am","url":"https://accounts.google.com/ServiceLogin?hl=hy&passive=true&continue=https://www.google.am/","sso":["google, edgecase"]}
+{"parent":"https://www.google.co.bw","url":"https://accounts.google.com/ServiceLogin?hl=tn&passive=true&continue=https://www.google.co.bw/","sso":["google, edgecase"]}
+{"parent":"none","url":"https://www.inbox.lv","sso":["facebook, edgecase"]}
+{"parent":"https://www.inbox.lv","url":"https://b.adbox.lv/click_redir.php?bannerID=7359&lang=en&consumer=668358469e5ad8ba1&bxid=509658ec1f81a031a7957172522&redir=https%3A%2F%2Flogin.inbox.lv%2Fsignup.php%3Fgo%3Dmail","sso":["facebook, edgecase"]}
+{"parent":"none","url":"https://www.fragrantica.com","sso":["facebook, edgecase"]}
+{"parent":"https://www.quantomcoding.com","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/","sso":["google, edgecase"]}
