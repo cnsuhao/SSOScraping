@@ -5,8 +5,6 @@ var Nightmare = require('nightmare');
 //Variable declaration
 var visited = [];
 var num = 0;
-var links = [];
-var logs = [];
 
 //Get command line arg and run
 var sites = JSON.parse(process.argv.slice(2));
@@ -278,12 +276,12 @@ function run(array){
 				})
 				.end()
 				.then(function (result) {
-					var resObj = {"pageResults" : [], "pageTime" : {}};
+					var resObj = {"pageResults" : [], "pageTime" : {}, "links" : []};
 				  	if(result){
 				  		ssoInfo.sso = result.candidates;
 				  		if(ssoInfo['sso'].length > 0) resObj['pageResults'].push(ssoInfo);
 				  		links = links.concat(result.links);
-				  		rerun(links, link);
+				  		resObj['links'] = links;
 				  	}
 				  	var end = Date.now();
 				  	var time = {"url" : link, "timeTaken" : (end - start)+"ms"};
@@ -300,19 +298,22 @@ function run(array){
 		});
 	}, Promise.resolve([])).then(function(results){
     	console.log(results);
+    	if(results['links'].length > 0){
+    		rerun(results['links']);
+    	}
 	});
 }
 
-function rerun(links, parent){
+function rerun(links){
 	var len = 0;
 	if(links.length > 3) links = links.slice(0, 3);
 
 	
 	links.reduce(function(accumulator, url) {
-  		return accumulator.then(function(reresults) {
+  		return accumulator.then(function(results) {
 			console.log('hi');
 			var each = url;
-			var ssoInfo = {"parent" : parent, "url" : each, "sso" : []};
+			var ssoInfo = {"url" : each, "sso" : []};
 			var start = Date.now();
 			var nightmare = Nightmare({
 				gotoTimeout : 30000,
@@ -492,19 +493,19 @@ function rerun(links, parent){
 					  	var end = Date.now();
 					  	var time = {"url" : each, "timeTaken" : (end - start)+"ms"};
 					  	reruns['pageTime'] = time;
-					  	reresults.push(reruns);
-					  	return reresults;
+					  	results.push(reruns);
+					  	return results;
 					})
 					.catch(function (error) {
 						console.error('rerun');
 					   console.error('Search failed:', error);
-					   reresults.push(error);
-					   return reresults;
+					   results.push(error);
+					   return results;
 					});
 			}
 		});
-	}, Promise.resolve([])).then(function(reresults){
-    	console.log(reresults);
+	}, Promise.resolve([])).then(function(results){
+    	console.log(results);
 	});
 }
 
