@@ -3,6 +3,8 @@ import os
 import json
 import subprocess
 
+
+os.environ["DISPLAY"]=":3"
 websites = []
 
 # Read websites data from CSV file
