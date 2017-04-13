@@ -2,16 +2,16 @@
 var fs = require('fs');
 var Nightmare = require('nightmare');
 
-//Get command line arg and run
-var sites = JSON.parse(process.argv.slice(2));
-run(sites);
-
 //Variable declaration
 var visited = [];
 var num = 0;
 var results = [];
 var errors = [];
 var times = [];
+
+//Get command line arg and run
+var sites = JSON.parse(process.argv.slice(2));
+run(sites);
 
 function run(array){
 	while(array.length > 0){
@@ -193,7 +193,7 @@ function run(array){
 
 						var len = sso.length;
 						var i = 0;
-						
+
 		                while(i < len){
 			                var each = sso[i];
 			                var siteMatch = inputstr.match(each.regex);
