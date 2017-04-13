@@ -523,8 +523,11 @@ function makeUnique(list){
 
 // Write or read from file functions
 function write(data){
-	try{		
-		fs.appendFile('../data/log-summa.txt', JSON.stringify(data), function(isDone){});
+	try{
+		for(var i = 0; i < data.length; i++){
+			var each = data[i];
+			fs.appendFile('../data/log-summa.txt', JSON.stringify(each)+"\n", function(isDone){});
+		}
 	}catch(e){
 		console.log("Write file error : " + e);
 	}
