@@ -50,12 +50,12 @@ function run(array){
 				    				tree = tree.concat(arr);
 			    				}
 			    				if(!(branch.attributes == null || branch.nodeName == 'SCRIPT' || branch.nodeName == 'EMBED')){
-									if(this.prefilter(elem)){
-										var sso = this.hasSSO(elem);
+									if(this.prefilter(branch)){
+										var sso = this.hasSSO(branch);
 			    						if(sso){
 			    							if(candidates.indexOf(sso) == -1) candidates.push(sso);
 			    						}else{
-			    							var link = this.hasLinks(elem);
+			    							var link = this.hasLinks(branch);
 			    							if(link && sites.indexOf(link) == -1) sites.unshift(link);
 			    						}
 									}
@@ -343,8 +343,8 @@ function rerun(links, parent){
 				    				tree = tree.concat(arr);
 			    				}
 			    				if(!(branch.attributes == null || branch.nodeName == 'SCRIPT' || branch.nodeName == 'EMBED')){
-									if(this.prefilter(elem)){
-										var sso = this.hasSSO(elem);
+									if(this.prefilter(branch)){
+										var sso = this.hasSSO(branch);
 			    						if(sso){
 			    							if(candidates.indexOf(sso) == -1) candidates.push(sso);
 			    						}
