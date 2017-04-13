@@ -8,6 +8,7 @@ var num = 0;
 var results = [];
 var errors = [];
 var times = [];
+var links = [];
 
 //Get command line arg and run
 var sites = JSON.parse(process.argv.slice(2));
@@ -52,7 +53,7 @@ function run(array){
 	    							if(candidates.indexOf(sso) == -1) candidates.push(sso);
 	    						}else{
 	    							var link = this.hasLinks(elem);
-	    							if(link && visited.indexOf(link) == -1) sites.unshift(link);
+	    							if(link && sites.indexOf(link) == -1) sites.unshift(link);
 	    						}
 							}
 						}
@@ -278,7 +279,7 @@ function run(array){
 			  		rerun(links, link);
 			  	}
 			  	var end = Date.now();
-			  	times.push({"url" : each, "timeTaken" : (end - start)+"ms"});
+			  	times.push({"url" : link, "timeTaken" : (end - start)+"ms"});
 			})
 			.catch(function (error) {
 				console.error('run');
@@ -305,7 +306,7 @@ function rerun(links, parent){
 		});
 		if(visited.indexOf(each) == -1){
 			nightmare
-			.goto(link)
+			.goto(each)
 			.evaluate(function(){
 				window.fns = {
 					prefilter : function(node){
