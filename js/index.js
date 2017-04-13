@@ -6,7 +6,7 @@ var Nightmare = require('nightmare');
 var visited = [];
 var num = 0;
 var links = [];
-var results = ["pageResults" : [], "pageTime" : {}];
+var results = {"pageResults" : [], "pageTime" : {}};
 
 //Get command line arg and run
 var sites = JSON.parse(process.argv.slice(2));
