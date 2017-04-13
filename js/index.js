@@ -327,6 +327,7 @@ function rerun(links){
 			                return bool;
 				    	},
 						processDOM : function(){
+							var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : []};
 							tree = document.querySelectorAll('*');
 				    		for(var i = tree.length; i--;){
 				    			var branch = tree[i];
