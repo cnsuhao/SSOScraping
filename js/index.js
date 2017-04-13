@@ -39,19 +39,27 @@ function run(array){
 		                return bool;
 			    	},
 					processDOM : function(){
-						var candidates = []; var sites = []; var result = {"candidates" : [], "links" : []};
-						var items = document.querySelectorAll('*');
-						var len = items.length;
-						for (var i = len; i--;) {
-							var elem = items[i];
-							if(this.prefilter(elem)){
-								var sso = this.hasSSO(elem);
-	    						if(sso){
-	    							if(candidates.indexOf(sso) == -1) candidates.push(sso);
-	    						}else{
-	    							var link = this.hasLinks(elem);
-	    							if(link && sites.indexOf(link) == -1) sites.unshift(link);
-	    						}
+						var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : []};
+			    		tree.push(document.body);
+			    		while(tree.length > 0){
+			    			var branch = tree.pop();
+			    			if(branch != null){
+			    				var children = branch.children;
+			    				if(children){
+			    					var arr = [].slice.call(children);
+				    				tree = tree.concat(arr);
+			    				}
+			    				if(!(branch.attributes == null || branch.nodeName == 'SCRIPT' || branch.nodeName == 'EMBED')){
+									if(this.prefilter(elem)){
+										var sso = this.hasSSO(elem);
+			    						if(sso){
+			    							if(candidates.indexOf(sso) == -1) candidates.push(sso);
+			    						}else{
+			    							var link = this.hasLinks(elem);
+			    							if(link && sites.indexOf(link) == -1) sites.unshift(link);
+			    						}
+									}
+								}
 							}
 						}
 						result.candidates = candidates;
@@ -293,10 +301,12 @@ function rerun(links, parent){
 	if(links.length > 3) len = 3;
 	else if(links.length < 3) len = links.length;
 
+	console.log(len);
 	for(var k = len; k--;){
 		console.log('hi');
 		var each = links[k];
-		var ssoInfo = {"parent" : parent, "url" : each, "sso" : []}
+		var ssoInfo = {"parent" : parent, "url" : each, "sso" : []};
+		console.log(ssoInfo)
 		var start = Date.now();
 		var nightmare = Nightmare({
 			gotoTimeout : 30000,
@@ -322,16 +332,24 @@ function rerun(links, parent){
 		                return bool;
 			    	},
 					processDOM : function(){
-						var candidates = []; var sites = []; var result = {"candidates" : []};
-						var items = document.querySelectorAll('*');
-						var len = items.length;
-						for (var i = len; i--;) {
-							var elem = items[i];
-							if(this.prefilter(elem)){
-								var sso = this.hasSSO(elem);
-	    						if(sso){
-	    							if(candidates.indexOf(sso) == -1) candidates.push(sso);
-	    						}
+						var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : []};
+			    		tree.push(document.body);
+			    		while(tree.length > 0){
+			    			var branch = tree.pop();
+			    			if(branch != null){
+			    				var children = branch.children;
+			    				if(children){
+			    					var arr = [].slice.call(children);
+				    				tree = tree.concat(arr);
+			    				}
+			    				if(!(branch.attributes == null || branch.nodeName == 'SCRIPT' || branch.nodeName == 'EMBED')){
+									if(this.prefilter(elem)){
+										var sso = this.hasSSO(elem);
+			    						if(sso){
+			    							if(candidates.indexOf(sso) == -1) candidates.push(sso);
+			    						}
+									}
+								}
 							}
 						}
 						result.candidates = candidates;
