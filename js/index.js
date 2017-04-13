@@ -280,8 +280,8 @@ function run(array){
 				.end()
 				.then(function (result) {
 				  	if(result){
-				  		ssoInfo.sso = result.candidates;
-				  		if(result.links.length > 3) result.links = result.links.slice(0, 3);
+				  		ssoInfo['sso'] = result.candidates;
+				  		if(result.links.length > 2) result.links = result.links.slice(0, 2);
 				  		links = links.concat(result.links);
 				  	}
 				  	var end = Date.now();
@@ -484,7 +484,7 @@ function rerun(links){
 				.end()
 				.then(function (result) {
 				  	if(result){
-				  		ssoInfo.sso = result.candidates;
+				  		ssoInfo['sso'] = result.candidates;
 				  	}
 				  	var end = Date.now();
 				  	var time = (end - start)+"ms";
