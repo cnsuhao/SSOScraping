@@ -6,7 +6,7 @@ var Nightmare = require('nightmare');
 var visited = [];
 var num = 0;
 var links = [];
-var results = {"pageResults" : [], "pageTime" : {}};
+var logs = {"pageResults" : [], "pageTime" : {}};
 
 //Get command line arg and run
 var sites = JSON.parse(process.argv.slice(2));
@@ -280,14 +280,14 @@ function run(array){
 				.then(function (result) {
 				  	if(result){
 				  		ssoInfo.sso = result.candidates;
-				  		if(ssoInfo['sso'].length > 0) results['pageResults'].push(ssoInfo);
+				  		if(ssoInfo['sso'].length > 0) logs['pageResults'].push(ssoInfo);
 				  		links = links.concat(result.links);
 				  		rerun(links, link);
 				  	}
 				  	var end = Date.now();
 				  	var time = {"url" : link, "timeTaken" : (end - start)+"ms"};
-				  	results['pageTime'] = time;
-				  	return results;
+				  	logs['pageTime'] = time;
+				  	return logs;
 				})
 				.catch(function (error) {
 					console.error('run');
@@ -481,13 +481,13 @@ function rerun(links, parent){
 					.then(function (result) {
 					  	if(result){
 					  		ssoInfo.sso = result.candidates;
-					  		if(ssoInfo['sso'].length > 0) results['pageResults'].push(ssoInfo);
+					  		if(ssoInfo['sso'].length > 0) logs['pageResults'].push(ssoInfo);
 					  	}
 					  	visited.push(each);
 					  	var end = Date.now();
 					  	var time = {"url" : each, "timeTaken" : (end - start)+"ms"};
-					  	results['pageTime'] = time;
-					  	return results;
+					  	logs['pageTime'] = time;
+					  	return logs;
 					})
 					.catch(function (error) {
 						console.error('rerun');
