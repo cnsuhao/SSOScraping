@@ -309,7 +309,7 @@ function rerun(links, parent){
 
 	
 	links.reduce(function(accumulator, url) {
-  		return accumulator.then(function(results) {
+  		return accumulator.then(function(reresults) {
 			console.log('hi');
 			var each = url;
 			var ssoInfo = {"parent" : parent, "url" : each, "sso" : []};
@@ -492,19 +492,19 @@ function rerun(links, parent){
 					  	var end = Date.now();
 					  	var time = {"url" : each, "timeTaken" : (end - start)+"ms"};
 					  	reruns['pageTime'] = time;
-					  	results.push(reruns);
-					  	return results;
+					  	reresults.push(reruns);
+					  	return reresults;
 					})
 					.catch(function (error) {
 						console.error('rerun');
 					   console.error('Search failed:', error);
-					   results.push(error);
-					   return results;
+					   reresults.push(error);
+					   return reresults;
 					});
 			}
 		});
-	}, Promise.resolve([])).then(function(results){
-    	console.log(results);
+	}, Promise.resolve([])).then(function(reresults){
+    	console.log(reresults);
 	});
 }
 
