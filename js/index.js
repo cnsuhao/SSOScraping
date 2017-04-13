@@ -304,6 +304,7 @@ function rerun(links, parent){
 	var len = 0;
 	if(links.length > 3) links = links.slice(0, 3);
 
+	var reruns = {"pageResults" : [], "pageTime" : {}};
 	links.reduce(function(accumulator, url) {
   		return accumulator.then(function(results) {
 			console.log('hi');
@@ -481,13 +482,13 @@ function rerun(links, parent){
 					.then(function (result) {
 					  	if(result){
 					  		ssoInfo.sso = result.candidates;
-					  		if(ssoInfo['sso'].length > 0) logs['pageResults'].push(ssoInfo);
+					  		if(ssoInfo['sso'].length > 0) reruns['pageResults'].push(ssoInfo);
 					  	}
 					  	visited.push(each);
 					  	var end = Date.now();
 					  	var time = {"url" : each, "timeTaken" : (end - start)+"ms"};
-					  	logs['pageTime'] = time;
-					  	return logs;
+					  	reruns['pageTime'] = time;
+					  	return reruns;
 					})
 					.catch(function (error) {
 						console.error('rerun');
