@@ -1,0 +1,155 @@
+"elem is not defined"
+"elem is not defined"
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.soso.com/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.qq.com/"}
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.detail.tmall.com/"}
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.login.tmall.com/"}
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.ask.com/"}
+{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.service.tmall.com/"}
+{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.onclkds.com/"}
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+"elem is not defined"
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.qq.com/"}
+{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.service.tmall.com/"}
+{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.login.tmall.com/"}
+{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.onclkds.com/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.ask.com/"}
+{"message":"navigation error","code":-3,"details":"","url":"https://www.bbc.co.uk/"}
+{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.detail.tmall.com/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.soso.com/"}
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.microsoftonline.com"}
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.tianya.cn"}
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.csdn.net"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.fc2.com/"}
+{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.askcom.me/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.cctv.com/"}
+{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.pages.tmall.com/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.xinhuanet.com/"}
+{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.amazonaws.com/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.daum.net/"}
+{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.livedoor.jp/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.gmw.cn/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.china.com/"}
+{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.thewhizmarketing.com/"}
+{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.chinadaily.com.cn/"}
+{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.globo.com/"}
+{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.list.tmall.com/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.dailymail.co.uk/"}
+{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.123movies.is/"}
+{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.rule.tmall.com/"}
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.youth.cn"}
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.varzesh3.com"}
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.nicovideo.jp"}
+{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.onclkds.com/"}
+{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.service.tmall.com/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.qq.com/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.ask.com/"}
+{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.detail.tmall.com/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.soso.com/"}
+{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.login.tmall.com/"}
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.tianya.cn"}
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.microsoftonline.com"}
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.csdn.net"}
+{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.pages.tmall.com/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.fc2.com/"}
+{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.askcom.me/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.daum.net/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.xinhuanet.com/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.gmw.cn/"}
+{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.thewhizmarketing.com/"}
+{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.amazonaws.com/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.china.com/"}
+{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.livedoor.jp/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.cctv.com/"}
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.dailymail.co.uk/"}
+{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.rule.tmall.com/"}
+{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.list.tmall.com/"}
+{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.globo.com/"}
+{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.chinadaily.com.cn/"}
+{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.123movies.is/"}
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.youth.cn"}
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.nicovideo.jp"}
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.varzesh3.com"}
+{}
