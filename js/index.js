@@ -303,8 +303,9 @@ function run(array){
 
 function rerun(links){
 	var len = 0;
-	
-	links.reduce(function(accumulator, url) {
+	var filtered = makeUnique(links);
+
+	filtered.reduce(function(accumulator, url) {
   		return accumulator.then(function(results) {
 			console.log('hi');
 			var each = url;
@@ -497,6 +498,26 @@ function rerun(links){
 	}, Promise.resolve([])).then(function(results){
     	write(results);
 	});
+}
+
+function makeUnique(list){
+	Array.prototype.contains = function(v){
+	    for(var i = 0; i < this.length; i++) {
+	        if(this[i] === v) return true;
+	    }
+	    return false;
+	};
+	Array.prototype.unique = function(){
+	    var arr = [];
+	    for(var i = 0; i < this.length; i++) {
+	        if(!arr.contains(this[i])) {
+	            arr.push(this[i]);
+	        }
+	    }
+	    return arr; 
+	};
+	var uniq = list.unique();
+	return uniq;
 }
 
 // Write or read from file functions
