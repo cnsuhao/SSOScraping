@@ -2,13 +2,14 @@ import csv
 import os
 import json
 import subprocess
+import time
 
 
 os.environ["DISPLAY"]=":3"
 websites = []
 
 # Read websites data from CSV file
-with open('../data/summa.csv') as csvFile:
+with open('../data/top-20k.csv') as csvFile:
     reader = csv.reader(csvFile, delimiter=",")
     for data in reader:
         websites.append(data[1])
@@ -21,9 +22,12 @@ def chunks(l, n):
         yield l[i:i + n]
 
 
-listchunks = list(chunks(websites, 2));
+listchunks = list(chunks(websites, 100));
 
 for chunk in listchunks:
+    start = time.time()
 	print("Chunk")
 	cmd = "DEBUG=nightmare:actions* node index.js '"+json.dumps(chunk)+"'"
 	subprocess.call(cmd, shell=True)
+end = time.time()
+print "Time taken" + end - start

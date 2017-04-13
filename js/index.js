@@ -526,7 +526,7 @@ function write(data){
 	try{
 		for(var i = 0; i < data.length; i++){
 			var each = data[i];
-			fs.appendFile('../data/log-summa.txt', JSON.stringify(each)+"\n", function(isDone){});
+			fs.appendFile('../data/20klog.txt', JSON.stringify(each)+"\n", function(isDone){});
 		}
 	}catch(e){
 		console.log("Write file error : " + e);
