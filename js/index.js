@@ -47,7 +47,9 @@ function run(array){
 				    				var children = branch.children;
 				    				if(children){
 				    					var arr = [].slice.call(children);
-					    				tree = tree.concat(arr);
+					    				arr.forEach(function(currVal, arr, index){
+				                        	tree.unshift(currVal);
+				                        });
 				    				}
 					    			if(!(branch.attributes == null || branch.nodeName == 'SCRIPT' || branch.nodeName == 'EMBED')){
 										if(this.prefilter(branch)){
@@ -342,7 +344,9 @@ function rerun(links){
 				    				var children = branch.children;
 				    				if(children){
 				    					var arr = [].slice.call(children);
-					    				tree = tree.concat(arr);
+					    				arr.forEach(function(currVal, arr, index){
+				                        	tree.unshift(currVal);
+				                        });
 				    				}
 				    				if(!(branch.attributes == null || branch.nodeName == 'SCRIPT' || branch.nodeName == 'EMBED')){
 										if(this.prefilter(branch)){
