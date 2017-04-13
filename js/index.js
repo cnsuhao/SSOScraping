@@ -5,9 +5,6 @@ var Nightmare = require('nightmare');
 //Variable declaration
 var visited = [];
 var num = 0;
-var results = [];
-var errors = [];
-var times = [];
 var links = [];
 
 //Get command line arg and run
@@ -274,17 +271,18 @@ function run(array){
 			.then(function (result) {
 			  	if(result){
 			  		ssoInfo.sso = result.candidates;
-			  		if(ssoInfo['sso'].length > 0) results.push(ssoInfo);
+			  		if(ssoInfo['sso'].length > 0) write(ssoInfo, 0);
 			  		links = links.concat(result.links);
 			  		rerun(links, link);
 			  	}
 			  	var end = Date.now();
-			  	times.push({"url" : link, "timeTaken" : (end - start)+"ms"});
+			  	var time = {"url" : link, "timeTaken" : (end - start)+"ms"};
+			  	write(time, 2);
 			})
 			.catch(function (error) {
 				console.error('run');
 			   console.error('Search failed:', error);
-			   errors.push(error);
+			   write(error, 1);
 			});
 		num++;
 	}
@@ -463,19 +461,17 @@ function rerun(links, parent){
 			.then(function (result) {
 			  	if(result){
 			  		ssoInfo.sso = result.candidates;
-			  		if(ssoInfo['sso'].length > 0) results.push(ssoInfo);
+			  		if(ssoInfo['sso'].length > 0) write(ssoInfo, 0);
 			  	}
 			  	visited.push(each);
-			  	if(num == 99) write(results, 0);
 			  	var end = Date.now();
-			  	times.push({"url" : each, "timeTaken" : (end - start)+"ms"});
-			  	if(num == 99) write(results, 2);
+			  	var time = {"url" : each, "timeTaken" : (end - start)+"ms"};
+			  	write(time, 2);
 			})
 			.catch(function (error) {
 				console.error('rerun');
 			   console.error('Search failed:', error);
-			   errors.push(error);
-			   if(num == 99) write(results, 1);
+			   write(error, 1);
 			});
 		}
 	}
@@ -485,20 +481,11 @@ function rerun(links, parent){
 function write(data, type){
 	try{		
 		switch(type){
-			case 0 : while(data.length > 0){
-						var each = data.shift();
-						fs.appendFile('../data/log-f20k.txt', JSON.stringify(each)+"\n", function(isDone){});
-					}
+			case 0 : fs.appendFile('../data/log-summa.txt', JSON.stringify(data)+"\n", function(isDone){});
 					break;
-			case 1 : while(data.length > 0){
-						var each = data.shift();
-						fs.appendFile('../data/errors.txt', JSON.stringify(each)+"\n", function(isDone){});
-					}
+			case 1 : fs.appendFile('../data/errors.txt', JSON.stringify(data)+"\n", function(isDone){});
 					break;
-			case 2 : while(data.length > 0){
-						var each = data.shift();
-						fs.appendFile('../data/times.csv', JSON.stringify(each)+"\n", function(isDone){});
-					}
+			case 2 : fs.appendFile('../data/times.txt', JSON.stringify(data)+"\n", function(isDone){});
 					break;
 			default : break;
 		}
