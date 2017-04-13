@@ -15,11 +15,11 @@ var times = [];
 
 function run(array){
 	while(array.length > 0){
-		var link = array.shift();
-		var ssoInfo = {"parent" : "none", "url" : node, "sso" : []};
+		var link = "https://www." + array.shift();
+		var ssoInfo = {"parent" : "none", "url" : link, "sso" : []};
 		var start = Date.now();
 		var nightmare = Nightmare({
-			gotoTimeout : 20000,
+			gotoTimeout : 30000,
 			show : false
 		});
 		nightmare
@@ -192,6 +192,8 @@ function run(array){
 						var k6 = /create[\-\s]*[up]+[\-\s]*[with]+[using]+/gi;
 
 						var len = sso.length;
+						var i = 0;
+						
 		                while(i < len){
 			                var each = sso[i];
 			                var siteMatch = inputstr.match(each.regex);
@@ -279,6 +281,7 @@ function run(array){
 			  	times.push({"url" : each, "timeTaken" : (end - start)+"ms"});
 			})
 			.catch(function (error) {
+				console.error('run');
 			   console.error('Search failed:', error);
 			   errors.push(error);
 			});
@@ -292,11 +295,12 @@ function rerun(links, parent){
 	else if(links.length < 3) len = links.length;
 
 	for(var k = len; k--;){
+		console.log('hi');
 		var each = links[k];
 		var ssoInfo = {"parent" : parent, "url" : each, "sso" : []}
 		var start = Date.now();
 		var nightmare = Nightmare({
-			gotoTimeout : 20000,
+			gotoTimeout : 30000,
 			show : false
 		});
 		if(visited.indexOf(each) == -1){
@@ -421,6 +425,7 @@ function rerun(links, parent){
 						var k6 = /create[\-\s]*[up]+[\-\s]*[with]+[using]+/gi;
 
 						var len = sso.length;
+						var i = 0;
 		                while(i < len){
 			                var each = sso[i];
 			                var siteMatch = inputstr.match(each.regex);
@@ -466,6 +471,7 @@ function rerun(links, parent){
 			  	if(num == 99) write(results, 2);
 			})
 			.catch(function (error) {
+				console.error('rerun');
 			   console.error('Search failed:', error);
 			   errors.push(error);
 			   if(num == 99) write(results, 1);
