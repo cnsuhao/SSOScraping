@@ -501,9 +501,10 @@ function rerun(links){
 }
 
 function makeUnique(list){
+	var r = /:\/\/(.[^/]+)/;
 	Array.prototype.contains = function(v){
 	    for(var i = 0; i < this.length; i++) {
-	        if(this[i] === v) return true;
+	        if((this[i].url).match(r)[1] === (v).match(r)[1]) return true;
 	    }
 	    return false;
 	};
