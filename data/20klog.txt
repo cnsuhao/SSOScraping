@@ -1,0 +1,350 @@
+{"url":"https://www.google.com","sso":[],"timeTaken":"858ms"}
+{"url":"https://www.youtube.com","sso":[],"timeTaken":"2821ms"}
+{"url":"https://www.facebook.com","sso":[],"timeTaken":"1207ms"}
+{"url":"https://www.baidu.com","sso":[],"timeTaken":"3477ms"}
+{"url":"https://www.yahoo.com","sso":[],"timeTaken":"4276ms"}
+{"url":"https://www.wikipedia.org","sso":[],"timeTaken":"943ms"}
+{"url":"https://www.google.co.in","sso":[],"timeTaken":"795ms"}
+{"url":"https://www.tmall.com","sso":[],"timeTaken":"6042ms"}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.qq.com/"}}
+{"url":"https://www.amazon.com","sso":["amazon, openid"],"timeTaken":"1739ms"}
+{"url":"https://www.sohu.com","sso":[],"timeTaken":"30648ms"}
+{"url":"https://www.google.co.jp","sso":[],"timeTaken":"817ms"}
+{"url":"https://www.taobao.com","sso":[],"timeTaken":"5467ms"}
+{"url":"https://www.live.com","sso":[],"timeTaken":"1673ms"}
+{"url":"https://www.vk.com","sso":[],"timeTaken":"3757ms"}
+{"url":"https://www.twitter.com","sso":[],"timeTaken":"2618ms"}
+{"url":"https://www.linkedin.com","sso":[],"timeTaken":"1828ms"}
+{"url":"https://www.instagram.com","sso":[],"timeTaken":"1178ms"}
+{"url":"https://www.360.cn","sso":[],"timeTaken":"4438ms"}
+{"url":"https://www.yahoo.co.jp","sso":[],"timeTaken":"6441ms"}
+{"url":"https://www.sina.com.cn","sso":[],"timeTaken":"6242ms"}
+{"url":"https://www.google.de","sso":[],"timeTaken":"765ms"}
+{"url":"https://www.jd.com","sso":[],"timeTaken":"3312ms"}
+{"url":"https://www.reddit.com","sso":[],"timeTaken":"3253ms"}
+{"url":"https://www.google.co.uk","sso":[],"timeTaken":"1172ms"}
+{"url":"https://www.google.fr","sso":[],"timeTaken":"879ms"}
+{"url":"https://www.ebay.com","sso":[],"timeTaken":"2931ms"}
+{"url":"https://www.msn.com","sso":[],"timeTaken":"1962ms"}
+{"url":"https://www.google.ru","sso":[],"timeTaken":"770ms"}
+{"url":"https://www.bing.com","sso":[],"timeTaken":"652ms"}
+{"url":"https://www.weibo.com","sso":[],"timeTaken":"6167ms"}
+{"url":"https://www.netflix.com","sso":[],"timeTaken":"2564ms"}
+{"url":"https://www.wordpress.com","sso":[],"timeTaken":"2406ms"}
+{"url":"https://www.microsoft.com","sso":[],"timeTaken":"3285ms"}
+{"url":"https://www.hao123.com","sso":[],"timeTaken":"7860ms"}
+{"url":"https://www.tumblr.com","sso":[],"timeTaken":"6159ms"}
+{"url":"https://www.google.com.br","sso":[],"timeTaken":"796ms"}
+{"url":"https://www.stackoverflow.com","sso":[],"timeTaken":"1875ms"}
+{"url":"https://www.amazon.co.jp","sso":["amazon, openid"],"timeTaken":"2374ms"}
+{"url":"https://www.yandex.ru","sso":[],"timeTaken":"3291ms"}
+{"url":"https://www.google.it","sso":[],"timeTaken":"900ms"}
+{"url":"https://www.office.com","sso":[],"timeTaken":"1308ms"}
+{"url":"https://www.imdb.com","sso":["facebook, oauth"],"timeTaken":"3961ms"}
+{"url":"https://www.apple.com","sso":[],"timeTaken":"1185ms"}
+{"url":"https://www.google.es","sso":[],"timeTaken":"727ms"}
+{"url":"https://www.pinterest.com","sso":[],"timeTaken":"1876ms"}
+{"url":"https://www.google.com.hk","sso":[],"timeTaken":"804ms"}
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.onclkds.com/"}}
+{"url":"https://www.t.co","sso":[],"timeTaken":"601ms"}
+{"url":"https://www.github.com","sso":[],"timeTaken":"1656ms"}
+{"url":"https://www.adobe.com","sso":[],"timeTaken":"4699ms"}
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.service.tmall.com/"}}
+{"url":"https://www.aliexpress.com","sso":[],"timeTaken":"2988ms"}
+{"url":"https://www.paypal.com","sso":[],"timeTaken":"2158ms"}
+{"url":"https://www.blogspot.com","sso":[],"timeTaken":"1214ms"}
+{"url":"https://www.google.ca","sso":[],"timeTaken":"777ms"}
+{"url":"https://www.google.com.mx","sso":[],"timeTaken":"769ms"}
+{"url":"https://www.google.com.tw","sso":[],"timeTaken":"764ms"}
+{"url":"https://www.dropbox.com","sso":[],"timeTaken":"2092ms"}
+{"url":"https://www.whatsapp.com","sso":[],"timeTaken":"1003ms"}
+{"url":"https://www.ok.ru","sso":[],"timeTaken":"6126ms"}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.ask.com/"}}
+{"url":"https://www.diply.com","sso":[],"timeTaken":"2366ms"}
+{"url":"https://www.pornhub.com","sso":["box, edgecase"],"timeTaken":"2011ms"}
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.detail.tmall.com/"}}
+{"error":{"message":"navigation error","code":-3,"details":"","url":"https://www.bbc.co.uk/"}}
+{"url":"https://www.naver.com","sso":[],"timeTaken":"2054ms"}
+{"url":"https://www.amazon.co.uk","sso":["amazon, openid"],"timeTaken":"2285ms"}
+{"url":"https://www.bbc.com","sso":[],"timeTaken":"4314ms"}
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.login.tmall.com/"}}
+{"url":"https://www.imgur.com","sso":[],"timeTaken":"1724ms"}
+{"url":"https://www.nytimes.com","sso":[],"timeTaken":"6700ms"}
+{"url":"https://www.popads.net","sso":[],"timeTaken":"2566ms"}
+{"url":"https://www.booking.com","sso":[],"timeTaken":"2712ms"}
+{"url":"https://www.soundcloud.com","sso":[],"timeTaken":"1724ms"}
+{"url":"https://www.thepiratebay.org","sso":[],"timeTaken":"1508ms"}
+{"url":"https://www.onlinesbi.com","sso":[],"timeTaken":"3616ms"}
+{"url":"https://www.mail.ru","sso":[],"timeTaken":"5825ms"}
+{"url":"https://www.stackexchange.com","sso":[],"timeTaken":"1399ms"}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.soso.com/"}}
+{"url":"https://www.livejasmin.com","sso":[],"timeTaken":"2152ms"}
+{"url":"https://www.wikihow.com","sso":["google, edgecase","facebook, edgecase"],"timeTaken":"1614ms"}
+{"url":"https://www.google.com.tr","sso":[],"timeTaken":"797ms"}
+{"url":"https://www.cnet.com","sso":[],"timeTaken":"1783ms"}
+{"url":"https://www.theguardian.com","sso":[],"timeTaken":"3978ms"}
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.microsoftonline.com"}}
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.tianya.cn"}}
+{"url":"https://www.spotify.com","sso":[],"timeTaken":"2178ms"}
+{"url":"https://www.washingtonpost.com","sso":[],"timeTaken":"3983ms"}
+{"url":"https://www.google.com.au","sso":[],"timeTaken":"839ms"}
+{"url":"https://www.indeed.com","sso":[],"timeTaken":"1910ms"}
+{"url":"https://www.google.com.sg","sso":[],"timeTaken":"853ms"}
+{"url":"https://www.alipay.com","sso":[],"timeTaken":"1943ms"}
+{"url":"https://www.google.co.kr","sso":[],"timeTaken":"822ms"}
+{"url":"https://www.espn.com","sso":[],"timeTaken":"4051ms"}
+{"url":"https://www.google.co.id","sso":[],"timeTaken":"805ms"}
+{"url":"https://www.txxx.com","sso":[],"timeTaken":"4667ms"}
+{"url":"https://www.nih.gov","sso":[],"timeTaken":"1518ms"}
+{"url":"https://www.chase.com","sso":[],"timeTaken":"1876ms"}
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.csdn.net"}}
+{"url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/","sso":["google, edgecase"],"timeTaken":"843ms"}
+{"url":"http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001","sso":[],"timeTaken":"4615ms"}
+{"url":"https://www.facebook.com/r.php","sso":[],"timeTaken":"1118ms"}
+{"url":"https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F","sso":[],"timeTaken":"6063ms"}
+{"url":"https://www.yahoo.com/news/pentagon-us-dropped-largest-non-nuclear-bomb-afghanistan-165659026--politics.html","sso":[],"timeTaken":"7467ms"}
+{"url":"https://www.wikipedia.org/login","sso":[],"timeTaken":"777ms"}
+{"url":"https://login.yahoo.com/config/login?.src=fpctx&.intl=us&.lang=en-US&.done=https%3A%2F%2Fwww.yahoo.com","sso":[],"timeTaken":"2161ms"}
+{"url":"https://login.tmall.com/?redirectURL=https%3A%2F%2Fwww.tmall.com%2F","sso":[],"timeTaken":"5250ms"}
+{"url":"https://register.tmall.com/","sso":[],"timeTaken":"6616ms"}
+{"url":"https://www.amazon.com/gp/registry/wishlist/ref=nav_youraccount_wl?ie=UTF8&requiresSignIn=1","sso":["amazon, openid"],"timeTaken":"1131ms"}
+{"url":"https://world.taobao.com/markets/all/sea/register","sso":[],"timeTaken":"3771ms"}
+{"url":"https://signup.live.com/?wa=wsignin1.0&rpsnv=13&ct=1492116228&rver=6.7.6643.0&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fmail.live.com%2Fdefault.aspx&id=64855&cbcxt=mai&contextid=4892DF14175398C8&bk=1492116228&uiflavor=web&uaid=e573d39726de4471a28c1a4434018b8e&mkt=EN-US&lc=1033","sso":[],"timeTaken":"2348ms"}
+{"url":"https://login.live.com/gls.srf?urlID=WinLiveTermsOfUse&mkt=EN-US&vv=1600","sso":[],"timeTaken":"4629ms"}
+{"url":"https://vk.com/login","sso":[],"timeTaken":"3468ms"}
+{"url":"https://twitter.com/signup","sso":[],"timeTaken":"1147ms"}
+{"url":"https://www.linkedin.com/login","sso":[],"timeTaken":"780ms"}
+{"url":"https://www.instagram.com/login","sso":[],"timeTaken":"799ms"}
+{"url":"https://www.yahoo.co.jp/login","sso":[],"timeTaken":"6467ms"}
+{"url":"https://login.sina.com.cn/signup/signup.php","sso":[],"timeTaken":"3426ms"}
+{"url":"https://www.jd.com/login","sso":[],"timeTaken":"4839ms"}
+{"url":"https://www.reddit.com/login","sso":[],"timeTaken":"1449ms"}
+{"url":"https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&ru=http%3A%2F%2Fwww.ebay.com%2Ffeed","sso":[],"timeTaken":"1305ms"}
+{"url":"https://onedrive.live.com/?gologin=1&WT.mc_id=O16_BingHP","sso":[],"timeTaken":"1565ms"}
+{"url":"http://weibo.com/signup/signup.php?from=usweibo","sso":[],"timeTaken":"2612ms"}
+{"url":"https://www.netflix.com/","sso":[],"timeTaken":"2647ms"}
+{"url":"https://wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fwordpress.com%2F","sso":[],"timeTaken":"811ms"}
+{"url":"https://www.microsoft.com/login","sso":[],"timeTaken":"1122ms"}
+{"url":"http://app.appsflyer.com/com.tumblr?pid=tumblr_internal&c=signup_page","sso":[],"timeTaken":"3379ms"}
+{"url":"https://www.tumblr.com/policy","sso":[],"timeTaken":"2463ms"}
+{"url":"https://stackoverflow.com/users/login?ssrc=site_switcher&returnurl=http%3a%2f%2fstackoverflow.com%2f","sso":["aol, openid","yahoo, openid","facebook, oauth","google, oauth"],"timeTaken":"1496ms"}
+{"url":"https://www.amazon.co.jp/gp/family/signup/welcome/ref=nav__shopall","sso":["amazon, openid"],"timeTaken":"2776ms"}
+{"url":"https://www.yandex.ru/login","sso":[],"timeTaken":"3795ms"}
+{"url":"https://www.office.com/login?es=Click&ru=%2F","sso":[],"timeTaken":"1225ms"}
+{"url":"https://products.office.com/en-US/student/office-in-education","sso":[],"timeTaken":"4320ms"}
+{"url":"http://pro.imdb.com/signup/index.html?rf=cons_nb_hm&ref_=cons_nb_hm","sso":[],"timeTaken":"1831ms"}
+{"url":"https://www.imdb.com/registration/signin?u=/&ref_=nv_usr_lgin_1","sso":["google, oauth","facebook, oauth"],"timeTaken":"1474ms"}
+{"url":"https://secure.imdb.com/register-imdb/form-v2?ref_=ft_reg","sso":["google, oauth","facebook, oauth"],"timeTaken":"1395ms"}
+{"url":"https://www.apple.com/login","sso":[],"timeTaken":"1661ms"}
+{"url":"https://www.pinterest.com/login","sso":[],"timeTaken":"2190ms"}
+{"url":"https://www.t.co/login","sso":[],"timeTaken":"673ms"}
+{"url":"https://github.com/login","sso":[],"timeTaken":"1413ms"}
+{"url":"https://www.adobe.com/login","sso":[],"timeTaken":"3257ms"}
+{"url":"https://login.aliexpress.com/xman/xlogout.htm","sso":[],"timeTaken":"2449ms"}
+{"url":"https://thirdparty.aliexpress.com/login.htm?type=fb&tracelog=ws_fb_topbar","sso":[],"timeTaken":"1070ms"}
+{"url":"https://www.paypal.com/signin?country.x=US&locale.x=en_US","sso":[],"timeTaken":"1299ms"}
+{"url":"https://www.ok.ru/video/277835947597?st._aid=login_openPopularVideo_1","sso":[],"timeTaken":"31430ms"}
+{"url":"https://www.blogger.com/go/signin","sso":["google, edgecase"],"timeTaken":"907ms"}
+{"url":"https://www.dropbox.com/login","sso":[],"timeTaken":"2017ms"}
+{"url":"https://www.whatsapp.com/login","sso":[],"timeTaken":"931ms"}
+{"url":"http://www.pornhubpremium.com/premium_signup?type=NetworkBar_Ph&compliance=1","sso":[],"timeTaken":"2415ms"}
+{"url":"https://diply.com/login","sso":[],"timeTaken":"1572ms"}
+{"url":"https://www.naver.com/login","sso":[],"timeTaken":"2275ms"}
+{"url":"https://www.amazon.co.uk/gp/kindle/ku/sign-up/ref=nav_shopall_kds","sso":[],"timeTaken":"1919ms"}
+{"url":"https://www.bbc.com/login","sso":[],"timeTaken":"2997ms"}
+{"url":"https://imgur.com/signin?invokedBy=regularSignIn","sso":[],"timeTaken":"1308ms"}
+{"url":"https://www.popads.net/register.html","sso":[],"timeTaken":"2285ms"}
+{"url":"http://eedition.nytimes.com/cgi-bin/signup.cgi?cc=37FYY","sso":[],"timeTaken":"1770ms"}
+{"url":"https://admin.booking.com/hotel/hoteladmin/login.html?lang=en-us&aid=304142&label=HeaderInfoMenuExt","sso":[],"timeTaken":"4251ms"}
+{"url":"https://join.booking.com/?lang=en-us&utm_source=topbar&utm_medium=frontend&aid=1194661","sso":[],"timeTaken":"4792ms"}
+{"url":"https://secure.booking.com/reviewtimeline.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmcgV1c19pbIgBAZgBMcIBA3gxMcgBDNgBAegBAfgBApICAXmoAgM;sid=0d2a8d95c84b347210cae99c0acba79e;from_index_lightbox=1","sso":[],"timeTaken":"2181ms"}
+{"url":"https://soundcloud.com/login","sso":["facebook, edgecase","google, edgecase"],"timeTaken":"3500ms"}
+{"url":"https://www.thepiratebay.org/login","sso":[],"timeTaken":"24028ms"}
+{"url":"https://www.onlinesbi.com/prelogin/epfohome.htm","sso":[],"timeTaken":"2580ms"}
+{"url":"https://retail.onlinesbi.com/retail/login.htm","sso":[],"timeTaken":"4136ms"}
+{"url":"https://m.onlinesbi.com/mretail/login.htm","sso":[],"timeTaken":"3897ms"}
+{"url":"https://r.mail.ru/cls951827/e.mail.ru/login?lang=ru_RU&Page=&from=multi","sso":[],"timeTaken":"9862ms"}
+{"url":"https://stackexchange.com/users/login?returnurl=http%3a%2f%2fstackexchange.com%2f#create-account","sso":["aol, openid","stackexchange, openid","yahoo, openid","google, openid"],"timeTaken":"1060ms"}
+{"url":"https://www.livejasmin.com/en/auth/login","sso":[],"timeTaken":"2251ms"}
+{"url":"https://www.wikihow.com/Special:UserLogin?type=login&returnto=Main-Page","sso":["google, edgecase","facebook, edgecase"],"timeTaken":"1644ms"}
+{"url":"https://www.cnet.com/user/login/?appId=376","sso":[],"timeTaken":"1989ms"}
+{"url":"https://profile.theguardian.com/signin?INTCMP=DOTCOM_HEADER_SIGNIN","sso":[],"timeTaken":"1849ms"}
+{"url":"https://www.spotify.com/login?continue=https%3A%2F%2Fwww.spotify.com%2Fus%2Faccount%2Foverview%2F","sso":["facebook, oauth"],"timeTaken":"1293ms"}
+{"url":"https://www.washingtonpost.com/login","sso":[],"timeTaken":"5085ms"}
+{"url":"https://www.indeed.com/account/login?dest=%2F","sso":[],"timeTaken":"993ms"}
+{"url":"http://games.espn.com/flb/welcome","sso":[],"timeTaken":"2652ms"}
+{"url":"https://auth.alipay.com/login/index.htm?goto=https%3A%2F%2Fwww.alipay.com%2F","sso":[],"timeTaken":"4751ms"}
+{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"http://zjnet.zjaic.gov.cn/sign/addSignOnline.action"}
+{"url":"https://www.txxx.com/login/?action=not_allowed","sso":[],"timeTaken":"2901ms"}
+{"url":"https://www.nih.gov/login","sso":[],"timeTaken":"1673ms"}
+{"url":"https://secure07c.chase.com/web/auth/dashboard","sso":[],"timeTaken":"1272ms"}
+{"url":"https://chaseonline.chase.com/public/enroll/IdentifyUser.aspx?LOB=RBGLogon","sso":[],"timeTaken":"1637ms"}
+{"url":"https://m.chase.com/#logon","sso":[],"timeTaken":"1464ms"}
+{"url":"https://www.walmart.com","sso":[],"timeTaken":"3962ms"}
+{"url":"https://www.w3schools.com","sso":[],"timeTaken":"1275ms"}
+{"url":"https://www.twitch.tv","sso":[],"timeTaken":"5317ms"}
+{"url":"https://www.pixnet.net","sso":["box, openid","yahoo, openid","facebook, openid","google, openid"],"timeTaken":"9719ms"}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.gmw.cn/"}}
+{"url":"https://www.wikia.com","sso":[],"timeTaken":"3192ms"}
+{"url":"https://www.google.pl","sso":[],"timeTaken":"868ms"}
+{"url":"https://www.googleusercontent.com","sso":[],"timeTaken":"615ms"}
+{"url":"https://www.xhamster.com","sso":[],"timeTaken":"1522ms"}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.fc2.com/"}}
+{"url":"https://www.amazon.de","sso":["amazon, openid"],"timeTaken":"2682ms"}
+{"url":"https://www.amazon.de","sso":["amazon, openid"],"timeTaken":"2579ms"}
+{"error":{"message":"navigation error","code":-3,"details":"","url":"https://www.salesforce.com/"}}
+{"url":"https://www.bongacams.com","sso":[],"timeTaken":"2709ms"}
+{"url":"https://www.adf.ly","sso":[],"timeTaken":"2575ms"}
+{"url":"https://www.amazon.in","sso":["amazon, openid"],"timeTaken":"2874ms"}
+{"url":"https://www.godaddy.com","sso":[],"timeTaken":"1670ms"}
+{"url":"https://www.google.com.eg","sso":[],"timeTaken":"838ms"}
+{"url":"https://www.cnn.com","sso":[],"timeTaken":"7410ms"}
+{"url":"https://www.google.co.th","sso":[],"timeTaken":"779ms"}
+{"url":"https://www.bestbuy.com","sso":[],"timeTaken":"3999ms"}
+{"url":"https://www.google.com.sa","sso":[],"timeTaken":"1824ms"}
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.askcom.me/"}}
+{"url":"https://www.google.com.pk","sso":[],"timeTaken":"1676ms"}
+{"url":"https://www.google.com.ar","sso":[],"timeTaken":"729ms"}
+{"url":"https://www.clicksgear.com","sso":[],"timeTaken":"622ms"}
+{"url":"https://www.alibaba.com","sso":[],"timeTaken":"2929ms"}
+{"url":"https://www.craigslist.org","sso":[],"timeTaken":"1557ms"}
+{"url":"https://www.savefrom.net","sso":[],"timeTaken":"2482ms"}
+{"url":"https://www.blogger.com","sso":[],"timeTaken":"951ms"}
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.pages.tmall.com/"}}
+{"url":"https://www.blastingnews.com","sso":[],"timeTaken":"2832ms"}
+{"url":"https://www.ebay.de","sso":[],"timeTaken":"2679ms"}
+{"url":"https://www.google.nl","sso":[],"timeTaken":"868ms"}
+{"url":"https://www.uptodown.com","sso":[],"timeTaken":"3461ms"}
+{"url":"https://www.rakuten.co.jp","sso":[],"timeTaken":"22705ms"}
+{"url":"https://www.porn555.com","sso":[],"timeTaken":"4274ms"}
+{"url":"https://www.dailymotion.com","sso":[],"timeTaken":"2209ms"}
+{"url":"https://www.bet365.com","sso":[],"timeTaken":"2298ms"}
+{"url":"https://www.so.com","sso":[],"timeTaken":"3705ms"}
+{"url":"https://www.ettoday.net","sso":[],"timeTaken":"7535ms"}
+{"url":"https://www.xvideos.com","sso":[],"timeTaken":"1544ms"}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.china.com/"}}
+{"url":"https://www.vimeo.com","sso":[],"timeTaken":"4381ms"}
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.amazonaws.com/"}}
+{"url":"https://www.google.co.ve","sso":[],"timeTaken":"860ms"}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.daum.net/"}}
+{"url":"https://www.google.co.za","sso":[],"timeTaken":"739ms"}
+{"url":"https://www.ebay.co.uk","sso":[],"timeTaken":"2284ms"}
+{"url":"https://www.tribunnews.com","sso":[],"timeTaken":"4904ms"}
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.youth.cn"}}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.xinhuanet.com/"}}
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.thewhizmarketing.com/"}}
+{"url":"https://www.vice.com","sso":[],"timeTaken":"4638ms"}
+{"url":"https://www.adexchangeprediction.com","sso":[],"timeTaken":"584ms"}
+{"url":"https://www.quora.com","sso":[],"timeTaken":"1007ms"}
+{"url":"https://www.ntd.tv","sso":[],"timeTaken":"1507ms"}
+{"url":"https://www.avito.ru","sso":[],"timeTaken":"4794ms"}
+{"url":"https://www.google.gr","sso":[],"timeTaken":"809ms"}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.cctv.com/"}}
+{"url":"https://www.flipkart.com","sso":[],"timeTaken":"30808ms"}
+{"url":"https://www.mediafire.com","sso":["twitter, edgecase"],"timeTaken":"1850ms"}
+{"url":"https://www.slideshare.net","sso":[],"timeTaken":"1941ms"}
+{"url":"https://www.cnzz.com","sso":[],"timeTaken":"12414ms"}
+{"url":"https://www.detik.com","sso":[],"timeTaken":"9626ms"}
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.nicovideo.jp"}}
+{"url":"https://www.hclips.com","sso":[],"timeTaken":"1833ms"}
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.globo.com/"}}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.dailymail.co.uk/"}}
+{"url":"https://www.google.com.co","sso":[],"timeTaken":"1091ms"}
+{"url":"https://www.google.com.ph","sso":[],"timeTaken":"821ms"}
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.list.tmall.com/"}}
+{"url":"https://www.google.com.vn","sso":[],"timeTaken":"758ms"}
+{"url":"https://www.google.be","sso":[],"timeTaken":"831ms"}
+{"url":"https://www.deviantart.com","sso":[],"timeTaken":"2317ms"}
+{"url":"https://www.force.com","sso":[],"timeTaken":"4446ms"}
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.varzesh3.com"}}
+{"url":"https://www.daikynguyenvn.com","sso":[],"timeTaken":"2351ms"}
+{"url":"https://www.steampowered.com","sso":[],"timeTaken":"2389ms"}
+{"url":"https://www.theladbible.com","sso":[],"timeTaken":"2465ms"}
+{"url":"https://www.chaturbate.com","sso":[],"timeTaken":"2117ms"}
+{"url":"https://www.upornia.com","sso":[],"timeTaken":"3151ms"}
+{"url":"https://www.uol.com.br","sso":[],"timeTaken":"30713ms"}
+{"url":"https://www.kinogo.club","sso":[],"timeTaken":"5591ms"}
+{"url":"https://www.popcash.net","sso":[],"timeTaken":"1023ms"}
+{"url":"https://www.google.se","sso":[],"timeTaken":"763ms"}
+{"url":"https://www.google.com.ua","sso":[],"timeTaken":"770ms"}
+{"url":"https://www.google.ro","sso":[],"timeTaken":"857ms"}
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.livedoor.jp/"}}
+{"url":"https://www.blogspot.co.id","sso":[],"timeTaken":"1644ms"}
+{"url":"https://www.go2cloud.org","sso":[],"timeTaken":"648ms"}
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.chinadaily.com.cn/"}}
+{"url":"https://www.google.az","sso":[],"timeTaken":"916ms"}
+{"url":"https://www.doubleclick.net","sso":[],"timeTaken":"2108ms"}
+{"url":"https://www.roblox.com","sso":[],"timeTaken":"1726ms"}
+{"url":"https://www.buzzfeed.com","sso":[],"timeTaken":"2396ms"}
+{"url":"https://www.gfycat.com","sso":[],"timeTaken":"7264ms"}
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.123movies.is/"}}
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.rule.tmall.com/"}}
+{"url":"https://www.9gag.com","sso":[],"timeTaken":"4747ms"}
+{"url":"http://link.twitch.tv/design-onsite-blogUS-onboard-20170410","sso":[],"timeTaken":"1680ms"}
+{"url":"https://affiliates.walmart.com/#!/signup","sso":[],"timeTaken":"1840ms"}
+{"url":"https://www.w3schools.com/login","sso":[],"timeTaken":"845ms"}
+{"url":"https://www.wikia.com/signin?redirect=http%3A%2F%2Fwww.wikia.com%2Ffandom%3Fcb%3D1492116802157","sso":[],"timeTaken":"1272ms"}
+{"url":"https://panel.pixnet.cc/login/openid?done=https%3A%2F%2Fwww.pixnet.net%2F&openid=https%3A%2F%2Fmember.pixnet.cc%2Flogin&easy_login=1&from_service=Blog","sso":[],"timeTaken":"3272ms"}
+{"url":"https://accounts.google.com/ServiceLogin?hl=pl&passive=true&continue=https://www.google.pl/","sso":["google, edgecase"],"timeTaken":"899ms"}
+{"url":"https://www.googleusercontent.com/login","sso":[],"timeTaken":"653ms"}
+{"url":"https://xhamster.com/signup?from=index_page","sso":[],"timeTaken":"1768ms"}
+{"url":"https://www.amazon.de/gp/kindle/ku/sign-up/ui/rw/about/ref=nav_shopall_kds","sso":[],"timeTaken":"2550ms"}
+{"url":"https://bongacams.com/members/join","sso":[],"timeTaken":"1784ms"}
+{"url":"https://login.adf.ly/login","sso":[],"timeTaken":"1589ms"}
+{"url":"https://www.amazon.in/gp/registry/wishlist/ref=nav_youraccount_wl?ie=UTF8&requiresSignIn=1","sso":["amazon, openid"],"timeTaken":"1770ms"}
+{"url":"https://sso.godaddy.com?realm=idp&app={{pc:loginapp}}&path=","sso":[],"timeTaken":"1164ms"}
+{"url":"https://sso.godaddy.com/account/create?realm=idp&app=www&path=","sso":[],"timeTaken":"1154ms"}
+{"url":"https://account.godaddy.com/security/login-info/edit","sso":[],"timeTaken":"1394ms"}
+{"url":"https://www.cnn.com/login","sso":[],"timeTaken":"7990ms"}
+{"url":"https://www-ssl.bestbuy.com/identity/global/createAccount","sso":[],"timeTaken":"2510ms"}
+{"url":"https://www.clicksgear.com/login","sso":[],"timeTaken":"698ms"}
+{"url":"https://login.alibaba.com/?tracelog=hd_signin","sso":[],"timeTaken":"3279ms"}
+{"url":"https://us-favorite.alibaba.com/favorite2/favorite_home.htm#/favList?listType=product&actionType=login","sso":[],"timeTaken":"5565ms"}
+{"url":"https://accounts.craigslist.org/login/home","sso":[],"timeTaken":"1383ms"}
+{"url":"https://en.savefrom.net/login","sso":[],"timeTaken":"1173ms"}
+{"url":"https://www.blogger.com/go/signin","sso":["google, edgecase"],"timeTaken":"917ms"}
+{"url":"https://www.blastingnews.com/login","sso":[],"timeTaken":"2601ms"}
+{"url":"https://www.signup.ebayplus.ebay.de/eplusweb/signupnp","sso":[],"timeTaken":"2160ms"}
+{"url":"https://signin.ebay.de/ws/eBayISAPI.dll?SignIn&ru=http%3A%2F%2Fwww.ebay.de%2Ffeed","sso":[],"timeTaken":"1542ms"}
+{"url":"http://www.ebay.de/rpp/deals","sso":[],"timeTaken":"2743ms"}
+{"url":"https://en.uptodown.com/login","sso":[],"timeTaken":"1166ms"}
+{"url":"https://www.rakuten.co.jp/myrakuten/login.html","sso":[],"timeTaken":"3473ms"}
+{"url":"https://porn555.com/login","sso":[],"timeTaken":"30395ms"}
+{"url":"https://www.dailymotion.com/pageitem/authenticationContainer?request=/signin&urlback=%2Fupload?","sso":[],"timeTaken":"2108ms"}
+{"url":"https://www.bet365.com/login","sso":[],"timeTaken":"1023ms"}
+{"url":"http://www.so.com/link?url=http%3A%2F%2Fi.360.cn%2Flogin%3Fsrc%3Dpcw_so%26destUrl%3Dhttps%253A%252F%252Fwww.so.com%252F&q=&ts=1492116894&t=c3d47bdb43df2345af710ddcf59eb4f&src=haosou","sso":[],"timeTaken":"8130ms"}
+{"url":"https://www.ettoday.net/login","sso":[],"timeTaken":"8032ms"}
+{"url":"https://www.xvideos.com/my-subs/videos","sso":[],"timeTaken":"1197ms"}
+{"url":"https://upload.xvideos.com/account/create","sso":[],"timeTaken":"1732ms"}
+{"url":"https://vimeo.com/log_in","sso":[],"timeTaken":"1823ms"}
+{"url":"https://signin.ebay.co.uk/ws/eBayISAPI.dll?SignIn&ru=http%3A%2F%2Fwww.ebay.co.uk%2Ffeed","sso":[],"timeTaken":"1790ms"}
+{"url":"https://www.tribunnews.com/login","sso":[],"timeTaken":"2685ms"}
+{"url":"https://www.vice.com/login","sso":[],"timeTaken":"2843ms"}
+{"url":"https://www.detik.com/login","sso":[],"timeTaken":"2089ms"}
+{"url":"https://www.quora.com/","sso":[],"timeTaken":"977ms"}
+{"url":"https://www.adexchangeprediction.com/login","sso":[],"timeTaken":"626ms"}
+{"url":"https://www.ntd.tv/login","sso":[],"timeTaken":"893ms"}
+{"url":"https://www.avito.ru/login","sso":[],"timeTaken":"3136ms"}
+{"url":"https://www.flipkart.com/account/login?signup=true","sso":[],"timeTaken":"4103ms"}
+{"url":"https://www.mediafire.com/","sso":["twitter, edgecase"],"timeTaken":"1535ms"}
+{"url":"https://www.slideshare.net/login","sso":[],"timeTaken":"1287ms"}
+{"url":"https://i.umeng.com/signup","sso":[],"timeTaken":"6619ms"}
+{"url":"http://upload.hclips.com/my_video_upload/","sso":[],"timeTaken":"2874ms"}
+{"url":"https://www.deviantart.com/checkout/?mx=premium&subpref=22870_0&point=loginbar","sso":[],"timeTaken":"1516ms"}
+{"url":"https://www.salesforce.com/form/signup/freetrial-sales.jsp?d=70130000000EqoP","sso":[],"timeTaken":"3222ms"}
+{"url":"https://login.salesforce.com/","sso":[],"timeTaken":"2479ms"}
+{"url":"https://www.daikynguyenvn.com/login","sso":[],"timeTaken":"4833ms"}
+{"url":"https://www.steampowered.com/login","sso":[],"timeTaken":"2117ms"}
+{"url":"https://www.ladbible.com/login","sso":[],"timeTaken":"2462ms"}
+{"url":"https://chaturbate.com/auth/login/","sso":[],"timeTaken":"920ms"}
+{"url":"https://upornia.com/login","sso":[],"timeTaken":"2791ms"}
+{"url":"https://cadastro.uol.com.br/indexb.html?skin=widgetnotify/visitor/pf&dest=REDIR%7Chttps%3A%2F%2Fwww.uol.com.br%2F","sso":[],"timeTaken":"5229ms"}
+{"url":"https://www.popcash.net/members/login","sso":[],"timeTaken":"1091ms"}
+{"url":"https://kinogo.club/index.php?do=register","sso":[],"timeTaken":"4148ms"}
+{"url":"https://www.blogspot.co.id/login","sso":[],"timeTaken":"1486ms"}
+{"url":"https://www.go2cloud.org/login","sso":[],"timeTaken":"636ms"}
+{"url":"https://www.thinkwithgoogle.com/newsletter/doubleclick/signup","sso":[],"timeTaken":"2356ms"}
+{"url":"https://gfycat.com/login","sso":[],"timeTaken":"1124ms"}
+{"url":"https://www.roblox.com/login","sso":[],"timeTaken":"1370ms"}
+{"url":"https://www.buzzfeed.com/signup","sso":[],"timeTaken":"2504ms"}
+{"url":"https://9gag.com/login","sso":[],"timeTaken":"3313ms"}
