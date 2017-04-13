@@ -299,8 +299,7 @@ function run(array){
 				});
 		});
 	}, Promise.resolve([])).then(function(results){
-    	logs.push(results);
-    	console.log(logs);
+    	console.log(results);
 	});
 }
 
