@@ -39,8 +39,8 @@ function run(array){
 			                return bool;
 				    	},
 						processDOM : function(){
-							var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : []};
-							tree.push(document.body);
+							var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : []}
+				    		tree.push(document.body);
 				    		while(tree.length > 0){
 				    			var branch = tree.pop();
 				    			if(branch != null){
@@ -51,20 +51,20 @@ function run(array){
 				                        	tree.unshift(currVal);
 				                        });
 				    				}
-					    			if(!(branch.attributes == null || branch.nodeName == 'SCRIPT' || branch.nodeName == 'EMBED')){
-										if(this.prefilter(branch)){
-											var sso = this.hasSSO(branch);
+				    				if(!(branch.attributes == null || branch.nodeName == 'SCRIPT' || branch.nodeName == 'EMBED')){
+				    					if(this.prefilter(branch)){
+				    						var sso = this.hasSSO(branch);
 				    						if(sso){
 				    							if(candidates.indexOf(sso) == -1) candidates.push(sso);
 				    						}else{
 				    							var link = this.hasLinks(branch);
 				    							if(link && sites.indexOf(link) == -1) sites.unshift(link);
 				    						}
-										}
-									}
-								}
-							}
-							result.candidates = candidates;
+				    					}
+				    				}
+				    			}
+				    		}
+				    		result.candidates = candidates;
 				    		result.links = this.limitLinks(sites);
 				    		if(result.links.length == 0) result.links = this.makeNewLinks();
 				    		return result;
@@ -85,14 +85,15 @@ function run(array){
 			                var e5 = /recovery/gi; var e6 = /forgot/gi; var e7 = /help/gi; var e8 = /promo[tion]*/gi; 
 			                var e9 = /privacy[\-\s]*[policy]*/gi; var e10 = /sports/gi; var e11 = /story/gi; var e12 = /campaign/gi;
 			                var e13 = /questions/gi; var e14 = /store/gi; var e15 = /itunes/gi; var e16 = /play\.google/gi;
-			                var e17 = /graph\.facebook/gi;
+			                var e17 = /graph\.facebook/gi; var e18 = /jobs/gi;
 
 			                if(inputstr.match(e0) == null && inputstr.match(e1) == null  && inputstr.match(e2) == null && 
 			                    inputstr.match(e3) == null && inputstr.match(e4) == null && inputstr.match(e5) == null &&
 			                    inputstr.match(e6) == null && inputstr.match(e7) == null && inputstr.match(e8) == null &&
 			                    inputstr.match(e9) == null && inputstr.match(e10) == null && inputstr.match(e11) == null &&
 			                    inputstr.match(e12) == null && inputstr.match(e13) == null && inputstr.match(e14) == null
-			                    && inputstr.match(e15) == null && inputstr.match(e16) == null && inputstr.match(e17) == null){
+			                    && inputstr.match(e15) == null && inputstr.match(e16) == null && inputstr.match(e17) == null 
+			                    && inputstr.match(e18) == null){
 			                    if(inputstr.match(l1) != null || inputstr.match(l2) != null || 
 			                    	inputstr.match(l3) != null || inputstr.match(l4) != null || inputstr.match(l5) != null){
 			                        return true;
@@ -127,7 +128,7 @@ function run(array){
 				    		if(result) return result;
 				    	},
 				    	checkSSOWords : function(inputstr){
-				    		var sso = [{"site" : "google", "regex" : /google/gi, "url" : ["https://accounts.google.com/o/oauth2/auth"]}, 
+				    		var sso = [{"site" : "google", "regex" : /google/gi, "url" : ["https://accounts.google.com/o/oauth2/auth", "https://accounts.google.com/ServiceLogin"]}, 
 								{"site" : "yahoo", "regex" : /yahoo/gi, "url" : ["https://api.login.yahoo.com/oauth2/request_auth"]}, 
 								{"site" : "500px", "regex" : /500px/gi, "url": ["https://api.500px.com/v1/oauth"]}, 
 								{"site" : "aol", "regex" : /aol/gi, "url" :["https://api.screenname.aol.com/auth"]}, 
@@ -281,7 +282,7 @@ function run(array){
 				.then(function (result) {
 				  	if(result){
 				  		ssoInfo['sso'] = result.candidates;
-				  		if(result.links.length > 2) result.links = result.links.slice(0, 2);
+				  		if(result.links.length > 4) result.links = result.links.slice(0, 4);
 				  		links = links.concat(result.links);
 				  	}
 				  	var end = Date.now();
@@ -336,8 +337,8 @@ function rerun(links){
 			                return bool;
 				    	},
 						processDOM : function(){
-							var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : []};
-							tree.push(document.body);
+							var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : []}
+				    		tree.push(document.body);
 				    		while(tree.length > 0){
 				    			var branch = tree.pop();
 				    			if(branch != null){
@@ -349,16 +350,14 @@ function rerun(links){
 				                        });
 				    				}
 				    				if(!(branch.attributes == null || branch.nodeName == 'SCRIPT' || branch.nodeName == 'EMBED')){
-										if(this.prefilter(branch)){
-											var sso = this.hasSSO(branch);
-				    						if(sso){
-				    							if(candidates.indexOf(sso) == -1) candidates.push(sso);
-				    						}
-										}
-									}
-								}
-							}
-							result.candidates = candidates;
+				    					if(this.prefilter(branch)){
+				    						var sso = this.hasSSO(branch);
+				    						if(sso && candidates.indexOf(sso) == -1) candidates.push(sso);
+				    					}
+				    				}
+				    			}
+				    		}
+				    		result.candidates = candidates;
 				    		return result;
 						},
 				    	makeAttrString : function(node){
@@ -375,7 +374,7 @@ function rerun(links){
 				    		if(result) return result;
 				    	},
 				    	checkSSOWords : function(inputstr){
-				    		var sso = [{"site" : "google", "regex" : /google/gi, "url" : ["https://accounts.google.com/o/oauth2/auth"]}, 
+				    		var sso = [{"site" : "google", "regex" : /google/gi, "url" : ["https://accounts.google.com/o/oauth2/auth", "https://accounts.google.com/ServiceLogin"]}, 
 								{"site" : "yahoo", "regex" : /yahoo/gi, "url" : ["https://api.login.yahoo.com/oauth2/request_auth"]}, 
 								{"site" : "500px", "regex" : /500px/gi, "url": ["https://api.500px.com/v1/oauth"]}, 
 								{"site" : "aol", "regex" : /aol/gi, "url" :["https://api.screenname.aol.com/auth"]}, 
@@ -530,7 +529,7 @@ function write(data){
 	try{
 		for(var i = 0; i < data.length; i++){
 			var each = data[i];
-			fs.appendFile('../data/log-summa.txt', JSON.stringify(each)+"\n", function(isDone){});
+			fs.appendFile('../data/log-summa.txt', JSON.stringify(each)+"\n"+"\n", function(isDone){});
 		}
 	}catch(e){
 		console.log("Write file error : " + e);
