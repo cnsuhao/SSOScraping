@@ -6,7 +6,7 @@ var Nightmare = require('nightmare');
 var visited = [];
 var num = 0;
 var links = [];
-var logs = {"pageResults" : [], "pageTime" : {}};
+var logs = [];
 
 //Get command line arg and run
 var sites = JSON.parse(process.argv.slice(2));
@@ -278,16 +278,17 @@ function run(array){
 				})
 				.end()
 				.then(function (result) {
+					var resObj = {"pageResults" : [], "pageTime" : {}};
 				  	if(result){
 				  		ssoInfo.sso = result.candidates;
-				  		if(ssoInfo['sso'].length > 0) logs['pageResults'].push(ssoInfo);
+				  		if(ssoInfo['sso'].length > 0) resObj['pageResults'].push(ssoInfo);
 				  		links = links.concat(result.links);
 				  		rerun(links, link);
 				  	}
 				  	var end = Date.now();
 				  	var time = {"url" : link, "timeTaken" : (end - start)+"ms"};
-				  	logs['pageTime'] = time;
-				  	return logs;
+				  	resObj['pageTime'] = time;
+				  	return resObj;
 				})
 				.catch(function (error) {
 					console.error('run');
@@ -296,7 +297,8 @@ function run(array){
 				});
 		});
 	}, Promise.resolve([])).then(function(results){
-    	console.log(results);
+    	logs.push(results);
+    	console.log(logs);
 	});
 }
 
@@ -304,7 +306,7 @@ function rerun(links, parent){
 	var len = 0;
 	if(links.length > 3) links = links.slice(0, 3);
 
-	var reruns = {"pageResults" : [], "pageTime" : {}};
+	
 	links.reduce(function(accumulator, url) {
   		return accumulator.then(function(results) {
 			console.log('hi');
@@ -480,6 +482,7 @@ function rerun(links, parent){
 					})
 					.end()
 					.then(function (result) {
+						var reruns = {"pageResults" : [], "pageTime" : {}};
 					  	if(result){
 					  		ssoInfo.sso = result.candidates;
 					  		if(ssoInfo['sso'].length > 0) reruns['pageResults'].push(ssoInfo);
@@ -498,7 +501,8 @@ function rerun(links, parent){
 			}
 		});
 	}, Promise.resolve([])).then(function(results){
-	    console.log(results);
+	    logs.push(results);
+    	console.log(logs);
 	});
 }
 
