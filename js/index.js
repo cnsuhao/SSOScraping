@@ -40,25 +40,18 @@ function run(array){
 				    	},
 						processDOM : function(){
 							var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : []};
-				    		tree.push(document.body);
-				    		while(tree.length > 0){
-				    			var branch = tree.pop();
-				    			if(branch != null){
-				    				var children = branch.children;
-				    				if(children){
-				    					var arr = [].slice.call(children);
-					    				tree = tree.concat(arr);
-				    				}
-				    				if(!(branch.attributes == null || branch.nodeName == 'SCRIPT' || branch.nodeName == 'EMBED')){
-										if(this.prefilter(branch)){
-											var sso = this.hasSSO(branch);
-				    						if(sso){
-				    							if(candidates.indexOf(sso) == -1) candidates.push(sso);
-				    						}else{
-				    							var link = this.hasLinks(branch);
-				    							if(link && sites.indexOf(link) == -1) sites.unshift(link);
-				    						}
-										}
+				    		tree = document.querySelectorAll('*');
+				    		for(var i = tree.length; i--;){
+				    			var branch = tree[i];
+				    			if(!(branch.attributes == null || branch.nodeName == 'SCRIPT' || branch.nodeName == 'EMBED')){
+									if(this.prefilter(branch)){
+										var sso = this.hasSSO(branch);
+			    						if(sso){
+			    							if(candidates.indexOf(sso) == -1) candidates.push(sso);
+			    						}else{
+			    							var link = this.hasLinks(branch);
+			    							if(link && sites.indexOf(link) == -1) sites.unshift(link);
+			    						}
 									}
 								}
 							}
@@ -334,23 +327,15 @@ function rerun(links){
 			                return bool;
 				    	},
 						processDOM : function(){
-							var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : []};
-				    		tree.push(document.body);
-				    		while(tree.length > 0){
-				    			var branch = tree.pop();
-				    			if(branch != null){
-				    				var children = branch.children;
-				    				if(children){
-				    					var arr = [].slice.call(children);
-					    				tree = tree.concat(arr);
-				    				}
-				    				if(!(branch.attributes == null || branch.nodeName == 'SCRIPT' || branch.nodeName == 'EMBED')){
-										if(this.prefilter(branch)){
-											var sso = this.hasSSO(branch);
-				    						if(sso){
-				    							if(candidates.indexOf(sso) == -1) candidates.push(sso);
-				    						}
-										}
+							tree = document.querySelectorAll('*');
+				    		for(var i = tree.length; i--;){
+				    			var branch = tree[i];
+			    				if(!(branch.attributes == null || branch.nodeName == 'SCRIPT' || branch.nodeName == 'EMBED')){
+									if(this.prefilter(branch)){
+										var sso = this.hasSSO(branch);
+			    						if(sso){
+			    							if(candidates.indexOf(sso) == -1) candidates.push(sso);
+			    						}
 									}
 								}
 							}
@@ -526,7 +511,7 @@ function write(data){
 	try{
 		for(var i = 0; i < data.length; i++){
 			var each = data[i];
-			fs.appendFile('../data/20klog.txt', JSON.stringify(each)+"\n", function(isDone){});
+			fs.appendFile('../data/log-summa.txt', JSON.stringify(each)+"\n", function(isDone){});
 		}
 	}catch(e){
 		console.log("Write file error : " + e);
