@@ -277,28 +277,28 @@ function run(array){
 				})
 				.end()
 				.then(function (result) {
-					var resObj = {"pageResults" : [], "pageTime" : {}};
+					var resObj = {"sso" : [], "time" : {}};
 				  	if(result){
 				  		ssoInfo.sso = result.candidates;
-				  		if(ssoInfo['sso'].length > 0) resObj['pageResults'].push(ssoInfo);
+				  		if(ssoInfo['sso'].length > 0) resObj['sso'].push(ssoInfo);
 				  		if(result.links.length > 3) result.links = result.links.slice(0, 3);
 				  		links = links.concat(result.links);
 				  	}
 				  	var end = Date.now();
 				  	var time = {"url" : link, "timeTaken" : (end - start)+"ms"};
-				  	resObj['pageTime'] = time;
+				  	resObj['time'] = time;
 				  	results.push(resObj);
 					return results;
 				})
 				.catch(function (error) {
 					console.error('run');
 				   	console.error('Search failed:', error);
-				    results.push(error);
+				    results.push({"error" : error});
 					return results;
 				});
 		});
 	}, Promise.resolve([])).then(function(results){
-    	console.log(results);
+    	write(results);
     	rerun(links);
 	});
 }
@@ -500,22 +500,14 @@ function rerun(links){
 				});
 		});
 	}, Promise.resolve([])).then(function(results){
-    	console.log(results);
+    	write(results);
 	});
 }
 
 // Write or read from file functions
-function write(data, type){
+function write(data){
 	try{		
-		switch(type){
-			case 0 : fs.appendFile('../data/log-summa.txt', JSON.stringify(data)+"\n", function(isDone){});
-					break;
-			case 1 : fs.appendFile('../data/errors.txt', JSON.stringify(data)+"\n", function(isDone){});
-					break;
-			case 2 : fs.appendFile('../data/times.txt', JSON.stringify(data)+"\n", function(isDone){});
-					break;
-			default : break;
-		}
+		fs.appendFile('../data/log-summa.txt', JSON.stringify(data), function(isDone){});
 	}catch(e){
 		console.log("Write file error : " + e);
 	}
