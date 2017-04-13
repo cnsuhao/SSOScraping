@@ -305,7 +305,7 @@ function rerun(links, parent){
 	for(var k = len; k--;){
 		console.log('hi');
 		var each = links[k];
-		var ssoInfo = {"parent" : parent, "url" : each, "sso" : []};
+		var ssoInfo = {"url" : each, "sso" : []};
 		console.log(ssoInfo)
 		var start = Date.now();
 		var nightmare = Nightmare({
