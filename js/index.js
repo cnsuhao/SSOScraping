@@ -15,7 +15,7 @@ function run(array){
 	array.reduce(function(accumulator, url) {
   		return accumulator.then(function(results) {
   			var link = "https://www." + url;
-  			var ssoInfo = {"parent" : "none", "url" : link, "sso" : []};
+  			var ssoInfo = {"url" : link, "sso" : [], "timeTaken" : ''};
   			var start = Date.now();
 			var nightmare = Nightmare({
 				gotoTimeout : 30000,
@@ -277,17 +277,15 @@ function run(array){
 				})
 				.end()
 				.then(function (result) {
-					var resObj = {"sso" : [], "time" : {}};
 				  	if(result){
 				  		ssoInfo.sso = result.candidates;
-				  		if(ssoInfo['sso'].length > 0) resObj['sso'].push(ssoInfo);
 				  		if(result.links.length > 3) result.links = result.links.slice(0, 3);
 				  		links = links.concat(result.links);
 				  	}
 				  	var end = Date.now();
-				  	var time = {"url" : link, "timeTaken" : (end - start)+"ms"};
-				  	resObj['time'] = time;
-				  	results.push(resObj);
+				  	var time = (end - start)+"ms";
+				  	ssoInfo['timeTaken'] = time;
+				  	results.push(ssoInfo);
 					return results;
 				})
 				.catch(function (error) {
@@ -310,7 +308,7 @@ function rerun(links){
   		return accumulator.then(function(results) {
 			console.log('hi');
 			var each = url;
-			var ssoInfo = {"url" : each, "sso" : []};
+			var ssoInfo = {"url" : each, "sso" : [], "timeTaken" : ''};
 			var start = Date.now();
 			var nightmare = Nightmare({
 				gotoTimeout : 30000,
@@ -480,16 +478,13 @@ function rerun(links){
 				})
 				.end()
 				.then(function (result) {
-					var reruns = {"pageResults" : [], "pageTime" : {}};
 				  	if(result){
 				  		ssoInfo.sso = result.candidates;
-				  		if(ssoInfo['sso'].length > 0) reruns['pageResults'].push(ssoInfo);
 				  	}
-				  	visited.push(each);
 				  	var end = Date.now();
-				  	var time = {"url" : each, "timeTaken" : (end - start)+"ms"};
-				  	reruns['pageTime'] = time;
-				  	results.push(reruns);
+				  	var time = (end - start)+"ms";
+				  	ssoInfo['timeTaken'] = time;
+				  	results.push(ssoInfo);
 				  	return results;
 				})
 				.catch(function (error) {
