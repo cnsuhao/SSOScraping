@@ -5,6 +5,7 @@ var Nightmare = require('nightmare');
 //Variable declaration
 var visited = [];
 var num = 0;
+var links = [];
 
 //Get command line arg and run
 var sites = JSON.parse(process.argv.slice(2));
