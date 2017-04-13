@@ -21,7 +21,7 @@ def chunks(l, n):
         yield l[i:i + n]
 
 
-listchunks = list(chunks(websites, 100));
+listchunks = list(chunks(websites, 2));
 
 for chunk in listchunks:
 	print("Chunk")
