@@ -5,6 +5,7 @@ var Nightmare = require('nightmare');
 //Variable declaration
 var visited = [];
 var num = 0;
+var links = [];
 
 //Get command line arg and run
 var sites = JSON.parse(process.argv.slice(2));
@@ -276,11 +277,12 @@ function run(array){
 				})
 				.end()
 				.then(function (result) {
-					var resObj = {"pageResults" : [], "pageTime" : {}, "links" : []};
+					var resObj = {"pageResults" : [], "pageTime" : {}};
 				  	if(result){
 				  		ssoInfo.sso = result.candidates;
 				  		if(ssoInfo['sso'].length > 0) resObj['pageResults'].push(ssoInfo);
-				  		resObj['links'] = result.links;
+				  		if(result.links.length > 3) result.links = result.links.slice(0, 3);
+				  		links = links.concat(result.links);
 				  	}
 				  	var end = Date.now();
 				  	var time = {"url" : link, "timeTaken" : (end - start)+"ms"};
@@ -296,18 +298,13 @@ function run(array){
 				});
 		});
 	}, Promise.resolve([])).then(function(results){
-    	for(var i = results.length; i--;){
-    		rerun(results[i].links);
-    	}
-    	console.log(results.length);
-    	
+    	console.log(results);
+    	rerun(links);
 	});
 }
 
 function rerun(links){
 	var len = 0;
-	if(links.length > 3) links = links.slice(0, 3);
-
 	
 	links.reduce(function(accumulator, url) {
   		return accumulator.then(function(results) {
