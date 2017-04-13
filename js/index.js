@@ -288,12 +288,14 @@ function run(array){
 				  	var end = Date.now();
 				  	var time = {"url" : link, "timeTaken" : (end - start)+"ms"};
 				  	resObj['pageTime'] = time;
-				  	return resObj;
+				  	results.push(resObj);
+					return results;
 				})
 				.catch(function (error) {
 					console.error('run');
 				   	console.error('Search failed:', error);
-				   	return error;
+				    results.push(error);
+					return results;
 				});
 		});
 	}, Promise.resolve([])).then(function(results){
@@ -491,18 +493,19 @@ function rerun(links, parent){
 					  	var end = Date.now();
 					  	var time = {"url" : each, "timeTaken" : (end - start)+"ms"};
 					  	reruns['pageTime'] = time;
-					  	return reruns;
+					  	results.push(reruns);
+					  	return results;
 					})
 					.catch(function (error) {
 						console.error('rerun');
 					   console.error('Search failed:', error);
-					   return error;
+					   results.push(error);
+					   return results;
 					});
 			}
 		});
 	}, Promise.resolve([])).then(function(results){
-	    logs.push(results);
-    	console.log(logs);
+    	console.log(results);
 	});
 }
 
