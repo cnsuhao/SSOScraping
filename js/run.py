@@ -11,7 +11,7 @@ websites = []
 with open('../data/top-2k.csv') as csvFile:
     reader = csv.reader(csvFile, delimiter=",")
     for data in reader:
-        if(data[0]) > 300:
+        if (data[0] > 300):
             websites.append(data[1])
     csvFile.close()
 
