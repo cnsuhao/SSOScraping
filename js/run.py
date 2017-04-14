@@ -8,7 +8,7 @@ os.environ["DISPLAY"]=":3"
 websites = []
 
 # Read websites data from CSV file
-with open('../data/summa.csv') as csvFile:
+with open('../data/top-2k.csv') as csvFile:
     reader = csv.reader(csvFile, delimiter=",")
     for data in reader:
         websites.append(data[1])

@@ -529,7 +529,7 @@ function write(data){
 	try{
 		for(var i = 0; i < data.length; i++){
 			var each = data[i];
-			fs.appendFile('../data/log-summa.txt', JSON.stringify(each)+"\n"+"\n", function(isDone){});
+			fs.appendFile('../data/log-2k.txt', JSON.stringify(each)+"\n"+"\n", function(isDone){});
 		}
 	}catch(e){
 		console.log("Write file error : " + e);
