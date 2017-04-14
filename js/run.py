@@ -11,7 +11,7 @@ websites = []
 with open('../data/top-2k.csv') as csvFile:
     reader = csv.reader(csvFile, delimiter=",")
     for data in reader:
-        if (data[0] > 300):
+        if (int(data[0]) > 300):
             websites.append(data[1])
     csvFile.close()
 
@@ -25,6 +25,6 @@ def chunks(l, n):
 listchunks = list(chunks(websites, 100));
 
 for chunk in listchunks:
-	print("Chunk")
+	print("chunk")
 	cmd = "DEBUG=nightmare:actions* node index.js '"+json.dumps(chunk)+"'"
 	subprocess.call(cmd, shell=True)
