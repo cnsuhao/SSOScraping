@@ -1,0 +1,949 @@
+//Error messages
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.qq.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.onclkds.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.service.tmall.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.ask.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.detail.tmall.com/"}}
+
+{"error":{"message":"navigation error","code":-3,"details":"","url":"https://www.bbc.co.uk/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.login.tmall.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.soso.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.tianya.cn"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.microsoftonline.com"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.csdn.net"}}
+
+{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"http://zjnet.zjaic.gov.cn/sign/addSignOnline.action"}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.gmw.cn/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.fc2.com/"}}
+
+{"error":{"message":"navigation error","code":-3,"details":"","url":"https://www.salesforce.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.askcom.me/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.pages.tmall.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.china.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.amazonaws.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.daum.net/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.youth.cn"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.xinhuanet.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.thewhizmarketing.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.cctv.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.nicovideo.jp"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.globo.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.dailymail.co.uk/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.list.tmall.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.varzesh3.com"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.livedoor.jp/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.123movies.is/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.rule.tmall.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.chinadaily.com.cn/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.china.com.cn/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.myway.com"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.huaban.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.ameblo.jp/"}}
+
+{"error":{"message":"navigation error","code":-310,"details":"ERR_TOO_MANY_REDIRECTS","url":"https://www.getmyads.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.pinimg.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.prestoris.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.foxnews.com/"}}
+
+{"error":{"message":"navigation error","code":-109,"details":"ERR_ADDRESS_UNREACHABLE","url":"https://www.39.net/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.bp.blogspot.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.k618.cn/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.wordreference.com"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.codeonclick.com"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.rutracker.org/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.twimg.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.thewhizproducts.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.reddituploads.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.naver.jp/"}}
+
+{"error":{"message":"navigation error","code":-3,"details":"","url":"https://www.mama.cn/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.thesaurus.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.ikea.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.putlockers.ch/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.spotscenered.info/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.kompas.com"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.huanqiu.com/"}}
+
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.wittyfeed.com/login"}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.sharepoint.com"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.ifeng.com/"}}
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.youtube-mp3.org"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.steamcommunity.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.caijing.com.cn/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.chaoshi.tmall.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.ltn.com.tw/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.cloudfront.net/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.hatenablog.com"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.google.cn"}}
+
+{"error":{"message":"navigation error","code":-3,"details":"","url":"https://www.pandora.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.webtretho.com/"}}
+
+{"error":{"message":"navigation error","code":-3,"details":"","url":"http://www8.hp.com/us/en/home.html"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.espncricinfo.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.kakaku.com"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.enet.com.cn/"}}
+
+{"error":{"message":"navigation error","code":-100,"details":"ERR_CONNECTION_CLOSED","url":"https://www.pulseonclick.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.dictionary.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.yesky.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.ab4hr.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.mysagagame.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.4dsply.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.seasonvar.ru/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.hola.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.go.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.ku6.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.media.tumblr.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.redirectvoluum.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.ci123.com/"}}
+
+{"error":{"message":"navigation error","code":-3,"details":"","url":"http://www.speedtest.net/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.ablogica.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.telegraph.co.uk/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.ndtv.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.gsmarena.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.mixplugin.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.hilltopads.net/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.nownews.com"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.biobiochile.cl/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.haber7.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.newtabtv.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.eastday.com"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.videodownloadconverter.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.baike.com"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.elpais.com/"}}
+
+{"error":{"message":"navigation error","code":-159,"details":"ERR_SSL_UNRECOGNIZED_NAME_ALERT","url":"https://www.rednet.cn/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.weevah2.top/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.dumedia.ru/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.err.tmall.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.blog.jp/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.azlyrics.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.discover.wordpress.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.rediff.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.reuters.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.marca.com"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.homedepot.com/“}}
+
+{"message":"navigation error","code":-3,"details":"","url":"https://online.americanexpress.com/myca/oce/us/action/register?request_type=un_Register&Face=en_US&regSrc=logon&linknav=us-homepage-createnewaccount"}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.directrev.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.umblr.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.shink.in/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.filehippo.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.163.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.pikabu.ru/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.libero.it/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.reverso.net"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.list-manage.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.goal.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.vip.wordpress.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.friv.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.plusnetwork.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.y8.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.ytimg.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.pwwysydh.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.flirt4free.com"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.providr.com"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.pairade.com"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.okezone.com"}}
+
+
+{"error":{"message":"navigation error","code":-3,"details":"","url":"https://www.ouedkniss.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.sakura.ne.jp"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.mediaoffermania.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.milliyet.com.tr"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.emol.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.doorblog.jp/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.elmundo.es"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.manoramaonline.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.livescore.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.oeeee.com/"}}
+
+{"message":"navigation error","code":-3,"details":"","url":"http://www.momoshop.com.tw/main/Main.jsp"}
+
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.gazetaexpress.com/login"}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.bitly.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.mi.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.mediaprovide.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.witchcraftcash.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.streamcloud.eu/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.adidas.tmall.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.blkget.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.viid.me/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.nikkei.com/"}}
+
+{"error":{"message":"navigation error","code":-101,"details":"ERR_CONNECTION_RESET","url":"https://www.nikkeibp.co.jp/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.clotraiam.website/"}}
+
+{"error":{"message":"navigation error","code":-109,"details":"ERR_ADDRESS_UNREACHABLE","url":"https://www.17ok.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.watsons.tmall.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.livedoor.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.www.gov.uk/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.nba.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.bhaskar.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.eyny.com"}}
+
+{"error":{"message":"navigation error","code":-100,"details":"ERR_CONNECTION_CLOSED","url":"https://www.drudgereport.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.about.com"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.time.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.adplxmd.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.buzzhand.com/"}}
+
+{"message":"navigation error","code":-3,"details":"","url":"https://www.lowes.com/en_us/mylowes.html"}
+
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.nature.com/foxtrot/svc/login"}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.abril.com.br/"}}
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.fromdoctopdf.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.meb.gov.tr"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.auction.co.kr"}}
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.efukt.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.miopdigital.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.psu.edu/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.news.com.au/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.aljazeera.net"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.baskino.club/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.youboy.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.telewebion.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.how01.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.televisionfanatic.com"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.digitaltrends.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.kizi.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.scribol.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.160117rd.xyz/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.mejortorrent.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.familydoctor.com.cn/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.syosetu.com/"}}
+
+{"error":{"message":"navigation error","code":-107,"details":"ERR_SSL_PROTOCOL_ERROR","url":"https://www.qingdaonews.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.royalbank.com"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.infobae.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.india.com/"}}
+
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://bab.la/login"}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.mec.gov.br/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.adk2x.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.abc.net.au/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.food.tmall.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.republika.co.id/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.worldstarhiphop.com"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.aksam.com.tr/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.bigtests.me"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.chosun.com"}}
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.southcn.com"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.3c.tmall.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.content.tmall.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.flashscore.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.dw.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.6park.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.jia.tmall.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.sportzwiki.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.jizzbunker.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.stream-it.online/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.pirateproxy.vip/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.sankei.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.smi2.ru/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.dropbooks.tv"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.biglobe.ne.jp"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.4399.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.brassring.com"}}
+
+{"error":{"message":"navigation error","code":-3,"details":"","url":"https://plarium.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.indianrail.gov.in"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.programme-tv.net/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.bigcinema.to/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.hateblo.jp"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.alicdn.com"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.sfgate.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.skysports.com"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.editor.wix.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.kisscartoon.se/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.bravotube.net/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.mediaset.it/"}}
+
+{"error":{"message":"navigation error","code":-100,"details":"ERR_CONNECTION_CLOSED","url":"https://www.forgeofempires.com/"}}
+
+{"error":{"message":"navigation error","code":-101,"details":"ERR_CONNECTION_RESET","url":"https://www.mpixeli.com/"}}
+
+
+{"error":{"message":"navigation error","code":-107,"details":"ERR_SSL_PROTOCOL_ERROR","url":"https://www.17k.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.gap.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.nextmedia.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.abc.es/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.eenadu.net/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.dagospia.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.mawdoo3.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.metropoles.com"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.easypdfcombine.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.jiameng.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.talk.tw"}}
+
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.offersongold.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.rutor.info/"}}
+
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.eroterest.net"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.nextlnk2.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.greatandhra.com/"}}
+
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.24h.com.vn/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.foodnetwork.com/"}}
+
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.ubisoft.com/login"}
+
+
+
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.hibapress.com/login"}
+
+{"error":{"message":"navigation error","code":-109,"details":"ERR_ADDRESS_UNREACHABLE","url":"https://www.sozcu.com.tr/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.v1.cn/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.index.hu/"}}
+
+
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.service.gov.uk/"}}
+
+
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.jin115.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.mihanblog.com/"}}
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.geocities.jp"}}
+
+
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.el-nacional.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.masralarabia.com"}}
+
+{"error":{"message":"navigation error","code":-109,"details":"ERR_ADDRESS_UNREACHABLE","url":"https://www.01net.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.akairan.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.padsdel.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.kinoprofi.org/"}}
+
+
+{"error":{"message":"navigation error","code":-324,"details":"ERR_EMPTY_RESPONSE","url":"https://www.teletica.com/"}}
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.tilestwra.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.lanacion.com.ar/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.clevernt.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.sina.com.tw"}}
+
+
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.yao.tmall.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.hitomi.la/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.kuronekoyamato.co.jp/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.tomsguide.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.lloydsbank.co.uk/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.alohatube.com"}}
+
+
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.yourdictionary.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.dhgate.com/"}}
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.mufg.jp/"}}
+
+
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.xoclkrvstrafms.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.zerohedge.com"}}
+
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.atmarkit.co.jp"}}
+
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.businessweekly.com.tw"}}
+
+{"error":{"message":"navigation error","code":-3,"details":"","url":"http://www.tradedoubler.com/en/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.academic.ru/"}}
+
+
+
+{"error":{"message":"navigation error","code":-3,"details":"","url":"https://www.togetter.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.socialnewpages.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-109,"details":"ERR_ADDRESS_UNREACHABLE","url":"https://www.pearsoncmg.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.jb51.net/"}}
+
+
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.employeesdirectorships.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.wnd.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.protect-your-privacy.net"}}
+
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.zeit.de/"}}
+
+
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.vidto.me/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.frtyg.com"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.mbc.net/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.jsfiddle.net/"}}
+
+
+{"error":{"message":"navigation error","code":-337,"details":"ERR_SPDY_PROTOCOL_ERROR","url":"https://www.ibtimes.com/"}}
+
+
+
+{"error":"Cannot read property 'toLowerCase' of null"}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.quikr.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.eonline.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.6pm.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.cyro.se"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.miui.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.politicususa.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.panet.co.il/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.koreastardaily.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.thegay.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.p30download.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.nsdl.com"}}
+
+
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.kdnet.net/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.lavanguardia.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.noaa.gov"}}
+
+
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.towpath.xyz/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.clubic.com/"}}
+
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.esuteru.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-137,"details":"ERR_NAME_RESOLUTION_FAILED","url":"https://www.socialtrade.biz/"}}
+
+
+
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.cpasbien.cm/login"}
+
+
+
+{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://sci.dhl.com/GC3/glog.webserver.servlet.umt.Login"}
+
+
+{"message":"navigation error","code":-3,"details":"","url":"https://login.gamestop.com/Profile"}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.oceanofgames.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.elconfidencial.com/"}}
+
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.techtudo.com.br/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.patheos.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.fontawesome.io/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.deref-gmx.net/"}}
+
+
+
+{"error":{"message":"navigation error","code":-107,"details":"ERR_SSL_PROTOCOL_ERROR","url":"https://www.anybunny.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.mts.ru/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.abplive.in/"}}
+
+
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.wenxuecity.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-3,"details":"ERR_ABORTED","url":"https://www.tunein.com/"}}
+
+
+{"error":{"message":"navigation error","code":-159,"details":"ERR_SSL_UNRECOGNIZED_NAME_ALERT","url":"https://www.laprensagrafica.com/"}}
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.persianblog.ir"}}
+
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.sanook.com"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.yomiuri.co.jp"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.developer.wordpress.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.myhome.tmall.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.hilton.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.pelis24.tv"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.fb.ru/"}}
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.chicagotribune.com/"}}
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.arcot.com/"}}
+
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.otzovik.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.safefinder.com/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.cdninstagram.com/"}}
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.haberturk.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.makeleio.gr/"}}
+
+{"error":{"message":"navigation error","code":-107,"details":"ERR_SSL_PROTOCOL_ERROR","url":"https://www.ekantipur.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.360doc.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.fast-torrent.ru/"}}
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.xiaomi.com"}}
+
+
+
+{"error":{"message":"navigation error","code":-3,"details":"","url":"https://www.iheart.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.vn-gid.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.bfmtv.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.kitco.com"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.2chblog.jp/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.subject.tmall.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.movie4k.to"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.hulu.jp/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.dlsite.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.foxsports.com/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.knowyourmeme.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.eluniverso.com/"}}
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.rus.ec"}}
+
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.imgrum.net"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.iobit.com/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.acfun.cn/"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.deref-web-02.de/"}}
+
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.lagaceta.com.ar"}}
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.bsnl.in/"}}
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.techbang.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.cracked.com/"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.sun-gazing.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.kd2244.com"}}
+
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.xmovies8.tv"}}
+
+{"error":{"message":"navigation error","code":-101,"details":"ERR_CONNECTION_RESET","url":"https://www.picofile.com/"}}
+
+{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://free.internetspeedtracker.com/login"}
+
+
+
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.anyporn.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.hatenablog.jp"}}
+
+
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.hindustantimes.com/"}}
+
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.legacy.com"}}
+
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.time2play-online.net/"}}
+
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.mydala.com/"}}
