@@ -11,12 +11,14 @@ websites = []
 
 
 filename = sys.argv[1]
+start = sys.argv[2]
 
 # Read websites data from CSV file
 with open('../data/csv/'+str(filename)) as csvFile:
     reader = csv.reader(csvFile, delimiter=",")
     for data in reader:
-        websites.append(data[1])
+        if(data[0] > start):
+            websites.append(data[1])
     csvFile.close()
 
 # Split into chunks of array
