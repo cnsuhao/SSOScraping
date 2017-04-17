@@ -303,6 +303,7 @@ function run(array){
 		});
 	}, Promise.resolve([])).then(function(results){
     	write(results);
+    	console.log("Before rerun");
     	rerun(links);
 	});
 }
@@ -505,6 +506,8 @@ function rerun(links){
 		});
 	}, Promise.resolve([])).then(function(results){
     	write(results);
+    	console.log("After rerun");
+    	console.log("All done");
 	});
 }
 
