@@ -2,17 +2,21 @@ import csv
 import os
 import json
 import subprocess
+import sys
+
 
 
 os.environ["DISPLAY"]=":3"
 websites = []
 
+
+filename = sys.argv[1]
+
 # Read websites data from CSV file
-with open('../data/top-2k.csv') as csvFile:
+with open('../data/'+str(filename)) as csvFile:
     reader = csv.reader(csvFile, delimiter=",")
     for data in reader:
-        if (int(data[0]) > 300):
-            websites.append(data[1])
+        websites.append(data[1])
     csvFile.close()
 
 # Split into chunks of array
@@ -22,9 +26,10 @@ def chunks(l, n):
         yield l[i:i + n]
 
 
-listchunks = list(chunks(websites, 100));
+listchunks = list(chunks(websites, 2));
 
 for chunk in listchunks:
-	print("chunk")
-	cmd = "DEBUG=nightmare:actions* node index.js '"+json.dumps(chunk)+"'"
-	subprocess.call(cmd, shell=True)
+    print("chunk")
+    cmd = "DEBUG=nightmare:actions* node index.js '"+json.dumps(filename)+"'"
+    cmd += " '"+json.dumps(chunk)+"'"
+    subprocess.call(cmd, shell=True)

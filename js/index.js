@@ -8,7 +8,8 @@ var num = 0;
 var links = [];
 
 //Get command line arg and run
-var sites = JSON.parse(process.argv.slice(2));
+var  logFileName = JSON.parse(process.argv[2]);
+var sites = JSON.parse(process.argv.slice(3));
 run(sites);
 
 function run(array){
@@ -115,7 +116,7 @@ function run(array){
 			                return null;
 			            },
 				    	makeAttrString : function(node){
-				    		var str = '';
+				    		var str = node.textContent || '';
 			                var attribs = node.attributes;
 			                for(var i=0; i < attribs.length; i++){
 			                    str += attribs[i].name + "=" + attribs[i].value + ";"
@@ -223,10 +224,12 @@ function run(array){
 				                    }else if(openMatch != null){
 				                        return each.site+", openid";
 				                    }else{
-				                        if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
-				                            inputstr.match(k5) != null || inputstr.match(k6) != null){
-				                            return each.site+', edgecase';
-				                        }
+				                    	if(each.site != 'box' && each.site != 'vk' && each.site != '500px'){
+				                    		if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
+					                            inputstr.match(k5) != null || inputstr.match(k6) != null){
+					                            return each.site+', edgecase';
+					                        }
+				                    	} 
 				                    }
 				                }
 				                i++;
@@ -282,7 +285,7 @@ function run(array){
 				.then(function (result) {
 				  	if(result){
 				  		ssoInfo['sso'] = result.candidates;
-				  		if(result.links.length > 4) result.links = result.links.slice(0, 4);
+				  		if(result.links.length > 3) result.links = result.links.slice(0, 3);
 				  		links = links.concat(result.links);
 				  	}
 				  	var end = Date.now();
@@ -361,7 +364,7 @@ function rerun(links){
 				    		return result;
 						},
 				    	makeAttrString : function(node){
-				    		var str = '';
+				    		var str = node.textContent || '';
 			                var attribs = node.attributes;
 			                for(var i=0; i < attribs.length; i++){
 			                    str += attribs[i].name + "=" + attribs[i].value + ";"
@@ -468,10 +471,12 @@ function rerun(links){
 				                    }else if(openMatch != null){
 				                        return each.site+", openid";
 				                    }else{
-				                        if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
-				                            inputstr.match(k5) != null || inputstr.match(k6) != null){
-				                            return each.site+', edgecase';
-				                        }
+				                    	if(each.site != 'box' && each.site != 'vk' && each.site != '500px'){
+					                        if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
+					                            inputstr.match(k5) != null || inputstr.match(k6) != null){
+					                            return each.site+', edgecase';
+					                        }
+					                    }
 				                    }
 				                }
 				                i++;
@@ -529,7 +534,7 @@ function write(data){
 	try{
 		for(var i = 0; i < data.length; i++){
 			var each = data[i];
-			fs.appendFile('../data/log-2k.txt', JSON.stringify(each)+"\n"+"\n", function(isDone){});
+			fs.appendFile('../data/'+logFileName+'_log.txt', JSON.stringify(each)+"\n", function(isDone){});
 		}
 	}catch(e){
 		console.log("Write file error : " + e);
