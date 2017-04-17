@@ -1,0 +1,34 @@
+SINGLE SIGN OUT — Project that explores how a vulnerability found in one IDP can have a domino effect on other IDPs that also depend on it. See how an interconnected web has some problems with it. The technical part of it is how a Facebook vulnerability can lead to compromise in other SPs that depend on it. 
+Idea changed : Different project intention now
+
+Moe found a vulnerability in Facebook where he could take over someone’s account. So we want to see if the identity providers are all vulnerable similarly. And my first job is to find on top million sites what are the idps used to log in and sign up and work from there. 
+
+Writing the SSO discovery program in python using selenium
+Had some problems with packages and which version of python to use. Now fixed on python 2.7. 
+it needs lxml, beautifulsoup, selenium
+everything set up,  testing only pending then run on many websites
+urls being scoured
+
+Major updates :
+
+First tried python + selenium + beautifulsoup — but this caused problems with selenium chrome being more
+so changed to phantomjs and same combo above — but phantom had a lot of bugs that couldnt be resolved
+changed to casperjs — did not scale well
+then finally decided on nightmarejs — runs well. 
+First ran a 2k. Then increased instances and ran 5k in 15 instances. That did not work well so increased to 20k for 5 instances
+There are some problems with certain website where it hangs. This might because of number of reasons :
+The website is prompting for a download which stops the execution unless i can close that prompt. But this is a problem in a headless browser situation becoz there is no visible window. 
+
+
+Algorithm  used :
+
+1. Open URL of website
+2. Traverse DOM doing a DFS on the all elements
+3. For each DOM element, scan for potential SSO. If found, then record result and move on to next element.
+4. If not found, then scan same element for signup/login links. If found, record result for later use. 
+5. Consolidate the above results and if there exists signup/login links, rerun same algorithm for those links. But that algorithm will scan only for SSO and not anymore links. 
+6. Repeat this for all websites. 
+
+Nightmare :
+
+It uses async execution style so I have used Array.reduce to keep track of the different queues and accumulate the results. This works quite well and it seems to be time efficient. The functions to traverse the DOM and extract the candidates are written in the context of the page (in evaluate()). Though the two runs for the links are the same with a slight difference, I did not want to club them together because that would involve more if statements and code clutter. This separation kinda keeps it cleaner and less tangled. 

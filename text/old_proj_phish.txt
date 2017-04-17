@@ -1,0 +1,103 @@
+Single Sign On Phishing :
+
+Problem statement : 
+
+Single sign on phishing is prevalent and users are lured to give their IdP credentials by clicking and logging into a site that has been spoofed to look like an honest IdP. 
+Instead of signing on to the IdP, credentials are leaked to phishers. 
+
+Goals :
+Step 1 : Come up with heuristics to identify legitimate SSO buttons from phishing SSO buttons
+Step 2 : Study top million websites and see if the heuristics actually apply and extend it
+Step 3 : Create an extension to find if SSO buttons on a page are legitimate or not 
+
+Reading : (Papers)
+In the paper “The Devil is Phishing: Rethinking Web Single Sign-On Systems Security” - 2013, the author talks about how insufficiently the problem of Web SSO phishing has been analyzed. For this purpose, he first demonstrates how easy it is to spoof  login popup windows of legitimate IdPs. And he does this by merely doing some HTML and CSS changes that makes a fake popup. He also conducts a user study to show that even users who have used SSO before are convinced of the authenticity of such a page. This shows that phishing more than ever before can be easily done and is more prevalent. 
+What did I think : 
+Well as far as I have seen, now clicking an SSO button actually redirects the user to the login page of the IdP, so prevalence of the popup login window is questionable. Have to be checked. 
+	2. Consequently, research prevalence of spoofing when such a redirection is the norm.
+
+2. Decisions06.pdf - Talks about how users make decisions and be susceptible to phishing. Mostly email and then subsequent phishing sites itself. But I feel it is not relevant to the project because it talks about email phishing and what happens when a user visits such an evil site rather than on how to prevent it. 
+3. Effectiveness07.pdf - Blacklistes sites and phishing page properties 
+	- heuristics related to the phishing page itself
+	- again assumes user visits the website instead of being prevented from 
+	- admits that it doesnt attempt to prevent users from visiting a phishing site
+	- and also mainly consequent to email phishing
+4. ICCCN2016.pdf - email is 1st level of context 
+	- phishing site is 2nd level of context 
+	- creates toolkit to create phishing sites in real time to see how effective they are by conducting user studies
+	- phishing attack types - simple, advanced and extreme 
+	- simple - one level of depth meaning only login page present
+	- advanced - 2 or 3 levels depth there are some linked pages
+	- extreme - unlimited depth - goal to cover effectively the deception - has all pages perfectly linked like the legitimate site to convince user
+	- has 4 parts - Webpage generator, temporary webpage repository, link substitution and Web SSO library 
+	- covers both traditional and web sso phishing
+	- part 1 - responsible for generating webpages based on requests intercepted from user
+	- part 2 - temporarily stores created and finally modified web pages
+	- part 3 - enables link substitution of both static and dynamic links
+	- part 4 - creates diff sso spoofed windows based on os, browsers and so on
+	- extreme phishing attacks with unlimited levels of depth are highly dangerous. they do not defend against existing solutions
+	- Look at whitelist & hashing based solutions
+	- It says heuristic based solns like ones that rely on visual and non visual cues of a website may not be effective because extreme attacks will replace all this stuff with legit values that only change while getting substituted. So URL based stuff also might not work. 
+5. jcs14.pdf - not relevant talks about formal analysis of protocols
+6. malurlkdd09.pdf - extracting features from URLs using various statistical techniques but the ICCN toolkit wil make this less effective with the URL subst thing
+7. oauth-sso12 - again is basically the analysis of OAuth2.0 protocol
+8. p1-garera07.pdf - study on if we can use URLs and its structure to say if a site is phishing or not. ICCN references this in their study and such heuristic based measures can be less effective because they talk about simple phishing and these URLs can be made to look as legit URLs based on the toolkit
+9. jakobsson06.pdf - This paper was also referenced by ICCN and are mentioned like the earlier one as part of the measurement studies for simple phishing success rates and how they are not much effective because its simple
+10. phishingpages10.pdf - This paper is also referenced by ICCN and is part of the heuristic soln to id phishing URLs for maintaining Google phishing blacklist. It also becomes ineffective when urls are also made to look legit
+11. saml08.pdf - not relevant because its an analysis of a protocol flaw again
+12. signon11.pdf - maybe relevant because it talks about why users refuse to use sso systems
+13. websso-final12.pdf - another analysis of web sso security flaw. Its mentioned in iccn as one study that measures vulnerabilities of sso n not the core issue itself so. 
+14. whyphishingworks06.pdf - is referenced in iccn. talks about why phishing works basically susceptibility study. how look and feel of a spoofed website provides are found by users by its appearance rather than by indicators. 
+15. cantina07.pdf - not sure if this is relevant exactly because its a content based system that calculates some sort of score for the terms on a website, does a search on google and based on that matched url to see if the site is legitimate or not
+
+	
+	
+
+Reading : (Online)
+As recent as june 2016, there was a phishing attack against the education sector where attackers lured the users to login to target institution with credentials to divert money by changing the direct deposit information on the HR portals of the sites. Further, email address was compromised by accessing the Outlook Web Access and sending email from trusted corporate mail to others thus spreading the campaign more. Source : https://www.optiv.com/blog/threat-advisory-single-sign-on-phishing. Defenses: Lack of 2 step auth and unaware users.
+
+
+
+What am I to understand :
+
+The prevalence of popup window sign on phishing and latest phishing advances
+Any already present heuristics?
+Already present techniques to detect phishing?
+
+
+Open redirects :
+OAuth : When a url has a parameter like “http://something.com/blog?redirect_url=somethingelse This is considered open redirect. So if the user is authorized on some protocol, and the authorization server only registers part of the redirect URI then there will be a possibility that the  attacker can replace the redirect url and make the user click on it and get access code. And if the website wrongly authenticates instead of authorizing they will be able to access account also. 
+SAML : In SAML as the email says, if the ACSUrl is bad then idP most likely wont authorize it since its a unknown SP. But it is still redirected to the url where the attacker can deliver a phishing page and users can get spoofed. For this the user has to click on open redirect URL itself. 
+
+OpenID Connect : It is built on top of OAuth 2 itself. It makes authentication request to see if the user has an account with the IDP and if not then tell them to sign up at the SP. Not sure how open redirects
+
+
+Implemented the logic - refining some edge cases
+figuring out how to click with selenium when you dont know the element name - done
+writing out the values to a file - log file - done just refine
+only log out websites 
+sign up also with addn to login click with selenium? - both - yet to
+how do i proceed after this? - we will see if the output offline analysis actually is the actual endpoint - yet to
+search if images in page are official where names are not present - md5 hash - yet to
+check out headless browser - yet to
+send ssh key - done
+
+
+
+Chrome extension :
+
+takes only png for icon
+finished testing with initial work - 500 websites not so accurate list
+try doing properly the refined logic 
+Edge cases - refinement:
+facebook login in tracking pixels
+identifying keywords for detailed refinement
+Wrong values : 
+- in extension code
+check program execution
+Structure it so the state is maintainable - consistent behavior over different runs
+cover edge cases - manual analysis in different websites - document it
+in testing code 
+  see how both sign up and login can be incorporated in one load of website
+see if that logs the right values
+implement headless browser
