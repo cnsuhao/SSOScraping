@@ -314,7 +314,7 @@ function rerun(links){
 
 	filtered.reduce(function(accumulator, url) {
   		return accumulator.then(function(results) {
-			console.log('hi');
+			console.log(url);
 			var each = url;
 			var ssoInfo = {"url" : each, "sso" : [], "timeTaken" : ''};
 			var start = Date.now();
