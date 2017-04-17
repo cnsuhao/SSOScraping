@@ -32,7 +32,7 @@ listchunks = list(chunks(websites, 100));
 print(len(listchunks))
 
 for chunk in listchunks:
-    print("chunk")
+    print("chunk"+len(chunk))
     cmd = "DEBUG=nightmare:actions* node index.js '"+json.dumps(filename)+"'"
     cmd += " '"+json.dumps(chunk)+"'"
     subprocess.call(cmd, shell=True)
