@@ -13,7 +13,7 @@ websites = []
 filename = sys.argv[1]
 
 # Read websites data from CSV file
-with open('../data/'+str(filename)) as csvFile:
+with open('../data/csv/'+str(filename)) as csvFile:
     reader = csv.reader(csvFile, delimiter=",")
     for data in reader:
         websites.append(data[1])
