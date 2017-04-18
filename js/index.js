@@ -15,8 +15,8 @@ run(sites);
 function run(array){
 	array.reduce(function(accumulator, url) {
   		return accumulator.then(function(results) {
-  			var link = "https://www." + url;
-  			var ssoInfo = {"url" : link, "sso" : [], "timeTaken" : ''};
+  			var link = "https://www." + url[1];
+  			var ssoInfo = {"rank" : url[0], "url" : link, "sso" : [], "timeTaken" : ''};
   			var start = Date.now();
 			var nightmare = Nightmare({
 				gotoTimeout : 30000,
@@ -290,6 +290,9 @@ function run(array){
 				  	if(result){
 				  		ssoInfo['sso'] = result.candidates;
 				  		if(result.links.length > 3) result.links = result.links.slice(0, 3);
+				  		for(var i = 0; i < result.links.length; i++){
+							result.links[i] = result.links[i]+"||"+url[0];
+				  		}
 				  		links = links.concat(result.links);
 				  	}
 				  	var end = Date.now();
@@ -318,9 +321,9 @@ function rerun(links){
 
 	filtered.reduce(function(accumulator, url) {
   		return accumulator.then(function(results) {
-			console.log(url);
-			var each = url;
-			var ssoInfo = {"url" : each, "sso" : [], "timeTaken" : ''};
+			var split = url.split('||');
+			var each = split[0];
+			var ssoInfo = {"rank": split[1], "url" : each, "sso" : [], "timeTaken" : ''};
 			var start = Date.now();
 			var nightmare = Nightmare({
 				executionTimeout: 30000,

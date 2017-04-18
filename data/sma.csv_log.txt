@@ -1,0 +1,70 @@
+{"rank":"32","url":"https://www.netflix.com","sso":[],"timeTaken":"2231ms"}
+{"rank":"38","url":"https://www.stackoverflow.com","sso":["google, openid"],"timeTaken":"1976ms"}
+{"rank":"39","url":"https://www.amazon.co.jp","sso":["500px, openid","amazon, openid","amazon, no-url"],"timeTaken":"2366ms"}
+{"rank":"40","url":"https://www.yandex.ru","sso":[],"timeTaken":"2957ms"}
+{"rank":"43","url":"https://www.imdb.com","sso":["twitter, no-url","amazon, no-url","facebook, no-url","facebook, oauth"],"timeTaken":"3708ms"}
+{"rank":"50","url":"https://www.buzzfeed.com","sso":[],"timeTaken":"2291ms"}
+{"rank":"46","url":"https://www.pinterest.com","sso":["google, no-url"],"timeTaken":"1847ms"}
+{"rank":"33","url":"https://www.wordpress.com","sso":[],"timeTaken":"2714ms"}
+{"url":"https://wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fwordpress.com%2F","sso":[],"timeTaken":"968ms"}
+{"url":"https://www.netflix.com/login","sso":["netflix, no-url","facebook, no-url"],"timeTaken":"2490ms"}
+{"url":"https://stackoverflow.com/users/login?ssrc=site_switcher&returnurl=http%3a%2f%2fstackoverflow.com%2f","sso":["google, openid","google, oauth","facebook, oauth","yahoo, openid","aol, openid"],"timeTaken":"1478ms"}
+{"url":"https://www.amazon.co.jp/gp/video/primesignup/ref=dvm_jp_pl_cs_pw_hero_np_unrec_lifeb?pf_rd_p=c1a315c5-0b55-4c7d-a611-b2d4ff161b73&pf_rd_r=CDEYJSM0GW7W0Y1854CG","sso":[],"timeTaken":"1546ms"}
+{"url":"https://www.yandex.ru/login","sso":[],"timeTaken":"3604ms"}
+{"url":"http://pro.imdb.com/signup/index.html?rf=cons_ft_hm&ref_=cons_ft_hm","sso":["amazon, no-url"],"timeTaken":"3190ms"}
+{"url":"https://secure.imdb.com/register-imdb/form-v2?ref_=ft_reg","sso":["google, no-url","amazon, no-url","facebook, no-url","facebook, oauth","google, oauth"],"timeTaken":"1641ms"}
+{"url":"https://www.imdb.com/registration/signin?u=/&ref_=nv_usr_lgin_1","sso":["google, no-url","amazon, no-url","facebook, no-url","facebook, oauth","google, oauth"],"timeTaken":"1487ms"}
+{"url":"https://www.pinterest.com/login","sso":["google, no-url"],"timeTaken":"1991ms"}
+{"url":"https://www.buzzfeed.com/signup","sso":["facebook, no-url","google, no-url","twitter, no-url"],"timeTaken":"2169ms"}
+{"rank":"32","url":"https://www.netflix.com","sso":[],"timeTaken":"1810ms"}
+{"rank":"33","url":"https://www.wordpress.com","sso":[],"timeTaken":"6802ms"}
+{"rank":"38","url":"https://www.stackoverflow.com","sso":["google, openid"],"timeTaken":"1899ms"}
+{"rank":"39","url":"https://www.amazon.co.jp","sso":["500px, openid","amazon, openid","amazon, no-url"],"timeTaken":"2079ms"}
+{"rank":"40","url":"https://www.yandex.ru","sso":[],"timeTaken":"2693ms"}
+{"rank":"43","url":"https://www.imdb.com","sso":["twitter, no-url","amazon, no-url","facebook, no-url","facebook, oauth"],"timeTaken":"3978ms"}
+{"rank":"46","url":"https://www.pinterest.com","sso":["google, no-url"],"timeTaken":"1822ms"}
+{"rank":"50","url":"https://www.buzzfeed.com","sso":[],"timeTaken":"2213ms"}
+{"rank":"32","url":"https://www.netflix.com","sso":[],"timeTaken":"1958ms"}
+{"rank":"33","url":"https://www.wordpress.com","sso":[],"timeTaken":"2775ms"}
+{"rank":"38","url":"https://www.stackoverflow.com","sso":["google, openid"],"timeTaken":"1970ms"}
+{"rank":"39","url":"https://www.amazon.co.jp","sso":["500px, openid","amazon, openid","amazon, no-url"],"timeTaken":"2111ms"}
+{"rank":"40","url":"https://www.yandex.ru","sso":[],"timeTaken":"2810ms"}
+{"rank":"43","url":"https://www.imdb.com","sso":["twitter, no-url","amazon, no-url","facebook, no-url","facebook, oauth"],"timeTaken":"3901ms"}
+{"rank":"46","url":"https://www.pinterest.com","sso":[],"timeTaken":"1741ms"}
+{"rank":"50","url":"https://www.buzzfeed.com","sso":[],"timeTaken":"2233ms"}
+{"rank":"32","url":"https://www.netflix.com","sso":[],"timeTaken":"1992ms"}
+{"rank":"33","url":"https://www.wordpress.com","sso":[],"timeTaken":"3351ms"}
+{"rank":"38","url":"https://www.stackoverflow.com","sso":["google, openid"],"timeTaken":"1805ms"}
+{"rank":"39","url":"https://www.amazon.co.jp","sso":["500px, openid","amazon, openid","amazon, no-url"],"timeTaken":"2138ms"}
+{"rank":"40","url":"https://www.yandex.ru","sso":[],"timeTaken":"3159ms"}
+{"rank":"43","url":"https://www.imdb.com","sso":["twitter, no-url","amazon, no-url","facebook, no-url","facebook, oauth"],"timeTaken":"3595ms"}
+{"rank":"46","url":"https://www.pinterest.com","sso":["google, no-url"],"timeTaken":"1817ms"}
+{"rank":"50","url":"https://www.buzzfeed.com","sso":[],"timeTaken":"2212ms"}
+{"rank":"32","url":"https://www.netflix.com/login","sso":["netflix, no-url","facebook, no-url"],"timeTaken":"2274ms"}
+{"rank":"33","url":"https://wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fwordpress.com%2F","sso":[],"timeTaken":"960ms"}
+{"rank":"38","url":"https://stackoverflow.com/users/login?ssrc=site_switcher&returnurl=http%3a%2f%2fstackoverflow.com%2f","sso":["google, openid","google, oauth","facebook, oauth","yahoo, openid","aol, openid"],"timeTaken":"1513ms"}
+{"rank":"39","url":"https://www.amazon.co.jp/gp/video/primesignup/ref=dvm_jp_pl_cs_pw_hero_np_unrec_ever?pf_rd_p=53d265b8-b467-4f24-8fe3-3442aa384812&pf_rd_r=QZCFRF4ZG3D223K1GQDP","sso":[],"timeTaken":"1423ms"}
+{"rank":"40","url":"https://www.yandex.ru/login","sso":[],"timeTaken":"3713ms"}
+{"rank":"43","url":"https://secure.imdb.com/register-imdb/form-v2?ref_=ft_reg","sso":["google, no-url","amazon, no-url","facebook, no-url","facebook, oauth","google, oauth"],"timeTaken":"1434ms"}
+{"rank":"43","url":"http://pro.imdb.com/signup/index.html?rf=cons_ft_hm&ref_=cons_ft_hm","sso":["amazon, no-url"],"timeTaken":"2075ms"}
+{"rank":"43","url":"https://www.imdb.com/registration/signin?u=/&ref_=nv_usr_lgin_1","sso":["google, no-url","amazon, no-url","facebook, no-url","facebook, oauth","google, oauth"],"timeTaken":"1269ms"}
+{"rank":"46","url":"https://www.pinterest.com/login","sso":["google, no-url"],"timeTaken":"1810ms"}
+{"rank":"50","url":"https://www.buzzfeed.com/signup","sso":["facebook, no-url","google, no-url","twitter, no-url"],"timeTaken":"2260ms"}
+{"rank":"32","url":"https://www.netflix.com","sso":[],"timeTaken":"1740ms"}
+{"rank":"33","url":"https://www.wordpress.com","sso":[],"timeTaken":"2396ms"}
+{"rank":"38","url":"https://www.stackoverflow.com","sso":["google, openid"],"timeTaken":"1898ms"}
+{"rank":"39","url":"https://www.amazon.co.jp","sso":["500px, openid","amazon, openid","amazon, no-url"],"timeTaken":"2156ms"}
+{"rank":"40","url":"https://www.yandex.ru","sso":[],"timeTaken":"2698ms"}
+{"rank":"43","url":"https://www.imdb.com","sso":["twitter, no-url","amazon, no-url","facebook, no-url","facebook, oauth"],"timeTaken":"3631ms"}
+{"rank":"46","url":"https://www.pinterest.com","sso":["google, no-url"],"timeTaken":"1780ms"}
+{"rank":"50","url":"https://www.buzzfeed.com","sso":[],"timeTaken":"2893ms"}
+{"rank":"32","url":"https://www.netflix.com/login","sso":["netflix, no-url","facebook, no-url"],"timeTaken":"2114ms"}
+{"rank":"33","url":"https://wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fwordpress.com%2F","sso":[],"timeTaken":"938ms"}
+{"rank":"38","url":"https://stackoverflow.com/users/login?ssrc=site_switcher&returnurl=http%3a%2f%2fstackoverflow.com%2f","sso":["google, openid","google, oauth","facebook, oauth","yahoo, openid","aol, openid"],"timeTaken":"1353ms"}
+{"rank":"39","url":"https://www.amazon.co.jp/gp/video/primesignup/ref=dvm_jp_pl_cs_pw_hero_np_fte_ever?pf_rd_p=d8db4efe-87d8-4b4d-98e7-83b831174748&pf_rd_r=V4ZSJS6FEK3Q8NMF64AG","sso":[],"timeTaken":"1326ms"}
+{"rank":"40","url":"https://www.yandex.ru/login","sso":[],"timeTaken":"3845ms"}
+{"rank":"43","url":"http://pro.imdb.com/signup/index.html?rf=cons_ft_hm&ref_=cons_ft_hm","sso":["amazon, no-url"],"timeTaken":"2213ms"}
+{"rank":"43","url":"https://secure.imdb.com/register-imdb/form-v2?ref_=ft_reg","sso":["google, no-url","amazon, no-url","facebook, no-url","facebook, oauth","google, oauth"],"timeTaken":"1531ms"}
+{"rank":"43","url":"https://www.imdb.com/registration/signin?u=/&ref_=nv_usr_lgin_1","sso":["google, no-url","amazon, no-url","facebook, no-url","facebook, oauth","google, oauth"],"timeTaken":"1257ms"}
+{"rank":"46","url":"https://www.pinterest.com/login","sso":["google, no-url"],"timeTaken":"1800ms"}
+{"rank":"50","url":"https://www.buzzfeed.com/signup","sso":["facebook, no-url","google, no-url","twitter, no-url"],"timeTaken":"2549ms"}

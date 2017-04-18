@@ -19,7 +19,7 @@ with open('../data/csv/'+str(filename)) as csvFile:
     reader = csv.reader(csvFile, delimiter=",")
     for data in reader:
         if(int(data[0]) > int(start)):
-            websites.append(data[1])
+            websites.append(data)
     print(len(websites))
     csvFile.close()
 
