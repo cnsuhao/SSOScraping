@@ -13,11 +13,12 @@ websites = []
 filename = sys.argv[1]
 start = sys.argv[2]
 
+print int(start)
 # Read websites data from CSV file
 with open('../data/csv/'+str(filename)) as csvFile:
     reader = csv.reader(csvFile, delimiter=",")
     for data in reader:
-        if(data[0] > int(start)):
+        if(int(data[0]) > int(start)):
             websites.append(data[1])
     print(len(websites))
     csvFile.close()
