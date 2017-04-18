@@ -21,6 +21,7 @@ with open('../data/csv/'+str(filename)) as csvFile:
             websites.append(data[1])
     csvFile.close()
 
+print(len(websites))
 # Split into chunks of array
 def chunks(l, n):
     """Yield successive n-sized chunks from l."""
