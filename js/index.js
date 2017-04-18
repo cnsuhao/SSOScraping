@@ -87,7 +87,7 @@ function run(array){
 			                var e9 = /privacy[\-\s]*[policy]*/gi; var e10 = /sports/gi; var e11 = /story/gi; var e12 = /campaign/gi;
 			                var e13 = /questions/gi; var e14 = /store/gi; var e15 = /itunes/gi; var e16 = /play\.google/gi;
 			                var e17 = /graph\.facebook/gi; var e18 = /jobs/gi; var e19 = /pdf/gi; var e20 = /doc/gi; var e21 = /jsp/gi;
-			                var e22 = /entry/gi; var e23 = /exe/gi; var e24 = /download/gi; var 25 = /newsletter/gi;
+			                var e22 = /entry/gi; var e23 = /exe/gi; var e24 = /download/gi; var e25 = /newsletter/gi;
 
 			                if(inputstr.match(e0) == null && inputstr.match(e1) == null  && inputstr.match(e2) == null && 
 			                    inputstr.match(e3) == null && inputstr.match(e4) == null && inputstr.match(e5) == null &&
