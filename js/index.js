@@ -480,7 +480,7 @@ function rerun(links){
 				                    	if(each.site != 'box' && each.site != 'vk' && each.site != '500px'){
 					                        if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
 					                            inputstr.match(k5) != null || inputstr.match(k6) != null){
-					                            return each.site+', edgecase';
+					                            return each.site+', no-url';
 					                        }
 					                    }
 				                    }
