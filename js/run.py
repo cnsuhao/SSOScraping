@@ -17,12 +17,11 @@ start = sys.argv[2]
 with open('../data/csv/'+str(filename)) as csvFile:
     reader = csv.reader(csvFile, delimiter=",")
     for data in reader:
-        print data[0]
-        if(data[0] > start):
+        if(data[0] > int(start)):
             websites.append(data[1])
+    print(len(websites))
     csvFile.close()
 
-print(len(websites))
 # Split into chunks of array
 def chunks(l, n):
     """Yield successive n-sized chunks from l."""
