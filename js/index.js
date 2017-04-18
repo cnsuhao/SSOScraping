@@ -20,6 +20,7 @@ function run(array){
   			var start = Date.now();
 			var nightmare = Nightmare({
 				gotoTimeout : 30000,
+				executionTimeout: 30000,
 				show : false
 			});
 			return nightmare.goto(link)
@@ -322,6 +323,7 @@ function rerun(links){
 			var ssoInfo = {"url" : each, "sso" : [], "timeTaken" : ''};
 			var start = Date.now();
 			var nightmare = Nightmare({
+				executionTimeout: 30000,
 				gotoTimeout : 30000,
 				show : false
 			});
