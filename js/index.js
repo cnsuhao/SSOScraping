@@ -86,7 +86,7 @@ function run(array){
 			                var e5 = /recovery/gi; var e6 = /forgot/gi; var e7 = /help/gi; var e8 = /promo[tion]*/gi; 
 			                var e9 = /privacy[\-\s]*[policy]*/gi; var e10 = /sports/gi; var e11 = /story/gi; var e12 = /campaign/gi;
 			                var e13 = /questions/gi; var e14 = /store/gi; var e15 = /itunes/gi; var e16 = /play\.google/gi;
-			                var e17 = /graph\.facebook/gi; var e18 = /jobs/gi;
+			                var e17 = /graph\.facebook/gi; var e18 = /jobs/gi; var e19 = /pdf/gi; var e20 = /doc/gi; var e21 = /jsp/gi;
 
 			                if(inputstr.match(e0) == null && inputstr.match(e1) == null  && inputstr.match(e2) == null && 
 			                    inputstr.match(e3) == null && inputstr.match(e4) == null && inputstr.match(e5) == null &&
@@ -94,7 +94,8 @@ function run(array){
 			                    inputstr.match(e9) == null && inputstr.match(e10) == null && inputstr.match(e11) == null &&
 			                    inputstr.match(e12) == null && inputstr.match(e13) == null && inputstr.match(e14) == null
 			                    && inputstr.match(e15) == null && inputstr.match(e16) == null && inputstr.match(e17) == null 
-			                    && inputstr.match(e18) == null){
+			                    && inputstr.match(e18) == null && inputstr.match(e19) == null && inputstr.match(e20) == null
+			                    && inputstr.match(e21) == null){
 			                    if(inputstr.match(l1) != null || inputstr.match(l2) != null || 
 			                    	inputstr.match(l3) != null || inputstr.match(l4) != null || inputstr.match(l5) != null){
 			                        return true;
