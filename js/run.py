@@ -17,6 +17,7 @@ start = sys.argv[2]
 with open('../data/csv/'+str(filename)) as csvFile:
     reader = csv.reader(csvFile, delimiter=",")
     for data in reader:
+        print data[0]
         if(data[0] > start):
             websites.append(data[1])
     csvFile.close()
