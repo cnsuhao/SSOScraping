@@ -321,6 +321,7 @@ function rerun(links){
 
 	filtered.reduce(function(accumulator, url) {
   		return accumulator.then(function(results) {
+  			console.log(url);
 			var split = url.split('||');
 			var each = split[0];
 			var ssoInfo = {"rank": split[1], "url" : each, "sso" : [], "timeTaken" : ''};
