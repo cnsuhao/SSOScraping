@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "nightmare": "^2.10.0",
+    "nightmare-download-manager": "^0.2.4",
     "vo": "^4.0.2"
   }
 }

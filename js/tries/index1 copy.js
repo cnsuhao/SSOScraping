@@ -21,11 +21,14 @@ function run(array){
   			var ssoInfo = {"rank" : url[0], "url" : link, "sso" : [], "timeTaken" : ''};
   			var start = Date.now();
 			var nightmare = Nightmare({
-				ignoreDownloads : true,
+    			ignoreDownloads : true,
 				gotoTimeout : 30000,
+				executionTimeout: 120000,
 				show : false
 			});
-			return nightmare.goto(link)
+
+			return nightmare.downloadManager()
+				.goto(link)
 				.evaluate(function(){
 					window.fns = {
 						prefilter : function(node){
@@ -306,12 +309,13 @@ function run(array){
 				.catch(function (error) {
 					console.error('run');
 				   	console.error('Search failed:', error);
-				    results.push({"error" : error});
+				    results.push({"rank" : url[0], "url" : link, "error" : error});
 					return results;
 				});
 		});
 	}, Promise.resolve([])).then(function(results){
-    	write(results);
+		console.log(results)
+    	write(results, 0);
     	console.log("Before rerun");
     	rerun(links);
 	});
@@ -329,11 +333,14 @@ function rerun(links){
 			var ssoInfo = {"rank": split[1], "url" : each, "sso" : [], "timeTaken" : ''};
 			var start = Date.now();
 			var nightmare = Nightmare({
-				ignoreDownloads : true,
+    			ignoreDownloads : true,
 				gotoTimeout : 30000,
+				executionTimeout: 120000,
 				show : false
 			});
+			
 			return nightmare
+				.downloadManager()
 				.goto(each)
 				.evaluate(function(){
 					window.fns = {
@@ -511,12 +518,13 @@ function rerun(links){
 				.catch(function (error) {
 					console.error('rerun');
 				   console.error('Search failed:', error);
-				   results.push(error);
+				   results.push({"rank" : url[0], "url" : link, "error" : error});
 				   return results;
 				});
 		});
 	}, Promise.resolve([])).then(function(results){
-    	write(results);
+		console.log(results)
+    	write(results, 1);
     	console.log("After rerun");
     	console.log("All done");
 	});
@@ -544,11 +552,18 @@ function makeUnique(list){
 }
 
 // Write or read from file functions
-function write(data){
+function write(data, type){
+	console.log("hey")
+	console.log(data)
 	try{
-		for(var i = 0; i < data.length; i++){
-			var each = data[i];
-			fs.appendFile('../data/'+logFileName+'_log.txt', JSON.stringify(each)+"\n", function(isDone){});
+		if(data.length > 0){
+			for(var i = 0; i < data.length; i++){
+				var each = data[i];
+				fs.appendFileSync('../data/'+logFileName+'_log.txt', JSON.stringify(each)+"\n");
+			}
+			if(type == 1) process.kill(process['pid']);
+		}else{
+			if(type == 1) process.kill(process['pid']);
 		}
 	}catch(e){
 		console.log("Write file error : " + e);
