@@ -18,6 +18,7 @@ function run(array){
 	array.reduce(function(accumulator, url) {
   		return accumulator.then(function(results) {
   			var link = "https://www." + url[1];
+  			console.log(link);
   			var ssoInfo = {"rank" : url[0], "url" : link, "sso" : [], "timeTaken" : ''};
   			var start = Date.now();
 			var nightmare = Nightmare({
