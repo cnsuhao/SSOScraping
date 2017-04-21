@@ -8,6 +8,7 @@ require('nightmare-download-manager')(Nightmare);
 var visited = [];
 var num = 0;
 var links = [];
+var html = [];
 
 //Get command line arg and run
 var  logFileName = JSON.parse(process.argv[2]);
@@ -44,7 +45,7 @@ function run(array){
 			                return bool;
 				    	},
 						processDOM : function(){
-							var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : []}
+							var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : []};
 				    		tree.push(document.body);
 				    		while(tree.length > 0){
 				    			var branch = tree.pop();
