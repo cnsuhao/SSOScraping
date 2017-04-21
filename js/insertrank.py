@@ -8,6 +8,7 @@ errors = []
 runs = []
 success = []
 websites = []
+newDict = {}
 
 filename = sys.argv[1]
 fname = str(filename)+'/'+str(filename)+'.csv_log.txt'
@@ -21,8 +22,10 @@ with open('../data/csv/5k groups/'+str(csvname)) as csvFile:
     print(len(websites))
     csvFile.close()
 
-
-        
+with open('../data/Runs - success/'+fname) as tfile:
+    for line in tfile:
+        split = ast.literal_eval(line)
+        print type(split)
  
 
 
