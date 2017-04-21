@@ -311,7 +311,7 @@ function run(array){
 				.catch(function (error) {
 					console.error('run');
 				   	console.error('Search failed:', error);
-				    results.push({"error" : error});
+				    results.push({"rank" : url[0], "error" : error});
 					return results;
 				});
 		});
@@ -517,7 +517,7 @@ function rerun(links){
 				.catch(function (error) {
 					console.error('rerun');
 				   console.error('Search failed:', error);
-				   results.push(error);
+				   results.push({"rank" : split[1], "error" : error});
 				   return results;
 				});
 		});
