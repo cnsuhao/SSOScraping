@@ -9,6 +9,8 @@ var visited = [];
 var num = 0;
 var links = [];
 var html = [];
+var allResults = [];
+
 
 //Get command line arg and run
 var  logFileName = JSON.parse(process.argv[2]);
@@ -45,7 +47,7 @@ function run(array){
 			                return bool;
 				    	},
 						processDOM : function(){
-							var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : []};
+							var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : [], "html" : document.documentElement.innerHTML};
 				    		tree.push(document.body);
 				    		while(tree.length > 0){
 				    			var branch = tree.pop();
@@ -298,6 +300,7 @@ function run(array){
 							result.links[i] = result.links[i]+"||"+url[0];
 				  		}
 				  		links = links.concat(result.links);
+				  		html.push({"link": url[1], "html" : result.html});
 				  	}
 				  	var end = Date.now();
 				  	var time = (end - start)+"ms";
@@ -313,7 +316,7 @@ function run(array){
 				});
 		});
 	}, Promise.resolve([])).then(function(results){
-    	write(results);
+    	allResults = allResults.concat(results);
     	console.log("Before rerun");
     	rerun(links);
 	});
@@ -354,7 +357,7 @@ function rerun(links){
 			                return bool;
 				    	},
 						processDOM : function(){
-							var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : []}
+							var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : [], "html" : document.documentElement.innerHTML}
 				    		tree.push(document.body);
 				    		while(tree.length > 0){
 				    			var branch = tree.pop();
@@ -503,6 +506,7 @@ function rerun(links){
 				.then(function (result) {
 				  	if(result){
 				  		ssoInfo['sso'] = result.candidates;
+				  		html.push({"link": split[0], "html" : result.html});
 				  	}
 				  	var end = Date.now();
 				  	var time = (end - start)+"ms";
@@ -518,7 +522,9 @@ function rerun(links){
 				});
 		});
 	}, Promise.resolve([])).then(function(results){
-    	write(results);
+		allResults = allResults.concat(results);
+    	write(allResults);
+    	storeSite(html);
     	console.log("After rerun");
     	console.log("All done");
 	});
@@ -555,4 +561,29 @@ function write(data){
 	}catch(e){
 		console.log("Write file error : " + e);
 	}
+}
+
+function storeSite(data){
+	try{
+		for(var i = 0; i < data.length; i++){
+			var name = data[i].link;
+			name = extractHostname(name);
+			var each = data[i];
+			fs.appendFile('../data/websites/'+name+'_sitedata.txt', JSON.stringify(each)+"\n", function(isDone){});
+		}
+	}catch(e){
+		console.log("Write file error : " + e);
+	}
+}
+
+function extractHostname(url) {
+    var hostname;
+    if (url.indexOf("://") > -1) {
+        hostname = url.split('/')[2];
+    }
+    else {
+        hostname = url.split('/')[0];
+    }
+    hostname = hostname.split(':')[0];
+    return hostname;
 }
