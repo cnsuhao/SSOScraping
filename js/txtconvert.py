@@ -9,9 +9,9 @@ fname = str(filename)+'/'+str(filename)+'.csv_log.txt'
 with open('../data/Runs - success/'+fname) as tfile:
     fileStr = tfile.readlines()
     for i in fileStr:
-        if i.find('error') != -1 or i.find('message') != -1:
+        if i.find('error') != -1 and i.find('message') != -1:
             errors.append(i)
-        elif i.find('oauth') != -1 or i.find('openid') != -1 or i.find('edgecase') != -1:
+        elif i.find('oauth') != -1 or i.find('openid') != -1 or i.find('no-url') != -1:
             success.append(i)
         elif i.find('sso') != -1:
             runs.append(i)
