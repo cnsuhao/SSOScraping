@@ -12,3 +12,13 @@ weebly.com - Facebook, Google [Crawler did not detect either because there was n
 abs-cbn.com - No SSO [Crawler got it right]
 outbrain.com - No SSO [Crawler got it right]
 weather.com - Facebook, Google [Crawler did not detect either. It said "Continue with"  which wasnt included in the script. Included now]
+rambler.ru - VK, Instagram, Facebook, Google, Twitter [Crawler did not detect because the language was different & no matching OAuth URL. See pic]
+forbes.com - Facebook, Twitter, Linkedin, Google, Yahoo, Microsoft [Crawler detected Google only. But the tags itself did not have any text saying "login with" or any Oauth url. See pic.]
+slack.com - No SSO [Crawler got it right]
+zhihu.com - Weibo and other language idps [Crawler did not detect because no Oauth Url or "login with" text]
+trello.com - Google [Crawler got it right]
+dingit.tv - Facebook [Crawler did not detect it]
+tistory.com - No SSO [Crawler got it right]
+douyu.com - Weibo & other lang idps [Crawler did not detect because no OAuth url or text. See pic.]
+openload.co - No SSO [Crawler got it right]
+
