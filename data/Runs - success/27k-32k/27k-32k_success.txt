@@ -1,0 +1,173 @@
+{"url":"https://bets.gg/auth/steam","sso":["passport, openid"],"timeTaken":"1657ms","rank":"27077"}
+
+{"url":"https://avatanplus.com/login","sso":["vk, oauth"],"timeTaken":"2701ms","rank":"27209"}
+
+{"url":"https://cpanel.hostinger.es","sso":["google, oauth"],"timeTaken":"2147ms","rank":""}
+
+{"url":"https://abasmanesh.com/fa/account/register/","sso":["google, oauth"],"timeTaken":"7549ms","rank":"27350"}
+
+{"url":"https://www.zippymoviez.ch","sso":["google, edgecase","instagram, edgecase","microsoft, edgecase","twitter, edgecase","instagram, oauth","microsoft, oauth","google, oauth"],"timeTaken":"3699ms","rank":"27413"}
+
+{"url":"https://www.smiletemplates.com","sso":["google, oauth"],"timeTaken":"5022ms","rank":"27436"}
+
+{"url":"https://www.zippymoviez.co/register/","sso":["google, edgecase","instagram, edgecase","microsoft, edgecase","twitter, edgecase","instagram, oauth","microsoft, oauth","google, oauth"],"timeTaken":"4634ms","rank":""}
+
+{"url":"https://www.smiletemplates.com/SignUp","sso":["google, oauth"],"timeTaken":"5187ms","rank":"27436"}
+
+{"url":"https://www.liveresult.ru","sso":["google, openid"],"timeTaken":"14529ms","rank":"27533"}
+
+{"url":"http://acefile.co/login","sso":["google, edgecase","google, oauth"],"timeTaken":"980ms","rank":""}
+
+{"url":"https://www.liveresult.ru/usercp/","sso":["google, openid"],"timeTaken":"10600ms","rank":"27533"}
+
+{"url":"https://www.alo.bg/login.php?redirect=login_google","sso":["google, edgecase","google, oauth"],"timeTaken":"1381ms","rank":"27549"}
+
+{"url":"https://secure.chinavasion.com/login/","sso":["paypal, openid","paypal, edgecase"],"timeTaken":"2168ms","rank":""}
+
+{"url":"https://www.e-news.su","sso":["google, oauth"],"timeTaken":"8516ms","rank":"27764"}
+
+{"url":"https://my.agilecrm.com/register","sso":["google, openid"],"timeTaken":"1119ms","rank":""}
+
+{"url":"https://www.e-news.su/?do=register","sso":["google, oauth"],"timeTaken":"9373ms","rank":"27764"}
+
+{"url":"http://www.wikispaces.com/site/signin?goto=http%3A%2F%2Fwww.wikispaces.com%2Fsite%2Ferror%2Fdomain%3FresponseToken%3De7ac63d165353835395353395bbbf126","sso":["google, openid","yahoo, openid","aol, openid"],"timeTaken":"1570ms","rank":""}
+
+{"url":"https://www.fotosklad.ru","sso":["vk, oauth","google, oauth"],"timeTaken":"9617ms","rank":"27815"}
+
+{"url":"https://www.bellazon.com","sso":["google, edgecase","instagram, edgecase","facebook, edgecase","twitter, edgecase","instagram, oauth","google, oauth"],"timeTaken":"4056ms","rank":"27831"}
+
+{"url":"https://www.opengameart.org","sso":["twitter, openid"],"timeTaken":"2114ms","rank":"27861"}
+
+{"url":"https://www.fotosklad.ru/personal/?register=yes&backurl=%2F","sso":["vk, oauth","google, oauth"],"timeTaken":"6305ms","rank":"27815"}
+
+{"url":"https://www.bellazon.com/main/topic/62363-registered-ielts-toefl-esol-and-celtadelta-and-other-english-language-certificates-onlineieltsonlineoutlookcom-we-are-an-organization-specialized-in-the-acquisition-of-ieltstoefl-and-gre-certification-we-can-provide-original-certificate/?do=getLastComment","sso":["google, edgecase","instagram, edgecase","facebook, edgecase","twitter, edgecase","instagram, oauth","google, oauth"],"timeTaken":"3052ms","rank":"27831"}
+
+{"url":"https://sandbox.braintreegateway.com/login","sso":["paypal, edgecase","paypal, openid"],"timeTaken":"2052ms","rank":""}
+
+{"url":"https://www.braintreegateway.com/login","sso":["paypal, edgecase","paypal, openid"],"timeTaken":"1087ms","rank":""}
+
+{"url":"https://www.wifistudy.com","sso":["google, oauth"],"timeTaken":"3650ms","rank":"27970"}
+
+{"url":"https://www.facebook.com/v2.8/dialog/oauth?client_id=206587842728245&state=9a1a781276e860495c579f82970e233a&response_type=code&sdk=php-sdk-5.0.0&redirect_uri=http%3A%2F%2Fwww.naijapals.com%2F%3FL%3Dregistration.fbV2&scope=email%2Cuser_birthday%2Cpublic_profile","sso":[],"timeTaken":"913ms","rank":""}
+
+{"url":"https://www.wifistudy.com/login","sso":["google, oauth"],"timeTaken":"2652ms","rank":"27970"}
+
+{"url":"https://www.beboo.ru","sso":["vk, oauth"],"timeTaken":"1755ms","rank":"28086"}
+
+{"url":"https://alibonus.com/login","sso":["twitter, edgecase","google, oauth"],"timeTaken":"7846ms","rank":"28016"}
+
+{"url":"https://beboo.ru/signup","sso":["vk, oauth"],"timeTaken":"1424ms","rank":"28086"}
+
+{"url":"http://whosgamingnow.net/entry/openid?url=http%3A%2F%2Fsteamcommunity.com%2Fopenid&Target=%2F","sso":[],"timeTaken":"1981ms","rank":""}
+
+{"url":"https://www.facebook.com/dialog/oauth?client_id=516295178554349&redirect_uri=https://drivetribe.com/fb-sign-in&response_type=token&scope=public_profile, email","sso":[],"timeTaken":"975ms","rank":""}
+
+{"url":"https://security.wildberries.kz/login?returnUrl=https://www.wildberries.kz/","sso":["vk, oauth","google, oauth","instagram, oauth"],"timeTaken":"4620ms","rank":""}
+
+{"url":"https://www.saqlamheyat.az","sso":["vk, oauth"],"timeTaken":"5171ms","rank":"28397"}
+
+{"url":"http://saqlamheyat.az/index.php?do=register","sso":["vk, oauth"],"timeTaken":"3501ms","rank":""}
+
+{"url":"https://www.teamusa.org/portal/home","sso":["yahoo, edgecase","microsoft, edgecase","yahoo, openid"],"timeTaken":"1452ms","rank":"28405"}
+
+{"url":"https://www.docme.ru/login.html","sso":["yandex, openid"],"timeTaken":"2535ms","rank":"28423"}
+
+{"url":"https://babadu.ru/auth/register/?backurl=/auth/&register=yes&backurl=%2F","sso":["yandex, openid","google, oauth"],"timeTaken":"13835ms","rank":"28449"}
+
+{"url":"https://www.pandlr.com","sso":["google, edgecase","google, openid","facebook, openid","vk, openid","twitter, openid","instagram, openid"],"timeTaken":"2540ms","rank":"28942"}
+
+{"url":"https://www.gezimanya.com","sso":["facebook, oauth","twitter, edgecase"],"timeTaken":"5906ms","rank":"28993"}
+
+{"url":"http://playrust.com/wp-login.php","sso":["google, edgecase","google, oauth"],"timeTaken":"1089ms","rank":""}
+
+{"url":"https://www.ipower.com/controlpanel/index.bml","sso":["google, edgecase","google, oauth"],"timeTaken":"2238ms","rank":"28928"}
+
+{"url":"https://login.timedoctor.com/v2/?locale=en_US","sso":["google, oauth"],"timeTaken":"1911ms","rank":""}
+
+{"url":"https://steamcommunity.com/openid/login?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=checkid_setup&openid.return_to=http%3A%2F%2Fsteamrep.com%2F&openid.realm=http%3A%2F%2Fsteamrep.com&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select","sso":[],"timeTaken":"1431ms","rank":""}
+
+{"url":"https://www.sixt.com","sso":["google, edgecase","google, oauth"],"timeTaken":"4373ms","rank":"29058"}
+
+{"url":"https://sensortower.com/users/auth/google_oauth2","sso":["google, edgecase","google, oauth"],"timeTaken":"1103ms","rank":"29051"}
+
+{"url":"https://www.sixt.com/php/reservation/loginsec?q=K1JfmxbDYnLcRftTY2gcL2Qmw2MHPjGpifRd3Qru6Wvme4NTC_KEAtdlemEwO2AB_TWnDSahrSHCmyeEmhpS8R-cB1VJZwk7f9LgJQR8PkUMdGPDXw50-0EkyVprwXKb","sso":["google, edgecase","google, oauth"],"timeTaken":"4568ms","rank":"29058"}
+
+{"url":"https://www.anilibria.tv","sso":["vk, oauth"],"timeTaken":"3559ms","rank":"29113"}
+
+{"url":"https://www.anilibria.tv/auth/registration.php","sso":["vk, oauth"],"timeTaken":"3259ms","rank":"29113"}
+
+{"url":"https://realtimeboard.com/signup/","sso":["google, edgecase","google, oauth"],"timeTaken":"2224ms","rank":"29151"}
+
+{"url":"https://al.ly/user/login/google","sso":["google, edgecase","google, oauth"],"timeTaken":"1345ms","rank":"29221"}
+
+{"url":"https://account.tbdress.com/login.html?logintype=1&sourceUrl=https://www.tbdress.com/","sso":["google, edgecase","facebook, edgecase","paypal, openid"],"timeTaken":"3882ms","rank":""}
+
+{"url":"https://www.goldstar.com/oauth/facebook/login","sso":[],"timeTaken":"1260ms","rank":"29650"}
+
+{"url":"https://app.mavenlink.com/login","sso":["box, openid","yahoo, edgecase"],"timeTaken":"1846ms","rank":""}
+
+{"url":"https://www.jq22.com","sso":["github, oauth"],"timeTaken":"5987ms","rank":"29911"}
+
+{"url":"https://www.facebook.com/v2.1/dialog/oauth?app_id=100816066669488&redirect_uri=https%3A%2F%2Fwww.vinted.cz%2Fmember%2Ffacebook%2Ffacebook_login&scope=email%2Cuser_friends","sso":[],"timeTaken":"1049ms","rank":""}
+
+{"url":"https://www.incomeon.com/hauth/login/Live","sso":["microsoft, oauth"],"timeTaken":"1658ms","rank":"29979"}
+
+{"url":"https://www.sulpak.kz","sso":["vk, oauth"],"timeTaken":"12339ms","rank":"30011"}
+
+{"url":"https://www.sulpak.kz/login","sso":["vk, oauth"],"timeTaken":"11312ms","rank":"30011"}
+
+{"url":"https://www.cirquedusoleil.com/en/cirque-club/form/login","sso":["facebook, oauth"],"timeTaken":"1207ms","rank":"30029"}
+
+{"url":"https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101225939&redirect_uri=http%3A%2F%2Fwww.jx09.com%2Fqqlogin.php","sso":[],"timeTaken":"7336ms","rank":""}
+
+{"url":"https://www.survivetheark.com","sso":["twitter, edgecase","microsoft, oauth"],"timeTaken":"2930ms","rank":"30387"}
+
+{"url":"https://www.selfgrowth.com/user","sso":["aol, openid","facebook, openid","google, openid","yahoo, openid"],"timeTaken":"2151ms","rank":"30385"}
+
+{"url":"https://survivetheark.com/index.php?/register/","sso":["google, edgecase","microsoft, oauth"],"timeTaken":"2009ms","rank":"30387"}
+
+{"url":"https://www.sixt.de","sso":["google, edgecase","google, oauth"],"timeTaken":"4336ms","rank":"30487"}
+
+{"url":"https://onecloud.media/login/google","sso":["google, edgecase","google, oauth"],"timeTaken":"1093ms","rank":"30406"}
+
+{"url":"https://cvmkr.com/Member/","sso":["google, edgecase","facebook, oauth"],"timeTaken":"1315ms","rank":"30474"}
+
+{"url":"https://www.kinoafisha.info","sso":["vk, oauth"],"timeTaken":"7731ms","rank":"30727"}
+
+{"url":"http://app.mt.gov/epass/epass","sso":["yahoo, openid","aol, openid","yahoo, edgecase","aol, edgecase"],"timeTaken":"1528ms","rank":""}
+
+{"url":"http://www.amazon.com/gp/product/1449337937","sso":["google, openid","amazon, openid","vk, openid"],"timeTaken":"9294ms","rank":""}
+
+{"url":"https://www.ru-minecraft.ru","sso":["vk, oauth","google, oauth"],"timeTaken":"3879ms","rank":"30972"}
+
+{"url":"https://ru-minecraft.ru/index.php?do=register","sso":["vk, oauth","google, oauth"],"timeTaken":"3735ms","rank":"30972"}
+
+{"url":"https://www.tourbar.com","sso":["vk, oauth","google, oauth"],"timeTaken":"2420ms","rank":"31033"}
+
+{"url":"https://tourbar.com/login","sso":["vk, oauth","google, oauth"],"timeTaken":"1789ms","rank":"31033"}
+
+{"url":"https://www.kuponko.si","sso":["google, oauth"],"timeTaken":"7245ms","rank":"31233"}
+
+{"url":"https://www.facebook.com/v2.5/dialog/oauth?client_id=1530114233910063&state=e3b56ac0aa5b74561a8db5c43cea5718&response_type=code&sdk=php-sdk-5.0.0&redirect_uri=https%3A%2F%2Fwww.kuponko.si%2Fportal%2Findex%2Ffacebook&scope=public_profile%2Cemail%2Cuser_birthday","sso":[],"timeTaken":"1151ms","rank":""}
+
+{"url":"https://www.kuponko.si/portal/user/first-time-visit","sso":["google, oauth"],"timeTaken":"7404ms","rank":"31233"}
+
+{"url":"https://www.bingfeng.tw","sso":["google, oauth"],"timeTaken":"5976ms","rank":"31377"}
+
+{"url":"https://www.ketabrah.ir/page/signin","sso":["google, oauth"],"timeTaken":"2692ms","rank":"31472"}
+
+{"url":"https://www.newkaliningrad.ru","sso":["google, oauth"],"timeTaken":"7295ms","rank":"31539"}
+
+{"url":"https://www.newkaliningrad.ru/my/register/","sso":["google, oauth"],"timeTaken":"6333ms","rank":"31539"}
+
+{"url":"https://cpanel.hostinger.co.uk","sso":["google, oauth"],"timeTaken":"3223ms","rank":""}
+
+{"url":"https://www.videosmile.ru","sso":["vk, oauth"],"timeTaken":"5841ms","rank":"31715"}
+
+{"url":"https://videosmile.ru/login","sso":["vk, oauth"],"timeTaken":"2531ms","rank":"31715"}
+
+{"url":"https://specials.virginaustralia.com/vmail/","sso":["facebook, oauth"],"timeTaken":"5542ms","rank":""}
+
+{"url":"https://www.tellows.it/login/","sso":["google, openid","yahoo, openid","aol, openid","500px, openid"],"timeTaken":"2491ms","rank":"31842"}
+
+{"url":"https://www.whogohost.com/host/clientarea.php","sso":["google, openid"],"timeTaken":"3487ms","rank":"31985"}

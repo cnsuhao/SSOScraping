@@ -1,0 +1,85 @@
+{"url":"http://zofile.com/?op=login&method=google","sso":["google, edgecase","google, oauth"],"timeTaken":"1384ms","rank":""}
+
+{"url":"https://newtalk.tw/member/signin","sso":["facebook, openid","google, openid"],"timeTaken":"4985ms","rank":"52346"}
+
+{"url":"https://www.homeimprovementpages.com.au/login","sso":["google, edgecase","facebook, edgecase","facebook, oauth"],"timeTaken":"2765ms","rank":"52489"}
+
+{"url":"https://www.friday-ad.co.uk","sso":["facebook, edgecase","facebook, oauth"],"timeTaken":"3373ms","rank":"52513"}
+
+{"url":"https://www.friday-ad.co.uk/login/","sso":["google, edgecase","facebook, oauth","google, oauth"],"timeTaken":"2109ms","rank":"52513"}
+
+{"url":"https://www.virtualsoccer.ru","sso":["vk, oauth"],"timeTaken":"4811ms","rank":"52828"}
+
+{"url":"https://www.mql5.com/en/auth_register","sso":["yahoo, openid"],"timeTaken":"1323ms","rank":""}
+
+{"url":"https://www.nowcoder.com","sso":["github, oauth"],"timeTaken":"26203ms","rank":"52960"}
+
+{"url":"https://www.turboserial.net","sso":["google, oauth"],"timeTaken":"4583ms","rank":"52989"}
+
+{"url":"http://turboserial.net/index.php?do=register","sso":["google, oauth"],"timeTaken":"4287ms","rank":""}
+
+{"url":"https://app.showings.com","sso":["aol, openid","yahoo, openid","google, openid"],"timeTaken":"1549ms","rank":""}
+
+{"url":"https://api.weibo.com/oauth2/authorize?client_id=2935454382&redirect_uri=https%3A%2F%2Fwww.modelmanagement.com%2Faccount%2Fweibo%2Fcallback%2F&response_type=code","sso":[],"timeTaken":"3017ms","rank":""}
+
+{"url":"https://www.ents24.com","sso":["facebook, oauth"],"timeTaken":"4863ms","rank":"53774"}
+
+{"url":"https://postovnezdarma.cz/customer/account/login/referer/aHR0cHM6Ly9wb3N0b3ZuZXpkYXJtYS5jei8,/","sso":["google, oauth"],"timeTaken":"6341ms","rank":"53744"}
+
+{"url":"https://www.insanejournal.com","sso":["google, openid","yahoo, openid"],"timeTaken":"2179ms","rank":"53893"}
+
+{"url":"http://www.insanejournal.com/openid/","sso":["yahoo, openid"],"timeTaken":"970ms","rank":""}
+
+{"url":"https://www.iphonegeek.me","sso":["vk, oauth","google, oauth"],"timeTaken":"3071ms","rank":"53964"}
+
+{"url":"https://www.zotabox.com","sso":["google, edgecase","google, oauth"],"timeTaken":"2079ms","rank":"53962"}
+
+{"url":"https://www.iphonegeek.me/?do=register","sso":["vk, oauth","google, oauth"],"timeTaken":"2871ms","rank":"53964"}
+
+{"url":"https://www.thesettlersonline.pl","sso":["facebook, oauth"],"timeTaken":"7684ms","rank":"54147"}
+
+{"url":"https://www.thesettlersonline.pl/login","sso":["facebook, oauth"],"timeTaken":"3272ms","rank":"54147"}
+
+{"url":"https://www.kinosok.org","sso":["vk, oauth","google, oauth"],"timeTaken":"30532ms","rank":"54381"}
+
+{"url":"http://kinosok.org/index.php?do=register","sso":["vk, oauth","google, oauth"],"timeTaken":"30474ms","rank":""}
+
+{"url":"https://www.libri.hu","sso":["google, oauth"],"timeTaken":"4757ms","rank":"55167"}
+
+{"url":"https://www.libri.hu/shop_cart/#navigationBar","sso":["google, oauth"],"timeTaken":"3766ms","rank":"55167"}
+
+{"url":"https://www.amazon.com/gp/student/signup/info/?ref_=assoc_tag_ph_1402130811706&_encoding=UTF8&camp=1789&creative=9325&linkCode=pf4&tag=viciouss-20&linkId=e4042195b1b22674ae921b78956223d2","sso":["aol, openid"],"timeTaken":"1838ms","rank":""}
+
+{"url":"https://www.bitrix24.es/register/reg.php","sso":["google, oauth"],"timeTaken":"2911ms","rank":"55718"}
+
+{"url":"https://www.cossa.ru","sso":["vk, oauth"],"timeTaken":"7247ms","rank":"55956"}
+
+{"url":"https://www.cossa.ru/login","sso":["vk, oauth"],"timeTaken":"5719ms","rank":"55956"}
+
+{"url":"https://www.rogoff.club","sso":["facebook, oauth"],"timeTaken":"6127ms","rank":"56046"}
+
+{"url":"https://www.rogoff.club/index.php?do=register","sso":["facebook, oauth"],"timeTaken":"2592ms","rank":"56046"}
+
+{"url":"https://www.pictastar.com","sso":["instagram, oauth"],"timeTaken":"1937ms","rank":"56102"}
+
+{"url":"https://www.pictastar.com/login","sso":["instagram, oauth"],"timeTaken":"1479ms","rank":"56102"}
+
+{"url":"https://www.cincopa.com/login.aspx","sso":["google, edgecase","google, oauth","yahoo, openid","aol, openid","facebook, edgecase","yahoo, edgecase","aol, edgecase"],"timeTaken":"1677ms","rank":"56128"}
+
+{"url":"https://www.avtomobil.az","sso":["google, oauth"],"timeTaken":"3406ms","rank":"56287"}
+
+{"url":"https://www.staufenbiel.de/service/login-ssl.html","sso":["google, oauth"],"timeTaken":"4260ms","rank":"56239"}
+
+{"url":"https://www.earthclinic.com/register.html","sso":["google, oauth"],"timeTaken":"2082ms","rank":"56285"}
+
+{"url":"https://www.codester.com/sign_up/","sso":["facebook, oauth","facebook, edgecase"],"timeTaken":"2204ms","rank":"56489"}
+
+{"url":"https://saboskirt.com/oauth/begin-authorize?method=pinterest","sso":["google, edgecase","facebook, edgecase"],"timeTaken":"3108ms","rank":"56609"}
+
+{"url":"https://shop.mikroe.com/my-account","sso":["google, openid","linkedin, openid","github, openid"],"timeTaken":"3162ms","rank":""}
+
+{"url":"https://www.classy.org/login","sso":["facebook, oauth"],"timeTaken":"1286ms","rank":"56699"}
+
+{"url":"https://www.anitokyo.tv","sso":["vk, oauth","google, oauth"],"timeTaken":"13855ms","rank":"56735"}
+
+{"url":"http://anitokyo.tv/index.php?do=register","sso":["vk, oauth","google, oauth"],"timeTaken":"10062ms","rank":""}
