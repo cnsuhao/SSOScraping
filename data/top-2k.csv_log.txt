@@ -6,7 +6,7 @@
 {"rank":"6","url":"https://www.wikipedia.org","sso":[],"timeTaken":"1053ms"}
 {"rank":"7","url":"https://www.google.co.in","sso":[],"timeTaken":"1267ms"}
 {"rank":"8","url":"https://www.tmall.com","sso":[],"timeTaken":"5316ms"}
-{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.qq.com/"}}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.qq.com/"}, "rank" : "9"}
 {"rank":"10","url":"https://www.amazon.com","sso":["500px, openid","amazon, openid","amazon, no-url"],"timeTaken":"1719ms"}
 {"rank":"11","url":"https://www.sohu.com","sso":[],"timeTaken":"6314ms"}
 {"rank":"12","url":"https://www.google.co.jp","sso":[],"timeTaken":"1108ms"}
@@ -45,11 +45,11 @@
 {"rank":"45","url":"https://www.google.es","sso":[],"timeTaken":"858ms"}
 {"rank":"46","url":"https://www.pinterest.com","sso":[],"timeTaken":"1602ms"}
 {"rank":"47","url":"https://www.google.com.hk","sso":[],"timeTaken":"1166ms"}
-{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.onclkds.com/"}}
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.onclkds.com/"}, "rank" : "48"}
 {"rank":"49","url":"https://www.t.co","sso":[],"timeTaken":"618ms"}
 {"rank":"50","url":"https://www.github.com","sso":[],"timeTaken":"1742ms"}
 {"rank":"51","url":"https://www.adobe.com","sso":[],"timeTaken":"4892ms"}
-{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.service.tmall.com/"}}
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.service.tmall.com/"}, "rank" : "52"}
 {"rank":"56","url":"https://www.ok.ru","sso":[],"timeTaken":"5655ms"}
 {"rank":"55","url":"https://www.paypal.com","sso":[],"timeTaken":"3015ms"}
 {"rank":"54","url":"https://www.aliexpress.com","sso":["google, no-url"],"timeTaken":"2585ms"}
@@ -59,15 +59,15 @@
 {"rank":"60","url":"https://www.dropbox.com","sso":[],"timeTaken":"2023ms"}
 {"rank":"59","url":"https://www.google.com.mx","sso":[],"timeTaken":"721ms"}
 {"rank":"61","url":"https://www.whatsapp.com","sso":[],"timeTaken":"1302ms"}
-{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.ask.com/"}}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.ask.com/"}, "rank" : "63"}
 {"rank":"64","url":"https://www.diply.com","sso":[],"timeTaken":"2256ms"}
 {"rank":"65","url":"https://www.naver.com","sso":[],"timeTaken":"3571ms"}
 {"rank":"62","url":"https://www.pornhub.com","sso":[],"timeTaken":"11227ms"}
-{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.detail.tmall.com/"}}
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.detail.tmall.com/"}, "rank" : "66"}
 {"rank":"68","url":"https://www.amazon.co.uk","sso":["500px, openid","amazon, openid","amazon, no-url"],"timeTaken":"2223ms"}
-{"error":{"message":"navigation error","code":-3,"details":"","url":"https://www.bbc.co.uk/"}}
+{"error":{"message":"navigation error","code":-3,"details":"","url":"https://www.bbc.co.uk/"}, "rank" : "67"}
 {"rank":"69","url":"https://www.bbc.com","sso":[],"timeTaken":"5318ms"}
-{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.login.tmall.com/"}}
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.login.tmall.com/"}, "rank" : "70"}
 {"rank":"71","url":"https://www.imgur.com","sso":[],"timeTaken":"2333ms"}
 {"rank":"72","url":"https://www.popads.net","sso":[],"timeTaken":"2342ms"}
 {"rank":"73","url":"https://www.nytimes.com","sso":["google, no-url","facebook, no-url"],"timeTaken":"7037ms"}
@@ -77,14 +77,14 @@
 {"rank":"78","url":"https://www.mail.ru","sso":["yahoo, no-url"],"timeTaken":"6497ms"}
 {"rank":"77","url":"https://www.onlinesbi.com","sso":[],"timeTaken":"3978ms"}
 {"rank":"79","url":"https://www.stackexchange.com","sso":[],"timeTaken":"1550ms"}
-{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.soso.com/"}}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.soso.com/"}, "rank" : "80"}
 {"rank":"81","url":"https://www.google.com.tr","sso":[],"timeTaken":"884ms"}
 {"rank":"82","url":"https://www.livejasmin.com","sso":[],"timeTaken":"1968ms"}
 {"rank":"84","url":"https://www.cnet.com","sso":[],"timeTaken":"1519ms"}
 {"rank":"85","url":"https://www.theguardian.com","sso":[],"timeTaken":"3330ms"}
-{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.tianya.cn"}}
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.tianya.cn"}, "rank" : "86"}
 {"rank":"83","url":"https://www.wikihow.com","sso":["facebook, no-url","google, no-url"],"timeTaken":"1451ms"}
-{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.microsoftonline.com"}}
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.microsoftonline.com"}, "rank" : "88"}
 {"rank":"87","url":"https://www.spotify.com","sso":[],"timeTaken":"2578ms"}
 {"rank":"89","url":"https://www.washingtonpost.com","sso":[],"timeTaken":"6519ms"}
 {"rank":"90","url":"https://www.google.com.au","sso":[],"timeTaken":"1336ms"}
@@ -96,7 +96,7 @@
 {"rank":"94","url":"https://www.txxx.com","sso":[],"timeTaken":"3472ms"}
 {"rank":"97","url":"https://www.google.co.id","sso":[],"timeTaken":"1108ms"}
 {"rank":"98","url":"https://www.nih.gov","sso":[],"timeTaken":"1566ms"}
-{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.csdn.net"}}
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.csdn.net"}, "rank" : "99"}
 {"rank":"100","url":"https://www.chase.com","sso":[],"timeTaken":"1638ms"}
 {"rank":"1","url":"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/","sso":["google, no-url"],"timeTaken":"737ms"}
 {"rank":"3","url":"https://www.facebook.com/login/","sso":[],"timeTaken":"862ms"}
@@ -182,15 +182,15 @@
 {"rank":"102","url":"https://www.twitch.tv","sso":[],"timeTaken":"4972ms"}
 {"rank":"103","url":"https://www.w3schools.com","sso":[],"timeTaken":"1030ms"}
 {"rank":"104","url":"https://www.pixnet.net","sso":["box, openid","google, openid","facebook, openid","yahoo, openid"],"timeTaken":"10029ms"}
-{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.gmw.cn/"}}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.gmw.cn/"}, "rank" : "105"}
 {"rank":"106","url":"https://www.wikia.com","sso":[],"timeTaken":"4149ms"}
 {"rank":"107","url":"https://www.google.pl","sso":[],"timeTaken":"787ms"}
 {"rank":"108","url":"https://www.googleusercontent.com","sso":[],"timeTaken":"631ms"}
 {"rank":"109","url":"https://www.xhamster.com","sso":[],"timeTaken":"1406ms"}
-{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.fc2.com/"}}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.fc2.com/"}, "rank" : "110"}
 {"rank":"111","url":"https://www.amazon.de","sso":["500px, openid","amazon, openid","amazon, no-url"],"timeTaken":"2406ms"}
 {"rank":"112","url":"https://www.amazon.de","sso":["500px, openid","amazon, openid","amazon, no-url"],"timeTaken":"2282ms"}
-{"error":{"message":"navigation error","code":-3,"details":"","url":"https://www.salesforce.com/"}}
+{"error":{"message":"navigation error","code":-3,"details":"","url":"https://www.salesforce.com/"}, "rank" : "113"}
 {"rank":"114","url":"https://www.bongacams.com","sso":[],"timeTaken":"3165ms"}
 {"rank":"115","url":"https://www.adf.ly","sso":[],"timeTaken":"2857ms"}
 {"rank":"116","url":"https://www.amazon.in","sso":["google, openid","500px, openid","amazon, openid","amazon, no-url"],"timeTaken":"2070ms"}
@@ -200,7 +200,7 @@
 {"rank":"120","url":"https://www.google.co.th","sso":[],"timeTaken":"1151ms"}
 {"rank":"121","url":"https://www.bestbuy.com","sso":[],"timeTaken":"3239ms"}
 {"rank":"122","url":"https://www.google.com.sa","sso":[],"timeTaken":"1168ms"}
-{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.askcom.me/"}}
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.askcom.me/"}, "rank" : "123"}
 {"rank":"124","url":"https://www.google.com.pk","sso":[],"timeTaken":"1181ms"}
 {"rank":"125","url":"https://www.google.com.ar","sso":[],"timeTaken":"757ms"}
 {"rank":"126","url":"https://www.clicksgear.com","sso":[],"timeTaken":"619ms"}
@@ -208,7 +208,7 @@
 {"rank":"128","url":"https://www.craigslist.org","sso":[],"timeTaken":"1511ms"}
 {"rank":"129","url":"https://www.savefrom.net","sso":[],"timeTaken":"2495ms"}
 {"rank":"130","url":"https://www.blogger.com","sso":[],"timeTaken":"862ms"}
-{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.pages.tmall.com/"}}
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.pages.tmall.com/"}, "rank" : "131"}
 {"rank":"132","url":"https://www.blastingnews.com","sso":["facebook, no-url"],"timeTaken":"2946ms"}
 {"rank":"133","url":"https://www.ebay.de","sso":[],"timeTaken":"2242ms"}
 {"rank":"134","url":"https://www.google.nl","sso":[],"timeTaken":"745ms"}
@@ -220,22 +220,22 @@
 {"rank":"140","url":"https://www.so.com","sso":[],"timeTaken":"3724ms"}
 {"rank":"141","url":"https://www.ettoday.net","sso":[],"timeTaken":"7556ms"}
 {"rank":"142","url":"https://www.xvideos.com","sso":[],"timeTaken":"1597ms"}
-{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.china.com/"}}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.china.com/"}, "rank" : "143"}
 {"rank":"144","url":"https://www.vimeo.com","sso":[],"timeTaken":"3975ms"}
-{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.amazonaws.com/"}}
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.amazonaws.com/"}, "rank" : "145"}
 {"rank":"146","url":"https://www.google.co.ve","sso":[],"timeTaken":"949ms"}
-{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.daum.net/"}}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.daum.net/"}, "rank" : "147"}
 {"rank":"148","url":"https://www.google.co.za","sso":[],"timeTaken":"772ms"}
 {"rank":"149","url":"https://www.ebay.co.uk","sso":[],"timeTaken":"2383ms"}
 {"rank":"150","url":"https://www.tribunnews.com","sso":[],"timeTaken":"4219ms"}
-{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.youth.cn"}}
-{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.xinhuanet.com/"}}
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.youth.cn"}, "rank" : "151"}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.xinhuanet.com/"}, "rank" : "152"}
 {"rank":"153","url":"https://www.vice.com","sso":[],"timeTaken":"4156ms"}
-{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.thewhizmarketing.com/"}}
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.thewhizmarketing.com/"}, "rank" : "154"}
 {"rank":"157","url":"https://www.adexchangeprediction.com","sso":[],"timeTaken":"625ms"}
 {"rank":"158","url":"https://www.ntd.tv","sso":[],"timeTaken":"1558ms"}
 {"rank":"159","url":"https://www.avito.ru","sso":[],"timeTaken":"3686ms"}
-{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.cctv.com/"}}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.cctv.com/"}, "rank" : "160"}
 {"rank":"156","url":"https://www.quora.com","sso":[],"timeTaken":"981ms"}
 {"rank":"161","url":"https://www.google.gr","sso":[],"timeTaken":"791ms"}
 {"rank":"162","url":"https://www.flipkart.com","sso":[],"timeTaken":"30878ms"}
@@ -244,17 +244,17 @@
 {"rank":"163","url":"https://www.mediafire.com","sso":["twitter, no-url"],"timeTaken":"1391ms"}
 {"rank":"165","url":"https://www.cnzz.com","sso":[],"timeTaken":"12228ms"}
 {"rank":"167","url":"https://www.hclips.com","sso":[],"timeTaken":"2056ms"}
-{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.nicovideo.jp"}}
-{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.globo.com/"}}
-{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.dailymail.co.uk/"}}
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.nicovideo.jp"}, "rank" : "166"}
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.globo.com/"}, "rank" : "168"}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.dailymail.co.uk/"}, "rank" : "169"}
 {"rank":"170","url":"https://www.google.com.co","sso":[],"timeTaken":"753ms"}
 {"rank":"171","url":"https://www.google.com.ph","sso":[],"timeTaken":"1284ms"}
-{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.list.tmall.com/"}}
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.list.tmall.com/"}, "rank" : "172"}
 {"rank":"174","url":"https://www.google.be","sso":[],"timeTaken":"745ms"}
 {"rank":"173","url":"https://www.google.com.vn","sso":[],"timeTaken":"1243ms"}
 {"rank":"175","url":"https://www.deviantart.com","sso":[],"timeTaken":"2257ms"}
 {"rank":"176","url":"https://www.force.com","sso":[],"timeTaken":"4247ms"}
-{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.varzesh3.com"}}
+{"error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 30000 ms","url":"https://www.varzesh3.com"}, "rank" : "177"}
 {"rank":"178","url":"https://www.daikynguyenvn.com","sso":[],"timeTaken":"2878ms"}
 {"rank":"181","url":"https://www.chaturbate.com","sso":[],"timeTaken":"2871ms"}
 {"rank":"179","url":"https://www.steampowered.com","sso":[],"timeTaken":"2424ms"}
@@ -265,18 +265,18 @@
 {"rank":"185","url":"https://www.kinogo.club","sso":[],"timeTaken":"7818ms"}
 {"rank":"186","url":"https://www.google.com.ua","sso":[],"timeTaken":"804ms"}
 {"rank":"187","url":"https://www.google.se","sso":[],"timeTaken":"817ms"}
-{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.livedoor.jp/"}}
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.livedoor.jp/"}, "rank" : "189"}
 {"rank":"190","url":"https://www.blogspot.co.id","sso":[],"timeTaken":"1555ms"}
 {"rank":"188","url":"https://www.google.ro","sso":[],"timeTaken":"929ms"}
 {"rank":"191","url":"https://www.go2cloud.org","sso":[],"timeTaken":"686ms"}
 {"rank":"194","url":"https://www.doubleclick.net","sso":[],"timeTaken":"1990ms"}
 {"rank":"195","url":"https://www.gfycat.com","sso":[],"timeTaken":"3193ms"}
-{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.chinadaily.com.cn/"}}
+{"error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"https://www.chinadaily.com.cn/"}, "rank" : "192"}
 {"rank":"193","url":"https://www.google.az","sso":[],"timeTaken":"923ms"}
 {"rank":"197","url":"https://www.buzzfeed.com","sso":[],"timeTaken":"2238ms"}
 {"rank":"196","url":"https://www.roblox.com","sso":[],"timeTaken":"1514ms"}
-{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.123movies.is/"}}
-{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.rule.tmall.com/"}}
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.123movies.is/"}, "rank" : "198"}
+{"error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"https://www.rule.tmall.com/"}, "rank" : "199"}
 {"rank":"200","url":"https://www.9gag.com","sso":["google, no-url"],"timeTaken":"3644ms"}
 {"rank":"102","url":"http://link.twitch.tv/design-onsite-blogUS-onboard-20170410","sso":[],"timeTaken":"1828ms"}
 {"rank":"104","url":"https://panel.pixnet.cc/login/livelogin?done=http%3A%2F%2Fwww.pixnet.net%2Flogin%2Fopeniddone%3Fdone%3D","sso":["microsoft, oauth"],"timeTaken":"2219ms"}
@@ -351,9 +351,9 @@
 {"rank":"196","url":"https://www.roblox.com/login","sso":["google, no-url","facebook, no-url"],"timeTaken":"1361ms"}
 {"rank":"200","url":"https://9gag.com/login?ref=","sso":["google, no-url"],"timeTaken":"3154ms"}
 {"rank":"201","url":"https://www.reimageplus.com","sso":[],"timeTaken":"1183ms"}
-{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.huffingtonpost.com/"}}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.huffingtonpost.com/"}, "rank" : "202"}
 {"rank":"203","url":"https://www.google.at","sso":[],"timeTaken":"1253ms"}
-{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.breitbart.com/"}}
+{"error":{"message":"navigation error","code":-501,"details":"ERR_INSECURE_RESPONSE","url":"https://www.breitbart.com/"}, "rank" : "204"}
 {"rank":"205","url":"https://www.youm7.com","sso":[],"timeTaken":"3073ms"}
 {"rank":"206","url":"https://www.softonic.com","sso":[],"timeTaken":"3720ms"}
 {"rank":"207","url":"https://www.indiatimes.com","sso":[],"timeTaken":"3637ms"}

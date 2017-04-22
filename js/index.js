@@ -210,6 +210,7 @@ function run(array){
 							var k4 = /sign[\-\s]*[up]+[\-\s]*[with]+[using]+/gi;
 							var k5 = /register[\-\s]*[up]+[\-\s]*[with]+[using]+/gi;
 							var k6 = /create[\-\s]*[up]+[\-\s]*[with]+[using]+/gi;
+							var k7 = /continue[\-\s]*[with]+[using]+/gi;
 
 							var len = sso.length;
 							var i = 0;
@@ -236,7 +237,7 @@ function run(array){
 				                    }else{
 				                    	if(each.site != 'box' && each.site != 'vk' && each.site != '500px'){
 				                    		if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
-					                            inputstr.match(k5) != null || inputstr.match(k6) != null){
+					                            inputstr.match(k5) != null || inputstr.match(k6) != null || inputstr.match(k7) != null){
 					                            return each.site+', no-url';
 					                        }
 				                    	} 
@@ -465,6 +466,7 @@ function rerun(links){
 							var k4 = /sign[\-\s]*[up]+[\-\s]*[with]+[using]+/gi;
 							var k5 = /register[\-\s]*[up]+[\-\s]*[with]+[using]+/gi;
 							var k6 = /create[\-\s]*[up]+[\-\s]*[with]+[using]+/gi;
+							var k7 = /continue[\-\s]*[with]+[using]+/gi;
 
 							var len = sso.length;
 							var i = 0;
@@ -490,7 +492,7 @@ function rerun(links){
 				                    }else{
 				                    	if(each.site != 'box' && each.site != 'vk' && each.site != '500px'){
 					                        if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
-					                            inputstr.match(k5) != null || inputstr.match(k6) != null){
+					                            inputstr.match(k5) != null || inputstr.match(k6) != null || inputstr.match(k7) != null){
 					                            return each.site+', no-url';
 					                        }
 					                    }
