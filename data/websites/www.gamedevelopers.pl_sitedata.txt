@@ -1,0 +1,1 @@
+{"link":"https://www.gamedevelopers.pl/login","html":"<head>\n\n\t<title>404 Not Found</title>\n\n</head>\n<body bgcolor=\"#FFFFFF\">\n\n\t<h1>404 Not Found</h1>\n\tThe request <b>/login</b> was not found on this server.\n\n\n\n</body>"}

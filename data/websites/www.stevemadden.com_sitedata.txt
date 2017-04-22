@@ -1,0 +1,1 @@
+{"link":"https://www.stevemadden.com/login","html":"<head>\n<meta charset=\"utf-8\">\n<title>Starter</title>\n<script language=\"JavaScript\">\n\tfunction redirect_page()\n\t{\t\n                var url = \"/not_found.jsp\";\n        \n        document.location.replace(url);\n\t}\n</script>\n</head>\n<body onload=\"redirect_page()\">\n<p>&nbsp;</p>\n\n\n</body>"}
