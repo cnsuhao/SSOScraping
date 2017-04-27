@@ -1,0 +1,1 @@
+{"link":"hemat.id","html":"<head></head><body><pre style=\"word-wrap: break-word; white-space: pre-wrap;\">{\"_meta\":{\"status\":\"ERROR\",\"count\":1},\"result\":{\"errorCode\":404,\"userMessage\":\"Not Found.\",\"devMessage\":\"That route was not found on the server.\",\"more\":\"Check route for mispellings.\",\"applicationCode\":\"NF1000\"}}</pre></body>"}
