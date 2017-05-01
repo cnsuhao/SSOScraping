@@ -1,1 +1,0 @@
-{"link":"http://localdados.com/canal-aluno/espaco-aluno-login.php","html":"<head><script type=\"text/javascript\">\n\t\t\tlocation.href = 'espaco-aluno-login.php';\n\t\t</script></head>"}

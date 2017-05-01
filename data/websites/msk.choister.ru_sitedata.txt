@@ -1,1 +1,0 @@
-{"link":"https://msk.choister.ru/login","html":"<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\n<title>Error 404 Not Found</title>\n</head>\n<body><h2>HTTP ERROR 404</h2>\n<p>Problem accessing /login. Reason:\n</p><pre>    Not Found</pre><p></p><hr><i><small>Powered by Jetty://</small></i><hr>\n\n\n\n</body>"}
