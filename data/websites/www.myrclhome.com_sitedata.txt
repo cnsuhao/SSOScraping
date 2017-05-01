@@ -1,1 +1,0 @@
-{"link":"https://www.myrclhome.com/login","html":"<head></head><body>PhalconException: LoginController handler class cannot be loaded</body>"}

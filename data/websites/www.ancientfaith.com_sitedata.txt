@@ -1,1 +1,0 @@
-{"link":"https://www.ancientfaith.com/login","html":"<head>\n\t\t<title>404 - Not Found</title>\n\t\t<style>\n\t\t\tbody {padding:40px;}\n\t\t\th1 {font-size: 240px;color: #d2cec9;margin:0;}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<h1>404</h1>\n\t\t<p>Page not found.</p>\n\t\t<p><a href=\"/\">Home</a> | <a href=\"/browse\">Browse</a></p>\n\t\n</body>"}

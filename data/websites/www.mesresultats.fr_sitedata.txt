@@ -1,1 +1,0 @@
-{"link":"https://www.mesresultats.fr/login","html":"<head><title>405 - Method Not Allowed</title></head>\n  <body>\n    <h1>Method Not Allowed</h1>\n    <p>Your browser approached me (at /login) with the method \"GET\".  I only allow the method POST here.</p>\n  \n\n</body>"}
