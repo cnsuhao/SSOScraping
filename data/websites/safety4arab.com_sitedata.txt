@@ -1,1 +1,0 @@
-{"link":"safety4arab.com","html":"<head></head><body><br>\n<b>Fatal error</b>: Call to undefined function get_bloginfo() in <b>/home/safety4arab/public_html/wp-includes/class-wp-locale.php</b> on line <b>233</b><br>\n</body>"}

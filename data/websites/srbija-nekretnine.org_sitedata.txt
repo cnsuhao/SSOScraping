@@ -1,1 +1,0 @@
-{"link":"srbija-nekretnine.org","html":"<head></head><body><br>\n<b>Warning</b>:  mysqli::mysqli(): (HY000/1045): Access denied for user 'user'@'localhost' (using password: YES) in <b>/home/srbijane/public_html/includes/initial-script.php</b> on line <b>90</b><br>\nUnable to connect to database [Access denied for user 'user'@'localhost' (using password: YES)]</body>"}

@@ -1,1 +1,0 @@
-{"link":"sniperhire.net","html":"<head><title>Bad Request</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=us-ascii\"></head>\n<body><h2>Bad Request - Invalid Hostname</h2>\n<hr><p>HTTP Error 400. The request hostname is invalid.</p>\n\n</body>"}

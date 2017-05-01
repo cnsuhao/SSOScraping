@@ -1,1 +1,0 @@
-{"link":"sijilat.bh","html":"<head id=\"Head1\"><title>\n\tSIJILAT\n</title></head>\n\t<frameset cols=\"*\">\n\t\t<frame id=\"frame_main\" name=\"frame_main\" src=\"/internet_main.aspx\">\n\t</frameset>\n"}
