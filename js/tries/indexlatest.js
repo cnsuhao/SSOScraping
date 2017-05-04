@@ -2,12 +2,12 @@
 var fs = require('fs');
 var Nightmare = require('nightmare');
 require('nightmare-download-manager')(Nightmare);
-
+var $ = require('jQuery');
 
 //Variable declaration
 var links = [];
 var allResults = [];
-
+var visited = [];
 
 //Get command line arg and run
 var  logFileName = JSON.parse(process.argv[2]);
@@ -15,7 +15,7 @@ var sites = JSON.parse(process.argv.slice(3));
 run(sites);
 
 function run(list){
-	list.reduce(function(accumulator, initial){
+	list.reduce(function(accumulator, initial, ind, arr){
 		return accumulator.then(function(answers){
 			var rank = initial[0]; var link = initial[1]; var type = initial[2];
 			var url = "https://www.";
@@ -23,6 +23,7 @@ function run(list){
 			if(type == 0) url = link;
 			if(type == 1) url = "http://" + link;
 
+			if(visited.indexOf(url) != -1) return answers;
 			var ssoInfo = {"rank" : rank, "url" : url, "sso" : [], "timeTaken" : ''};
   			var start = Date.now();
 			console.log(url)
@@ -34,7 +35,8 @@ function run(list){
 					'ignore-certificate-errors': true
 				}
 			});
-
+			console.log(ind)
+			arr.splice(ind, 1);
 			return nightmare.goto(url)
 			.evaluate(function(type){
 				window.fns = {
@@ -82,8 +84,10 @@ function run(list){
 			    			}
 			    		}
 			    		result.candidates = candidates;
-			    		result.links = this.limitLinks(sites);
-			    		if(result.links.length == 0) result.links = this.makeNewLinks();
+			    		if(type != 0){
+				    		result.links = this.limitLinks(sites);
+				    		if(result.links.length == 0) result.links = this.makeNewLinks();
+				    	}
 			    		return result;
 					},
 					hasLinks : function(node){
@@ -342,6 +346,7 @@ function run(list){
 			}, type)
 			.end()
 			.then(function(result){
+				visited.push(url);
 				if(result){
 					ssoInfo['sso'] = result.candidates;
 					if(result.links.length > 3) result.links = result.links.slice(0, 3);
@@ -361,10 +366,18 @@ function run(list){
 				console.error('run');
 			   	console.error('Search failed:', error);
 			    answers.push({"rank" : rank, "url" : url, "error" : error});
-			    var extracted = extractHostname(url);
-			    type = 1;
-			    var obj = rank+","+extracted+","+type;
-			    links.push(obj.split(','));
+			    if(error.code){
+			    	if(error.code == -102 || error.code == -7 || error.code == -105 ||
+			    	error.code == -501 || error.code == -107 || error.code == -310 ||
+			    	error.code == -100 || error.code == -109 || error.code == -113 ||
+			    	error.code == -101 || error.code == -3 || error.code == -137 ||
+			    	error.code == -357 || error.code == -172){
+			    		var extracted = extractHostname(url);
+					    type = 1;
+					    var obj = rank+","+extracted+","+type;
+					    links.push(obj.split(','));
+			    	}
+			    }
 				return answers;
 			});
 		});
