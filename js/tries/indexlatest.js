@@ -21,7 +21,6 @@ function run(list){
 			if(type == 0) url = link;
 			if(type == 1) url = "http://www." + link;
 			if(type == 2) url = "http://" + link;
-			if(type > 3) return;
 
 			var ssoInfo = {"rank" : rank, "url" : url, "sso" : [], "timeTaken" : ''};
   			var start = Date.now();
@@ -54,7 +53,7 @@ function run(list){
 		                return bool;
 			    	},
 			    	processDOM : function(){
-						var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : [], "html" : document.documentElement.innerHTML};
+						var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : []};
 			    		var tries = [];
 			    		tree.push(document.body);
 			    		while(tree.length > 0){
@@ -73,10 +72,8 @@ function run(list){
 			    						if(sso){
 			    							if(candidates.indexOf(sso) == -1) candidates.push(sso);
 			    						}else{
-			    							if(type == -1){
-			    								var link = this.hasLinks(branch);
-			    								if(link && sites.indexOf(link) == -1) sites.unshift(link);
-			    							}
+		    								var link = this.hasLinks(branch);
+		    								if(link && sites.indexOf(link) == -1) sites.unshift(link);
 			    						}
 			    					}
 			    				}
@@ -343,19 +340,20 @@ function run(list){
 			})
 			.end()
 			.then(function(result){
-				if(result){
-					console.log(result)
-					ssoInfo['sso'] = result.candidates;
-					if(result.links.length > 3) result.links = result.links.slice(0, 3);
-					for(var i = 0; i < result.links.length; i++){
-						var obj = [rank, result.links[i], type++];
-						links.push(obj);
-			  		}
-				}
-				var end = Date.now();
-			  	var time = (end - start)+"ms";
-			  	ssoInfo['timeTaken'] = time;
-			  	answers.push(ssoInfo);
+				console.log(result)
+				// if(result){
+					
+				// 	ssoInfo['sso'] = result.candidates;
+				// 	if(result.links.length > 3) result.links = result.links.slice(0, 3);
+				// 	for(var i = 0; i < result.links.length; i++){
+				// 		var obj = [rank, result.links[i], type++];
+				// 		links.push(obj);
+			 //  		}
+				// }
+				// var end = Date.now();
+			 //  	var time = (end - start)+"ms";
+			 //  	ssoInfo['timeTaken'] = time;
+			 //  	answers.push(ssoInfo);
 				return answers;
 			})
 			.catch(function(error){
@@ -367,7 +365,7 @@ function run(list){
 		});
 	}, Promise.resolve([])).then(function(answers){
 		console.log(answers);
-		if(links.length > 0) run(links);
+		// if(links.length > 0) run(links);
 	});
 }
 
