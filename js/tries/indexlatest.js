@@ -2,15 +2,17 @@
 var fs = require('fs');
 var Nightmare = require('nightmare');
 require('nightmare-download-manager')(Nightmare);
-var $ = require('jQuery');
 
+
+//Variable declaration
 var links = [];
+var allResults = [];
 
 
 //Get command line arg and run
-var  fileName = JSON.parse(process.argv[2]);
-var websites = JSON.parse(process.argv.slice(3));
-run(websites);
+var  logFileName = JSON.parse(process.argv[2]);
+var sites = JSON.parse(process.argv.slice(3));
+run(sites);
 
 function run(list){
 	list.reduce(function(accumulator, initial){
@@ -19,8 +21,7 @@ function run(list){
 			var url = "https://www.";
 			if(type == -1) url += link;
 			if(type == 0) url = link;
-			if(type == 1) url = "http://www." + link;
-			if(type == 2) url = "http://" + link;
+			if(type == 1) url = "http://" + link;
 
 			var ssoInfo = {"rank" : rank, "url" : url, "sso" : [], "timeTaken" : ''};
   			var start = Date.now();
@@ -36,7 +37,6 @@ function run(list){
 
 			return nightmare.goto(url)
 			.evaluate(function(type){
-				return type;
 				window.fns = {
 					prefilter : function(node){
 			    		var bool = true;
@@ -72,8 +72,10 @@ function run(list){
 			    						if(sso){
 			    							if(candidates.indexOf(sso) == -1) candidates.push(sso);
 			    						}else{
-		    								var link = this.hasLinks(branch);
-		    								if(link && sites.indexOf(link) == -1) sites.unshift(link);
+			    							if(type != 0){
+			    								var link = this.hasLinks(branch);
+		    									if(link && sites.indexOf(link) == -1) sites.unshift(link);
+			    							}
 			    						}
 			    					}
 			    				}
@@ -337,35 +339,71 @@ function run(list){
 			        }
 				};
 				return fns.processDOM();
-			})
+			}, type)
 			.end()
 			.then(function(result){
-				console.log(result)
-				// if(result){
-					
-				// 	ssoInfo['sso'] = result.candidates;
-				// 	if(result.links.length > 3) result.links = result.links.slice(0, 3);
-				// 	for(var i = 0; i < result.links.length; i++){
-				// 		var obj = [rank, result.links[i], type++];
-				// 		links.push(obj);
-			 //  		}
-				// }
-				// var end = Date.now();
-			 //  	var time = (end - start)+"ms";
-			 //  	ssoInfo['timeTaken'] = time;
-			 //  	answers.push(ssoInfo);
+				if(result){
+					ssoInfo['sso'] = result.candidates;
+					if(result.links.length > 3) result.links = result.links.slice(0, 3);
+					for(var i = 0; i < result.links.length; i++){
+						type = 0; 
+						var obj = rank+","+result.links[i]+","+type;
+						links.push(obj.split(','));
+			  		}
+				}
+				var end = Date.now();
+			  	var time = (end - start)+"ms";
+			  	ssoInfo['timeTaken'] = time;
+			  	answers.push(ssoInfo);
 				return answers;
 			})
 			.catch(function(error){
 				console.error('run');
 			   	console.error('Search failed:', error);
 			    answers.push({"rank" : rank, "url" : url, "error" : error});
+			    var extracted = extractHostname(url);
+			    type = 1;
+			    var obj = rank+","+extracted+","+type;
+			    links.push(obj.split(','));
 				return answers;
 			});
 		});
 	}, Promise.resolve([])).then(function(answers){
-		console.log(answers);
-		// if(links.length > 0) run(links);
+		allResults = allResults.concat(answers);
+		console.log(links)
+		if(links.length > 0) run(links);
 	});
 }
 
+function makeUnique(list){
+	var r = /:\/\/(.[^/]+)/;
+	Array.prototype.contains = function(v){
+	    for(var i = 0; i < this.length; i++) {
+	        if((this[i]).match(r)[1] === (v).match(r)[1]) return true;
+	    }
+	    return false;
+	};
+	Array.prototype.unique = function(){
+	    var arr = [];
+	    for(var i = 0; i < this.length; i++) {
+	        if(!arr.contains(this[i])) {
+	            arr.push(this[i]);
+	        }
+	    }
+	    return arr; 
+	};
+	var uniq = list.unique();
+	return uniq;
+}
+
+function extractHostname(url) {
+    var hostname;
+    if (url.indexOf("://") > -1) {
+        hostname = url.split('/')[2];
+    }
+    else {
+        hostname = url.split('/')[0];
+    }
+    hostname = hostname.split(':')[0];
+    return hostname;
+}
