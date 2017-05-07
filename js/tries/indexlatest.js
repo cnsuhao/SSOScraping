@@ -13,12 +13,11 @@ var sites = JSON.parse(process.argv.slice(3));
 run(sites);
 
 function run(list){
-	list.reduce(function(accumulator, initial, ind, arr){
+	list.reduce(function(accumulator, initial){
 		return accumulator.then(function(answers){
 			var rank = initial[0]; var link = initial[1];
 			var url = "http://www.";
 			url += link;
-
 			var ssoInfo = {"rank" : rank, "url" : url, "sso" : [], "timeTaken" : ''};
   			var start = Date.now();
 			console.log(url)
@@ -358,8 +357,8 @@ function run(list){
 			});
 		});
 	}, Promise.resolve([])).then(function(answers){
-		allResults = allResults.concat(results);
-    	console.log("Before rerun");
+		console.log("Before rerun");
+		allResults = allResults.concat(answers);
     	console.log(links)
     	rerun(links);
 	});
@@ -367,7 +366,7 @@ function run(list){
 
 function rerun(links){
 	var len = 0;
-
+	console.log("hi")
 	links.reduce(function(accumulator, url) {
   		return accumulator.then(function(results) {
 			var each = url[1];
@@ -622,7 +621,7 @@ function write(data){
 	try{
 		for(var i = 0; i < data.length; i++){
 			var each = data[i];
-			fs.appendFile('../data/'+logFileName+'_log.txt', JSON.stringify(each)+"\n", function(isDone){});
+			fs.appendFile('../../data/'+logFileName+'_log.txt', JSON.stringify(each)+"\n", function(isDone){});
 		}
 	}catch(e){
 		console.log("Write file error : " + e);

@@ -1,1 +1,8 @@
 
+{"rank":"22","url":"http://www.9gag.com","sso":["google, oauth-url","facebook, no-url","google, no-url"],"timeTaken":"79696ms"}
+{"rank":"66","url":"http://www.onlinemba.com","sso":[],"timeTaken":"30944ms"}
+{"rank":"22","url":"https://9gag.com/signup","sso":["google, oauth-url","facebook, no-url","google, no-url"],"timeTaken":"17093ms"}
+{"rank":"22","url":"https://9gag.com/login?ref=","sso":["google, oauth-url","facebook, no-url","google, no-url"],"timeTaken":"30483ms"}
+{"rank":"22","url":"https://9gag.com/login","sso":["google, oauth-url","facebook, no-url","google, no-url"],"timeTaken":"33057ms"}
+{"rank":"66","url":"http://www.onlinemba.com/login","sso":[],"timeTaken":"1681ms"}
+{"rank":"66","url":"http://www.onlinemba.com/signup","sso":[],"timeTaken":"6302ms"}
