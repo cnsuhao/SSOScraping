@@ -15,7 +15,7 @@ start = sys.argv[2]
 
 print int(start)
 # Read websites data from CSV file
-with open('../../data/csv/'+str(filename)) as csvFile:
+with open('../data/csv/'+str(filename)) as csvFile:
     reader = csv.reader(csvFile, delimiter=",")
     for data in reader:
         if(int(data[0]) > int(start)):
