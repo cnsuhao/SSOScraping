@@ -6,3 +6,6 @@
 {"rank":"22","url":"https://9gag.com/login","sso":["google, oauth-url","facebook, no-url","google, no-url"],"timeTaken":"33057ms"}
 {"rank":"66","url":"http://www.onlinemba.com/login","sso":[],"timeTaken":"1681ms"}
 {"rank":"66","url":"http://www.onlinemba.com/signup","sso":[],"timeTaken":"6302ms"}
+{"rank":"22","url":"http://www.forbes.com","sso":[],"timeTaken":"5970ms"}
+{"rank":"22","url":"http://www.forbes.com/login","sso":[],"timeTaken":"80650ms"}
+{"rank":"22","url":"http://www.forbes.com/signup","sso":[],"timeTaken":"80763ms"}

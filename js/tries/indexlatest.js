@@ -243,18 +243,20 @@ function run(list){
 			                                }
 			                            }
 			                        }
-			                        if(inputstr.match(k8) != null || inputstr.match(k9) != null || inputstr.match(k10) != null){
-			                        	return each.site+", oauth-keyword";
-			                        }
+			                        if(each.site != 'box' && each.site != 'vk' && each.site != '500px' && each.site != 'fb'){
+				                        if(inputstr.match(k8) != null || inputstr.match(k9) != null || inputstr.match(k10) != null){
+				                        	return each.site+", oauth-keyword";
+				                        }
+				                    }
 			                    }else if(openMatch != null){
-			                    	if(each.site != 'box' && each.site != 'vk' && each.site != '500px'){
+			                    	if(each.site != 'box' && each.site != 'vk' && each.site != '500px' && each.site != 'fb'){
 				                    	if(inputstr.match(k11) != null || inputstr.match(k12) != null || inputstr.match(k13) != null 
 				                    		|| inputstr.match(k14) != null || inputstr.match(k15) != null || inputstr.match(k16) != null){
 				                    		return each.site+", openid";
 				                    	}
 				                    }  
 			                    }else{
-			                    	if(each.site != 'box' && each.site != 'vk' && each.site != '500px'){
+			                    	if(each.site != 'box' && each.site != 'vk' && each.site != '500px' && each.site != 'fb'){
 			                    		if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
 				                            inputstr.match(k5) != null || inputstr.match(k6) != null || inputstr.match(k7) != null){
 				                            return each.site+", no-url";
@@ -341,6 +343,7 @@ function run(list){
 					for(var i = 0; i < result.links.length; i++){
 						var obj = rank+","+result.links[i];
 						links.push(obj.split(','));
+						console.log(links)
 			  		}
 				}
 				var end = Date.now();
@@ -542,18 +545,20 @@ function rerun(links){
 				                                }
 				                            }
 				                        }
-				                        if(inputstr.match(k8) != null || inputstr.match(k9) != null || inputstr.match(k10) != null){
-				                        	return each.site+", oauth-keyword";
-				                        }
+				                        if(each.site != 'box' && each.site != 'vk' && each.site != '500px' && each.site != 'fb'){
+					                        if(inputstr.match(k8) != null || inputstr.match(k9) != null || inputstr.match(k10) != null){
+					                        	return each.site+", oauth-keyword";
+					                        }
+					                    }
 				                    }else if(openMatch != null){
-				                    	if(each.site != 'box' && each.site != 'vk' && each.site != '500px'){
+				                    	if(each.site != 'box' && each.site != 'vk' && each.site != '500px' && each.site != 'fb'){
 					                    	if(inputstr.match(k11) != null || inputstr.match(k12) != null || inputstr.match(k13) != null 
 					                    		|| inputstr.match(k14) != null || inputstr.match(k15) != null || inputstr.match(k16) != null){
 					                    		return each.site+", openid";
 					                    	}
 					                    }  
 				                    }else{
-				                    	if(each.site != 'box' && each.site != 'vk' && each.site != '500px'){
+				                    	if(each.site != 'box' && each.site != 'vk' && each.site != '500px' && each.site != 'fb'){
 				                    		if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
 					                            inputstr.match(k5) != null || inputstr.match(k6) != null || inputstr.match(k7) != null){
 					                            return each.site+", no-url";
