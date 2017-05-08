@@ -20,7 +20,6 @@ with open('../data/csv/'+str(filename)) as csvFile:
     for data in reader:
         if(int(data[0]) > int(start)):
             websites.append(data)
-    print(websites)
     csvFile.close()
 
 # Split into chunks of array
