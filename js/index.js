@@ -343,7 +343,6 @@ function run(list){
 					for(var i = 0; i < result.links.length; i++){
 						var obj = rank+","+result.links[i];
 						links.push(obj.split(','));
-						console.log(links)
 			  		}
 				}
 				var end = Date.now();
@@ -362,7 +361,6 @@ function run(list){
 	}, Promise.resolve([])).then(function(answers){
 		console.log("Before rerun");
 		allResults = allResults.concat(answers);
-    	console.log(links)
     	rerun(links);
 	});
 }
@@ -384,6 +382,7 @@ function rerun(links){
 					'ignore-certificate-errors': true
 				}
 			});
+			console.log(each);
 			return nightmare
 				.goto(each)
 				.inject('js', 'jquery-3.2.1.min.js')
