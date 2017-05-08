@@ -24,7 +24,7 @@ function run(list){
 			var nightmare = Nightmare({
 				show : false,
 				ignoreDownloads : true,
-				gotoTimeout : 80000,
+				gotoTimeout : 60000,
 				switches: {
 					'ignore-certificate-errors': true
 				}
@@ -376,7 +376,7 @@ function rerun(links){
 			var start = Date.now();
 			var nightmare = Nightmare({
 				ignoreDownloads : true,
-				gotoTimeout : 80000,
+				gotoTimeout : 60000,
 				show : false,
 				switches: {
 					'ignore-certificate-errors': true
