@@ -30,7 +30,6 @@ function run(list){
 				}
 			});
 			return nightmare.goto(url)
-			.inject('js', 'jquery-3.2.1.min.js')
 			.evaluate(function(){
 				window.fns = {
 					prefilter : function(node){
@@ -129,8 +128,11 @@ function run(list){
 		                return null;
 		            },
 		            makeAttrString : function(node){
-		            	var txt = $(node).clone().children().remove().end().text().trim();
-			    		var str = txt || '';
+		            	var txt = '';
+		            	for (var i = 0; i < node.childNodes.length; ++i)
+							if (node.childNodes[i].nodeType === 3)
+								txt += node.childNodes[i].textContent;
+			    		var str = txt.trim() || '';
 		                var attribs = node.attributes;
 		                for(var i=0; i < attribs.length; i++){
 		                    str += attribs[i].name + "=" + attribs[i].value + ";"
@@ -385,7 +387,6 @@ function rerun(links){
 			console.log(each);
 			return nightmare
 				.goto(each)
-				.inject('js', 'jquery-3.2.1.min.js')
 				.evaluate(function(){
 					window.fns = {
 						prefilter : function(node){
@@ -430,8 +431,11 @@ function rerun(links){
 				    		return result;
 						},
 			            makeAttrString : function(node){
-			            	var txt = $(node).clone().children().remove().end().text().trim();
-				    		var str = txt || '';
+			            	var txt = '';
+			            	for (var i = 0; i < node.childNodes.length; ++i)
+								if (node.childNodes[i].nodeType === 3)
+									txt += node.childNodes[i].textContent;
+				    		var str = txt.trim() || '';
 			                var attribs = node.attributes;
 			                for(var i=0; i < attribs.length; i++){
 			                    str += attribs[i].name + "=" + attribs[i].value + ";"
