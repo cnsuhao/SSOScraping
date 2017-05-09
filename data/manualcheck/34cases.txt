@@ -23,34 +23,34 @@ Case 3 -- False positive
 	-- case 1
 7. 39.net -- weibo
 	-- different language
-	--
+	-- case 1
 8. k618.cn -- weibo
-	-- different language
-	--
+	-- different language. And there is no indication that the link is a login link. 
+	-- case 1
 9. kinopoisk.ru -- vk, f, yandex, tw, g 
-	-- different language
-	--
+	-- different language. login link in eng but popup inside iframe. 
+	-- case 1
 10. naver.jp -- f, tw
-	-- different language
-	--
+	-- different language. But login link in english added keyword 'join'. Should detect next time. 
+	-- case 1
 11. huanqui.com -- weibo
 	-- different language
-	--
+	-- case 1.
 12. tripadvisor.com -- f, g
-	-- did not detect because of popup modal opens on click
-	--
+	-- did not detect because of popup modal opens on click that gets included only on click and its inside iframe of same domain. might be accessible. 
+	-- case 2
 13. shutterstock.com -- none
-	-- detects fb sso - false positive
-	--
+	-- detects fb sso - false positive -- detected becuase of %2Fbase in a url. 
+	-- case 3 -- this was fixed i guess. just test. 
 14. onedio.com -- f, tw
-	-- different language
-	--
+	-- different language. But also login popup opens and gets inserted on click. 
+	-- case 1
 15. sharepoint.com -- mic
 	-- did not detect because there is no href on signin (href present in lib like impl). Not accessible thru /login or /signup
-	--
+	-- case 2
 16. hotstar.com -- f
-	-- did not detect becoz even though modal is detected, fb login option not present in modal html unless clicked
-	--
+	-- did not detect becoz even though modal is detected as part of page, fb login option not present in modal html unless clicked
+	-- case 2
 17. businessinsider.com -- none
 	-- detects sso - false positive
 	--

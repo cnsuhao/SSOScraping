@@ -1,0 +1,73 @@
+{"rank":"52","url":"http://www.service.tmall.com","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.service.tmall.com/"}}
+
+{"rank":"59","url":"http://www.google.com.mx","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"http://www.google.com.mx"}}
+
+{"rank":"66","url":"http://www.detail.tmall.com","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.detail.tmall.com/"}}
+
+{"rank":"67","url":"http://www.bbc.co.uk","error":{"message":"navigation error","code":-3,"details":"","url":"http://www.bbc.co.uk/"}}
+
+{"rank":"70","url":"http://www.login.tmall.com","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.login.tmall.com/"}}
+
+{"rank":"131","url":"http://www.pages.tmall.com","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.pages.tmall.com/"}}
+
+{"rank":"143","url":"http://www.china.com","error":{"message":"navigation error","code":-3,"details":"","url":"http://www.china.com/"}}
+
+{"rank":"172","url":"http://www.list.tmall.com","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.list.tmall.com/"}}
+
+{"rank":"198","url":"http://www.123movies.is","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.123movies.is/"}}
+
+{"rank":"199","url":"http://www.rule.tmall.com","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.rule.tmall.com/"}}
+
+{"rank":"177","url":"https://www.varzesh3.com/login?redirect=http://www.varzesh3.com/","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"https://www.varzesh3.com/login?redirect=http://www.varzesh3.com/"}}
+
+{"rank":"236","url":"http://www.pinimg.com","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.pinimg.com/"}}
+
+{"rank":"237","url":"http://www.prestoris.com","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.prestoris.com/"}}
+
+{"rank":"246","url":"http://www.bp.blogspot.com","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.bp.blogspot.com/"}}
+
+{"rank":"255","url":"http://www.reddituploads.com","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.reddituploads.com/"}}
+
+{"rank":"261","url":"http://www.twimg.com","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.twimg.com/"}}
+
+{"rank":"276","url":"http://www.mama.cn","error":{"message":"navigation error","code":-3,"details":"","url":"http://www.mama.cn/"}}
+
+{"rank":"282","url":"http://www.putlockers.ch","error":{"message":"navigation error","code":-102,"details":"ERR_CONNECTION_REFUSED","url":"http://www.putlockers.ch/"}}
+
+{"rank":"283","url":"http://www.spotscenered.info","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.spotscenered.info/"}}
+
+{"rank":"202","url":"http://www.huffingtonpost.com/signup","error":{"message":"navigation error","code":-3,"details":"","url":"http://www.huffingtonpost.com/users/notifications/"}}
+
+{"rank":"222","url":"https://dating.rambler.ru/a-register/track-top_head/?utm_content=dating&utm_medium=topline&utm_source=head","error":{"message":"navigation error","code":-3,"details":"","url":"https://dating.rambler.ru/?track=top_head&utm_content=dating&utm_medium=topline&utm_source=head"}}
+
+{"rank":"256","url":"http://www.wittyfeed.com/signup","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"http://www.wittyfeed.com/signup"}}
+
+{"rank":"256","url":"http://www.wittyfeed.com/login","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"http://www.wittyfeed.com/login"}}
+
+{"rank":"323","url":"http://www.chaoshi.tmall.com","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.chaoshi.tmall.com/"}}
+
+{"rank":"327","url":"http://www.cloudfront.net","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.cloudfront.net/"}}
+
+{"rank":"340","url":"http://www.pandora.com","error":{"message":"navigation error","code":-3,"details":"","url":"http://www.pandora.com/"}}
+
+{"rank":"344","url":"http://www.hp.com","error":{"message":"navigation error","code":-3,"details":"","url":"http://www8.hp.com/us/en/home.html"}}
+
+{"rank":"378","url":"http://www.media.tumblr.com","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.media.tumblr.com/"}}
+
+{"rank":"393","url":"http://www.speedtest.net","error":{"message":"navigation error","code":-3,"details":"","url":"http://www.speedtest.net/"}}
+
+{"rank":"398","url":"https://www.bilibili.com/register","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"https://www.bilibili.com/register"}}
+
+{"rank":"400","url":"http://paytm.com/login","error":{"message":"navigation error","code":-3,"details":"","url":"https://paytm.com/"}}
+
+{"rank":"400","url":"http://paytm.com/signup","error":{"message":"navigation error","code":-3,"details":"","url":"https://paytm.com/"}}
+
+{"rank":"403","url":"http://www.ablogica.com","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.ablogica.com/"}}
+
+{"rank":"446","url":"http://www.eastday.com","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"http://www.eastday.com"}}
+
+{"rank":"471","url":"http://www.err.tmall.com","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://www.err.tmall.com/"}}
+
+{"rank":"488","url":"http://www.reuters.com","error":{"message":"navigation error","code":-3,"details":"","url":"http://www.reuters.com/"}}
+
+{"rank":"430","url":"https://online.americanexpress.com/myca/oce/us/action/register?request_type=un_Register&Face=en_US&regSrc=logon&linknav=us-homepage-createnewaccount","error":{"message":"navigation error","code":-3,"details":"","url":"https://online.americanexpress.com/myca/oce/us/action/register?request_type=un_Register&Face=en_US&regSrc=logon&linknav=us-homepage-createnewaccount"}}

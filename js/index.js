@@ -86,7 +86,7 @@ function run(list){
 			    	},
 			    	checkLinkWords : function(inputstr){
 		                var l1 = /log[\-\s]*[io]+n/gi; var l2 = /sign[\-\s]*[io]+n/gi; var l3 = /sign[\-\s]*up+/gi; var l4 = /create[\-\s]*account+/gi; var l5 = /register/gi;
-		                var l6 = /get[\-\s]started/gi; var l7 = /registration/gi; var l8 = /existing[\-\s]user/gi;
+		                var l6 = /get[\-\s]started/gi; var l7 = /registration/gi; var l8 = /existing[\-\s]user/gi; var l9 = /join/gi;
 
 		                var e0 = /social/gi; var e1 = /subscribe/gi; var e2 = /connect/gi; var e3 = /like/gi; var e4 = /support/gi;
 		                var e5 = /recovery/gi; var e6 = /forgot/gi; var e7 = /help/gi; var e8 = /promo[tion]*/gi; 
@@ -108,7 +108,8 @@ function run(list){
 		                    inputstr.match(e27) == null){
 		                    if(inputstr.match(l1) != null || inputstr.match(l2) != null || 
 		                    	inputstr.match(l3) != null || inputstr.match(l4) != null || inputstr.match(l5) != null 
-		                    	|| inputstr.match(l6) != null || inputstr.match(l7) != null || inputstr.match(l8) != null){
+		                    	|| inputstr.match(l6) != null || inputstr.match(l7) != null || inputstr.match(l8) != null ||
+		                    	inputstr.match(l9) != null){
 		                        return true;
 		                   	}
 		                }
