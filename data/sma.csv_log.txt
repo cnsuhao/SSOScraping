@@ -9,3 +9,4 @@
 {"rank":"22","url":"http://www.forbes.com","sso":[],"timeTaken":"5970ms"}
 {"rank":"22","url":"http://www.forbes.com/login","sso":[],"timeTaken":"80650ms"}
 {"rank":"22","url":"http://www.forbes.com/signup","sso":[],"timeTaken":"80763ms"}
+{"rank":"22","url":"http://www.espncricinfo.com","error":{}}

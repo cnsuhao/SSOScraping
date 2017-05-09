@@ -49,7 +49,7 @@ function run(list){
 			    	},
 			    	processDOM : function(){
 						var tree = []; var candidates = []; var sites = []; var result = {"candidates" : [], "links" : []};
-			    		var tries = [];
+			    		var tries = []; var strs = [];
 			    		tree.push(document.body);
 			    		while(tree.length > 0){
 			    			var branch = tree.pop();
@@ -63,21 +63,23 @@ function run(list){
 			    				}
 			    				if(!(branch.attributes == null || branch.nodeName == 'SCRIPT' || branch.nodeName == 'EMBED')){
 			    					if(this.prefilter(branch)){
-			    						var sso = this.hasSSO(branch);
-			    						if(sso){
-			    							if(candidates.indexOf(sso) == -1) candidates.push(sso);
-			    						}else{
-			    							var link = this.hasLinks(branch);
-		    								if(link && sites.indexOf(link) == -1) sites.unshift(link);
-			    						}
+			    						strs.push(this.makeAttrString(branch));
+			    						// var sso = this.hasSSO(branch);
+			    						// if(sso){
+			    						// 	if(candidates.indexOf(sso) == -1) candidates.push(sso);
+			    						// }else{
+			    						// 	var link = this.hasLinks(branch);
+		    							// 	if(link && sites.indexOf(link) == -1) sites.unshift(link);
+			    						// }
 			    					}
 			    				}
 			    			}
 			    		}
-			    		result.candidates = candidates;
-			    		result.links = this.limitLinks(sites);
-			    		if(result.links.length == 0) result.links = this.makeNewLinks();
-			    		return result;
+			    		return strs;
+			    		// result.candidates = candidates;
+			    		// result.links = this.limitLinks(sites);
+			    		// if(result.links.length == 0) result.links = this.makeNewLinks();
+			    		// return result;
 					},
 					hasLinks : function(node){
 			    		var attrStr = this.makeAttrString(node);
@@ -337,19 +339,20 @@ function run(list){
 			})
 			.end()
 			.then(function(result){
-				if(result){
-					ssoInfo['sso'] = result.candidates;
-					if(result.links.length > 3) result.links = result.links.slice(0, 3);
-					for(var i = 0; i < result.links.length; i++){
-						var obj = rank+","+result.links[i];
-						links.push(obj.split(','));
-						console.log(links)
-			  		}
-				}
-				var end = Date.now();
-			  	var time = (end - start)+"ms";
-			  	ssoInfo['timeTaken'] = time;
-			  	answers.push(ssoInfo);
+				console.log(result);
+				// if(result){
+				// 	ssoInfo['sso'] = result.candidates;
+				// 	if(result.links.length > 3) result.links = result.links.slice(0, 3);
+				// 	for(var i = 0; i < result.links.length; i++){
+				// 		var obj = rank+","+result.links[i];
+				// 		links.push(obj.split(','));
+				// 		console.log(links)
+			 //  		}
+				// }
+				// var end = Date.now();
+			 //  	var time = (end - start)+"ms";
+			 //  	ssoInfo['timeTaken'] = time;
+			 //  	answers.push(ssoInfo);
 				return answers;
 			})
 			.catch(function(error){
