@@ -1,21 +1,26 @@
+Case 1 -- different language
+Case 2 -- popup modal problem
+Case 3 -- False positive
+
+
 1. softonic.com -- g, f 
-	-- did not detect because of popup modal opens on click
-	-- 
+	-- did not detect because of popup modal opens on click and the html for it only gets included on click
+	-- case 2
 2. indiatimes.com -- g,f
-	-- did not detect becoz login page opens on click of btn
-	--
+	-- did not detect becoz login page opens on click of btn which is a method call. opens in new tab. 
+	-- case 2
 3. forbes.com -- f, tw, li, g, y, mic, aol, four
-	-- did not detect because of popup modal opens on click
-	--
+	-- popup can be accessed through /link and is part of html. but did not detect. something wrong. 
+	-- case weird
 4. dingit.tv -- f
-	-- did not detect because of popup modal opens on click
-	--
-5. doyou.com -- weibo
-	-- different language
-	--
+	-- did not detect because of popup modal opens on click and the html for it only gets included on click
+	-- case 2
+5. douyu.com -- weibo
+	-- different language firstly. Next html included only after click and its inside an iframe.
+	-- case 1
 6. tokopedia.com -- f,g,y
-	-- different language
-	--
+	-- different language firstly. And the login with sso option has no differentiating keyword. 
+	-- case 1
 7. 39.net -- weibo
 	-- different language
 	--
