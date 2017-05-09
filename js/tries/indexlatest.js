@@ -37,7 +37,7 @@ function run(list){
 			    		var bool = true;
 		                if (node.nodeName != "A" && node.nodeName != "DIV" && node.nodeName != "IMG" &&
 		                    node.nodeName != "SPAN" && node.nodeName != "INPUT" &&
-		                    node.nodeName != "BUTTON" && node.nodeName != "IFRAME") bool = false;
+		                    node.nodeName != "BUTTON") bool = false;
 		                if (node.nodeName == "INPUT") {
 		                    if (node.type != "button" && node.type != "img" &&
 		                        node.type != "submit") bool = false;
@@ -56,13 +56,17 @@ function run(list){
 			    			if(branch != null){
 			    				var children = branch.children;
 			    				if(children){
+			    					var h = this;
 			    					var arr = [].slice.call(children);
+
 				    				arr.forEach(function(currVal, arr, index){
 			                        	tree.unshift(currVal);
+			                        	strs.push(h.makeAttrString(currVal));
 			                        });
 			    				}
 			    				if(!(branch.attributes == null || branch.nodeName == 'SCRIPT' || branch.nodeName == 'EMBED')){
 			    					if(this.prefilter(branch)){
+			    						
 			    						strs.push(this.makeAttrString(branch));
 			    						// var sso = this.hasSSO(branch);
 			    						// if(sso){
@@ -340,6 +344,7 @@ function run(list){
 			.end()
 			.then(function(result){
 				console.log(result);
+				write(result);
 				// if(result){
 				// 	ssoInfo['sso'] = result.candidates;
 				// 	if(result.links.length > 3) result.links = result.links.slice(0, 3);
