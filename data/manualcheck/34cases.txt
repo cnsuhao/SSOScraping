@@ -53,13 +53,13 @@ Case 3 -- False positive
 	-- case 2
 17. conservativetribune.com -- none
 	-- detects sso - false positive
-	--
+	-- FIXED. REMOVED AUTH KEYWORD THAT GENERATED FALSE POSITIVES.
 18. hatenablog.com -- google
 	-- login url is not detected even tho login is in English. check it
 	--
 19. themeforest.net -- none
-	-- detects sso - false positive
-	--
+	-- detects sso - false positive 
+	-- FIXED. REMOVED AUTH KEYWORD THAT GENERATED FALSE POSITIVES.
 20. feedly.com -- g, f, tw, mic, evernote
 	-- react click call. cannot detect unless clicked
 	--
@@ -104,7 +104,7 @@ Case 3 -- False positive
 	--
 34. blackboard -- none
 	-- detects wrongly sso, false positive
-	-- 
+	-- FIXED. REMOVED AUTH KEYWORD THAT GENERATED FALSE POSITIVES.
 35. ci123.com -- weibo
 	--
 	--

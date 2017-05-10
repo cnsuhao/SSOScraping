@@ -272,12 +272,12 @@ function run(list){
 				                            return each.site+", 1no-url"+inputstr;
 				                        }else if(inputstr.match(k17) != null || inputstr.match(k23) != null ||
 				                        	inputstr.match(k24) != null){
-				                        	if(inputstr.match(k18) != null || inputstr.match(k19) != null || inputstr.match(k8) != null
+				                        	if(inputstr.match(k18) != null || inputstr.match(k8) != null
 				                        	|| inputstr.match(k9) != null || inputstr.match(k10) != null){
 				                        		return each.site+", 2no-url"+inputstr;
 				                        	}
 				                        }else if(inputstr.match(k20) != null){
-				                        	if(inputstr.match(k18) != null || inputstr.match(k19) != null || inputstr.match(k8) != null
+				                        	if(inputstr.match(k18) != null || inputstr.match(k8) != null
 				                        	|| inputstr.match(k9) != null || inputstr.match(k10) != null){
 				                        		return each.site+", 3no-url"+inputstr;
 				                        	}
@@ -287,7 +287,7 @@ function run(list){
 				                        		return each.site+", 4no-url"+inputstr;
 				                        	}
 				                        }else if(inputstr.match(k21) != null || inputstr.match(k22) != null){
-				                        	if(inputstr.match(k17) != null || inputstr.match(k18) != null || inputstr.match(k19) != null ||
+				                        	if(inputstr.match(k17) != null || inputstr.match(k18) != null ||
 				                        		inputstr.match(k20) != null || inputstr.match(k26) != null || inputstr.match(k8) != null || 
 				                        		inputstr.match(k9) != null || inputstr.match(k10) != null){
 				                        		return each.site+", 5no-url"+inputstr;
@@ -576,12 +576,12 @@ function rerun(links){
 					                            return each.site+", no-url";
 					                        }else if(inputstr.match(k17) != null || inputstr.match(k23) != null ||
 					                        	inputstr.match(k24) != null){
-					                        	if(inputstr.match(k18) != null || inputstr.match(k19) != null || inputstr.match(k8) != null
+					                        	if(inputstr.match(k18) != null || inputstr.match(k8) != null
 					                        	|| inputstr.match(k9) != null || inputstr.match(k10) != null){
 					                        		return each.site+", no-url";
 					                        	}
 					                        }else if(inputstr.match(k20) != null){
-					                        	if(inputstr.match(k18) != null || inputstr.match(k19) != null || inputstr.match(k8) != null
+					                        	if(inputstr.match(k18) != null || inputstr.match(k8) != null
 					                        	|| inputstr.match(k9) != null || inputstr.match(k10) != null){
 					                        		return each.site+", no-url";
 					                        	}
@@ -591,7 +591,7 @@ function rerun(links){
 					                        		return each.site+", no-url";
 					                        	}
 					                        }else if(inputstr.match(k21) != null || inputstr.match(k22) != null){
-					                        	if(inputstr.match(k17) != null || inputstr.match(k18) != null || inputstr.match(k19) != null ||
+					                        	if(inputstr.match(k17) != null || inputstr.match(k18) != null ||
 					                        		inputstr.match(k20) != null || inputstr.match(k26) != null || inputstr.match(k8) != null || 
 					                        		inputstr.match(k9) != null || inputstr.match(k10) != null){
 					                        		return each.site+", no-url";
