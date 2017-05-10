@@ -41,7 +41,7 @@ Case 3 -- False positive
 	-- case 2
 13. shutterstock.com -- none
 	-- detects fb sso - false positive -- detected becuase of %2Fbase in a url. 
-	-- case 3 -- this was fixed i guess. just test. 
+	-- case 3 -- this was fixed i guess. FIXED. 
 14. onedio.com -- f, tw
 	-- different language. But also login popup opens and gets inserted on click. 
 	-- case 1
@@ -51,61 +51,58 @@ Case 3 -- False positive
 16. hotstar.com -- f
 	-- did not detect becoz even though modal is detected as part of page, fb login option not present in modal html unless clicked
 	-- case 2
-17. businessinsider.com -- none
+17. conservativetribune.com -- none
 	-- detects sso - false positive
 	--
-18. conservativetribune.com -- none
-	-- detects sso - false positive
-	--
-19. hatenablog.com -- google
+18. hatenablog.com -- google
 	-- login url is not detected even tho login is in English. check it
 	--
-20. themeforest.net -- none
+19. themeforest.net -- none
 	-- detects sso - false positive
 	--
-21. feedly.com -- g, f, tw, mic, evernote
+20. feedly.com -- g, f, tw, mic, evernote
 	-- react click call. cannot detect unless clicked
 	--
-22. pandora.com -- none
+21. pandora.com -- none
 	-- error code
 	--
-23. espncricinfo.com -- f
+22. espncricinfo.com -- f
 	-- did not detect because its inside iframe of cross domain whose content cannot be accessed
 	--
-24. kakaku.com -- f, g
+23. kakaku.com -- f, g
 	-- 
 	--
-25. accuweather.com -- none
+24. accuweather.com -- none
 	--
 	--
-26. seasonvar.ru -- vk, g, f, tw
+25. seasonvar.ru -- vk, g, f, tw
 	--
 	--
-27. ensohaber.com -- f, tw
+26. ensohaber.com -- f, tw
 	-- 
 	--
-28. ku6.com -- weibo
+27. ku6.com -- weibo
 	-- 
 	--
-29. onet.pl -- f
+28. onet.pl -- f
 	--
 	--
-30. bitauto.com -- weibo
+29. bitauto.com -- weibo
 	--
 	--
-31. snapdeal.com -- f, g
+30. snapdeal.com -- f, g
 	--
 	--
-32. repubblica .it -- f, g, tw, li
+31. repubblica .it -- f, g, tw, li
 	--
 	--
-33. medium.com -- g, f, tw
+32. medium.com -- g, f, tw
 	--
 	--
-34. battle.net -- f
+33. battle.net -- f
 	--
 	--
-35. blackboard -- none
+34. blackboard -- none
 	-- detects wrongly sso, false positive
 	-- 
 35. ci123.com -- weibo

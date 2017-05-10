@@ -65,12 +65,13 @@ function run(list){
 			    				}
 			    				if(!(branch.attributes == null || branch.nodeName == 'SCRIPT' || branch.nodeName == 'EMBED')){
 			    					if(this.prefilter(branch)){
-			    						
-			    						strs.push(this.makeAttrString(branch));
-			    						// var sso = this.hasSSO(branch);
-			    						// if(sso){
-			    						// 	if(candidates.indexOf(sso) == -1) candidates.push(sso);
-			    						// }else{
+			    			
+			    						var sso = this.hasSSO(branch);
+			    						if(sso){
+			    							
+			    							if(candidates.indexOf(sso) == -1) candidates.push(sso);
+			    						}
+			    						// else{
 			    						// 	var link = this.hasLinks(branch);
 		    							// 	if(link && sites.indexOf(link) == -1) sites.unshift(link);
 			    						// }
@@ -78,11 +79,11 @@ function run(list){
 			    				}
 			    			}
 			    		}
-			    		return strs;
-			    		// result.candidates = candidates;
+			    		result.candidates = candidates;
 			    		// result.links = this.limitLinks(sites);
 			    		// if(result.links.length == 0) result.links = this.makeNewLinks();
-			    		// return result;
+			    	
+			    		return result;
 					},
 					hasLinks : function(node){
 			    		var attrStr = this.makeAttrString(node);
@@ -141,9 +142,9 @@ function run(list){
 			    		var str = txt.trim() || '';
 			    		
 		                var attribs = node.attributes;
-		                // for(var i=0; i < attribs.length; i++){
-		                //     str += attribs[i].name + "=" + attribs[i].value + ";"
-		                // }
+		                for(var i=0; i < attribs.length; i++){
+		                    str += attribs[i].name + "=" + attribs[i].value + ";"
+		                }
 		                return str;
 			    	},
 			    	hasSSO : function(node){
@@ -268,28 +269,28 @@ function run(list){
 			                    	if(each.site != 'box' && each.site != 'vk' && each.site != '500px' && each.site != 'fb'){
 			                    		if(inputstr.match(k2) != null || inputstr.match(k3) != null  || inputstr.match(k4) != null || 
 				                            inputstr.match(k5) != null || inputstr.match(k6) != null || inputstr.match(k7) != null){
-				                            return each.site+", no-url";
+				                            return each.site+", 1no-url"+inputstr;
 				                        }else if(inputstr.match(k17) != null || inputstr.match(k23) != null ||
 				                        	inputstr.match(k24) != null){
 				                        	if(inputstr.match(k18) != null || inputstr.match(k19) != null || inputstr.match(k8) != null
 				                        	|| inputstr.match(k9) != null || inputstr.match(k10) != null){
-				                        		return each.site+", no-url";
+				                        		return each.site+", 2no-url"+inputstr;
 				                        	}
 				                        }else if(inputstr.match(k20) != null){
 				                        	if(inputstr.match(k18) != null || inputstr.match(k19) != null || inputstr.match(k8) != null
 				                        	|| inputstr.match(k9) != null || inputstr.match(k10) != null){
-				                        		return each.site+", no-url";
+				                        		return each.site+", 3no-url"+inputstr;
 				                        	}
 				                        }else if(inputstr.match(k26) != null){
 				                        	if(inputstr.match(k18) != null || inputstr.match(k8) != null
 				                        	|| inputstr.match(k9) != null || inputstr.match(k10) != null){
-				                        		return each.site+", no-url";
+				                        		return each.site+", 4no-url"+inputstr;
 				                        	}
 				                        }else if(inputstr.match(k21) != null || inputstr.match(k22) != null){
 				                        	if(inputstr.match(k17) != null || inputstr.match(k18) != null || inputstr.match(k19) != null ||
 				                        		inputstr.match(k20) != null || inputstr.match(k26) != null || inputstr.match(k8) != null || 
 				                        		inputstr.match(k9) != null || inputstr.match(k10) != null){
-				                        		return each.site+", no-url";
+				                        		return each.site+", 5no-url"+inputstr;
 				                        	}
 				                        }
 			                    	} 
@@ -347,7 +348,7 @@ function run(list){
 			.end()
 			.then(function(result){
 				console.log('using js')
-				console.log(result.length);
+				console.log(result);
 				write(result);
 				// if(result){
 				// 	ssoInfo['sso'] = result.candidates;
@@ -635,10 +636,11 @@ function rerun(links){
 // Write or read from file functions
 function write(data){
 	try{
-		for(var i = 0; i < data.length; i++){
-			var each = data[i];
-			fs.appendFile('../../data/'+logFileName+'_log.txt', JSON.stringify(each)+"\n", function(isDone){});
-		}
+		fs.appendFile('../../data/'+logFileName+'_log.txt', JSON.stringify(data)+"\n", function(isDone){});
+		// for(var i = 0; i < data.length; i++){
+		// 	var each = data[i];
+		// 	fs.appendFile('../../data/'+logFileName+'_log.txt', JSON.stringify(each)+"\n", function(isDone){});
+		// }
 	}catch(e){
 		console.log("Write file error : " + e);
 	}
