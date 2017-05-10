@@ -94,7 +94,7 @@ function run(list){
 		                var e13 = /questions/gi; var e14 = /store/gi; var e15 = /itunes/gi; var e16 = /play\.google/gi;
 		                var e17 = /graph\.facebook/gi; var e18 = /jobs/gi; var e19 = /pdf/gi; var e20 = /doc/gi; var e21 = /jsp/gi;
 		                var e22 = /entry/gi; var e23 = /exe/gi; var e24 = /download/gi; var e25 = /newsletter/gi; var e26 = /comment/gi;
-		                var e27 = /article/gi;
+		                var e27 = /article/gi; var e28 = /entertainment/gi;
 
 		                if(inputstr.match(e0) == null && inputstr.match(e1) == null  && inputstr.match(e2) == null && 
 		                    inputstr.match(e3) == null && inputstr.match(e4) == null && inputstr.match(e5) == null &&
@@ -105,7 +105,7 @@ function run(list){
 		                    && inputstr.match(e18) == null && inputstr.match(e19) == null && inputstr.match(e20) == null
 		                    && inputstr.match(e21) == null && inputstr.match(e22) == null && inputstr.match(e23) == null
 		                    && inputstr.match(e24) == null && inputstr.match(e25) == null && inputstr.match(e26) == null && 
-		                    inputstr.match(e27) == null){
+		                    inputstr.match(e27) == null &&  inputstr.match(e28) == null){
 		                    if(inputstr.match(l1) != null || inputstr.match(l2) != null || 
 		                    	inputstr.match(l3) != null || inputstr.match(l4) != null || inputstr.match(l5) != null 
 		                    	|| inputstr.match(l6) != null || inputstr.match(l7) != null || inputstr.match(l8) != null ||
