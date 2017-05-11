@@ -8,6 +8,7 @@ var links = [];
 var allResults = [];
 
 //Get command line arg and run
+
 var  logFileName = JSON.parse(process.argv[2]);
 var sites = JSON.parse(process.argv.slice(3));
 run(sites);
@@ -348,7 +349,7 @@ function run(list){
 			.end()
 			.then(function(result){
 				console.log('using js')
-				console.log(result);
+				// console.log(result);
 				write(result);
 				// if(result){
 				// 	ssoInfo['sso'] = result.candidates;
