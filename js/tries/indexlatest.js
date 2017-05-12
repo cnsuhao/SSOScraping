@@ -143,12 +143,10 @@ function run(list){
 // Write or read from file functions
 function write(data){
 	try{
-		fs.appendFile('../../data/'+logFileName+'_log.txt', JSON.stringify(data)+"\n", function(isDone){});
-		
-		// for(let i = 0; i < data.length; i++){
-		// 	let each = data[i];
-		// 	fs.appendFile('../data/'+logFileName+'_log.txt', JSON.stringify(each)+"\n", function(isDone){});
-		// }
+		for(let i = 0; i < data.length; i++){
+			let each = data[i];
+			fs.appendFile('../data/'+logFileName+'_log.txt', JSON.stringify(each)+"\n", function(isDone){});
+		}
 	}catch(e){
 		console.log("Write file error : " + e);
 	}
