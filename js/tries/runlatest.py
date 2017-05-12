@@ -3,14 +3,14 @@ import os
 import json
 import subprocess
 import sys
-import time
+
 
 
 
 os.environ["DISPLAY"]=":3"
 websites = []
 
-t0 = time.time()
+
 filename = sys.argv[1]
 start = sys.argv[2]
 
@@ -31,7 +31,7 @@ def chunks(l, n):
         yield l[i:i + n]
 
 
-listchunks = list(chunks(websites, 1));
+listchunks = list(chunks(websites, 100));
 print(len(listchunks))
 
 for chunk in listchunks:
@@ -39,7 +39,3 @@ for chunk in listchunks:
     cmd = "DEBUG=nightmare:actions* node indexlatest.js '"+json.dumps(filename)+"'"
     cmd += " '"+json.dumps(chunk)+"'"
     subprocess.call(cmd, shell=True)
-t1 = time.time()
-
-total = t1-t0
-print total
