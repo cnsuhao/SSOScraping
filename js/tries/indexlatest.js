@@ -63,19 +63,24 @@ function run(list){
 		                return str;
 			    	},
 					processDOM : function(){
-						let tree = []; let result = {"candidates" : [], "links" : []}; let links = []; let ssos = [];
+						let tree = []; let result = {"candidates" : [], "links" : []};
 			    		tree = [].slice.call(document.querySelectorAll('*'));
 			    		while(tree.length > 0){
 			    			let branch = tree.pop();
 			    			if(this.prefilter(branch) && branch.attributes != null){
 			    				let attribStr = this.makeAttrString(branch);
-			    				if(runType == 0){
-			    					let link = this.hasLinks(attribStr, branch);
-			    					if(link && result.links.indexOf(link) == -1) result.links.push(link);
+			    				let sso = this.hasSSO(attribStr);
+			    				if(sso){
+			    					if(result.candidates.indexOf(sso) == -1) result.candidates.push(sso);
+			    				}else{
+			    					if(runType == 0){
+				    					let link = this.hasLinks(attribStr, branch);
+				    					if(link && result.links.indexOf(link) == -1) result.links.push(link);
+				    				}
 			    				}
-			    				
 			    			}
 			    		}
+			    		result.links = this.limitLinks(result.links);
 			    		return result;
 					},
 					hasLinks : function(inputStr, node){
@@ -106,18 +111,22 @@ function run(list){
 		                }
 		                return null;
 					},
-					makeAttrString : function(node){
-		            	var txt = '';
-		            	for (var i = 0; i < node.childNodes.length; ++i)
-							if (node.childNodes[i].nodeType === 3)
-								txt += node.childNodes[i].textContent;
-			    		var str = txt.trim() || '';
-		                var attribs = node.attributes;
-		                for(var i=0; i < attribs.length; i++){
-		                    str += attribs[i].name + "=" + attribs[i].value + ";"
-		                }
-		                return str;
-			    	}
+					limitLinks : function(list){
+						let filtered = new Set();
+						for(let i = 0; i < list.length; i++){
+							let each = list[i];
+			        		if((/^http/gi).test(each)){
+			        			filtered.add(each);
+			        		}else if(each[0] == '/' && each[1] == '/'){
+		        				each = window.location.href.split('/')[0] + each;
+		        				filtered.add(each);
+		        			}else if(each[0] == '/' && each[1] != '/'){
+		        				each = window.location.href.split('/')[0] + "//" + window.location.href.split('/')[1] + each;
+		        				filtered.add(each);
+		        			}
+			        	}
+			        	return [].slice.call(filtered);
+					}
 				};
 				return fns.processDOM();
 			}, runType)
