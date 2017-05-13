@@ -1,21 +1,4 @@
-//Modules required
-var fs = require('fs');
-var Nightmare = require('nightmare');
-require('nightmare-download-manager')(Nightmare);
-
-//Variable declaration
-var links = [];
-var allResults = [];
-
-//Get command line arg and run
-var  logFileName = JSON.parse(process.argv[2]);
-var sites = JSON.parse(process.argv.slice(3));
-run(sites);
-
-function run(list){
-	list.reduce(function(accumulator, initial){
-		return accumulator.then(function(answers){
-			var rank = initial[0]; var link = initial[1];
+var rank = initial[0]; var link = initial[1];
 			var url = "http://www.";
 			url += link;
 			var ssoInfo = {"rank" : rank, "url" : url, "sso" : [], "timeTaken" : ''};
@@ -362,15 +345,12 @@ function run(list){
 			    answers.push({"rank" : rank, "url" : url, "error" : error});
 				return answers;
 			});
-		});
-	}, Promise.resolve([])).then(function(answers){
-		console.log("Before rerun");
-		allResults = allResults.concat(answers);
-    	rerun(links);
-	});
-}
 
-function rerun(links){
+
+
+
+
+			function rerun(links){
 	var len = 0;
 	console.log("hi")
 	links.reduce(function(accumulator, url) {

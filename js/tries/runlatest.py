@@ -6,6 +6,7 @@ import sys
 
 
 
+
 os.environ["DISPLAY"]=":3"
 websites = []
 
