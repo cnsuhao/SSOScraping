@@ -5,7 +5,7 @@ var Nightmare = require('nightmare');
 require('nightmare-download-manager')(Nightmare);
 
 function run(rank, url, findLinks, cb){
-    console.log(url);
+    // console.log(url);
     var ssoInfo = {"rank" : rank, "url" : url, "sso" : [], "timeTaken" : ''};
     var start = Date.now();
     var nightmare = Nightmare({
@@ -296,7 +296,7 @@ function log(result) {
 
 
 if (require.main === module) {
-    console.log('hi')
+    // console.log('hi')
     var workers = 10;
     var opt = require('node-getopt').create([
         ['w', 'workers=NUM', 'number of nightmare.js instances'],
