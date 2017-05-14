@@ -8193,26 +8193,6 @@
 {"rank":"173113","url":"http://www.dootalk.com/forums/index.php?app=core&module=global&section=register","sso":[],"timeTaken":"46565ms"}
 {"rank":"173116","url":"https://www.moreworks.jp/users/sign_in","sso":[],"timeTaken":"23543ms"}
 {"rank":"173115","url":"https://www.ourphorum.com/ucp.php?mode=register&sid=07403e96173a10bee4b5e53d3dcab4f1","sso":[],"timeTaken":"8940ms"}
-
-<--- Last few GCs --->
-
-[5693:0x222a6a0]   297592 ms: Mark-sweep 1106.6 (1586.9) -> 1103.7 (1586.9) MB, 848.7 / 0.0 ms  allocation failure GC in old space requested
-[5693:0x222a6a0]   298658 ms: Mark-sweep 1103.7 (1586.9) -> 1103.7 (1586.9) MB, 891.7 / 0.0 ms  allocation failure GC in old space requested
-[5693:0x222a6a0]   299586 ms: Mark-sweep 1103.7 (1586.9) -> 1103.7 (1532.9) MB, 764.4 / 0.0 ms  last resort 
-[5693:0x222a6a0]   300105 ms: Mark-sweep 1103.7 (1532.9) -> 1103.7 (1510.9) MB, 519.3 / 0.0 ms  last resort 
-
-
-<--- JS stacktrace --->
-
-==== JS stack trace =========================================
-
-Security context: 0x12d9111a66a1 <JS Object>
-    0: builtin exit frame: parse(this=0x12d91119a7d1 <a JSON with map 0x3690aff853d9>,0xbe4ccc02201 <Very long string[224360448]>)
-
-    1: onread [internal/child_process.js:~455] [pc=0x22cb5b0ef49a](this=0x111723842ac9 <a Pipe with map 0x3690affda469>,nread=48657,pool=0x1f8255970b91 <an Uint8Array with map 0x3690affe8b11>,recvHandle=0x896ff982311 <undefined>)
-
-==== Details =====================...
-
 {"rank":"173100","url":"http://jashiga.co.jp","sso":[],"timeTaken":"1658ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://jashiga.co.jp/"}}
 {"rank":"173102","url":"http://weathermap.co.jp","sso":[],"timeTaken":"1642ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://weathermap.co.jp/"}}
 {"rank":"173103","url":"http://trackback-cpa.com","sso":[],"timeTaken":"1553ms"}
