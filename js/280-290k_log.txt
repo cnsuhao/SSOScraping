@@ -2097,3 +2097,45 @@
 {"rank":"280790","url":"https://bugclose.com/login","sso":[],"timeTaken":"1275ms"}
 {"rank":"280791","url":"http://syntec-numerique.fr","sso":[],"timeTaken":"4345ms"}
 {"rank":"280791","url":"https://syntec-numerique.fr/node?destination=node","sso":[],"timeTaken":"3923ms"}
+{"rank":"280009","url":"http://bikashnews.com","sso":[],"timeTaken":"5212ms"}
+{"rank":"280004","url":"http://mspas.gob.gt","sso":[],"timeTaken":"5345ms"}
+{"rank":"280004","url":"https://mail.mspas.gob.gt/owa/auth/logon.aspx?url=https://mail.mspas.gob.gt/owa/&reason=0","sso":[],"timeTaken":"3143ms"}
+{"rank":"280009","url":"http://www.moenonline.moen.gov.np/login","sso":[],"timeTaken":"3305ms"}
+{"rank":"280795","url":"http://wordans.ca","sso":[],"timeTaken":"3158ms"}
+{"rank":"280795","url":"https://www.wordans.ca/signup","sso":[],"timeTaken":"1733ms"}
+{"rank":"280795","url":"https://www.wordans.ca/login","sso":[],"timeTaken":"2631ms"}
+{"rank":"280796","url":"http://derilu.com","sso":[],"timeTaken":"2168ms"}
+{"rank":"280796","url":"http://derilu.com/signup","sso":[],"timeTaken":"1822ms"}
+{"rank":"280796","url":"http://derilu.com/login","sso":[],"timeTaken":"1886ms"}
+{"rank":"280797","url":"http://interheart.co.jp","sso":[],"timeTaken":"1494ms"}
+{"rank":"280797","url":"http://interheart.co.jp/signup","sso":[],"timeTaken":"1029ms"}
+{"rank":"280794","url":"http://esurvey.kr","sso":[],"timeTaken":"60553ms","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"http://esurvey.kr"}}
+{"rank":"280798","url":"http://citysmart.info","sso":[],"timeTaken":"640ms"}
+{"rank":"280798","url":"http://citysmart.info/signup","sso":[],"timeTaken":"800ms"}
+{"rank":"280798","url":"http://citysmart.info/login","sso":[],"timeTaken":"782ms"}
+{"rank":"280799","url":"http://rockrun.com","sso":[],"timeTaken":"6323ms"}
+{"rank":"280799","url":"https://rockrun.com/contact#contact_form","sso":[],"timeTaken":"4370ms"}
+{"rank":"280799","url":"https://rockrun.com/account/login","sso":[],"timeTaken":"4320ms"}
+{"rank":"280800","url":"http://oneyoungworld.com","sso":[],"timeTaken":"6863ms"}
+{"rank":"280800","url":"https://www.oneyoungworld.com/user","sso":[],"timeTaken":"2278ms"}
+{"rank":"280800","url":"https://www.oneyoungworld.com/user/login","sso":[],"timeTaken":"2321ms"}
+{"rank":"280801","url":"http://csd.gov.pk","sso":[],"timeTaken":"60521ms","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"http://csd.gov.pk"}}
+{"rank":"280802","url":"http://linuxpl.info","sso":[],"timeTaken":"1345ms"}
+{"rank":"280802","url":"http://linuxpl.info/signup","sso":[],"timeTaken":"862ms"}
+{"rank":"280802","url":"http://linuxpl.info/login","sso":[],"timeTaken":"806ms"}
+{"rank":"280803","url":"http://adventurerv.net","sso":[],"timeTaken":"1540ms"}
+{"rank":"280803","url":"http://www.adventurerv.net/signup","sso":[],"timeTaken":"1057ms"}
+{"rank":"280803","url":"http://www.adventurerv.net/login","sso":[],"timeTaken":"962ms"}
+{"rank":"280804","url":"http://radiomz.org","sso":[],"timeTaken":"8447ms"}
+{"rank":"280804","url":"http://radiomz.org/signup","sso":[],"timeTaken":"3157ms"}
+{"rank":"280804","url":"http://radiomz.org/login","sso":[],"timeTaken":"3807ms"}
+{"rank":"280805","url":"http://georgeschool.org","sso":[],"timeTaken":"3129ms"}
+{"rank":"280805","url":"http://www.georgeschool.org/signup","sso":[],"timeTaken":"1027ms"}
+{"rank":"280805","url":"http://www.georgeschool.org/login","sso":["google, oauth-url"],"timeTaken":"1423ms"}
+{"rank":"280806","url":"http://federalpremium.com","sso":[],"timeTaken":"2436ms"}
+{"rank":"280806","url":"http://glarp.vistaoutdoor.com/pages/lodge/register.aspx?siteId=5","sso":[],"timeTaken":"1123ms"}
+{"rank":"280807","url":"http://pinbet88.com","sso":[],"timeTaken":"1990ms"}
+{"rank":"280807","url":"http://www.pinbet88.com/signup","sso":[],"timeTaken":"1267ms"}
+{"rank":"280807","url":"http://www.pinbet88.com/login","sso":[],"timeTaken":"973ms"}
+{"rank":"280808","url":"http://blackstonelabs.com","sso":[],"timeTaken":"13633ms"}
+{"rank":"280808","url":"https://blackstonelabs.com/contact#contact_form","sso":[],"timeTaken":"2693ms"}
