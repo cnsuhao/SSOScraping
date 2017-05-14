@@ -5,7 +5,7 @@ var Nightmare = require('nightmare');
 require('nightmare-download-manager')(Nightmare);
 
 function run(rank, url, findLinks, cb){
-    // console.log(url);
+    //console.log(url);
     var ssoInfo = {"rank" : rank, "url" : url, "sso" : [], "timeTaken" : ''};
     var start = Date.now();
     var nightmare = Nightmare({
@@ -19,8 +19,10 @@ function run(rank, url, findLinks, cb){
             'ignore-certificate-errors': true
         }
     });
+    var timeout = setTimeout(() => {
+        nightmare.halt("Timed out");
+    }, 60000);
     nightmare.goto(url)
-    .wait()
     .evaluate((findLinks) => {
         var ssoProviders = [
             {"site" : "google", "regex" : /google/gi, "url" : ["https://accounts.google.com/o/oauth2/auth", "https://accounts.google.com/ServiceLogin"]}, 
@@ -269,6 +271,7 @@ function run(rank, url, findLinks, cb){
     }, findLinks)
     .end()
     .then((result) => {
+        clearTimeout(timeout);
         var links = [];
         if(result){
             ssoInfo['sso'] = result.candidates;
@@ -283,6 +286,7 @@ function run(rank, url, findLinks, cb){
         cb(ssoInfo, links);
     })
     .catch((error) => {
+        clearTimeout(timeout);
         //console.error('Search failed:', error);
         ssoInfo["error"] = error;
         ssoInfo['timeTaken'] = (Date.now() - start) + "ms";
@@ -296,7 +300,6 @@ function log(result) {
 
 
 if (require.main === module) {
-    // console.log('hi')
     var workers = 10;
     var opt = require('node-getopt').create([
         ['w', 'workers=NUM', 'number of nightmare.js instances'],
@@ -310,7 +313,9 @@ if (require.main === module) {
     // Create an asynchronous queue.
     var queue = async.queue((task, cb) => {
         run(task.rank, task.url, task.findLinks, cb);
-    }, 10);
+    }, workers);
+
+    queue.drain = function () { /* done */ };
 
     for (let file of opt.argv) {
         var data = fs.readFileSync(file, {encoding: 'utf-8'});
@@ -318,13 +323,15 @@ if (require.main === module) {
         // Add all of the sites to the queue.
         for (let [rank, domain] of sites) {
             var task = { "rank": rank, "url": "http://"+domain, "findLinks": true };
-            queue.push(task, (ssoInfo, links) => {
-                log(ssoInfo);
-                for (let url of links) {
-                    var task = { "rank": rank, "url": url, "findLinks": false };
-                    queue.unshift(task, (ssoInfo, links) => { log(ssoInfo); });
-                }
-            });
+            if (rank) {
+                queue.push(task, (ssoInfo, links) => {
+                    log(ssoInfo);
+                    for (let url of links) {
+                        var task = { "rank": rank, "url": url, "findLinks": false };
+                        queue.unshift(task, (ssoInfo, links) => { log(ssoInfo); });
+                    }
+                });
+            }
         }
     }
 }
