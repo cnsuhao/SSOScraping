@@ -11647,3 +11647,890 @@
 {"rank":"144433","url":"https://hyperloop-one.com/signup","sso":[],"timeTaken":"1684ms"}
 {"rank":"144433","url":"https://hyperloop-one.com/login","sso":[],"timeTaken":"1583ms"}
 {"rank":"144434","url":"http://joinquant.com","sso":[],"timeTaken":"7013ms"}
+{"rank":"144441","url":"http://publicaccessnow.com","sso":[],"timeTaken":"52617ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://publicaccessnow.com/"}}
+{"rank":"144440","url":"http://gogin.co.jp","sso":[],"timeTaken":"53813ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://gogin.co.jp/"}}
+{"rank":"144437","url":"http://sparkasse-giessen.de","sso":[],"timeTaken":"62694ms"}
+{"rank":"144436","url":"http://hdmovie24.biz","sso":[],"timeTaken":"62820ms"}
+{"rank":"144438","url":"http://eandis.be","sso":[],"timeTaken":"63795ms"}
+{"rank":"144439","url":"http://raketka.cz","sso":[],"timeTaken":"71007ms"}
+{"rank":"144443","url":"http://ulango.tv","sso":[],"timeTaken":"18718ms"}
+{"rank":"144438","url":"https://www.eandis.be/signup","sso":[],"timeTaken":"11565ms"}
+{"rank":"144436","url":"https://hdmovie24.biz/signup","sso":[],"timeTaken":"14896ms"}
+{"rank":"144437","url":"https://www.sparkasse-giessen.de/de/home/login-online-banking/demo-online-banking-chiptan.html?n=true&lvv=Demo","sso":[],"timeTaken":"15169ms"}
+{"rank":"144442","url":"http://snappr.co","sso":[],"timeTaken":"25575ms"}
+{"rank":"144443","url":"http://ulango.tv/signup","sso":[],"timeTaken":"6979ms"}
+{"rank":"144443","url":"http://ulango.tv/login","sso":[],"timeTaken":"7631ms"}
+{"rank":"144439","url":"http://www.raketka.cz/prihlasit-se","sso":[],"timeTaken":"16370ms"}
+{"rank":"144436","url":"https://hdmovie24.biz/login","sso":[],"timeTaken":"8341ms"}
+{"rank":"144438","url":"https://www.eandis.be/login","sso":[],"timeTaken":"10183ms"}
+{"rank":"144439","url":"http://www.raketka.cz/loginbyfacebook","sso":["facebook, oauth-keyword"],"timeTaken":"10800ms"}
+{"rank":"144442","url":"https://www.snappr.co/join-us","sso":[],"timeTaken":"13138ms"}
+{"rank":"144437","url":"https://www.sparkasse-giessen.de/de/home.html?sp:ac=ifaemlogin%3ALoginPortlet_0%3ALOGIN_HEADER%40portal","sso":[],"timeTaken":"13704ms"}
+{"rank":"144447","url":"http://wrestlingenvivo.com","sso":[],"timeTaken":"19367ms"}
+{"rank":"144445","url":"http://ikea.com.cy","sso":[],"timeTaken":"37319ms"}
+{"rank":"144445","url":"http://www.ikea.com.cy/signup","sso":[],"timeTaken":"5274ms"}
+{"rank":"144447","url":"http://wrestlingenvivo.com/signup","sso":[],"timeTaken":"23527ms"}
+{"rank":"144445","url":"http://www.ikea.com.cy/login","sso":[],"timeTaken":"12755ms"}
+{"rank":"144446","url":"http://lincolnshirelive.co.uk","sso":[],"timeTaken":"57786ms"}
+{"rank":"144444","url":"http://07kbr.ru","sso":[],"timeTaken":"64877ms","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"http://07kbr.ru"}}
+{"rank":"144446","url":"https://register.thisis.co.uk/login.html?site=http%3A%2F%2Fwww.lincolnshireecho.co.uk&origin=http%3A%2F%2Fwww.lincolnshirelive.co.uk%2F","sso":["twitter, no-url","facebook, no-url","google, no-url"],"timeTaken":"3781ms"}
+{"rank":"144447","url":"http://wrestlingenvivo.com/login","sso":[],"timeTaken":"25658ms"}
+{"rank":"144448","url":"http://cadillacforums.com","sso":[],"timeTaken":"65535ms"}
+{"rank":"144450","url":"http://freenom.world","sso":[],"timeTaken":"16342ms"}
+{"rank":"144449","url":"http://thefrugalgirls.com","sso":[],"timeTaken":"67537ms"}
+{"rank":"144450","url":"http://www.freenom.world/signup","sso":[],"timeTaken":"5446ms"}
+{"rank":"144450","url":"http://www.freenom.world/login","sso":[],"timeTaken":"1959ms"}
+{"rank":"144446","url":"https://register.thisis.co.uk/register.html?site=http%3A%2F%2Fwww.lincolnshireecho.co.uk&origin=http%3A%2F%2Fwww.lincolnshirelive.co.uk%2F","sso":["twitter, no-url","facebook, no-url","google, no-url"],"timeTaken":"23590ms"}
+{"rank":"144453","url":"http://tomorrowland.co.jp","sso":[],"timeTaken":"3261ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://tomorrowland.co.jp/"}}
+{"rank":"144451","url":"http://alliance.edu.in","sso":[],"timeTaken":"16736ms"}
+{"rank":"144449","url":"http://www.bigcattracks.com/aff_c?offer_id=9517&aff_id=3104","sso":[],"timeTaken":"14783ms"}
+{"rank":"144454","url":"http://gniko.cn","sso":[],"timeTaken":"9724ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://gniko.cn/"}}
+{"rank":"144451","url":"https://login.microsoftonline.com/","sso":[],"timeTaken":"6530ms"}
+{"rank":"144455","url":"http://bit-st.jp","sso":[],"timeTaken":"16860ms"}
+{"rank":"144455","url":"https://www.bit-st.jp/signup","sso":[],"timeTaken":"8042ms"}
+{"rank":"144456","url":"http://ali-clicks.com","sso":[],"timeTaken":"22579ms"}
+{"rank":"144455","url":"https://www.bit-st.jp/login","sso":[],"timeTaken":"9295ms"}
+{"rank":"144457","url":"http://bodiesinmotion.photo","sso":["facebook, no-url","google, no-url"],"timeTaken":"20273ms"}
+{"rank":"144456","url":"http://analytics.testandtracknow.com/signup","sso":[],"timeTaken":"4538ms"}
+{"rank":"144456","url":"http://analytics.testandtracknow.com/login","sso":[],"timeTaken":"4219ms"}
+{"rank":"144457","url":"https://www.bodiesinmotion.photo/register","sso":["facebook, no-url","google, no-url"],"timeTaken":"13826ms"}
+{"rank":"144458","url":"http://mapoftheworld.ru","sso":[],"timeTaken":"14129ms"}
+{"rank":"144452","url":"http://zznews.cn","sso":[],"timeTaken":"65219ms","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"http://zznews.cn"}}
+{"rank":"144459","url":"http://aurora.org","sso":[],"timeTaken":"14227ms"}
+{"rank":"144448","url":"http://www.cadillacforums.com/forums/register.php","sso":[],"timeTaken":"66820ms"}
+{"rank":"144458","url":"http://mapoftheworld.ru/signup","sso":[],"timeTaken":"6000ms"}
+{"rank":"144458","url":"http://mapoftheworld.ru/login","sso":[],"timeTaken":"4606ms"}
+{"rank":"144460","url":"http://buxprofi.ru","sso":[],"timeTaken":"11070ms"}
+{"rank":"144462","url":"http://matomycontentnetwork.com","sso":[],"timeTaken":"5600ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://matomycontentnetwork.com/"}}
+{"rank":"144459","url":"https://aurorahealthcare.versaic.com/login","sso":[],"timeTaken":"10183ms"}
+{"rank":"144451","url":"https://student.alliance.edu.in/KnowledgePro/StudentLogin.do","sso":[],"timeTaken":"63814ms","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"https://student.alliance.edu.in/KnowledgePro/StudentLogin.do"}}
+{"rank":"144461","url":"http://semplicelabs.com","sso":[],"timeTaken":"13176ms"}
+{"rank":"144460","url":"http://www.buxprofi.ru/signup","sso":[],"timeTaken":"9101ms"}
+{"rank":"144460","url":"http://www.buxprofi.ru/login","sso":[],"timeTaken":"8799ms"}
+{"rank":"144461","url":"http://www.semplicelabs.com/signup","sso":[],"timeTaken":"6130ms"}
+{"rank":"144461","url":"http://www.semplicelabs.com/login","sso":[],"timeTaken":"5858ms"}
+{"rank":"144463","url":"http://rostovmama.ru","sso":[],"timeTaken":"20878ms"}
+{"rank":"144468","url":"http://ajaxload.info","sso":[],"timeTaken":"6464ms"}
+{"rank":"144467","url":"http://dietoflife.com","sso":[],"timeTaken":"12556ms"}
+{"rank":"144468","url":"http://ajaxload.info/signup","sso":[],"timeTaken":"6183ms"}
+{"rank":"144466","url":"http://tripadvisor.rs","sso":[],"timeTaken":"17894ms"}
+{"rank":"144463","url":"http://forum.rostovmama.ru/index.php?action=register","sso":[],"timeTaken":"11366ms"}
+{"rank":"144468","url":"http://ajaxload.info/login","sso":[],"timeTaken":"5371ms"}
+{"rank":"144465","url":"http://homebnc.com","sso":[],"timeTaken":"31889ms"}
+{"rank":"144467","url":"http://www.dietoflife.com/","sso":[],"timeTaken":"13868ms"}
+{"rank":"144466","url":"https://www.tripadvisor.rs/RegistrationController?flow=core_combined&pid=427&returnTo=%2F&fullscreen=true","sso":["vkontakte, no-url","google, no-url"],"timeTaken":"11925ms"}
+{"rank":"144466","url":"https://www.tripadvisor.rs/MemberProfile","sso":["facebook, no-url","google, no-url"],"timeTaken":"13237ms"}
+{"rank":"144469","url":"http://cz-zhaohui.com","sso":[],"timeTaken":"9962ms"}
+{"rank":"144469","url":"http://cz-zhaohui.com/signup","sso":[],"timeTaken":"5939ms"}
+{"rank":"144471","url":"http://gospelinlife.com","sso":[],"timeTaken":"9329ms"}
+{"rank":"144469","url":"http://cz-zhaohui.com/login","sso":[],"timeTaken":"5449ms"}
+{"rank":"144470","url":"http://otis.edu","sso":[],"timeTaken":"14337ms"}
+{"rank":"144471","url":"http://gospelinlife.com/signup","sso":[],"timeTaken":"9473ms"}
+{"rank":"144471","url":"http://gospelinlife.com/login","sso":[],"timeTaken":"9564ms"}
+{"rank":"144464","url":"http://chandi.cn","sso":[],"timeTaken":"63165ms","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"http://chandi.cn"}}
+{"rank":"144470","url":"http://otis.edu/registration-records","sso":[],"timeTaken":"11037ms"}
+{"rank":"144473","url":"http://spedbrasil.net","sso":[],"timeTaken":"4909ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://spedbrasil.net/"}}
+{"rank":"144465","url":"https://homebnc.com/login","sso":[],"timeTaken":"32320ms"}
+{"rank":"144472","url":"http://ueditorbbs.com","sso":[],"timeTaken":"8778ms"}
+{"rank":"144475","url":"http://sd61.bc.ca","sso":[],"timeTaken":"3904ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://sd61.bc.ca/"}}
+{"rank":"144470","url":"http://otis.edu/registration-information","sso":[],"timeTaken":"15551ms"}
+{"rank":"144474","url":"http://virtualtaboo.com","sso":[],"timeTaken":"11847ms"}
+{"rank":"144476","url":"http://clubprofi.com","sso":[],"timeTaken":"8563ms"}
+{"rank":"144472","url":"http://ueditorbbs.com/login","sso":["google, no-url"],"timeTaken":"8515ms"}
+{"rank":"144476","url":"https://clubprofi.com/index.php","sso":[],"timeTaken":"4604ms"}
+{"rank":"144472","url":"http://ueditorbbs.com/signup","sso":["google, no-url"],"timeTaken":"12199ms"}
+{"rank":"144474","url":"https://join.virtualtaboo.com/signup/signup.php","sso":[],"timeTaken":"12453ms"}
+{"rank":"144474","url":"https://virtualtaboo.com/auth/login","sso":[],"timeTaken":"7402ms"}
+{"rank":"144477","url":"http://umnet.com","sso":[],"timeTaken":"18862ms"}
+{"rank":"144477","url":"http://umnet.com/home/login","sso":[],"timeTaken":"4704ms"}
+{"rank":"144479","url":"http://multi-tor.org","sso":[],"timeTaken":"18877ms"}
+{"rank":"144478","url":"http://525down.com","sso":[],"timeTaken":"20320ms"}
+{"rank":"144478","url":"http://www.525down.com/signup","sso":[],"timeTaken":"5958ms"}
+{"rank":"144479","url":"http://rutor.info/users.php","sso":[],"timeTaken":"9183ms"}
+{"rank":"144482","url":"http://laguaz.net","sso":[],"timeTaken":"15474ms"}
+{"rank":"144478","url":"http://www.525down.com/login","sso":[],"timeTaken":"5701ms"}
+{"rank":"144481","url":"http://dmax.it","sso":[],"timeTaken":"26677ms"}
+{"rank":"144483","url":"http://suibe.edu.cn","sso":[],"timeTaken":"4101ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://suibe.edu.cn/"}}
+{"rank":"144481","url":"http://www.dmax.it/login","sso":[],"timeTaken":"6029ms"}
+{"rank":"144482","url":"http://laguaz.net/login","sso":[],"timeTaken":"7961ms"}
+{"rank":"144482","url":"http://laguaz.net/signup","sso":[],"timeTaken":"10255ms"}
+{"rank":"144481","url":"http://www.dmax.it/signup","sso":[],"timeTaken":"13746ms"}
+{"rank":"144486","url":"http://sletneonline.in","sso":[],"timeTaken":"6226ms"}
+{"rank":"144484","url":"http://eurasianews.info","sso":[],"timeTaken":"11710ms"}
+{"rank":"144485","url":"http://dbajagic.tumblr.com","sso":[],"timeTaken":"11984ms"}
+{"rank":"144486","url":"http://sletneonline.in/signup","sso":[],"timeTaken":"5609ms"}
+{"rank":"144484","url":"http://eurasianews.info/signup","sso":[],"timeTaken":"5778ms"}
+{"rank":"144485","url":"http://dbajagic.tumblr.com/signup","sso":[],"timeTaken":"6032ms"}
+{"rank":"144485","url":"http://dbajagic.tumblr.com/login","sso":[],"timeTaken":"5867ms"}
+{"rank":"144487","url":"http://franklincountyauditor.com","sso":[],"timeTaken":"14343ms"}
+{"rank":"144486","url":"http://sletneonline.in/login","sso":[],"timeTaken":"5505ms"}
+{"rank":"144484","url":"http://eurasianews.info/login","sso":[],"timeTaken":"8858ms"}
+{"rank":"144487","url":"http://www.franklincountyauditor.com/signup","sso":[],"timeTaken":"4761ms"}
+{"rank":"144488","url":"http://sekundomer.net","sso":[],"timeTaken":"7604ms"}
+{"rank":"144487","url":"http://www.franklincountyauditor.com/login","sso":[],"timeTaken":"5152ms"}
+{"rank":"144480","url":"http://mangaid.co","sso":[],"timeTaken":"64800ms"}
+{"rank":"144488","url":"http://sekundomer.net/signup","sso":[],"timeTaken":"5995ms"}
+{"rank":"144488","url":"http://sekundomer.net/login","sso":[],"timeTaken":"5843ms"}
+{"rank":"144480","url":"http://mangaid.co/admin/login","sso":[],"timeTaken":"7747ms"}
+{"rank":"144489","url":"http://chinairn.com","sso":[],"timeTaken":"13455ms"}
+{"rank":"144492","url":"http://passportjs.org","sso":[],"timeTaken":"7108ms"}
+{"rank":"144489","url":"http://user.chinairn.com/register.html","sso":[],"timeTaken":"4964ms"}
+{"rank":"144492","url":"http://passportjs.org/signup","sso":[],"timeTaken":"6492ms"}
+{"rank":"144490","url":"http://video-mart95.com","sso":[],"timeTaken":"23654ms"}
+{"rank":"144492","url":"http://passportjs.org/login","sso":[],"timeTaken":"6262ms"}
+{"rank":"144491","url":"http://whosay.com","sso":[],"timeTaken":"20175ms"}
+{"rank":"144490","url":"http://www.video-mart95.com/login","sso":[],"timeTaken":"12765ms","error":{"message":"navigation error","code":-3,"details":"","url":"http://www.video-mart95.com/login"}}
+{"rank":"144490","url":"http://www.video-mart95.com/signup","sso":[],"timeTaken":"14340ms","error":{"message":"navigation error","code":-3,"details":"","url":"http://www.video-mart95.com/signup"}}
+{"rank":"144494","url":"http://untirta.ac.id","sso":[],"timeTaken":"17102ms"}
+{"rank":"144493","url":"http://bucketlistjourney.net","sso":[],"timeTaken":"27386ms"}
+{"rank":"144491","url":"https://www.whosay.com/sign-in?redirectUri=/","sso":["twitter, no-url"],"timeTaken":"14505ms"}
+{"rank":"144493","url":"http://bucketlistjourney.net/login","sso":[],"timeTaken":"6712ms"}
+{"rank":"144496","url":"http://mlh.io","sso":[],"timeTaken":"13306ms"}
+{"rank":"144494","url":"http://untirta.ac.id/signup","sso":[],"timeTaken":"14163ms"}
+{"rank":"144493","url":"http://bucketlistjourney.net/signup","sso":[],"timeTaken":"18066ms"}
+{"rank":"144497","url":"http://itongcheng.com","sso":[],"timeTaken":"4207ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://itongcheng.com/"}}
+{"rank":"144494","url":"http://untirta.ac.id/login","sso":[],"timeTaken":"15870ms"}
+{"rank":"144499","url":"http://tax861.gov.cn","sso":[],"timeTaken":"4079ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://tax861.gov.cn/"}}
+{"rank":"144500","url":"http://webdamdb.com","sso":[],"timeTaken":"2540ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://webdamdb.com/"}}
+{"rank":"144496","url":"https://mlh.io/events","sso":[],"timeTaken":"18045ms"}
+{"rank":"144496","url":"http://news.mlh.io/windows-joins-dell-mlhs-north-america-co-presenting-partner-06-30-2016","sso":[],"timeTaken":"21112ms"}
+{"rank":"144495","url":"http://hhczy.com","sso":[],"timeTaken":"37683ms"}
+{"rank":"144501","url":"http://bruceleadx3.com","sso":[],"timeTaken":"5626ms"}
+{"rank":"144501","url":"http://bruceleadx3.com/signup","sso":[],"timeTaken":"4163ms"}
+{"rank":"144501","url":"http://bruceleadx3.com/login","sso":[],"timeTaken":"3693ms"}
+{"rank":"144498","url":"http://gourmetsleuth.com","sso":[],"timeTaken":"24990ms"}
+{"rank":"144502","url":"http://heartfoundation.org.au","sso":[],"timeTaken":"21293ms"}
+{"rank":"144498","url":"http://www.gourmetsleuth.com/login","sso":[],"timeTaken":"7712ms"}
+{"rank":"144503","url":"http://yzjn88.com","sso":[],"timeTaken":"26051ms"}
+{"rank":"144495","url":"http://member.hhczy.com/Register.aspx","sso":[],"timeTaken":"25754ms"}
+{"rank":"144503","url":"http://www.yzjn88.com/signup","sso":[],"timeTaken":"5117ms"}
+{"rank":"144503","url":"http://www.yzjn88.com/login","sso":[],"timeTaken":"4837ms"}
+{"rank":"144495","url":"http://member.hhczy.com/Login.aspx","sso":[],"timeTaken":"23869ms"}
+{"rank":"144502","url":"https://heartfoundation.org.au/login","sso":[],"timeTaken":"12682ms"}
+{"rank":"144505","url":"http://zjsnrwiki.com","sso":[],"timeTaken":"3380ms"}
+{"rank":"144502","url":"https://heartfoundation.org.au/signup","sso":[],"timeTaken":"18413ms"}
+{"rank":"144505","url":"http://zjsnrwiki.com/signup","sso":[],"timeTaken":"3988ms"}
+{"rank":"144505","url":"http://zjsnrwiki.com/login","sso":[],"timeTaken":"4095ms"}
+{"rank":"144498","url":"http://www.gourmetsleuth.com/account/register","sso":[],"timeTaken":"17897ms"}
+{"rank":"144507","url":"http://leggiditalia.it","sso":[],"timeTaken":"9600ms"}
+{"rank":"144504","url":"http://allsports-tv.com","sso":[],"timeTaken":"19498ms"}
+{"rank":"144506","url":"http://gurasen.com","sso":[],"timeTaken":"23860ms"}
+{"rank":"144504","url":"http://www.allsports-tv.com/login","sso":[],"timeTaken":"6859ms"}
+{"rank":"144509","url":"http://mktaba.org","sso":[],"timeTaken":"13225ms"}
+{"rank":"144506","url":"http://gurasen.com/login","sso":[],"timeTaken":"5449ms"}
+{"rank":"144506","url":"http://gurasen.com/signup","sso":[],"timeTaken":"5551ms"}
+{"rank":"144507","url":"http://online.leggiditalia.it/cgi-bin/OnlineLogin","sso":[],"timeTaken":"13072ms"}
+{"rank":"144509","url":"http://www.mktaba.org/vb/login.php","sso":[],"timeTaken":"5499ms"}
+{"rank":"144509","url":"http://www.mktaba.org/vb/login.php?do=login","sso":[],"timeTaken":"5982ms"}
+{"rank":"144504","url":"http://www.allsports-tv.com/register","sso":[],"timeTaken":"7744ms"}
+{"rank":"144511","url":"http://evsuite.com","sso":[],"timeTaken":"5308ms"}
+{"rank":"144511","url":"http://evsuite.com/signup","sso":[],"timeTaken":"2936ms"}
+{"rank":"144510","url":"http://joomlashack.com","sso":[],"timeTaken":"12588ms"}
+{"rank":"144508","url":"http://austinkayak.com","sso":[],"timeTaken":"36530ms"}
+{"rank":"144512","url":"http://vodoumedia.com","sso":[],"timeTaken":"9140ms"}
+{"rank":"144511","url":"http://evsuite.com/login","sso":[],"timeTaken":"3903ms"}
+{"rank":"144512","url":"http://vodoumedia.com/login","sso":[],"timeTaken":"5933ms"}
+{"rank":"144512","url":"http://vodoumedia.com/signup","sso":[],"timeTaken":"6383ms"}
+{"rank":"144510","url":"https://www.joomlashack.com/joomla-extensions/jcal/","sso":[],"timeTaken":"12866ms"}
+{"rank":"144510","url":"https://www.joomlashack.com/users/login/","sso":[],"timeTaken":"10131ms"}
+{"rank":"144508","url":"http://www.austinkayak.com/login","sso":[],"timeTaken":"17989ms"}
+{"rank":"144508","url":"http://www.austinkayak.com/login/","sso":[],"timeTaken":"16535ms"}
+{"rank":"144516","url":"http://ausregistry.net.au","sso":[],"timeTaken":"6652ms"}
+{"rank":"144517","url":"http://copacet.com","sso":[],"timeTaken":"7708ms"}
+{"rank":"144516","url":"http://ausregistry.net.au/signup","sso":[],"timeTaken":"5770ms"}
+{"rank":"144513","url":"http://cbs58.com","sso":[],"timeTaken":"40943ms"}
+{"rank":"144516","url":"http://ausregistry.net.au/login","sso":[],"timeTaken":"4281ms"}
+{"rank":"144517","url":"http://advertising.copacet.com/","sso":[],"timeTaken":"6085ms"}
+{"rank":"144514","url":"http://soylaneta.com","sso":[],"timeTaken":"26903ms"}
+{"rank":"144513","url":"http://www.cbs58.com/login","sso":[],"timeTaken":"5104ms"}
+{"rank":"144513","url":"http://www.cbs58.com/signup","sso":[],"timeTaken":"6742ms"}
+{"rank":"144515","url":"http://torrentstream.tv","sso":[],"timeTaken":"24854ms"}
+{"rank":"144514","url":"http://soylaneta.com/signup","sso":[],"timeTaken":"6763ms"}
+{"rank":"144514","url":"http://soylaneta.com/login","sso":[],"timeTaken":"5074ms"}
+{"rank":"144520","url":"http://puzzles.ca","sso":[],"timeTaken":"3572ms"}
+{"rank":"144519","url":"http://60wdb.com","sso":[],"timeTaken":"8375ms"}
+{"rank":"144518","url":"http://manshor.net","sso":[],"timeTaken":"13964ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://manshor.net/"}}
+{"rank":"144519","url":"http://www.60wdb.com/signup","sso":[],"timeTaken":"2314ms"}
+{"rank":"144520","url":"http://puzzles.ca/signup","sso":[],"timeTaken":"2629ms"}
+{"rank":"144519","url":"http://www.60wdb.com/login","sso":[],"timeTaken":"3049ms"}
+{"rank":"144520","url":"http://puzzles.ca/login","sso":[],"timeTaken":"2985ms"}
+{"rank":"144521","url":"http://blackcrush.com","sso":[],"timeTaken":"4797ms"}
+{"rank":"144515","url":"http://torrentstream.tv/login.php","sso":[],"timeTaken":"15125ms"}
+{"rank":"144522","url":"http://goddess-shop.com","sso":[],"timeTaken":"3419ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://goddess-shop.com/"}}
+{"rank":"144515","url":"http://torrentstream.tv/register.html","sso":[],"timeTaken":"14715ms"}
+{"rank":"144521","url":"http://www.blackcrush.com/signup","sso":[],"timeTaken":"3591ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://%2A.blackcrush.com/signup/"}}
+{"rank":"144521","url":"http://www.blackcrush.com/login","sso":[],"timeTaken":"6364ms"}
+{"rank":"144527","url":"http://fideuram.it","sso":[],"timeTaken":"2388ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://fideuram.it/"}}
+{"rank":"144523","url":"http://galoremag.com","sso":[],"timeTaken":"14989ms"}
+{"rank":"144525","url":"http://siast.sk.ca","sso":[],"timeTaken":"10200ms"}
+{"rank":"144526","url":"http://unanleon.edu.ni","sso":[],"timeTaken":"13505ms"}
+{"rank":"144528","url":"http://peoplecert.org","sso":[],"timeTaken":"7771ms"}
+{"rank":"144523","url":"https://galoremag.us6.list-manage.com/subscribe/post?u=3fea351d2fae474dd55ec0526&id=4d1c075505","sso":[],"timeTaken":"6837ms"}
+{"rank":"144526","url":"http://unanleon.edu.ni/signup","sso":[],"timeTaken":"4533ms"}
+{"rank":"144525","url":"http://saskpolytech.ca/admissions/apply-and-register/admission-process-part-time.aspx","sso":[],"timeTaken":"8919ms"}
+{"rank":"144524","url":"http://xocat2.com","sso":[],"timeTaken":"22299ms"}
+{"rank":"144526","url":"http://unanleon.edu.ni/login","sso":[],"timeTaken":"3134ms"}
+{"rank":"144524","url":"http://www.xocat.com/signup","sso":[],"timeTaken":"3296ms"}
+{"rank":"144528","url":"http://www.peoplecert.org/en","sso":[],"timeTaken":"6780ms"}
+{"rank":"144524","url":"http://www.xocat.com/login","sso":[],"timeTaken":"4387ms"}
+{"rank":"144528","url":"http://www.peoplecert.org/en/PassportLogin/Pages/PASSPORTLogin.aspx","sso":[],"timeTaken":"13415ms"}
+{"rank":"144525","url":"http://saskpolytech.ca/admissions/apply-and-register/admission-processes.aspx","sso":[],"timeTaken":"9474ms"}
+{"rank":"144533","url":"http://admarketplace.com","sso":[],"timeTaken":"5152ms"}
+{"rank":"144531","url":"http://qtv.qa","sso":[],"timeTaken":"8814ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://qtv.qa/"}}
+{"rank":"144529","url":"http://tribunesandtriumphs.org","sso":[],"timeTaken":"18977ms"}
+{"rank":"144532","url":"http://rapidog.biz","sso":[],"timeTaken":"14940ms"}
+{"rank":"144534","url":"http://imemories.com","sso":[],"timeTaken":"8061ms"}
+{"rank":"144533","url":"https://tagtoday.net/","sso":[],"timeTaken":"11895ms"}
+{"rank":"144532","url":"http://rapidog.biz/signup","sso":["facebook, no-url","twitter, no-url","google, no-url"],"timeTaken":"4898ms"}
+{"rank":"144534","url":"https://www.imemories.com/signup","sso":[],"timeTaken":"5388ms"}
+{"rank":"144530","url":"http://mtwiki.blogspot.com","sso":[],"timeTaken":"26783ms"}
+{"rank":"144534","url":"https://www.imemories.com/login","sso":[],"timeTaken":"4900ms"}
+{"rank":"144532","url":"http://rapidog.biz/login","sso":["facebook, no-url","twitter, no-url","google, no-url"],"timeTaken":"8501ms"}
+{"rank":"144535","url":"http://kglogis.co.kr","sso":[],"timeTaken":"9883ms"}
+{"rank":"144529","url":"http://www.tribunesandtriumphs.org/signup","sso":[],"timeTaken":"28320ms"}
+{"rank":"144530","url":"http://mtwiki.blogspot.com/signup","sso":[],"timeTaken":"20758ms"}
+{"rank":"144530","url":"http://mtwiki.blogspot.com/login","sso":[],"timeTaken":"21576ms"}
+{"rank":"144529","url":"http://www.tribunesandtriumphs.org/login","sso":[],"timeTaken":"24991ms"}
+{"rank":"144535","url":"http://kglogis.co.kr/member/join.html","sso":[],"timeTaken":"9052ms"}
+{"rank":"144535","url":"http://kglogis.co.kr/member/login.html","sso":[],"timeTaken":"4947ms"}
+{"rank":"144538","url":"http://watchfree.org","sso":[],"timeTaken":"6966ms"}
+{"rank":"144540","url":"http://antarvasnasex.net","sso":[],"timeTaken":"10365ms"}
+{"rank":"144537","url":"http://dz-modern.com","sso":[],"timeTaken":"16380ms"}
+{"rank":"144538","url":"http://watchfree.org/signup","sso":[],"timeTaken":"17027ms"}
+{"rank":"144540","url":"https://antarvasnasex.net/signup","sso":[],"timeTaken":"15379ms"}
+{"rank":"144536","url":"http://it-here.ru","sso":[],"timeTaken":"32904ms"}
+{"rank":"144539","url":"http://villaschweppes.com","sso":[],"timeTaken":"30419ms"}
+{"rank":"144540","url":"https://antarvasnasex.net/login","sso":[],"timeTaken":"11384ms"}
+{"rank":"144538","url":"http://watchfree.org/login","sso":[],"timeTaken":"8753ms"}
+{"rank":"144536","url":"https://it-here.us9.list-manage.com/subscribe/post?u=55668ffcf322e4d6ebf0a2427&id=5cda251f28","sso":[],"timeTaken":"9258ms"}
+{"rank":"144537","url":"http://www.dz-modern.com/2013/07/registration-University-orientation-bacheliers.html","sso":[],"timeTaken":"35531ms"}
+{"rank":"144539","url":"http://www.villaschweppes.com/signup","sso":[],"timeTaken":"20252ms"}
+{"rank":"144544","url":"http://mokuren.ne.jp","sso":[],"timeTaken":"3629ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://mokuren.ne.jp/"}}
+{"rank":"144539","url":"http://www.villaschweppes.com/login","sso":[],"timeTaken":"22334ms"}
+{"rank":"144543","url":"http://safeway.ca","sso":[],"timeTaken":"10055ms"}
+{"rank":"144541","url":"http://ismailimail.wordpress.com","sso":[],"timeTaken":"25184ms"}
+{"rank":"144546","url":"http://gva.ch","sso":[],"timeTaken":"9556ms"}
+{"rank":"144541","url":"https://ismailimail.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fismailimail.wordpress.com%2F2017%2F05%2F12%2Fginan-unchaa-re-kot-bahu-vechana-your-abode-is-at-an-elevated-fort-far-away%2F","sso":[],"timeTaken":"5459ms"}
+{"rank":"144543","url":"https://www.safeway.ca/signup","sso":[],"timeTaken":"7104ms"}
+{"rank":"144543","url":"https://www.safeway.ca/login","sso":[],"timeTaken":"4136ms"}
+{"rank":"144546","url":"http://gva.ch/signup","sso":[],"timeTaken":"7780ms"}
+{"rank":"144546","url":"http://gva.ch/login","sso":[],"timeTaken":"8095ms"}
+{"rank":"144547","url":"http://hdtwinktube.com","sso":[],"timeTaken":"6879ms"}
+{"rank":"144549","url":"http://vcmedia.vn","sso":[],"timeTaken":"3583ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://vcmedia.vn/"}}
+{"rank":"144547","url":"http://hdtwinktube.com/signup","sso":[],"timeTaken":"3239ms"}
+{"rank":"144547","url":"http://hdtwinktube.com/login","sso":[],"timeTaken":"3274ms"}
+{"rank":"144548","url":"http://lampiris.fr","sso":[],"timeTaken":"9695ms"}
+{"rank":"144551","url":"http://peelregion.ca","sso":[],"timeTaken":"5213ms"}
+{"rank":"144550","url":"http://shopifyinspector.com","sso":[],"timeTaken":"8332ms"}
+{"rank":"144551","url":"http://www.peelregion.ca/join/","sso":[],"timeTaken":"3856ms"}
+{"rank":"144552","url":"http://duotrope.com","sso":[],"timeTaken":"4410ms"}
+{"rank":"144548","url":"https://espaceclient.lampiris.fr/user/login","sso":[],"timeTaken":"12701ms"}
+{"rank":"144552","url":"https://duotrope.com/account/login.aspx","sso":[],"timeTaken":"5194ms"}
+{"rank":"144552","url":"https://duotrope.com/account/signup.aspx","sso":[],"timeTaken":"4204ms"}
+{"rank":"144542","url":"http://zhuhai.gd.cn","sso":[],"timeTaken":"63794ms"}
+{"rank":"144554","url":"http://qis.cn","sso":[],"timeTaken":"5579ms"}
+{"rank":"144554","url":"http://qis.cn/signup","sso":[],"timeTaken":"3138ms"}
+{"rank":"144542","url":"http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44040202000130","sso":[],"timeTaken":"8782ms"}
+{"rank":"144554","url":"http://qis.cn/login","sso":[],"timeTaken":"2677ms"}
+{"rank":"144553","url":"http://meteopress.cz","sso":[],"timeTaken":"13046ms"}
+{"rank":"144556","url":"http://oumaga-times.com","sso":[],"timeTaken":"3138ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://oumaga-times.com/"}}
+{"rank":"144545","url":"http://mindenkilapja.hu","sso":[],"timeTaken":"63527ms"}
+{"rank":"144553","url":"https://www.meteopress.cz/login","sso":[],"timeTaken":"4441ms"}
+{"rank":"144545","url":"http://mindenkilapja.hu/login","sso":[],"timeTaken":"2694ms"}
+{"rank":"144555","url":"http://topreviews.best","sso":[],"timeTaken":"12383ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://topreviews.best/"}}
+{"rank":"144557","url":"http://boheshop.com","sso":[],"timeTaken":"1778ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://boheshop.com/"}}
+{"rank":"144553","url":"https://www.meteopress.cz/signup","sso":[],"timeTaken":"11417ms"}
+{"rank":"144558","url":"http://torfehnegar.com","sso":[],"timeTaken":"13828ms"}
+{"rank":"144560","url":"http://xigou100.com","sso":[],"timeTaken":"13616ms"}
+{"rank":"144559","url":"http://armateam.org","sso":[],"timeTaken":"14951ms"}
+{"rank":"144560","url":"http://www.xigou100.com/callback/oauthjump.html?type=sina","sso":[],"timeTaken":"6212ms"}
+{"rank":"144558","url":"http://torfehnegar.com/signup","sso":[],"timeTaken":"7539ms"}
+{"rank":"144559","url":"http://www.armateam.org/signup","sso":[],"timeTaken":"6619ms"}
+{"rank":"144559","url":"http://www.armateam.org/login","sso":[],"timeTaken":"4622ms"}
+{"rank":"144558","url":"http://torfehnegar.com/login","sso":[],"timeTaken":"6883ms"}
+{"rank":"144560","url":"http://www.xigou100.com/callback/oauthjump.html?type=taobao","sso":[],"timeTaken":"11452ms"}
+{"rank":"144561","url":"http://sobheqazvin.ir","sso":[],"timeTaken":"11504ms"}
+{"rank":"144561","url":"http://sobheqazvin.ir/signup","sso":[],"timeTaken":"3157ms"}
+{"rank":"144563","url":"http://payu2blog.com","sso":[],"timeTaken":"10257ms"}
+{"rank":"144562","url":"http://iriboffice.ir","sso":[],"timeTaken":"15396ms"}
+{"rank":"144561","url":"http://sobheqazvin.ir/login","sso":[],"timeTaken":"7901ms"}
+{"rank":"144562","url":"http://oa.irib.ir/login.aspx?loginMode=0","sso":[],"timeTaken":"5195ms"}
+{"rank":"144563","url":"https://town.payu2blog.com/login.html","sso":[],"timeTaken":"10650ms"}
+{"rank":"144563","url":"http://www.payu2blog.com/blog-signup.html","sso":[],"timeTaken":"6516ms"}
+{"rank":"144545","url":"http://mindenkilapja.hu/signup","sso":[],"timeTaken":"62096ms"}
+{"rank":"144565","url":"http://razorfish.com","sso":[],"timeTaken":"5982ms"}
+{"rank":"144564","url":"http://mobanku.com","sso":[],"timeTaken":"10967ms"}
+{"rank":"144564","url":"http://www.mobanku.com/signup","sso":[],"timeTaken":"2981ms"}
+{"rank":"144565","url":"https://www.razorfish.com/signup","sso":[],"timeTaken":"4011ms"}
+{"rank":"144565","url":"https://www.razorfish.com/login","sso":[],"timeTaken":"2820ms"}
+{"rank":"144564","url":"http://www.mobanku.com/login","sso":[],"timeTaken":"3621ms"}
+{"rank":"144569","url":"http://fcplaza.com","sso":[],"timeTaken":"6101ms"}
+{"rank":"144567","url":"http://hiyyz.com","sso":[],"timeTaken":"16496ms"}
+{"rank":"144568","url":"http://downloadgamegratis18.com","sso":[],"timeTaken":"7249ms"}
+{"rank":"144566","url":"http://91cy.cn","sso":[],"timeTaken":"21892ms"}
+{"rank":"144569","url":"http://www.fcplaza.com/signup","sso":[],"timeTaken":"4868ms"}
+{"rank":"144568","url":"http://www.downloadgamegratis18.com/signup","sso":[],"timeTaken":"7575ms"}
+{"rank":"144566","url":"http://www.zstv.cn/login","sso":[],"timeTaken":"5721ms"}
+{"rank":"144566","url":"http://uc.hao315.com/user_register.html","sso":[],"timeTaken":"8268ms"}
+{"rank":"144568","url":"http://www.downloadgamegratis18.com/login","sso":[],"timeTaken":"7389ms"}
+{"rank":"144569","url":"http://www.fcplaza.com/login","sso":[],"timeTaken":"3768ms"}
+{"rank":"144567","url":"http://hiyyz.com/signup","sso":[],"timeTaken":"17283ms"}
+{"rank":"144567","url":"http://hiyyz.com/login","sso":[],"timeTaken":"16267ms"}
+{"rank":"144570","url":"http://mynewplace.com","sso":[],"timeTaken":"10666ms"}
+{"rank":"144572","url":"http://kasamba.com","sso":[],"timeTaken":"15118ms"}
+{"rank":"144570","url":"http://www.mynewplace.com/signup","sso":[],"timeTaken":"7737ms"}
+{"rank":"144571","url":"http://konya.bel.tr","sso":[],"timeTaken":"24536ms"}
+{"rank":"144572","url":"https://www.kasamba.com/registration/sign-up.aspx","sso":[],"timeTaken":"13168ms"}
+{"rank":"144572","url":"https://www.kasamba.com/authentication/sign-in.aspx","sso":[],"timeTaken":"13543ms"}
+{"rank":"144573","url":"http://cgway.net","sso":[],"timeTaken":"22977ms"}
+{"rank":"144571","url":"http://imarkbs.konya.bel.tr:4535/plantadilat/Account/Login.aspx","sso":[],"timeTaken":"7579ms"}
+{"rank":"144570","url":"http://www.mynewplace.com/login","sso":[],"timeTaken":"6793ms"}
+{"rank":"144574","url":"http://xvideos.blog.br","sso":[],"timeTaken":"5190ms"}
+{"rank":"144574","url":"http://xvideos.blog.br/signup","sso":[],"timeTaken":"3237ms"}
+{"rank":"144574","url":"http://xvideos.blog.br/login","sso":[],"timeTaken":"4337ms"}
+{"rank":"144576","url":"http://autotoolza.ru","sso":[],"timeTaken":"3382ms"}
+{"rank":"144573","url":"https://www.cgway.net/register","sso":[],"timeTaken":"16596ms"}
+{"rank":"144576","url":"http://autotoolza.ru/signup","sso":[],"timeTaken":"2330ms"}
+{"rank":"144577","url":"http://delsud.com.ar","sso":[],"timeTaken":"2338ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://delsud.com.ar/"}}
+{"rank":"144576","url":"http://autotoolza.ru/login","sso":[],"timeTaken":"4762ms"}
+{"rank":"144575","url":"http://gamesharing.ir","sso":[],"timeTaken":"26189ms"}
+{"rank":"144579","url":"http://federalmogul.com","sso":[],"timeTaken":"8307ms"}
+{"rank":"144579","url":"http://federalmogul.com/signup","sso":[],"timeTaken":"2094ms"}
+{"rank":"144579","url":"http://federalmogul.com/login","sso":[],"timeTaken":"3702ms"}
+{"rank":"144578","url":"http://dobrota.ru","sso":[],"timeTaken":"20900ms"}
+{"rank":"144580","url":"http://stclaircollege.ca","sso":[],"timeTaken":"5878ms"}
+{"rank":"144575","url":"http://gamesharing.in/login/","sso":[],"timeTaken":"12849ms"}
+{"rank":"144580","url":"http://lms.stclaircollege.ca/","sso":[],"timeTaken":"7131ms"}
+{"rank":"144578","url":"http://www.dobrota.ru/users/register.html","sso":[],"timeTaken":"11391ms"}
+{"rank":"144581","url":"http://noicompriamoauto.it","sso":[],"timeTaken":"5263ms"}
+{"rank":"144582","url":"http://cagematch.de","sso":[],"timeTaken":"4683ms"}
+{"rank":"144581","url":"https://www.noicompriamoauto.it/signup","sso":[],"timeTaken":"4269ms"}
+{"rank":"144582","url":"https://www.cagematch.de/signup","sso":[],"timeTaken":"3803ms"}
+{"rank":"144582","url":"https://www.cagematch.de/login","sso":[],"timeTaken":"3403ms"}
+{"rank":"144581","url":"https://www.noicompriamoauto.it/login","sso":[],"timeTaken":"4284ms"}
+{"rank":"144583","url":"http://yesstyle.co.uk","sso":[],"timeTaken":"12227ms"}
+{"rank":"144583","url":"https://www.yesstyle.com/en/secure/sign-up.html","sso":["facebook, oauth-keyword","google, oauth-keyword"],"timeTaken":"5246ms"}
+{"rank":"144584","url":"http://fyzhuji.com","sso":[],"timeTaken":"15789ms"}
+{"rank":"144583","url":"https://www.yesstyle.com/en/secure/sign-in.html","sso":["facebook, oauth-keyword","google, oauth-keyword"],"timeTaken":"4381ms"}
+{"rank":"144584","url":"http://fyzhuji.com/register.php","sso":[],"timeTaken":"9805ms"}
+{"rank":"144586","url":"http://unbelievableshield.space","sso":[],"timeTaken":"11450ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://unbelievableshield.space/"}}
+{"rank":"144585","url":"http://27580.cn","sso":[],"timeTaken":"18125ms"}
+{"rank":"144580","url":"http://lms1.stclaircollege.ca/login/index.php","sso":[],"timeTaken":"61531ms","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"http://lms1.stclaircollege.ca/login/index.php"}}
+{"rank":"144585","url":"http://www.27580.cn/login.php","sso":[],"timeTaken":"5789ms"}
+{"rank":"144588","url":"http://lanches.co.jp","sso":[],"timeTaken":"9095ms"}
+{"rank":"144589","url":"http://hit.mx","sso":[],"timeTaken":"5854ms"}
+{"rank":"144589","url":"https://hit.mx/signup","sso":[],"timeTaken":"3046ms"}
+{"rank":"144589","url":"https://hit.mx/login","sso":[],"timeTaken":"3214ms"}
+{"rank":"144587","url":"http://workpermit.com.cn","sso":[],"timeTaken":"21263ms"}
+{"rank":"144588","url":"http://www.lanches.co.jp/signup","sso":[],"timeTaken":"14766ms"}
+{"rank":"144587","url":"http://www.kingnova.net/signup","sso":[],"timeTaken":"4313ms"}
+{"rank":"144587","url":"http://www.kingnova.net/login","sso":[],"timeTaken":"4366ms"}
+{"rank":"144590","url":"http://couponcodeplus.com","sso":[],"timeTaken":"5188ms"}
+{"rank":"144588","url":"http://www.lanches.co.jp/login","sso":[],"timeTaken":"12458ms"}
+{"rank":"144591","url":"http://byywee.com","sso":[],"timeTaken":"2697ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://byywee.com/"}}
+{"rank":"144590","url":"http://couponcodeplus.com/signup","sso":[],"timeTaken":"3467ms"}
+{"rank":"144590","url":"http://couponcodeplus.com/login","sso":[],"timeTaken":"3357ms"}
+{"rank":"144592","url":"http://ccpensieve.com","sso":[],"timeTaken":"3881ms"}
+{"rank":"144592","url":"http://www.ccpensieve.com/whyjoin.php","sso":[],"timeTaken":"3940ms"}
+{"rank":"144593","url":"http://tipp10.com","sso":[],"timeTaken":"7388ms"}
+{"rank":"144592","url":"http://www.ccpensieve.com/login.php","sso":[],"timeTaken":"3282ms"}
+{"rank":"144593","url":"https://www.tipp10.com/en/auth/register/","sso":[],"timeTaken":"3695ms"}
+{"rank":"144594","url":"http://haryanapoliceonline.gov.in","sso":[],"timeTaken":"13154ms"}
+{"rank":"144595","url":"http://musicscore.co.kr","sso":[],"timeTaken":"8063ms"}
+{"rank":"144594","url":"http://haryanapoliceonline.gov.in/signup","sso":[],"timeTaken":"3919ms"}
+{"rank":"144595","url":"http://www.musicscore.co.kr/m_mem/member/login.asp","sso":[],"timeTaken":"4733ms"}
+{"rank":"144596","url":"http://vliegtickets.be","sso":[],"timeTaken":"10995ms"}
+{"rank":"144595","url":"http://www.musicscore.co.kr/m_mem/member/pre_member.asp","sso":[],"timeTaken":"7320ms"}
+{"rank":"144594","url":"http://haryanapoliceonline.gov.in/login","sso":[],"timeTaken":"2665ms"}
+{"rank":"144596","url":"http://www.vliegtickets.be/login","sso":[],"timeTaken":"8145ms"}
+{"rank":"144598","url":"http://cmet4uk.ru","sso":["vkontakte, no-url","facebook, no-url","yandex, no-url","google, no-url","twitter, no-url"],"timeTaken":"14004ms"}
+{"rank":"144598","url":"http://cmet4uk.ru/register","sso":["vkontakte, no-url","facebook, no-url","yandex, no-url","google, no-url","twitter, no-url"],"timeTaken":"11727ms"}
+{"rank":"144599","url":"http://lyonaeroports.com","sso":[],"timeTaken":"11907ms"}
+{"rank":"144599","url":"https://www.lyonaeroports.com/signup","sso":[],"timeTaken":"8168ms"}
+{"rank":"144599","url":"https://www.lyonaeroports.com/login","sso":[],"timeTaken":"1567ms"}
+{"rank":"144600","url":"http://writeboard.com","sso":[],"timeTaken":"4931ms"}
+{"rank":"144597","url":"http://empregodf.com.br","sso":[],"timeTaken":"64209ms"}
+{"rank":"144600","url":"https://basecamp.com/signup?via=footer","sso":["google, no-url"],"timeTaken":"4671ms"}
+{"rank":"144597","url":"http://www.empregodf.com.br/login","sso":[],"timeTaken":"10916ms"}
+{"rank":"144600","url":"https://basecamp.com/signup","sso":["google, no-url"],"timeTaken":"5273ms"}
+{"rank":"144601","url":"http://amsterdamprinting.com","sso":[],"timeTaken":"6983ms"}
+{"rank":"144601","url":"http://www.amsterdamprinting.com/signup","sso":[],"timeTaken":"3749ms"}
+{"rank":"144601","url":"http://www.amsterdamprinting.com/login","sso":[],"timeTaken":"1924ms"}
+{"rank":"144602","url":"http://autodriving.net","sso":[],"timeTaken":"5707ms"}
+{"rank":"144602","url":"http://autodriving.net/signup","sso":[],"timeTaken":"5019ms"}
+{"rank":"144602","url":"http://autodriving.net/login","sso":[],"timeTaken":"5486ms"}
+{"rank":"144603","url":"http://doz.com","sso":[],"timeTaken":"5453ms"}
+{"rank":"144603","url":"https://app.doz.com/signup","sso":[],"timeTaken":"7351ms"}
+{"rank":"144597","url":"http://www.empregodf.com.br/signup","sso":[],"timeTaken":"61159ms"}
+{"rank":"144603","url":"https://app.doz.com/login","sso":[],"timeTaken":"5862ms"}
+{"rank":"144604","url":"http://railnation.fr","sso":[],"timeTaken":"9111ms"}
+{"rank":"144605","url":"http://khavarestan.ir","sso":[],"timeTaken":"9947ms"}
+{"rank":"144604","url":"http://www.railnation.fr/home/","sso":[],"timeTaken":"5530ms"}
+{"rank":"144605","url":"http://www.khavarestan.ir/signup","sso":[],"timeTaken":"3885ms"}
+{"rank":"144605","url":"http://www.khavarestan.ir/login","sso":[],"timeTaken":"3909ms"}
+{"rank":"144606","url":"http://flatcoin.net","sso":[],"timeTaken":"1896ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://flatcoin.net/"}}
+{"rank":"144607","url":"http://fareastcontainers.com","sso":[],"timeTaken":"10952ms"}
+{"rank":"144607","url":"http://www.fareastcontainers.com/signup","sso":[],"timeTaken":"1886ms"}
+{"rank":"144608","url":"http://vip86222.com","sso":[],"timeTaken":"13169ms"}
+{"rank":"144607","url":"http://www.fareastcontainers.com/login","sso":[],"timeTaken":"1516ms"}
+{"rank":"144608","url":"http://www.vip86222.com/index.php?mod=user&act=register","sso":[],"timeTaken":"7738ms"}
+{"rank":"144608","url":"http://www.vip86222.com/index.php?mod=user&act=login","sso":[],"timeTaken":"7085ms"}
+{"rank":"144609","url":"http://taozhexue.com","sso":[],"timeTaken":"2221ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://taozhexue.com/"}}
+{"rank":"144611","url":"http://pornhardx.com","sso":[],"timeTaken":"4109ms"}
+{"rank":"144610","url":"http://cheshmak.me","sso":[],"timeTaken":"8612ms"}
+{"rank":"144611","url":"https://pornhardx.com/signup","sso":[],"timeTaken":"6264ms"}
+{"rank":"144611","url":"https://pornhardx.com/login","sso":[],"timeTaken":"3528ms"}
+{"rank":"144610","url":"https://www.cheshmak.me/panel/login.html#/signup","sso":[],"timeTaken":"8205ms"}
+{"rank":"144613","url":"http://secure-decoration.com","sso":[],"timeTaken":"634ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://secure-decoration.com/"}}
+{"rank":"144612","url":"http://deutsch-als-fremdsprache.de","sso":[],"timeTaken":"2390ms"}
+{"rank":"144612","url":"http://www.deutsch-als-fremdsprache.de/signup","sso":[],"timeTaken":"1075ms"}
+{"rank":"144614","url":"http://weatherstreet.com","sso":[],"timeTaken":"2478ms"}
+{"rank":"144612","url":"http://www.deutsch-als-fremdsprache.de/login","sso":[],"timeTaken":"1119ms"}
+{"rank":"144614","url":"http://www.weatherstreet.com/signup","sso":[],"timeTaken":"1003ms"}
+{"rank":"144614","url":"http://www.weatherstreet.com/login","sso":[],"timeTaken":"809ms"}
+{"rank":"144615","url":"http://prepbootstrap.com","sso":[],"timeTaken":"1587ms"}
+{"rank":"144615","url":"http://prepbootstrap.com/registration","sso":[],"timeTaken":"1366ms"}
+{"rank":"144615","url":"http://prepbootstrap.com/login?returnUrl=%2Faccount","sso":[],"timeTaken":"1423ms"}
+{"rank":"144616","url":"http://pearsoned.co.in","sso":[],"timeTaken":"5568ms"}
+{"rank":"144616","url":"http://pearsoned.co.in/signup","sso":[],"timeTaken":"1738ms"}
+{"rank":"144617","url":"http://branchez-vous.com","sso":[],"timeTaken":"4243ms"}
+{"rank":"144616","url":"http://pearsoned.co.in/login","sso":[],"timeTaken":"1774ms"}
+{"rank":"144617","url":"http://branchez-vous.com/nous-joindre/","sso":[],"timeTaken":"2411ms"}
+{"rank":"144619","url":"http://omachoalpha.com.br","sso":[],"timeTaken":"5085ms"}
+{"rank":"144618","url":"http://thenewscorner.net","sso":[],"timeTaken":"6949ms"}
+{"rank":"144619","url":"http://www.omachoalpha.com.br/signup","sso":[],"timeTaken":"2182ms"}
+{"rank":"144618","url":"http://thenewscorner.net/miley-cyrus-excited-jennifer-hudson-kelly-clarkson-are-joining-the-voice-says-dad-billy-ray-is-her-mentor/","sso":[],"timeTaken":"3177ms"}
+{"rank":"144618","url":"http://thenewscorner.net/miley-cyrus-excited-jennifer-hudson-kelly-clarkson-are-joining-the-voice-says-dad-billy-ray-is-her-mentor-2/","sso":[],"timeTaken":"2759ms"}
+{"rank":"144619","url":"http://www.omachoalpha.com.br/login","sso":[],"timeTaken":"2275ms"}
+{"rank":"144620","url":"http://whatihavelearnedteaching.com","sso":[],"timeTaken":"2392ms"}
+{"rank":"144620","url":"https://www.whatihavelearnedteaching.com/word-problems-problem-type-join-problems/","sso":[],"timeTaken":"3372ms"}
+{"rank":"144622","url":"http://lhxh.cn","sso":[],"timeTaken":"15467ms"}
+{"rank":"144622","url":"http://lhxh.cn/user/signup.html","sso":[],"timeTaken":"6552ms"}
+{"rank":"144623","url":"http://csgoblackjack.com","sso":[],"timeTaken":"2217ms"}
+{"rank":"144623","url":"https://csgoblackjack.com/auth/","sso":[],"timeTaken":"1827ms"}
+{"rank":"144624","url":"http://lamiradadelreplicante.com","sso":[],"timeTaken":"3806ms"}
+{"rank":"144624","url":"http://lamiradadelreplicante.com/signup","sso":[],"timeTaken":"2956ms"}
+{"rank":"144624","url":"http://lamiradadelreplicante.com/login","sso":[],"timeTaken":"5830ms"}
+{"rank":"144625","url":"http://leadinvasion.de","sso":[],"timeTaken":"7894ms"}
+{"rank":"144625","url":"http://leadinvasion.de/signup","sso":[],"timeTaken":"1003ms"}
+{"rank":"144625","url":"http://leadinvasion.de/login","sso":[],"timeTaken":"1403ms"}
+{"rank":"144626","url":"http://payless.pk","sso":[],"timeTaken":"6248ms"}
+{"rank":"144621","url":"http://haodianpu.com","sso":[],"timeTaken":"60985ms","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"http://haodianpu.com"}}
+{"rank":"144626","url":"http://www.payless.pk/index.php?route=account/register","sso":[],"timeTaken":"4712ms"}
+{"rank":"144626","url":"http://www.payless.pk/index.php?route=account/login","sso":[],"timeTaken":"5222ms"}
+{"rank":"144628","url":"http://lyricinterpretations.com","sso":["facebook, no-url"],"timeTaken":"3167ms"}
+{"rank":"144628","url":"https://www.lyricinterpretations.com/users/register","sso":["facebook, no-url"],"timeTaken":"2200ms"}
+{"rank":"144628","url":"https://www.lyricinterpretations.com/users/login","sso":["facebook, no-url"],"timeTaken":"3056ms"}
+{"rank":"144629","url":"http://denwer.ru","sso":[],"timeTaken":"5369ms"}
+{"rank":"144629","url":"http://www.denwer.ru/ls/registration/","sso":[],"timeTaken":"1937ms"}
+{"rank":"144627","url":"http://minnyuu.jp","sso":[],"timeTaken":"19263ms"}
+{"rank":"144629","url":"http://www.denwer.ru/ls/login/","sso":[],"timeTaken":"2378ms"}
+{"rank":"144627","url":"http://minnyuu.jp/login","sso":[],"timeTaken":"15908ms"}
+{"rank":"144627","url":"http://minnyuu.jp/signup","sso":[],"timeTaken":"16065ms"}
+{"rank":"144631","url":"http://pingsitemap.com","sso":[],"timeTaken":"1398ms"}
+{"rank":"144631","url":"http://pingsitemap.com/signup","sso":[],"timeTaken":"702ms"}
+{"rank":"144631","url":"http://pingsitemap.com/login","sso":[],"timeTaken":"1483ms"}
+{"rank":"144632","url":"http://n-kishou.co.jp","sso":[],"timeTaken":"1030ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://n-kishou.co.jp/"}}
+{"rank":"144630","url":"http://tinydesignr.com","sso":[],"timeTaken":"4716ms"}
+{"rank":"144630","url":"http://www.tinydesignr.com/signup","sso":[],"timeTaken":"3100ms"}
+{"rank":"144633","url":"http://filmconvert.com","sso":[],"timeTaken":"4046ms"}
+{"rank":"144633","url":"https://www.filmconvert.com/signup","sso":[],"timeTaken":"1895ms"}
+{"rank":"144630","url":"http://www.tinydesignr.com/login","sso":[],"timeTaken":"3446ms"}
+{"rank":"144633","url":"https://www.filmconvert.com/login","sso":[],"timeTaken":"1650ms"}
+{"rank":"144634","url":"http://tmclub.eu","sso":[],"timeTaken":"2473ms"}
+{"rank":"144634","url":"http://tmclub.eu/signup","sso":[],"timeTaken":"1079ms"}
+{"rank":"144634","url":"http://tmclub.eu/login","sso":[],"timeTaken":"1076ms"}
+{"rank":"144635","url":"http://prix.net","sso":[],"timeTaken":"3796ms"}
+{"rank":"144635","url":"https://www.prix.net/register","sso":[],"timeTaken":"2302ms"}
+{"rank":"144636","url":"http://leadgid.ru","sso":[],"timeTaken":"7610ms"}
+{"rank":"144637","url":"http://free-training-tutorial.com","sso":[],"timeTaken":"5379ms"}
+{"rank":"144637","url":"http://free-training-tutorial.com/signup","sso":[],"timeTaken":"2524ms"}
+{"rank":"144636","url":"http://leadgid.ru/webmasters/signup","sso":[],"timeTaken":"4170ms"}
+{"rank":"144637","url":"http://free-training-tutorial.com/login","sso":[],"timeTaken":"1501ms"}
+{"rank":"144639","url":"http://fetish-ring.com","sso":[],"timeTaken":"4600ms"}
+{"rank":"144638","url":"http://salzlandsparkasse.de","sso":[],"timeTaken":"4779ms"}
+{"rank":"144639","url":"http://www.fetish-ring.com/index.php?PHPSESSID=k22ithmc9f1krdo5u3s7brmaq4&action=login","sso":[],"timeTaken":"2699ms"}
+{"rank":"144638","url":"https://www.salzlandsparkasse.de/de/home/login-online-banking/demo-online-banking-pushtan.html?n=true&stref=sitemap","sso":[],"timeTaken":"2942ms"}
+{"rank":"144639","url":"http://www.fetish-ring.com/index.php?PHPSESSID=k22ithmc9f1krdo5u3s7brmaq4&action=login2","sso":[],"timeTaken":"2497ms"}
+{"rank":"144638","url":"https://www.salzlandsparkasse.de/de/home.html?sp:ac=ifaemlogin%3ALoginPortlet_0%3ALOGIN_HEADER%40portal","sso":[],"timeTaken":"3282ms"}
+{"rank":"144640","url":"http://ip38.com","sso":[],"timeTaken":"1169ms"}
+{"rank":"144640","url":"http://ip38.com/signup","sso":[],"timeTaken":"660ms"}
+{"rank":"144640","url":"http://ip38.com/login","sso":[],"timeTaken":"673ms"}
+{"rank":"144641","url":"http://webdoki.hu","sso":[],"timeTaken":"2666ms"}
+{"rank":"144641","url":"http://www.webdoki.hu/signup","sso":[],"timeTaken":"994ms"}
+{"rank":"144641","url":"http://www.webdoki.hu/login","sso":[],"timeTaken":"1411ms"}
+{"rank":"144642","url":"http://sunduk.tv","sso":[],"timeTaken":"4106ms"}
+{"rank":"144643","url":"http://gatitasperversas.com","sso":[],"timeTaken":"5738ms"}
+{"rank":"144642","url":"https://www.sunduk.tv/auth/register","sso":[],"timeTaken":"5096ms"}
+{"rank":"144643","url":"http://www.gatitasperversas.com/login","sso":[],"timeTaken":"2985ms"}
+{"rank":"144643","url":"http://www.gatitasperversas.com/signup","sso":[],"timeTaken":"3848ms"}
+{"rank":"144642","url":"https://www.sunduk.tv/auth/login","sso":[],"timeTaken":"3184ms"}
+{"rank":"144645","url":"http://linktracker.info","sso":[],"timeTaken":"689ms"}
+{"rank":"144645","url":"http://linktracker.info/signup","sso":[],"timeTaken":"903ms"}
+{"rank":"144645","url":"http://linktracker.info/login","sso":[],"timeTaken":"3001ms"}
+{"rank":"144644","url":"http://ttesports.com","sso":[],"timeTaken":"11738ms"}
+{"rank":"144644","url":"http://ttesports.com/signup","sso":[],"timeTaken":"978ms"}
+{"rank":"144644","url":"http://ttesports.com/login","sso":[],"timeTaken":"1042ms"}
+{"rank":"144646","url":"http://remax.co.za","sso":[],"timeTaken":"10507ms"}
+{"rank":"144647","url":"http://pollstocongress.com","sso":[],"timeTaken":"5823ms"}
+{"rank":"144647","url":"http://pollstocongress.com/wp-login.php","sso":[],"timeTaken":"2844ms"}
+{"rank":"144646","url":"https://www.remax.co.za/invest/join-remax/","sso":[],"timeTaken":"5048ms"}
+{"rank":"144648","url":"http://muj-antikvariat.cz","sso":[],"timeTaken":"3333ms"}
+{"rank":"144646","url":"https://www.remax.co.za/invest/","sso":[],"timeTaken":"5634ms"}
+{"rank":"144648","url":"http://muj-antikvariat.cz/ucet?ac_func=login","sso":[],"timeTaken":"3632ms"}
+{"rank":"144649","url":"http://cybertext.wordpress.com","sso":[],"timeTaken":"4099ms"}
+{"rank":"144649","url":"https://cybertext.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fcybertext.wordpress.com%2F2017%2F05%2F03%2Fword-copy-autocorrect-entries-to-another-computer%2F","sso":[],"timeTaken":"25224ms"}
+{"rank":"144651","url":"http://alwaysnewsoftsafesystems4younow.site","sso":[],"timeTaken":"524ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://alwaysnewsoftsafesystems4younow.site/"}}
+{"rank":"144652","url":"http://heima8.com","sso":[],"timeTaken":"3555ms"}
+{"rank":"144650","url":"http://mol.gov.ae","sso":[],"timeTaken":"36333ms"}
+{"rank":"144652","url":"http://heima8.com/signup","sso":[],"timeTaken":"5287ms"}
+{"rank":"144650","url":"https://emiratization.mohre.gov.ae/_layouts/feTanmia_Prod/CustomLogin.aspx","sso":[],"timeTaken":"4808ms"}
+{"rank":"144650","url":"https://eservices.mol.gov.ae/enetwasal/arabic/login.aspx?lang=arb","sso":[],"timeTaken":"10587ms"}
+{"rank":"144652","url":"http://heima8.com/login","sso":[],"timeTaken":"5656ms"}
+{"rank":"144653","url":"http://elitemensguide.com","sso":[],"timeTaken":"1425ms"}
+{"rank":"144653","url":"http://elitemensguide.com/signup","sso":[],"timeTaken":"1528ms"}
+{"rank":"144654","url":"http://angara.net","sso":[],"timeTaken":"3910ms"}
+{"rank":"144653","url":"http://elitemensguide.com/login","sso":[],"timeTaken":"1584ms"}
+{"rank":"144655","url":"http://emoney.cn","sso":[],"timeTaken":"1223ms"}
+{"rank":"144654","url":"https://angara.net/auth/login?redir=%2F","sso":[],"timeTaken":"2389ms"}
+{"rank":"144655","url":"http://emoney.cn/login","sso":[],"timeTaken":"1008ms"}
+{"rank":"144656","url":"http://jadidpresse.com","sso":[],"timeTaken":"3159ms"}
+{"rank":"144656","url":"http://jadidpresse.com/signup","sso":[],"timeTaken":"1901ms"}
+{"rank":"144655","url":"http://emoney.cn/signup","sso":[],"timeTaken":"7482ms"}
+{"rank":"144656","url":"http://jadidpresse.com/login","sso":[],"timeTaken":"1409ms"}
+{"rank":"144658","url":"http://video7s.com","sso":[],"timeTaken":"810ms"}
+{"rank":"144658","url":"http://video7s.com/signup","sso":[],"timeTaken":"652ms"}
+{"rank":"144658","url":"http://video7s.com/login","sso":[],"timeTaken":"616ms"}
+{"rank":"144657","url":"http://jdn.co.il","sso":[],"timeTaken":"4481ms"}
+{"rank":"144657","url":"http://www.jdn.co.il/wp-login.php?action=lostpassword","sso":[],"timeTaken":"1419ms"}
+{"rank":"144657","url":"http://www.jdn.co.il/wp-login.php","sso":[],"timeTaken":"1549ms"}
+{"rank":"144659","url":"http://jamesvillas.co.uk","sso":[],"timeTaken":"5231ms"}
+{"rank":"144660","url":"http://bombayshirts.com","sso":[],"timeTaken":"2163ms"}
+{"rank":"144659","url":"https://www.jamesvillas.co.uk/signup","sso":[],"timeTaken":"3015ms"}
+{"rank":"144660","url":"https://www.bombayshirts.com/","sso":[],"timeTaken":"1853ms"}
+{"rank":"144660","url":"https://www.bombayshirts.com/login/?return_url=index.php","sso":[],"timeTaken":"1761ms"}
+{"rank":"144659","url":"https://www.jamesvillas.co.uk/login","sso":[],"timeTaken":"3015ms"}
+{"rank":"144662","url":"http://haiguiwang.com","sso":[],"timeTaken":"13354ms"}
+{"rank":"144662","url":"http://www.haiguiwang.com/public_html/","sso":[],"timeTaken":"8166ms"}
+{"rank":"144663","url":"http://megapredmet.ru","sso":[],"timeTaken":"2450ms"}
+{"rank":"144663","url":"http://megapredmet.ru/signup","sso":["vkontakte, no-url","yandex, no-url","twitter, no-url","google, no-url"],"timeTaken":"2269ms"}
+{"rank":"144663","url":"http://megapredmet.ru/login","sso":["vkontakte, no-url","yandex, no-url","twitter, no-url","google, no-url"],"timeTaken":"1980ms"}
+{"rank":"144664","url":"http://redder.gr","sso":[],"timeTaken":"13006ms"}
+{"rank":"144664","url":"http://www.redder.gr/signup","sso":[],"timeTaken":"11642ms"}
+{"rank":"144661","url":"http://tuanfang.com","sso":[],"timeTaken":"60443ms","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"http://tuanfang.com"}}
+{"rank":"144665","url":"http://easyfitwindow.com","sso":[],"timeTaken":"4490ms"}
+{"rank":"144665","url":"https://easyfitwindow.com/signup","sso":[],"timeTaken":"1145ms"}
+{"rank":"144664","url":"http://www.redder.gr/login","sso":[],"timeTaken":"12294ms"}
+{"rank":"144665","url":"https://easyfitwindow.com/login","sso":[],"timeTaken":"1068ms"}
+{"rank":"144666","url":"http://masdoramas.net","sso":[],"timeTaken":"2188ms"}
+{"rank":"144666","url":"http://masdoramas.net/signup","sso":[],"timeTaken":"1640ms"}
+{"rank":"144667","url":"http://fastbodyslimming.com","sso":[],"timeTaken":"4257ms"}
+{"rank":"144666","url":"http://masdoramas.net/login","sso":[],"timeTaken":"1673ms"}
+{"rank":"144668","url":"http://getrocketbook.com","sso":[],"timeTaken":"2674ms"}
+{"rank":"144667","url":"http://extremetracking.com/open?login=fbslimng","sso":[],"timeTaken":"4659ms"}
+{"rank":"144668","url":"https://getrocketbook.us3.list-manage.com/subscribe/post?u=c40a96c3a5c49f78976e671ab&id=ac8cfa5b60","sso":[],"timeTaken":"1404ms"}
+{"rank":"144670","url":"http://trunkarchive.com","sso":[],"timeTaken":"1953ms"}
+{"rank":"144670","url":"https://www.trunkarchive.com/CS.aspx?VP3=LoginRegistration&L=False&R=True","sso":[],"timeTaken":"1266ms"}
+{"rank":"144669","url":"http://globalpolicy.org","sso":[],"timeTaken":"3438ms"}
+{"rank":"144669","url":"https://www.globalpolicy.org/signup","sso":[],"timeTaken":"1059ms"}
+{"rank":"144670","url":"https://www.trunkarchive.com/CS.aspx?VP3=LoginRegistration&L=True&R=False","sso":[],"timeTaken":"1274ms"}
+{"rank":"144669","url":"https://www.globalpolicy.org/login","sso":[],"timeTaken":"1291ms"}
+{"rank":"144671","url":"http://tohapi.fr","sso":[],"timeTaken":"3915ms"}
+{"rank":"144671","url":"https://www.tohapi.fr/signup","sso":[],"timeTaken":"2879ms"}
+{"rank":"144671","url":"https://www.tohapi.fr/login","sso":[],"timeTaken":"2884ms"}
+{"rank":"144672","url":"http://mondoblog.org","sso":[],"timeTaken":"9867ms"}
+{"rank":"144672","url":"http://mondoblog.org/nous-rejoindre/","sso":[],"timeTaken":"3791ms"}
+{"rank":"144674","url":"http://photographyisnotacrime.com","sso":[],"timeTaken":"4373ms"}
+{"rank":"144674","url":"http://photographyisnotacrime.com/signup","sso":[],"timeTaken":"2942ms"}
+{"rank":"144674","url":"http://photographyisnotacrime.com/login","sso":[],"timeTaken":"1364ms"}
+{"rank":"144675","url":"http://atbox.io","sso":["google, no-url","facebook, no-url","twitter, no-url"],"timeTaken":"1667ms"}
+{"rank":"144675","url":"https://atbox.io/login","sso":["google, no-url","facebook, no-url","twitter, no-url"],"timeTaken":"976ms"}
+{"rank":"144675","url":"https://atbox.io/register","sso":["google, no-url","facebook, no-url","twitter, no-url"],"timeTaken":"905ms"}
+{"rank":"144676","url":"http://saudecuriosa.com.br","sso":[],"timeTaken":"1457ms"}
+{"rank":"144676","url":"http://www.saudecuriosa.com.br/signup","sso":[],"timeTaken":"1743ms"}
+{"rank":"144676","url":"http://www.saudecuriosa.com.br/login","sso":[],"timeTaken":"1662ms"}
+{"rank":"144677","url":"http://diariocritico.com","sso":[],"timeTaken":"6480ms"}
+{"rank":"144677","url":"http://www.diariocritico.com/signup","sso":[],"timeTaken":"3216ms"}
+{"rank":"144673","url":"http://zhmb.gov.cn","sso":[],"timeTaken":"33547ms"}
+{"rank":"144677","url":"http://www.diariocritico.com/login","sso":[],"timeTaken":"3498ms"}
+{"rank":"144678","url":"http://mrpopat.in","sso":[],"timeTaken":"3077ms"}
+{"rank":"144678","url":"http://mrpopat.in/signup","sso":[],"timeTaken":"2826ms"}
+{"rank":"144673","url":"http://new.cnzz.com/v1/login.php?siteid=3791730","sso":[],"timeTaken":"9446ms"}
+{"rank":"144678","url":"http://mrpopat.in/login","sso":[],"timeTaken":"2569ms"}
+{"rank":"144679","url":"http://vstudents.org","sso":[],"timeTaken":"2084ms"}
+{"rank":"144679","url":"http://www.vstudents.org/signup","sso":[],"timeTaken":"721ms"}
+{"rank":"144679","url":"http://www.vstudents.org/login","sso":[],"timeTaken":"763ms"}
+{"rank":"144681","url":"http://infed.org","sso":[],"timeTaken":"1386ms"}
+{"rank":"144680","url":"http://520hack.com","sso":[],"timeTaken":"5614ms"}
+{"rank":"144681","url":"http://infed.org/signup","sso":[],"timeTaken":"3697ms"}
+{"rank":"144680","url":"http://520hack.com/member.php?mod=register","sso":[],"timeTaken":"3961ms"}
+{"rank":"144681","url":"http://infed.org/login","sso":[],"timeTaken":"3630ms"}
+{"rank":"144682","url":"http://wareko.jp","sso":[],"timeTaken":"4290ms"}
+{"rank":"144682","url":"https://www.wareko.jp/signup","sso":[],"timeTaken":"1552ms"}
+{"rank":"144682","url":"https://www.wareko.jp/login","sso":[],"timeTaken":"1197ms"}
+{"rank":"144684","url":"http://overgraph.ru","sso":[],"timeTaken":"6851ms"}
+{"rank":"144684","url":"http://overgraph.ru/signup","sso":[],"timeTaken":"2183ms"}
+{"rank":"144684","url":"http://overgraph.ru/login","sso":[],"timeTaken":"2155ms"}
+{"rank":"144685","url":"http://nctb.gov.bd","sso":[],"timeTaken":"11276ms"}
+{"rank":"144685","url":"http://mail.nctb.gov.bd/Login.aspx","sso":[],"timeTaken":"3600ms"}
+{"rank":"144683","url":"http://5hoom.com","sso":[],"timeTaken":"35027ms"}
+{"rank":"144685","url":"http://www.nothi.gov.bd/users/login","sso":[],"timeTaken":"11671ms"}
+{"rank":"144686","url":"http://kuttywap.com","sso":[],"timeTaken":"1259ms"}
+{"rank":"144686","url":"http://kuttywap.com/signup","sso":[],"timeTaken":"969ms"}
+{"rank":"144686","url":"http://kuttywap.com/login","sso":[],"timeTaken":"952ms"}
+{"rank":"144687","url":"http://blogkor.com","sso":[],"timeTaken":"3369ms"}
+{"rank":"144687","url":"https://blogkor.com/signup","sso":[],"timeTaken":"1344ms"}
+{"rank":"144687","url":"https://blogkor.com/login","sso":[],"timeTaken":"1239ms"}
+{"rank":"144688","url":"http://ajib.fr","sso":[],"timeTaken":"5420ms"}
+{"rank":"144688","url":"https://www.ajib.fr/signup","sso":[],"timeTaken":"4392ms"}
+{"rank":"144688","url":"https://www.ajib.fr/login","sso":[],"timeTaken":"5957ms","error":{"message":"navigation error","code":-310,"details":"ERR_TOO_MANY_REDIRECTS","url":"https://www.ajib.fr/un-celebre-reporter-allemand-se-convertit-a-lislam-le-jour-de-laid-al-fitr-video-ne-en-1980-lejeune-httpfb-me7wrps659o/"}}
+{"rank":"144689","url":"http://hopto.today","sso":[],"timeTaken":"474ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://hopto.today/"}}
+{"rank":"144690","url":"http://wowdate.de","sso":[],"timeTaken":"883ms"}
+{"rank":"144690","url":"http://wowdate.de/signup","sso":[],"timeTaken":"688ms"}
+{"rank":"144690","url":"http://wowdate.de/login","sso":[],"timeTaken":"738ms"}
+{"rank":"144691","url":"http://kitami-it.ac.jp","sso":[],"timeTaken":"692ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://kitami-it.ac.jp/"}}
+{"rank":"144692","url":"http://dozory.ru","sso":[],"timeTaken":"2739ms"}
+{"rank":"144692","url":"http://dozory.ru/signup","sso":[],"timeTaken":"791ms"}
+{"rank":"144692","url":"http://dozory.ru/login","sso":[],"timeTaken":"829ms"}
+{"rank":"144693","url":"http://philognosie.net","sso":[],"timeTaken":"3416ms"}
+{"rank":"144683","url":"http://www.5hoom.com/connect.php?mod=login&op=init&referer=index.php&statfrom=login_simple","sso":[],"timeTaken":"44797ms"}
+{"rank":"144693","url":"https://www.philognosie.net/index.php/user/loginmain/","sso":[],"timeTaken":"3075ms"}
+{"rank":"144695","url":"http://redirects.us","sso":[],"timeTaken":"810ms"}
+{"rank":"144694","url":"http://petlebi.com","sso":[],"timeTaken":"3323ms"}
+{"rank":"144695","url":"http://redirects.us/signup","sso":[],"timeTaken":"848ms"}
+{"rank":"144694","url":"http://www.petlebi.com/login","sso":[],"timeTaken":"3441ms"}
+{"rank":"144695","url":"http://redirects.us/login","sso":[],"timeTaken":"656ms"}
+{"rank":"144694","url":"http://www.petlebi.com/signup","sso":[],"timeTaken":"11209ms"}
+{"rank":"144696","url":"http://gsmdude.com","sso":["google, oauth-url"],"timeTaken":"9236ms"}
+{"rank":"144697","url":"http://windows-noob.com","sso":[],"timeTaken":"4639ms"}
+{"rank":"144697","url":"https://www.windows-noob.com/forums/register/","sso":[],"timeTaken":"3532ms"}
+{"rank":"144696","url":"https://gsmdude.com/signup","sso":["google, oauth-url"],"timeTaken":"6296ms"}
+{"rank":"144697","url":"https://www.windows-noob.com/forums/login/","sso":[],"timeTaken":"3814ms"}
+{"rank":"144696","url":"https://gsmdude.com/login","sso":["google, oauth-url"],"timeTaken":"7906ms"}
+{"rank":"144699","url":"http://casioindiashop.com","sso":["google, no-url"],"timeTaken":"6741ms"}
+{"rank":"144699","url":"https://www.casioindiashop.com/signup","sso":["google, no-url"],"timeTaken":"5279ms"}
+{"rank":"144699","url":"https://www.casioindiashop.com/login","sso":["google, no-url"],"timeTaken":"5285ms"}
+{"rank":"144700","url":"http://bistriteanul.ro","sso":[],"timeTaken":"7444ms"}
+{"rank":"144700","url":"http://www.bistriteanul.ro/signup","sso":[],"timeTaken":"737ms"}
+{"rank":"144700","url":"http://www.bistriteanul.ro/login","sso":[],"timeTaken":"743ms"}
+{"rank":"144701","url":"http://quecochemecompro.com","sso":[],"timeTaken":"3559ms"}
+{"rank":"144701","url":"https://www.quecochemecompro.com/login/","sso":[],"timeTaken":"3089ms"}
+{"rank":"144702","url":"http://tabulose-huren.com","sso":[],"timeTaken":"3839ms"}
+{"rank":"144702","url":"https://www.tabulose-huren.com/signup","sso":[],"timeTaken":"3557ms"}
+{"rank":"144702","url":"https://www.tabulose-huren.com/login","sso":[],"timeTaken":"3374ms"}
+{"rank":"144703","url":"http://newlifeauctions.com","sso":[],"timeTaken":"1305ms"}
+{"rank":"144703","url":"http://rover.ebay.com/rover/1/711-53200-19255-0/1?type=4&campid=5335870811&toolid=10001&customid=register&mpre=https%3A%2F%2Fscgi.ebay.com%2Fws%2FeBayISAPI.dll%3FRegisterEnterInfo","sso":[],"timeTaken":"5603ms"}
+{"rank":"144704","url":"http://darmankala.com","sso":[],"timeTaken":"3962ms"}
+{"rank":"144698","url":"http://mitula.net","sso":[],"timeTaken":"60398ms","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"http://mitula.net"}}
+{"rank":"144704","url":"https://www.darmankala.ir/login","sso":[],"timeTaken":"2610ms"}
+{"rank":"144704","url":"https://www.darmankala.ir/register","sso":[],"timeTaken":"2368ms"}
+{"rank":"144706","url":"http://cjfallon.ie","sso":[],"timeTaken":"4750ms"}
+{"rank":"144705","url":"http://autocompas.ru","sso":[],"timeTaken":"5871ms"}
+{"rank":"144706","url":"http://my.cjfallon.ie/login","sso":[],"timeTaken":"1984ms"}
+{"rank":"144707","url":"http://babebrkrflow.com","sso":[],"timeTaken":"738ms"}
+{"rank":"144707","url":"http://babebrkrflow.com/signup","sso":[],"timeTaken":"587ms"}
+{"rank":"144705","url":"https://www.autocompas.ru/auth/registration/","sso":[],"timeTaken":"2944ms"}
+{"rank":"144707","url":"http://babebrkrflow.com/login","sso":[],"timeTaken":"631ms"}
+{"rank":"144708","url":"http://transip.be","sso":[],"timeTaken":"4824ms"}
+{"rank":"144708","url":"https://www.transip.be/signup","sso":[],"timeTaken":"2892ms"}
+{"rank":"144709","url":"http://kara.com.ng","sso":["twitter, no-url","facebook, no-url","google, no-url"],"timeTaken":"8818ms"}
+{"rank":"144708","url":"https://www.transip.be/login","sso":[],"timeTaken":"2467ms"}
+{"rank":"144709","url":"http://www.kara.com.ng/signup","sso":["twitter, no-url","facebook, no-url","google, no-url"],"timeTaken":"1223ms"}
+{"rank":"144709","url":"http://www.kara.com.ng/login","sso":["twitter, no-url","facebook, no-url","google, no-url"],"timeTaken":"1555ms"}
+{"rank":"144711","url":"http://fino.co.in","sso":[],"timeTaken":"3463ms"}
+{"rank":"144711","url":"http://fino.co.in/signup","sso":[],"timeTaken":"1226ms"}
+{"rank":"144711","url":"http://fino.co.in/login","sso":[],"timeTaken":"1213ms"}
+{"rank":"144712","url":"http://oliverwyman.com","sso":[],"timeTaken":"2271ms"}
+{"rank":"144710","url":"http://irleasing.ir","sso":[],"timeTaken":"10649ms"}
+{"rank":"144712","url":"http://www.oliverwyman.com/signup","sso":[],"timeTaken":"1485ms"}
+{"rank":"144710","url":"http://www.irleasing.ir/index.php?do=register","sso":[],"timeTaken":"5680ms"}
+{"rank":"144710","url":"http://irleasing.ir/index.php?do=register","sso":[],"timeTaken":"6315ms"}
+{"rank":"144713","url":"http://gdcct.gov.cn","sso":[],"timeTaken":"407ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://gdcct.gov.cn/"}}
+{"rank":"144714","url":"http://prepaidgiftbalance.com","sso":[],"timeTaken":"383ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://prepaidgiftbalance.com/"}}
+{"rank":"144712","url":"http://www.oliverwyman.com/login","sso":[],"timeTaken":"1589ms"}
+{"rank":"144716","url":"http://forum.md","sso":[],"timeTaken":"4461ms"}
+{"rank":"144716","url":"https://forum.md/signup","sso":[],"timeTaken":"2842ms"}
+{"rank":"144715","url":"http://tecnun.es","sso":[],"timeTaken":"8817ms"}
+{"rank":"144715","url":"https://accounts.google.com/ServiceLogin?service=wise&passive=true&continue=http%3A%2F%2Fdrive.google.com.google.com%2Fmail%2F&ltmpl=default&service=mail&sacu=1&hd=alumni.tecnun.es","sso":["google, no-url"],"timeTaken":"676ms"}
+{"rank":"144716","url":"https://forum.md/login","sso":[],"timeTaken":"2621ms"}
+{"rank":"144718","url":"http://stadt-muenster.de","sso":[],"timeTaken":"3321ms"}
+{"rank":"144718","url":"http://www.stadt-muenster.de/signup","sso":[],"timeTaken":"2276ms"}
+{"rank":"144718","url":"http://www.stadt-muenster.de/login","sso":[],"timeTaken":"1822ms"}
+{"rank":"144717","url":"http://maiskizomba.com","sso":[],"timeTaken":"12609ms"}
+{"rank":"144717","url":"https://www.maiskizomba.com/en/","sso":[],"timeTaken":"4849ms"}
+{"rank":"144719","url":"http://dingziyy.com","sso":[],"timeTaken":"12703ms"}
+{"rank":"144719","url":"http://www.dingziyy.com/signup","sso":[],"timeTaken":"1265ms","error":{"message":"navigation error","code":-101,"details":"ERR_CONNECTION_RESET","url":"http://dingzi99.com/movie/404"}}
+{"rank":"144720","url":"http://coolgames.org.ua","sso":[],"timeTaken":"5309ms"}
+{"rank":"144719","url":"http://www.dingziyy.com/login","sso":[],"timeTaken":"1184ms","error":{"message":"navigation error","code":-101,"details":"ERR_CONNECTION_RESET","url":"http://dingzi99.com/movie/404"}}
+{"rank":"144720","url":"http://www.coolgames.org.ua/index.php?do=register","sso":[],"timeTaken":"3988ms"}
+{"rank":"144722","url":"http://ec2instances.info","sso":[],"timeTaken":"1919ms"}
+{"rank":"144722","url":"http://www.ec2instances.info/signup","sso":[],"timeTaken":"612ms"}
+{"rank":"144721","url":"http://haitetvn.com","sso":[],"timeTaken":"6459ms"}
+{"rank":"144722","url":"http://www.ec2instances.info/login","sso":[],"timeTaken":"590ms"}
+{"rank":"144721","url":"http://www.haitetvn.com/signup","sso":[],"timeTaken":"8534ms"}
+{"rank":"144721","url":"http://www.haitetvn.com/login","sso":[],"timeTaken":"8555ms"}
+{"rank":"144724","url":"http://desktime.com","sso":[],"timeTaken":"2739ms"}
+{"rank":"144723","url":"http://bronnitsy.com","sso":[],"timeTaken":"3254ms","error":{"message":"navigation error","code":-3,"details":"","url":"http://www.bronnitsy.com/"}}
+{"rank":"144724","url":"https://desktime.com/auth/register","sso":[],"timeTaken":"1943ms"}
+{"rank":"144724","url":"https://desktime.com/auth/login","sso":[],"timeTaken":"1870ms"}
+{"rank":"144725","url":"http://pornogam.tv","sso":[],"timeTaken":"2490ms"}
+{"rank":"144725","url":"https://pornogam.tv/signup","sso":[],"timeTaken":"2116ms"}
+{"rank":"144725","url":"https://pornogam.tv/login","sso":[],"timeTaken":"2188ms"}
+{"rank":"144727","url":"http://jjdzc.com","sso":[],"timeTaken":"12746ms"}
+{"rank":"144727","url":"http://www.jjdzc.com/signup","sso":[],"timeTaken":"898ms"}
+{"rank":"144727","url":"http://www.jjdzc.com/login","sso":[],"timeTaken":"1030ms"}
+{"rank":"144728","url":"http://mzk1.ru","sso":[],"timeTaken":"12810ms"}
+{"rank":"144728","url":"http://www.mzk1.ru/signup","sso":[],"timeTaken":"9197ms"}
+{"rank":"144728","url":"http://www.mzk1.ru/login","sso":[],"timeTaken":"2106ms"}
+{"rank":"144729","url":"http://study-languages-online.com","sso":[],"timeTaken":"2150ms"}
+{"rank":"144729","url":"http://study-languages-online.com/signup","sso":[],"timeTaken":"1817ms"}
+{"rank":"144729","url":"http://study-languages-online.com/login","sso":[],"timeTaken":"1727ms"}
+{"rank":"144726","url":"http://82vv.com","sso":[],"timeTaken":"60414ms","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"http://82vv.com"}}
+{"rank":"144730","url":"http://sutech.ac.ir","sso":[],"timeTaken":"12236ms"}
+{"rank":"144731","url":"http://companeo.com","sso":[],"timeTaken":"5154ms"}
+{"rank":"144730","url":"http://sutech.ac.ir/fa/user/register","sso":[],"timeTaken":"6403ms"}
+{"rank":"144731","url":"http://www.companeo.com/signup","sso":[],"timeTaken":"4205ms"}
+{"rank":"144731","url":"http://www.companeo.com/login","sso":[],"timeTaken":"4025ms"}
+{"rank":"144732","url":"http://nite.go.jp","sso":[],"timeTaken":"636ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://nite.go.jp/"}}
+{"rank":"144733","url":"http://xiconeditor.com","sso":[],"timeTaken":"2698ms"}
+{"rank":"144733","url":"http://www.xiconeditor.com/signup","sso":[],"timeTaken":"785ms"}
+{"rank":"144733","url":"http://www.xiconeditor.com/login","sso":[],"timeTaken":"826ms"}
+{"rank":"144730","url":"http://sutech.ac.ir/fa/front-page?destination=front-page","sso":[],"timeTaken":"12300ms"}
+{"rank":"144734","url":"http://mining-enc.ru","sso":[],"timeTaken":"4016ms"}
+{"rank":"144735","url":"http://harmonywave.pw","sso":[],"timeTaken":"2624ms"}
+{"rank":"144735","url":"http://www.harmonywave.pw/signup","sso":[],"timeTaken":"522ms","error":{"message":"navigation error","code":-324,"details":"ERR_EMPTY_RESPONSE","url":"http://www.harmonywave.pw/signup"}}
+{"rank":"144734","url":"http://mining-enc.ru/signup","sso":[],"timeTaken":"3085ms"}
+{"rank":"144735","url":"http://www.harmonywave.pw/login","sso":[],"timeTaken":"564ms","error":{"message":"navigation error","code":-324,"details":"ERR_EMPTY_RESPONSE","url":"http://www.harmonywave.pw/login"}}
+{"rank":"144734","url":"http://mining-enc.ru/login","sso":[],"timeTaken":"2363ms"}
+{"rank":"144736","url":"http://bolagsverket.se","sso":[],"timeTaken":"4223ms"}
+{"rank":"144736","url":"http://bolagsverket.se/signup","sso":[],"timeTaken":"955ms"}
+{"rank":"144737","url":"http://haroid.com","sso":[],"timeTaken":"3816ms"}
+{"rank":"144736","url":"http://bolagsverket.se/login","sso":[],"timeTaken":"1020ms"}
+{"rank":"144737","url":"https://www.haroid.com/signup","sso":[],"timeTaken":"2420ms"}
+{"rank":"144737","url":"https://www.haroid.com/login","sso":["facebook, no-url","twitter, no-url"],"timeTaken":"2413ms"}
+{"rank":"144739","url":"http://estascontratado.com","sso":[],"timeTaken":"5156ms"}
+{"rank":"144738","url":"http://ukh.edu.krd","sso":[],"timeTaken":"5655ms"}
+{"rank":"144738","url":"https://moodle.ukh.edu.krd/moodle/login/index.php","sso":[],"timeTaken":"5167ms"}
+{"rank":"144739","url":"http://www.estascontratado.com/loginempresa","sso":[],"timeTaken":"7111ms"}
+{"rank":"144739","url":"http://www.estascontratado.com/logincandidato","sso":[],"timeTaken":"3637ms"}
+{"rank":"144740","url":"http://speedcubeshop.com","sso":[],"timeTaken":"2779ms"}
+{"rank":"144740","url":"https://speedcubeshop.com/account/register","sso":[],"timeTaken":"2765ms"}
+{"rank":"144741","url":"http://universalmediaserver.com","sso":[],"timeTaken":"5525ms"}
+{"rank":"144740","url":"https://speedcubeshop.com/account/login","sso":[],"timeTaken":"2513ms"}
+{"rank":"144741","url":"http://www.universalmediaserver.com/signup","sso":[],"timeTaken":"649ms"}
+{"rank":"144741","url":"http://www.universalmediaserver.com/login","sso":[],"timeTaken":"678ms"}
+{"rank":"144743","url":"http://friendseek.com","sso":[],"timeTaken":"2784ms"}
+{"rank":"144742","url":"http://optaim.com","sso":[],"timeTaken":"4140ms"}
+{"rank":"144743","url":"https://www.friendseek.com/?-1.IFormSubmitListener-menu-authContainer-authenticationPanel-smallloginPanel-form","sso":[],"timeTaken":"1952ms"}
+{"rank":"144743","url":"https://www.friendseek.com/login","sso":[],"timeTaken":"1533ms"}
+{"rank":"144744","url":"http://sexne.net","sso":[],"timeTaken":"2355ms"}
+{"rank":"144744","url":"http://sexne.net/signup","sso":[],"timeTaken":"2253ms"}
+{"rank":"144742","url":"http://dsp.optaim.com","sso":[],"timeTaken":"9206ms"}
+{"rank":"144744","url":"http://sexne.net/login","sso":[],"timeTaken":"2001ms"}
+{"rank":"144746","url":"http://endeportes.xyz","sso":[],"timeTaken":"1777ms"}
+{"rank":"144746","url":"http://endeportes.xyz/signup","sso":[],"timeTaken":"590ms"}
+{"rank":"144746","url":"http://endeportes.xyz/login","sso":[],"timeTaken":"764ms"}
+{"rank":"144747","url":"http://reggaetoncolombia.net","sso":[],"timeTaken":"4762ms"}
+{"rank":"144745","url":"http://kaiwind.com","sso":[],"timeTaken":"9236ms"}
+{"rank":"144747","url":"http://reggaetoncolombia.net/signup","sso":[],"timeTaken":"2907ms"}
+{"rank":"144745","url":"http://www.kaiwind.com/signup","sso":[],"timeTaken":"4556ms"}
+{"rank":"144745","url":"http://www.kaiwind.com/login","sso":[],"timeTaken":"3046ms"}
+{"rank":"144747","url":"http://reggaetoncolombia.net/login","sso":[],"timeTaken":"2668ms"}
+{"rank":"144748","url":"http://rubensfan.de","sso":[],"timeTaken":"3248ms"}
+{"rank":"144749","url":"http://epbookspot.wordpress.com","sso":[],"timeTaken":"2241ms"}
+{"rank":"144749","url":"https://epbookspot.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fepbookspot.wordpress.com%2F2014%2F12%2F19%2Ffind-your-level-here%2F","sso":[],"timeTaken":"1097ms"}
+{"rank":"144748","url":"https://www.rubensfan.de/signup","sso":[],"timeTaken":"3841ms"}
+{"rank":"144748","url":"https://www.rubensfan.de/login","sso":[],"timeTaken":"3259ms"}
+{"rank":"144750","url":"http://idemama.com","sso":[],"timeTaken":"4442ms"}
+{"rank":"144751","url":"http://geapplianceparts.com","sso":[],"timeTaken":"4351ms"}
+{"rank":"144750","url":"https://www.idemama.com/users/kullanici-girisi.js","sso":[],"timeTaken":"2128ms"}
+{"rank":"144751","url":"https://genet.geappliances.com/ProductRegistration/register-appliance?icid=GEARFooter-register","sso":[],"timeTaken":"3187ms"}
+{"rank":"144751","url":"https://myaccount.geappliances.io/MyAccount/?icid=GEARtopnav-MYA","sso":["facebook, no-url","google, no-url","twitter, no-url"],"timeTaken":"3698ms"}
+{"rank":"144750","url":"https://www.idemama.com/users.js","sso":[],"timeTaken":"1000ms"}
+{"rank":"144752","url":"http://getnugg.com","sso":[],"timeTaken":"2921ms"}
+{"rank":"144753","url":"http://xtube.website","sso":[],"timeTaken":"3939ms"}
+{"rank":"144752","url":"https://getnugg.com/signup","sso":[],"timeTaken":"1604ms"}
+{"rank":"144753","url":"http://xtube.website/signup","sso":[],"timeTaken":"790ms"}
+{"rank":"144753","url":"http://xtube.website/login","sso":[],"timeTaken":"861ms"}
+{"rank":"144752","url":"https://getnugg.com/login","sso":[],"timeTaken":"2073ms"}
+{"rank":"144754","url":"http://cityrealty.com","sso":[],"timeTaken":"4464ms"}
+{"rank":"144754","url":"https://www.cityrealty.com/signup","sso":[],"timeTaken":"1589ms"}
+{"rank":"144754","url":"https://www.cityrealty.com/login","sso":[],"timeTaken":"1256ms"}
+{"rank":"144756","url":"http://suohoo.com","sso":[],"timeTaken":"4222ms"}
+{"rank":"144756","url":"http://www.suohoo.com/signup","sso":[],"timeTaken":"596ms"}
+{"rank":"144756","url":"http://www.suohoo.com/login","sso":[],"timeTaken":"740ms"}
+{"rank":"144755","url":"http://agnitas.de","sso":[],"timeTaken":"11315ms"}
+{"rank":"144757","url":"http://seonick.net","sso":[],"timeTaken":"2772ms"}
+{"rank":"144757","url":"http://www.seonick.net/join/","sso":[],"timeTaken":"1672ms"}
+{"rank":"144758","url":"http://ctabustracker.com","sso":[],"timeTaken":"992ms"}
+{"rank":"144755","url":"https://asp.agnitas.de/logon.do?action=0","sso":[],"timeTaken":"5757ms"}
+{"rank":"144758","url":"http://ctabustracker.com/signup","sso":[],"timeTaken":"563ms"}
+{"rank":"144758","url":"http://ctabustracker.com/login","sso":[],"timeTaken":"702ms"}
+{"rank":"144760","url":"http://minoshare.net","sso":[],"timeTaken":"733ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://minoshare.net/"}}
+{"rank":"144761","url":"http://alkhorasani.com","sso":[],"timeTaken":"1949ms"}
+{"rank":"144761","url":"https://www.alkhorasani.com/signup","sso":[],"timeTaken":"829ms"}
+{"rank":"144761","url":"https://www.alkhorasani.com/login","sso":[],"timeTaken":"674ms"}
+{"rank":"144759","url":"http://kalendrier.com","sso":[],"timeTaken":"5647ms"}
+{"rank":"144762","url":"http://seounity.com","sso":[],"timeTaken":"2265ms"}
+{"rank":"144759","url":"https://www.kalendrier.com/signup","sso":[],"timeTaken":"2746ms"}
+{"rank":"144762","url":"http://forums.seounity.com/login","sso":["google, oauth-url"],"timeTaken":"1703ms"}
+{"rank":"144763","url":"http://provincia.brescia.it","sso":[],"timeTaken":"606ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://provincia.brescia.it/"}}
+{"rank":"144759","url":"https://www.kalendrier.com/login","sso":[],"timeTaken":"1990ms"}
+{"rank":"144764","url":"http://pandynhabonita.tumblr.com","sso":[],"timeTaken":"2806ms"}
+{"rank":"144764","url":"https://pandynhabonita.tumblr.com/signup","sso":[],"timeTaken":"2385ms"}
+{"rank":"144765","url":"http://gharaati.ir","sso":[],"timeTaken":"4584ms"}
+{"rank":"144765","url":"http://gharaati.ir/signup","sso":[],"timeTaken":"1043ms"}
+{"rank":"144764","url":"https://pandynhabonita.tumblr.com/login","sso":[],"timeTaken":"1562ms"}
+{"rank":"144765","url":"http://gharaati.ir/login","sso":[],"timeTaken":"990ms"}
+{"rank":"144767","url":"http://czary.pl","sso":[],"timeTaken":"4737ms"}
+{"rank":"144767","url":"http://czary.pl/signup","sso":[],"timeTaken":"3729ms"}
+{"rank":"144767","url":"http://czary.pl/login","sso":[],"timeTaken":"2796ms"}
+{"rank":"144768","url":"http://unitymanual.com","sso":[],"timeTaken":"5564ms"}
+{"rank":"144768","url":"http://www.manew.com/tao","sso":[],"timeTaken":"4223ms"}
+{"rank":"144768","url":"http://www.manew.com/connect.php?mod=login&op=init&referer=index.php&statfrom=login_simple","sso":[],"timeTaken":"8898ms"}
+{"rank":"144769","url":"http://zendem.it","sso":[],"timeTaken":"3300ms"}
+{"rank":"144769","url":"http://zendem.it/signup","sso":[],"timeTaken":"1524ms"}
+{"rank":"144769","url":"http://zendem.it/login","sso":[],"timeTaken":"1703ms"}
+{"rank":"144770","url":"http://breastcancerconnect.com","sso":[],"timeTaken":"2428ms"}
+{"rank":"144770","url":"http://www.breastcancerconnect.com/join","sso":[],"timeTaken":"1706ms"}
+{"rank":"144770","url":"http://www.breastcancerconnect.com/login?return_to=%2F","sso":[],"timeTaken":"1657ms"}
+{"rank":"144771","url":"http://leet.ws","sso":[],"timeTaken":"1971ms"}
+{"rank":"144771","url":"https://www.leet.nl","sso":[],"timeTaken":"1294ms"}
+{"rank":"144771","url":"https://www.leet.nl/register","sso":[],"timeTaken":"1486ms"}
+{"rank":"144772","url":"http://worldmovieshd.com","sso":[],"timeTaken":"3614ms"}
+{"rank":"144772","url":"http://www.worldmovieshd.com/signup","sso":[],"timeTaken":"3062ms"}
+{"rank":"144772","url":"http://www.worldmovieshd.com/login","sso":[],"timeTaken":"2171ms"}
+{"rank":"144773","url":"http://boatshop24.com","sso":[],"timeTaken":"5402ms"}
+{"rank":"144773","url":"http://www.boatshop24.com/us/register.php","sso":[],"timeTaken":"3257ms"}
+{"rank":"144773","url":"http://www.boatshop24.com/us/login.php","sso":[],"timeTaken":"3146ms"}
+{"rank":"144774","url":"http://chambres-hotes.fr","sso":[],"timeTaken":"6332ms"}
+{"rank":"144774","url":"http://www.chambres-hotes.fr/signup","sso":[],"timeTaken":"3044ms"}
+{"rank":"144774","url":"http://www.chambres-hotes.fr/login","sso":[],"timeTaken":"2808ms"}
+{"rank":"144775","url":"http://videosxxxamateur.xxx","sso":[],"timeTaken":"2775ms"}
+{"rank":"144775","url":"http://www.videosxxxamateur.xxx/signup","sso":[],"timeTaken":"2340ms"}
+{"rank":"144775","url":"http://www.videosxxxamateur.xxx/login","sso":[],"timeTaken":"6610ms"}
+{"rank":"144776","url":"http://mitalent.org","sso":[],"timeTaken":"1824ms"}
+{"rank":"144776","url":"http://mitalent.org/Users/Account/LogOn?ReturnUrl=%2F","sso":[],"timeTaken":"1405ms"}
+{"rank":"144777","url":"http://stopgemor.ru","sso":[],"timeTaken":"3705ms"}
+{"rank":"144777","url":"http://stopgemor.ru/signup","sso":[],"timeTaken":"3902ms"}
+{"rank":"144777","url":"http://stopgemor.ru/login","sso":[],"timeTaken":"1473ms"}
+{"rank":"144778","url":"http://bancoguayaquil.com","sso":[],"timeTaken":"60386ms","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"http://bancoguayaquil.com"}}
+{"rank":"144779","url":"http://elated.com","sso":[],"timeTaken":"2618ms"}
+{"rank":"144779","url":"http://www.elated.com/signup","sso":[],"timeTaken":"788ms"}
+{"rank":"144779","url":"http://www.elated.com/login","sso":[],"timeTaken":"693ms"}
+{"rank":"144780","url":"http://army.mil.ng","sso":[],"timeTaken":"18815ms"}
+{"rank":"144780","url":"http://www.army.mil.ng/nigeria-and-cameroonian-troops-conduct-joint-clearance-operation/","sso":[],"timeTaken":"12850ms"}
+{"rank":"144780","url":"https://mail.army.mil.ng/owa/auth/logon.aspx?url=https://mail.army.mil.ng/owa&reason=0","sso":[],"timeTaken":"60381ms","error":{"message":"navigation error","code":-7,"details":"Navigation timed out after 60000 ms","url":"https://mail.army.mil.ng/owa/auth/logon.aspx?url=https://mail.army.mil.ng/owa&reason=0"}}
+{"rank":"144781","url":"http://anxietybc.com","sso":[],"timeTaken":"2591ms"}
+{"rank":"144781","url":"https://www.anxietybc.com/signup","sso":[],"timeTaken":"3066ms"}
+{"rank":"144781","url":"https://www.anxietybc.com/login","sso":[],"timeTaken":"2395ms"}
+{"rank":"144782","url":"http://dogforums.com","sso":[],"timeTaken":"7706ms"}
+{"rank":"144782","url":"http://www.dogforums.com/login.php?do=login","sso":[],"timeTaken":"7735ms"}
+{"rank":"144782","url":"http://www.dogforums.com/register.php","sso":[],"timeTaken":"60478ms"}
+{"rank":"144783","url":"http://pharmaskeletons.com","sso":[],"timeTaken":"2762ms"}
+{"rank":"144783","url":"http://pharmaskeletons.com/signup","sso":[],"timeTaken":"1716ms"}
+{"rank":"144783","url":"http://pharmaskeletons.com/login","sso":[],"timeTaken":"1770ms"}
+{"rank":"144784","url":"http://wurth.es","sso":[],"timeTaken":"37633ms"}
+{"rank":"144784","url":"http://www.wurth.es/customer/account/loginPost/referer/aHR0cDovL3d3dy53dXJ0aC5lcy8,/","sso":[],"timeTaken":"8706ms"}
+{"rank":"144785","url":"http://audacity.fr","sso":[],"timeTaken":"4032ms"}
+{"rank":"144785","url":"http://audacity.fr/signup","sso":[],"timeTaken":"3013ms"}

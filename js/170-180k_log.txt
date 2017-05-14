@@ -8647,4 +8647,99 @@
 {"rank":"173274","url":"http://cubahora.cu","sso":[],"timeTaken":"747ms","error":{"message":"navigation error","code":-105,"details":"ERR_NAME_NOT_RESOLVED","url":"http://cubahora.cu/"}}
 {"rank":"173275","url":"http://1201914.com","sso":[],"timeTaken":"9834ms"}
 {"rank":"173275","url":"http://1201914.com/signup","sso":[],"timeTaken":"5139ms"}
-{"rank":"173275","url":"http://1201914.com/login","sso":[],"timeTaken":"2805ms"}
+{"rank":"173275","url":"http://1201914.com/login","sso":[],"timeTaken":"2805ms"}{"rank":"173277","url":"http://animegaroom.com","sso":[],"timeTaken":"12262ms"}
+{"rank":"173276","url":"http://astercrash.tumblr.com","sso":[],"timeTaken":"13059ms"}
+{"rank":"173280","url":"http://youall.tv","sso":[],"timeTaken":"14114ms"}
+{"rank":"173279","url":"http://esstu.ru","sso":[],"timeTaken":"15388ms"}
+{"rank":"173281","url":"http://hihey.com","sso":[],"timeTaken":"15774ms"}
+{"rank":"173277","url":"http://animegaroom.com/wp-login.php","sso":[],"timeTaken":"4365ms"}
+{"rank":"173278","url":"http://webpont.com","sso":[],"timeTaken":"20353ms"}
+{"rank":"173280","url":"http://youall.tv/signup","sso":[],"timeTaken":"6734ms"}
+{"rank":"173279","url":"https://esstu.ru/uportal/login","sso":[],"timeTaken":"6619ms"}
+{"rank":"173281","url":"http://m.hihey.com/Index/login","sso":[],"timeTaken":"7532ms"}
+{"rank":"173278","url":"http://webpont.com/signup","sso":[],"timeTaken":"5680ms"}
+{"rank":"173279","url":"https://esstu.ru/uportal/localauth/login2","sso":[],"timeTaken":"11795ms"}
+{"rank":"173278","url":"http://webpont.com/login","sso":[],"timeTaken":"6502ms"}
+{"rank":"173280","url":"http://youall.tv/login","sso":[],"timeTaken":"4825ms"}
+{"rank":"173276","url":"http://astercrash.tumblr.com/signup","sso":[],"timeTaken":"16020ms"}
+{"rank":"173276","url":"http://astercrash.tumblr.com/login","sso":[],"timeTaken":"10801ms"}
+{"rank":"173283","url":"http://awkum.edu.pk","sso":[],"timeTaken":"8823ms"}
+{"rank":"173284","url":"http://tecvirtual.mx","sso":[],"timeTaken":"8946ms"}
+{"rank":"173287","url":"http://mobiloud.com","sso":[],"timeTaken":"10962ms"}
+{"rank":"173284","url":"http://tecvirtual.mx/signup","sso":[],"timeTaken":"3927ms"}
+{"rank":"173285","url":"http://wangpange.com","sso":[],"timeTaken":"15783ms"}
+{"rank":"173283","url":"http://awkum.edu.pk/signup","sso":[],"timeTaken":"9124ms"}
+{"rank":"173288","url":"http://worldstrides.org","sso":[],"timeTaken":"13386ms"}
+{"rank":"173285","url":"http://www.wangpange.com/signup","sso":[],"timeTaken":"5951ms"}
+{"rank":"173287","url":"https://www.mobiloud.com/login","sso":[],"timeTaken":"10547ms"}
+{"rank":"173285","url":"http://www.wangpange.com/login","sso":[],"timeTaken":"8045ms"}
+{"rank":"173284","url":"http://tecvirtual.mx/login","sso":[],"timeTaken":"3230ms"}
+{"rank":"173287","url":"https://www.mobiloud.com/signup","sso":[],"timeTaken":"16131ms"}
+{"rank":"173286","url":"http://mycadsite.com","sso":[],"timeTaken":"28080ms"}
+{"rank":"173283","url":"http://awkum.edu.pk/login","sso":[],"timeTaken":"6771ms"}
+{"rank":"173288","url":"https://worldstrides.com/register/","sso":[],"timeTaken":"10821ms"}
+{"rank":"173289","url":"http://gearrup.com","sso":[],"timeTaken":"8681ms"}
+{"rank":"173286","url":"https://www.mycadsite.com/signup","sso":[],"timeTaken":"5435ms"}
+{"rank":"173286","url":"https://www.mycadsite.com/login","sso":[],"timeTaken":"8535ms"}
+{"rank":"173289","url":"https://www.gearrup.com/signup","sso":[],"timeTaken":"5731ms"}
+{"rank":"173291","url":"http://kaspi.az","sso":[],"timeTaken":"11960ms"}
+{"rank":"173289","url":"https://www.gearrup.com/login","sso":[],"timeTaken":"8300ms"}
+{"rank":"173290","url":"http://tatcenter.ru","sso":[],"timeTaken":"20593ms"}
+{"rank":"173292","url":"http://sprint.ly","sso":["github, no-url","google, no-url"],"timeTaken":"16712ms"}
+{"rank":"173294","url":"http://myadmarket.com","sso":[],"timeTaken":"10536ms"}
+{"rank":"173291","url":"http://kaspi.az/signup","sso":[],"timeTaken":"13559ms"}
+{"rank":"173293","url":"http://antheamissy.com","sso":[],"timeTaken":"19138ms"}
+{"rank":"173291","url":"http://kaspi.az/login","sso":[],"timeTaken":"15653ms"}
+{"rank":"173294","url":"http://1539m.cpxcenter.com/admin/auth/login","sso":[],"timeTaken":"9153ms"}
+{"rank":"173292","url":"http://sprint.ly/getstarted","sso":["github, no-url","google, no-url"],"timeTaken":"11599ms"}
+{"rank":"173294","url":"http://affiliate.MyAdMarket.com/affiliate/network/login","sso":[],"timeTaken":"6562ms"}
+{"rank":"173293","url":"https://www.antheamissy.com/wp-login.php?redirect_to=https%3A%2F%2Fwww.antheamissy.com%2F","sso":[],"timeTaken":"8257ms"}
+{"rank":"173290","url":"http://tatcenter.ru/signup","sso":[],"timeTaken":"21642ms"}
+{"rank":"173292","url":"http://sprint.ly/account/login/","sso":["github, no-url","google, no-url"],"timeTaken":"9094ms"}
+{"rank":"173293","url":"https://www.antheamissy.com/register/","sso":[],"timeTaken":"14219ms"}
+{"rank":"173290","url":"http://tatcenter.ru/login","sso":[],"timeTaken":"18658ms"}
+{"rank":"173297","url":"http://vapeshop-hookahs.com","sso":[],"timeTaken":"10842ms"}
+{"rank":"173298","url":"http://adriatic.hr","sso":[],"timeTaken":"10502ms"}
+{"rank":"173296","url":"http://pozdravlandia.ru","sso":[],"timeTaken":"16254ms"}
+{"rank":"173300","url":"http://magnbrowser.net","sso":[],"timeTaken":"5258ms"}
+{"rank":"173297","url":"http://vapeshop-hookahs.com/signup","sso":["facebook, oauth-keyword"],"timeTaken":"9793ms"}
+{"rank":"173298","url":"http://www.adriatic.hr/en/apply","sso":["facebook, oauth-keyword","google, oauth-url"],"timeTaken":"9813ms"}
+{"rank":"173296","url":"http://pozdravlandia.ru/signup","sso":[],"timeTaken":"5920ms"}
+{"rank":"173300","url":"http://magnbrowser.net/signup","sso":[],"timeTaken":"5615ms"}
+{"rank":"173300","url":"http://magnbrowser.net/login","sso":[],"timeTaken":"5236ms"}
+{"rank":"173296","url":"http://pozdravlandia.ru/login","sso":[],"timeTaken":"7947ms"}
+{"rank":"173298","url":"http://www.adriatic.hr/en/login","sso":["facebook, oauth-keyword","google, oauth-url"],"timeTaken":"10859ms"}
+{"rank":"173297","url":"http://vapeshop-hookahs.com/login","sso":["facebook, oauth-keyword"],"timeTaken":"11405ms"}
+{"rank":"173299","url":"http://miusiq.net","sso":[],"timeTaken":"28561ms"}
+{"rank":"173295","url":"http://resept-shagi.ru","sso":[],"timeTaken":"40428ms"}
+{"rank":"173299","url":"http://www.miusiq.net/signup","sso":[],"timeTaken":"9124ms"}
+{"rank":"173302","url":"http://legiao-premium.net","sso":[],"timeTaken":"15639ms"}
+{"rank":"173303","url":"http://design-reuse.com","sso":[],"timeTaken":"18320ms"}
+{"rank":"173304","url":"http://asimp3.club","sso":[],"timeTaken":"18114ms"}
+{"rank":"173302","url":"http://www.legiao-premium.net/signup","sso":[],"timeTaken":"17744ms"}
+{"rank":"173303","url":"https://www.design-reuse.com/users/signup.php","sso":[],"timeTaken":"11852ms"}
+{"rank":"173304","url":"https://asimp3.club/signup","sso":[],"timeTaken":"17265ms"}
+{"rank":"173303","url":"https://www.design-reuse.com/login2.php?nexturl=https%3A%2F%2Fwww.design-reuse.com%2F","sso":[],"timeTaken":"7825ms"}
+{"rank":"173304","url":"https://asimp3.club/login","sso":[],"timeTaken":"11829ms"}
+{"rank":"173299","url":"http://www.miusiq.net/login","sso":[],"timeTaken":"7778ms"}
+{"rank":"173302","url":"http://www.legiao-premium.net/login","sso":[],"timeTaken":"11529ms"}
+
+<--- Last few GCs --->
+
+[2673:0x2f176a0]   211732 ms: Mark-sweep 1118.1 (1583.0) -> 1108.5 (1583.0) MB, 926.5 / 0.0 ms  allocation failure GC in old space requested
+[2673:0x2f176a0]   212500 ms: Mark-sweep 1108.5 (1583.0) -> 1108.5 (1583.0) MB, 737.5 / 0.0 ms  allocation failure GC in old space requested
+[2673:0x2f176a0]   213453 ms: Mark-sweep 1108.5 (1583.0) -> 1108.5 (1530.0) MB, 875.9 / 0.0 ms  last resort 
+[2673:0x2f176a0]   213860 ms: Mark-sweep 1108.5 (1530.0) -> 1108.5 (1509.5) MB, 406.4 / 0.0 ms  last resort 
+
+
+<--- JS stacktrace --->
+
+==== JS stack trace =========================================
+
+Security context: 0x2623c1f266a1 <JS Object>
+    0: builtin exit frame: parse(this=0x2623c1f1a7d1 <a JSON with map 0x33c0624853d9>,0xc3557de8b51 <Very long string[225200224]>)
+
+    1: onread [internal/child_process.js:~455] [pc=0x383643f8885a](this=0x1ebd3b6ddd09 <a Pipe with map 0x33c0624da469>,nread=25521,pool=0xc3557de2699 <an Uint8Array with map 0x3e0bd9102309>,recvHandle=0x13b496602311 <undefined>)
+
+==== Details =====================...
+
