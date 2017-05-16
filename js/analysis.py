@@ -21,7 +21,8 @@ def find(s, ch):
 
 def LoadData(logFileName):
     rankList, log_data, ssoProviders, ssoTypes = ([] for i in range(4))
-    numWebsites = 0
+    numWebsites = 0 
+    n = 0
     with open(logFileName) as log_file:
         for line in log_file:
             jsonLine = json.loads(line)
@@ -72,7 +73,7 @@ def LoadData(logFileName):
                     if type not in ssoTypes:
                         ssoTypes.append(type)
                     log_data.append([jsonLine['rank'], url, domain, loginType, provider, type])
-
+    log_data = sorted(log_data, key=itemgetter(2))
     return len(rankList), ssoProviders, ssoTypes, log_data
 
 def GetCount(numSites, ssoProviders, ssoTypes, logData):
@@ -93,6 +94,8 @@ def GetCount(numSites, ssoProviders, ssoTypes, logData):
         sumPer = sumPer + percentage
 
     for logLine in logData:
+        if logLine[4] == '' or logLine[4] is None:
+            continue
         edges.append([logLine[2], logLine[4]])
 
     return totalIdp, idpLoginSignupCount, percentageIdp, edges
@@ -119,12 +122,13 @@ def WriteResultsToFiles(numSites, totalIdp, idpLoginSignupCount, percentageIdp, 
     edges = sorted(edges, key=itemgetter(0))
     for line in edges:
         opLine = ''
-        for element in line:
-            opLine = opLine + str(element) + '\t'
+        for idx, element in enumerate(line):
+            uel = element.encode('ascii', 'ignore')
+            opLine = opLine + str(uel) + '\t'
         print ('\t' + opLine)
     return
 
-logFileName = sys.argv[1]
+logFileName = "../data/Runs - success/200k-300klog/260-270k_log.txt"
 numSites, ssoProviders, ssoTypes, logData = LoadData(logFileName)
 totalIdp, idpLoginSignupCount, percentageIdp, edges = GetCount(numSites, ssoProviders, ssoTypes, logData)
 WriteResultsToFiles(numSites, totalIdp, idpLoginSignupCount, percentageIdp, edges)
