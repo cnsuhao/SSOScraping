@@ -1,7 +1,8 @@
 import json
 import re
-from operator import itemgetter
 import sys
+from operator import itemgetter
+from urlparse import urlparse
 
 lgRe = re.compile('log[\-\s]*[io]+n', re.I)
 sgRe = re.compile('sign[\-\s]*[io]+n', re.I)
@@ -21,8 +22,6 @@ def find(s, ch):
 
 def LoadData(logFileName):
     rankList, log_data, ssoProviders, ssoTypes = ([] for i in range(4))
-    numWebsites = 0 
-    n = 0
     with open(logFileName) as log_file:
         for line in log_file:
             jsonLine = json.loads(line)
@@ -47,20 +46,13 @@ def LoadData(logFileName):
                 loginType = 'misc'
 
             url = jsonLine['url']
-            dotLocs = find(url, '.')
-            slashLocs = find(url, '/')
-            if  url[slashLocs[1]+1:slashLocs[1]+5] == 'www.':
-                start = dotLocs[0]+1
-            else:
-                start = slashLocs[1]+1
+            parseduri = urlparse((jsonLine['url']).encode('ascii', 'ignore'))
+            domain = '{uri.netloc}'.format(uri=parseduri)
 
-            if len(slashLocs) < 3:
-                domain = url[start:]
-            else:
-                domain = url[start:slashLocs[2]]
+            if domain.find('www') != -1:
+                domain = domain.translate(None, 'www')
+                domain = domain.replace('.', '', 1)
 
-            provider = ''
-            type = ''
             if len(jsonLine['sso']) == 0:
                 log_data.append([jsonLine['rank'], url, domain, loginType, '', ''])
             else:
@@ -68,6 +60,8 @@ def LoadData(logFileName):
                     items = ssoPair.split(',')
                     provider = items[0]
                     type = items[1]
+                    if provider == 'vk' or provider == 'vkontakte':
+                        provider = 'vk'
                     if provider not in ssoProviders:
                         ssoProviders.append(provider)
                     if type not in ssoTypes:
@@ -94,7 +88,7 @@ def GetCount(numSites, ssoProviders, ssoTypes, logData):
         sumPer = sumPer + percentage
 
     for logLine in logData:
-        if logLine[4] == '' or logLine[4] is None:
+        if logLine[4] == '' or logLine[4] is None or logLine[2] == '' or logLine[2] is None:
             continue
         edges.append([logLine[2], logLine[4]])
 
@@ -111,24 +105,25 @@ def WriteResultsToFiles(numSites, totalIdp, idpLoginSignupCount, percentageIdp, 
             opLine  = opLine + str(element) + '\t'
         print ('\t' + opLine)
 
-    print ('IDP Count')
+    print ('IDP Count Percentage')
     for line in percentageIdp:
         opLine = ''
         for element in line:
             opLine = opLine + str(element) + '\t'
         print ('\t' + opLine)
 
-    print ('Edges')
     edges = sorted(edges, key=itemgetter(0))
     for line in edges:
         opLine = ''
         for idx, element in enumerate(line):
+            element = element.rstrip()
             uel = element.encode('ascii', 'ignore')
             opLine = opLine + str(uel) + '\t'
-        print ('\t' + opLine)
+        with open('generatedEdges.txt', 'a') as efile:
+            efile.write(opLine + '\n')
     return
 
-logFileName = "../data/Runs - success/200k-300klog/260-270k_log.txt"
+logFileName = sys.argv[1]
 numSites, ssoProviders, ssoTypes, logData = LoadData(logFileName)
 totalIdp, idpLoginSignupCount, percentageIdp, edges = GetCount(numSites, ssoProviders, ssoTypes, logData)
 WriteResultsToFiles(numSites, totalIdp, idpLoginSignupCount, percentageIdp, edges)
