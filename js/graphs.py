@@ -1,4 +1,3 @@
-import sys
 import re
 from graph_tool.all import *
 
@@ -37,85 +36,93 @@ def calcVertexType(inputStr):
             break
     return vertexType
 
+def checkObjPresence(obj, list):
+    present = False
+    for item in list:
+        splitObj = obj.split(',')
+        splitlistObj = item.split(',')
+        if splitObj[0] == splitlistObj[0] and splitObj[1] == splitlistObj[1]:
+            present = True
+            break
+    return present
 
 #Read from edges file
-filename = 'sampleedges.txt'
+filename = 'generatedEdges.txt'
 with open(filename) as edgeFile:
     for line in edgeFile:
-        split = line.split(' ')
+        split = line.split('\t')
         singleIdp = split[0].strip()
         singleRp = split[1].strip()
         pair = singleIdp+','+singleRp
-        pairs.append(pair)
+        if not(checkObjPresence(pair, pairs)):
+            pairs.append(pair)
         rpVtype = calcVertexType(singleRp)
         idpVtype = calcVertexType(singleIdp)
         singles.add(singleIdp+','+idpVtype)
         singles.add(singleRp+','+rpVtype)
-
+print len(pairs)
 g1 = Graph(directed=False)
 
-vprop1_type = g1.new_vertex_property('string')
-vprop1_value = g1.new_vertex_property('string')
-vprop1_color = g1.new_vertex_property('string')
-vprop1_shape = g1.new_vertex_property('string')
-eprop1_color = g1.new_edge_property('string')
+vprop_type = g1.new_vertex_property('string')
+vprop_value = g1.new_vertex_property('string')
+vprop_color = g1.new_vertex_property('string')
+vprop_shape = g1.new_vertex_property('string')
 
 for each in singles:
+    print "vertex addition"
     newV = g1.add_vertex()
     vertexVal = each.split(',')[0]
     vertexType = each.split(',')[1]
-    vprop1_value[newV] = vertexVal
-    vprop1_type[newV] = vertexType
+    vprop_value[newV] = vertexVal
+    vprop_type[newV] = vertexType
     if vertexType == '0':
-        vprop1_color[newV] = 'yellow'
-        vprop1_shape[newV] = 'triangle'
+        vprop_color[newV] = 'yellow'
+        vprop_shape[newV] = 'triangle'
     if vertexType == '1':
-        vprop1_color[newV] = 'white'
-        vprop1_shape[newV] = 'circle'
+        vprop_color[newV] = 'white'
+        vprop_shape[newV] = 'circle'
     if vertexType == '-1':
-        vprop1_color[newV] = 'blue'
-        vprop1_shape[newV] = 'square'
+        vprop_color[newV] = 'blue'
+        vprop_shape[newV] = 'square'
 
+edgeList = []
 for pair in pairs:
     idp = pair.split(',')[0]
     rp = pair.split(',')[1]
-    src = ''
-    trgt = ''
-
+    print "hi"
     #Logic for first figure
-    for v in g1.get_vertices():
-        if vprop1_value[v] == idp:
-            src = v
-        elif vprop1_value[v] == rp:
-            trgt = v
-    newE = g1.add_edge(src, trgt)
-    eprop1_color[newE] = 'black'
-    if fb.search(vprop1_value[src]) is not None:
-        if vprop1_type[trgt] == '1':
-            vprop1_color[trgt] = 'green'
+    src = [v for v in g1.get_vertices() if vprop_value[v] == idp][0]
+    trgt = [v for v in g1.get_vertices() if vprop_value[v] == rp][0]
+    edgeList.append((src,trgt))
+    if fb.search(vprop_value[src]) is not None:
+        if vprop_type[trgt] == '1':
+            vprop_color[trgt] = 'green'
+g1.add_edge_list(edge_list=edgeList)
 
-graph_draw(g1, bg_color=[1,1,1,1], vertex_size=10, vertex_color="black", vertex_fill_color=vprop1_color, vertex_shape=vprop1_shape, vertex_pen_width=0.5, edge_color=eprop1_color,
-output_size=(400, 400), output="fig1.pdf")
+graph_draw(g1, bg_color=[1,1,1,1], vertex_size=10, vertex_color="black", vertex_fill_color=vprop_color,
+           vertex_shape=vprop_shape, vertex_pen_width=0.5, edge_color="black", output_size=(400, 400), output="fig1.pdf")
 
 
 g2 = Graph(g1)
 rpsWoFb = []
 #Logic for second figure
 for v in g2.get_vertices():
-    if vprop1_type[v] == '1':
+    print "second addition"
+    if vprop_type[v] == '1':
         neighbors = g2.get_out_neighbours(v)
-        gen = (w for w in neighbors if vprop1_type[w] == '-1')
+        gen = (w for w in neighbors if vprop_type[w] == '-1')
         if len(list(gen)) > 0:
             continue
         else:
             rpsWoFb.append(v)
 for v in rpsWoFb:
+    print "third addition"
     neighbors = g2.get_out_neighbours(v)
     for w in neighbors:
         nextNeighbors = g2.get_out_neighbours(w)
-        gen = (y for y in nextNeighbors if vprop1_type[y] == '-1')
+        gen = (y for y in nextNeighbors if vprop_type[y] == '-1')
         if len(list(gen)) > 0:
-            vprop1_color[v] = "red"
+            vprop_color[v] = "red"
 
-graph_draw(g2, bg_color=[1,1,1,1], vertex_size=10, vertex_color="black", vertex_fill_color=vprop1_color, vertex_shape=vprop1_shape, vertex_pen_width=0.5, edge_color=eprop1_color,
-output_size=(400, 400), output="fig2.pdf")
+graph_draw(g2, bg_color=[1,1,1,1], vertex_size=10, vertex_color="black", vertex_fill_color=vprop_color, vertex_shape=vprop_shape,
+           vertex_pen_width=0.5, edge_color="black", output_size=(400, 400), output="fig2.pdf")
